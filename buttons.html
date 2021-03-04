@@ -1,0 +1,1384 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buttons</title>
+
+    <!--Bootstrap css-->
+    <link rel="stylesheet" href="assets/Core/bootstrap/dist/css/bootstrap.min.css">
+   <!--plugins of viewcode-->
+   <link rel="stylesheet" type="text/css" href="assets/Plugins/codemirror/lib/codemirror.css">
+   <link rel="stylesheet" type="text/css" href="assets/Plugins/codemirror/theme/material.css">
+   
+    <!--Custom css-->
+    <link rel="stylesheet" href="dist/css/style.css">
+    <link rel="stylesheet" href="dist/scss/css/buttons.css">
+    <link rel="stylesheet" href="dist/sidenavCss/custom.css">
+</head>
+<body class="skin-megna fixed-layout">
+
+    <!-- ============================================================== -->
+        <!-- Topbar header - style you can find in pages.scss -->
+        <!-- ============================================================== -->
+        <header class="topbar">
+            <nav class="navbar top-navbar navbar-expand-md navbar-dark">
+                <!-- ============================================================== -->
+                <!-- Logo -->
+                <!-- ============================================================== -->
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="index.html">
+                        <!-- Logo icon --><b>
+                            <!--You can put here icon as well // <i class="wi wi-sunset"></i> //-->
+                            <!-- Dark Logo icon -->
+                            <img src="assets/images/New Logo.png" alt="homepage" class="light-logo" />
+                            <!-- Light Logo icon -->
+                            <!-- <img src="../assets/images/logo-light-icon.png" alt="homepage" class="light-logo" /> -->
+                        </b>
+                        <!--End Logo icon -->
+                        <span class="hidden-xs font-bold" style="font-size: 19px">Patel Techologies</span>
+                    </a>
+                </div>
+                <!-- ============================================================== -->
+                <!-- End Logo -->
+                <!-- ============================================================== -->
+                <div class="navbar-collapse">
+                    <!-- ============================================================== -->
+                    <!-- toggle and nav items -->
+                    <!-- ============================================================== -->
+                    <ul class="navbar-nav mr-auto">
+                        <!-- This is  -->
+                        <li class="nav-item"> <a class="nav-link nav-toggler d-block d-md-none waves-effect waves-dark" href="javascript:void(0)"><i class="ti-menu"></i></a> </li>
+                        <li class="nav-item"> <a class="nav-link sidebartoggler d-none d-lg-block d-md-block waves-effect waves-dark" href="javascript:void(0)"><i class="icon-menu"></i></a> </li>
+                        <!-- ============================================================== -->
+                        <!-- Search -->
+                        <!-- ============================================================== -->
+                        <li class="nav-item d-none d-md-block d-lg-block">
+                           <form action="">
+                              <input type="search" placeholder="Search & enter">
+                              <i class="fa fa-search"></i>
+                            </form>
+                        </li>
+                    </ul>
+                   
+                </div>
+            </nav>
+        </header>
+        <!-- ============================================================== -->
+        <!-- End Topbar header -->
+        <!-- ============================================================== -->
+        <!-- ============================================================== -->
+        <!-- Left Sidebar - style you can find in  custom.css  -->
+        <!-- ============================================================== -->
+        <aside class="left-sidebar">
+            <!-- Sidebar scroll-->
+            <div class="scroll-sidebar">
+                <!-- <div class="sidebar-header">
+                    <div class="companyLogo">
+                      <img class="img-responsive img-rounded" src="assets/images/company-logo.svg"
+                        alt="Company logo">
+                    </div>
+                </div> -->
+               <!-- Sidebar navigation-->
+                <nav class="sidebar-nav">
+                    <ul id="sidebarnav">
+                        <li>
+                            <a class="has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false"><i class="mdi mdi-login"></i><span class="hide-menu">Dashboard</span></a>
+                            <ul aria-expanded="false" class="collapse">
+                                <li><a href="Dashboard1.html">Dashboard 1</a></li>
+                                <li><a href="Dashboard2.html">Dashboard 2</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false"><i class="mdi mdi-login"></i><span class="hide-menu">Login Templates</span></a>
+                            <ul aria-expanded="false" class="collapse">
+                                <li><a href="Login1.html">Login 1</a></li>
+                                <li><a href="Login2.html">Login 2</a></li>
+                                <li><a href="Login3.html">Login 3</a></li>
+                                <li><a href="Login4.html">Login 4</a></li>
+                                <li><a href="Login5.html">Login 5</a></li>
+                                <li><a href="Login6.html">Login 6</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false"><i class="ti-palette"></i><span class="hide-menu">Ui Elements</span></a>
+                            <ul aria-expanded="false" class="collapse">
+                                <li><a href="cards.html">Cards</a></li>
+                                <li><a href="buttons.html">Buttons</a></li>
+                                <li><a href="tabs.html">Tab</a></li>
+                                <li><a href="switchs.html">Switchs</a></li>
+                                <li><a href="Notification.html">Notification</a></li>
+                                <li><a href="Alert.html">Alert Box</a></li>
+                                <li><a href="carousel.html">Carousel</a></li>
+                                <li><a href="Errorpage.html">Error Page</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false"><i class="ti-layout-accordion-merged"></i><span class="hide-menu">Tables</span></a>
+                            <ul aria-expanded="false" class="collapse">
+                                <li><a href="basicTable.html">Basic Table</a></li>
+                                <li><a href="dataTable.html">Data Table</a></li>
+                                <li><a href="editable table.html">Editable Table</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false"><i class="ti-layout-media-right-alt"></i><span class="hide-menu">Forms</span></a>
+                            <ul aria-expanded="false" class="collapse">
+                                <li><a href="basicForms.html">Basic Forms</a></li>
+                                <li><a href="checkbox.html">Checkbox</a></li>
+                                <li><a href="dateTimepicker.html">Date &amp; Time Picker</a></li>
+                                <li><a href="dragdropfile.html">Drag &amp; Drop File Upload</a></li>
+                                <li><a href="sliders.html">Sliders</a></li>
+                                <li><a href="addon.html">Addon Control</a></li>
+                                <li><a href="icheck.html">Icheck Control</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false"><i class="ti-layout-media-right-alt"></i><span class="hide-menu">Components</span></a>
+                            <ul aria-expanded="false" class="collapse">
+                                <li><a href="mdbuttons.html">Material Buttons</a></li>
+                                <li><a href="badges.html">Badges</a></li>
+                                <li><a href="spinners.html">Loaders/Spinners</a></li>
+                                <li><a href="progressbar.html">ProgressBar</a></li>
+                                <li><a href="socialbutton.html">SocialButtons</a></li>
+                                <li><a href="stepper.html">Steppers</a></li>
+                                <li><a href="extendedcards.html">Extended Cards</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false"><i class="ti-layout-media-right-alt"></i><span class="hide-menu">Navigation</span></a>
+                            <ul aria-expanded="false" class="collapse">
+                                <li><a href="navbar.html">Navbar</a></li>
+                                <li><a href="breadcrumb.html">Breadcrumb</a></li>
+                                <li><a href="megamenu.html">Mega Menu</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false"><i class="mdi mdi-login"></i><span class="hide-menu">Email Templete</span></a>
+                            <ul aria-expanded="false" class="collapse">
+                               <li><a href="Email_1.html">Email Templete 1</a></li>
+                                <li><a href="Email_2.html">Email Templete 2</a></li>
+                            </ul>
+                        </li>
+                        <!--<li>
+                            <a class="has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false"><i class="ti-layout-media-right-alt"></i><span class="hide-menu">Templates</span></a>
+                            <ul aria-expanded="false" class="collapse">
+                                <li><a href="Website.html">Website</a></li>
+                            </ul>
+                        </li>-->
+                    </ul>
+                </nav>
+                <!-- End Sidebar navigation -->
+            </div>
+            <!-- End Sidebar scroll-->
+        </aside>
+        <!-- ============================================================== -->
+        <!-- End Left Sidebar - style you can find in  custom.css  -->
+        <!-- ============================================================== -->
+
+    <div class="page-wrapper">
+        <div class="container-fluid"> 
+
+            
+            <!--Section-1-->
+            <div class="row">
+                <!---Solid buttons-->
+                <div class="col-md-6 col-12 pb-md-4 pb-4">
+                    <div class="card">
+                        <div class="card-header">
+                            <h4>Buttons</h4>
+                        </div>
+                        <div class="card-body">
+                            <div class="pb-3">
+                                <button type="button" id="button-primary" name="button-primary" class="btn downloadbtn mr-2 mb-2">view</button>
+                                <button type="button" id="" name="" class="btn btn-orange mr-2 mb-2">Add</button>
+                                <button type="button" id="" name="" class="btn btn-red mr-2 mb-2">save</button>
+                                <button type="button" id="" name="" class="btn btn-light mr-2 mb-2">Close</button>
+                                <button type="button" id="" name="" class="btn btn-oceanblue mr-2 mb-2">Subscribe</button>
+                                <button type="button" id="" name="" class="btn btn-success mr-2 mb-2">Buy</button>
+                                <button type="button" id="" name="" class="btn btn-edit mb-2">Edit</button>
+                            </div>
+
+                            <div>
+                                <button type="button" id="" name="" class="btn downloadbtn rounded-0 mr-2 mb-2">view</button>
+                                <button type="button" id="" name="" class="btn btn-orange rounded-0 mr-2 mb-2">Add</button>
+                                <button type="button" id="" name="" class="btn btn-red rounded-0 mr-2 mb-2">save</button>
+                                <button type="button" id="" name="" class="btn btn-light rounded-0 mr-2 mb-2">Close</button>
+                                <button type="button" id="" name="" class="btn btn-oceanblue rounded-0 mr-2 mb-2">Subscribe</button>
+                                <button type="button" id="" name="" class="btn btn-success rounded-0 mr-2 mb-2">Buy</button>
+                                <button type="button" id="" name="" class="btn btn-edit rounded-0 mb-2">Edit</button>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="text-center"><a id="btnViewcode" name="btnViewcode" class="btn btn-megna mt-4 mb-0" data-toggle="collapse" href="#solidbtnViewCodeSection" role="button" aria-expanded="false" aria-controls="solidbtnViewCodeSection">View Code</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--Solid button view code section-->
+                <div class="col-md-6 col-12 pb-md-4 pb-4">
+                    <div class="collapse" id="solidbtnViewCodeSection">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-12 p-0">
+                                    <div class="card bg-light h-100">
+                                        <div class="card-body">
+                                            <nav>
+                                                <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                                                    <a class="nav-item nav-link active" id="nav-html-tab" data-codeType='html' data-toggle="tab" href="#nav-html" role="tab" aria-controls="nav-html" aria-selected="true">HTML</a>
+                                                    <a class="nav-item nav-link" id="nav-css-tab" data-codeType='css' data-toggle="tab" href="#nav-css" role="tab" aria-controls="nav-css" aria-selected="false">CSS</a>
+                                                </div>
+                                            </nav>
+                                            <div class="tab-content border-left border-right border-bottom bg-white" id="nav-tabContent">
+                                                <div class="tab-pane fade show active" id="nav-html" role="tabpanel" aria-labelledby="nav-home-tab">
+                                                    <div class="container-fluid">
+                                                        <div class="row">
+                                                            <div class="col-12 text-right py-3">
+                                                                <button class="btn downloadbtn btn-sm" onclick="copyToClipboard('#card1HtmlCode',this)" data-toggle="tooltip" data-placement="top" title="Copy to clipboard">Copy</button>
+                                                            </div>
+                                                            <div class="col-12 px-0">
+                                                                <div class="form-group">
+                                                                    <textarea id="card1HtmlCode" class="form-control code" rows="5" id="txthtml" name="txthtml" readonly>
+ <!---Solid buttons-->
+<div class="pb-3">
+    <button type="button" id="button-primary" name="button-primary" class="btn downloadbtn mr-2 mb-2">view</button>
+    <button type="button" id="" name="" class="btn btn-orange mr-2 mb-2">Add</button>
+    <button type="button" id="" name="" class="btn btn-red mr-2 mb-2">save</button>
+    <button type="button" id="" name="" class="btn btn-light mr-2 mb-2">Close</button>
+    <button type="button" id="" name="" class="btn btn-oceanblue mr-2 mb-2">Subscribe</button>
+    <button type="button" id="" name="" class="btn btn-success mr-2 mb-2">Buy</button>
+    <button type="button" id="" name="" class="btn btn-edit mb-2">Edit</button>
+</div>
+
+<div>
+    <button type="button" id="" name="" class="btn downloadbtn rounded-0 mr-2 mb-2">view</button>
+    <button type="button" id="" name="" class="btn btn-orange rounded-0 mr-2 mb-2">Add</button>
+    <button type="button" id="" name="" class="btn btn-red rounded-0 mr-2 mb-2">save</button>
+    <button type="button" id="" name="" class="btn btn-light rounded-0 mr-2 mb-2">Close</button>
+    <button type="button" id="" name="" class="btn btn-oceanblue rounded-0 mr-2 mb-2">Subscribe</button>
+    <button type="button" id="" name="" class="btn btn-success rounded-0 mr-2 mb-2">Buy</button>
+    <button type="button" id="" name="" class="btn btn-edit rounded-0 mb-2">Edit</button>
+</div>
+              
+           
+ 
+                                           
+                                                    
+                                                                </textarea>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+
+                                                </div>
+                                                <div class="tab-pane fade" id="nav-css" role="tabpanel" aria-labelledby="nav-profile-tab">
+                                                    <div class="container-fluid">
+                                                        <div class="row">
+                                                            <div class="col-md-6 col-12 p-3 m-auto">
+                                                                <a class="btn downloadbtn btn-block" target="_blank" href="dist/downloadCss/buttons/solidbutton.css" download>Download solidbutton.css</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--section-2-->
+            <div class="row">
+                 <!--Outline buttons-->
+                 <div class="col-md-6 col-12 pb-md-4 pb-4">
+                    <div class="card">
+                        <div class="card-header">
+                           <h4>Outline buttons</h4>
+                        </div>
+                        <div class="card-body">
+                            <div class="pb-3">
+                                <button type="button" id="" name="" class="btn btn-outline-primary mr-2 mb-2">view</button>
+                                <button type="button" id="" name="" class="btn btn-outline-orange mr-2 mb-2">Add</button>
+                                <button type="button" id="" name="" class="btn btn-outline-red mr-2 mb-2">save</button>
+                                <button type="button" id="" name="" class="btn btn-outline-light mr-2 mb-2">Close</button>
+                                <button type="button" id="" name="" class="btn btn-outline-oceanblue mr-2 mb-2">Subscribe</button>
+                                <button type="button" id="" name="" class="btn btn-outline-success mr-2 mb-2">Buy</button>
+                                <button type="button" id="" name="" class="btn btn-outline-edit mb-2">Edit</button>
+                            </div>
+
+                            <div>
+                                <button type="button" id="" name="" class="btn btn-outline-primary rounded-0 mr-2 mb-2">view</button>
+                                <button type="button" id="" name="" class="btn btn-outline-orange rounded-0 mr-2 mb-2">Add</button>
+                                <button type="button" id="" name="" class="btn btn-outline-red rounded-0 mr-2 mb-2">save</button>
+                                <button type="button" id="" name="" class="btn btn-outline-light rounded-0 mr-2 mb-2">Close</button>
+                                <button type="button" id="" name="" class="btn btn-outline-oceanblue rounded-0 mr-2 mb-2">Subscribe</button>
+                                <button type="button" id="" name="" class="btn btn-outline-success rounded-0 mr-2 mb-2">Buy</button>
+                                <button type="button" id="" name="" class="btn btn-outline-edit rounded-0 mb-2">Edit</button>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="text-center"><a id="btnViewcode" name="btnViewcode" class="btn btn-megna mt-4 mb-0" data-toggle="collapse" href="#outlinebtnViewCodeSection" role="button" aria-expanded="false" aria-controls="outlinebtnViewCodeSection">View Code</a></div>
+                            </div>
+                       
+                        </div>
+
+                    </div>
+                </div>
+                <!--Outline button view code section-->
+                <div class="col-md-6 col-12 pb-md-4 pb-4">
+                    <div class="collapse" id="outlinebtnViewCodeSection">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-12 p-0">
+                                    <div class="card bg-light h-100">
+                                        <div class="card-body">
+                                            <nav>
+                                                <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                                                    <a class="nav-item nav-link active" id="nav-html-tab" data-codeType='html' data-toggle="tab" href="#nav-htmlcard2" role="tab" aria-controls="nav-html" aria-selected="true">HTML</a>
+                                                    <a class="nav-item nav-link" id="nav-css-tab" data-codeType='css' data-toggle="tab" href="#nav-csscard2" role="tab" aria-controls="nav-css" aria-selected="false">CSS</a>
+                                                </div>
+                                            </nav>
+                                            <div class="tab-content border-left border-right border-bottom bg-white" id="nav-tabContent">
+                                                <div class="tab-pane fade show active" id="nav-htmlcard2" role="tabpanel" aria-labelledby="nav-home-tab">
+                                                    <div class="container-fluid">
+                                                        <div class="row">
+                                                            <div class="col-12 text-right py-3">
+                                                                <button class="btn downloadbtn btn-sm" onclick="copyToClipboard('#card2HtmlCode',this)" data-toggle="tooltip" data-placement="top" title="Copy to clipboard">Copy</button>
+                                                            </div>
+                                                            <div class="col-12 px-0">
+                                                                <div class="form-group">
+  
+                                                                    <textarea id="card2HtmlCode" class="form-control code" rows="5" id="txthtml" name="txthtml" readonly>
+
+<!--Outline buttons-->
+<div class="pb-3">
+    <button type="button" id="" name="" class="btn btn-outline-primary mr-2 mb-2">view</button>
+    <button type="button" id="" name="" class="btn btn-outline-orange mr-2 mb-2">Add</button>
+    <button type="button" id="" name="" class="btn btn-outline-red mr-2 mb-2">save</button>
+    <button type="button" id="" name="" class="btn btn-outline-light mr-2 mb-2">Close</button>
+    <button type="button" id="" name="" class="btn btn-outline-oceanblue mr-2 mb-2">Subscribe</button>
+    <button type="button" id="" name="" class="btn btn-outline-success mr-2 mb-2">Buy</button>
+    <button type="button" id="" name="" class="btn btn-outline-edit mb-2">Edit</button>
+</div>
+
+<div>
+    <button type="button" id="" name="" class="btn btn-outline-primary rounded-0 mr-2 mb-2">view</button>
+    <button type="button" id="" name="" class="btn btn-outline-orange rounded-0 mr-2 mb-2">Add</button>
+    <button type="button" id="" name="" class="btn btn-outline-red rounded-0 mr-2 mb-2">save</button>
+    <button type="button" id="" name="" class="btn btn-outline-light rounded-0 mr-2 mb-2">Close</button>
+    <button type="button" id="" name="" class="btn btn-outline-oceanblue rounded-0 mr-2 mb-2">Subscribe</button>
+    <button type="button" id="" name="" class="btn btn-outline-success rounded-0 mr-2 mb-2">Buy</button>
+    <button type="button" id="" name="" class="btn btn-outline-edit rounded-0 mb-2">Edit</button>
+</div>
+                                    
+                                                    
+                                                                </textarea>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+
+                                                </div>
+                                                <div class="tab-pane fade" id="nav-csscard2" role="tabpanel" aria-labelledby="nav-profile-tab">
+                                                    <div class="container-fluid">
+                                                        <div class="row">
+                                                            <div class="col-md-6 col-12 p-3 m-auto">
+                                                                <a class="btn downloadbtn btn-block" target="_blank" href="dist/downloadCss/buttons/outlinebutton.css" download>Download outlinebutton.css</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!--section-3-->
+            <div class="row">
+                 <!--Solid rounded buttons-->
+                <div class="col-md-6 col-12 pb-md-4 pb-4">
+                    <div class="card">
+                        <div class="card-header">
+                            <h4>Rounded buttons</h4>
+                        </div>
+                        <div class="card-body">
+                            <div>
+                                <button type="button" id="" name="" class="btn downloadbtn btn-rounded mr-2 mb-2">view</button></a>
+                                <button type="button" id="" name="" class="btn btn-orange btn-rounded mr-2 mb-2">Add</button></a>
+                                <button type="button" id="" name="" class="btn btn-red btn-rounded mr-2 mb-2">save</button></a>
+                                <button type="button" id="" name="" class="btn btn-light btn-rounded mr-2 mb-2">Close</button></a>
+                                <button type="button" id="" name="" class="btn btn-oceanblue btn-rounded mr-2 mb-2">Subscribe</button></a>
+                                <button type="button" id="" name="" class="btn btn-success btn-rounded mr-2 mb-2">Buy</button></a>
+                                <button type="button" id="" name="" class="btn btn-edit-round mb-2">Edit</button></a>
+                            </div>
+
+                            <div class="col-md-12">
+                                <div class="text-center"><a id="btnViewcode" name="btnViewcode" class="btn btn-megna mt-4 mb-0" data-toggle="collapse" href="#solidroundedbtnViewCodeSection" role="button" aria-expanded="false" aria-controls="solidroundedbtnViewCodeSection">View Code</a></div>
+                            </div>
+                       
+                        </div>
+                    </div>
+                </div>
+                <!--Solid rounded button view code section-->
+                <div class="col-md-6 col-12 pb-md-4 pb-4">
+                    <div class="collapse" id="solidroundedbtnViewCodeSection">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-12 p-0">
+                                    <div class="card bg-light h-100">
+                                        <div class="card-body">
+                                            <nav>
+                                                <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                                                    <a class="nav-item nav-link active" id="nav-html-tab" data-codeType='html' data-toggle="tab" href="#nav-htmlcard3" role="tab" aria-controls="nav-html" aria-selected="true">HTML</a>
+                                                    <a class="nav-item nav-link" id="nav-css-tab" data-codeType='css' data-toggle="tab" href="#nav-csscard3" role="tab" aria-controls="nav-css" aria-selected="false">CSS</a>
+                                                </div>
+                                            </nav>
+                                            <div class="tab-content border-left border-right border-bottom bg-white" id="nav-tabContent">
+                                                <div class="tab-pane fade show active" id="nav-htmlcard3" role="tabpanel" aria-labelledby="nav-home-tab">
+                                                    <div class="container-fluid">
+                                                        <div class="row">
+                                                            <div class="col-12 text-right py-3">
+                                                                <button class="btn downloadbtn btn-sm" onclick="copyToClipboard('#card3HtmlCode',this)" data-toggle="tooltip" data-placement="top" title="Copy to clipboard">Copy</button>
+                                                            </div>
+                                                            <div class="col-12 px-0">
+                                                                <div class="form-group">
+                                                                    <textarea id="card3HtmlCode" class="form-control code" rows="5" id="txthtml" name="txthtml" readonly>
+<div class="page-wrapper">
+<!--Solid rounded buttons-->
+<div class="col-md-6 col-12 pb-md-4 pb-4">
+    <div class="card">
+        <div class="card-header">
+            <h4>Rounded buttons</h4>
+        </div>
+        <div class="card-body">
+            <div>
+                <button type="button" id="" name="" class="btn downloadbtn btn-rounded mr-2 mb-2">view</button></a>
+                <button type="button" id="" name="" class="btn btn-orange btn-rounded mr-2 mb-2">Add</button></a>
+                <button type="button" id="" name="" class="btn btn-red btn-rounded mr-2 mb-2">save</button></a>
+                <button type="button" id="" name="" class="btn btn-light btn-rounded mr-2 mb-2">Close</button></a>
+                <button type="button" id="" name="" class="btn btn-oceanblue btn-rounded mr-2 mb-2">Subscribe</button></a>
+                <button type="button" id="" name="" class="btn btn-success btn-rounded mr-2 mb-2">Buy</button></a>
+                <button type="button" id="" name="" class="btn btn-edit-round mb-2">Edit</button></a>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+                                           
+                                                    
+                                                                </textarea>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+
+                                                </div>
+                                                <div class="tab-pane fade" id="nav-csscard3" role="tabpanel" aria-labelledby="nav-profile-tab">
+                                                    <div class="container-fluid">
+                                                        <div class="row">
+                                                            <div class="col-md-6 col-12 p-3 m-auto">
+                                                                <a class="btn downloadbtn btn-block" target="_blank" href="dist/downloadCss/buttons/roundedbutton.css" download>Download roundedbutton.css</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+           <!--section-4-->
+            <div class="row">
+                <!--Rounded outline buttons-->
+                <div class="col-md-6 col-12 pb-md-4 pb-4">
+                    <div class="card">
+                        <div class="card-header">
+                           <h4>Rounded Outline buttons</h4>
+                        </div>
+                        <div class="card-body">
+                            <div>
+                                <button type="button" id="" name="" class="btn btn-outline-primary btn-rounded mr-2 mb-2">view</button></a>
+                                <button type="button" id="" name="" class="btn btn-orange-roundoutline btn-rounded  mr-2 mb-2">Add</button></a>
+                                <button type="button" id="" name="" class="btn btn-red-roundoutline btn-rounded mr-2 mb-2">save</button></a>
+                                <button type="button" id="" name="" class="btn btn-outline-light btn-rounded mr-2 mb-2">Close</button></a>
+                                <button type="button" id="" name="" class="btn btn-oceanblue-roundoutline btn-rounded mr-2 mb-2">Subscribe</button></a>
+                                <button type="button" id="" name="" class="btn btn-outline-success btn-rounded mr-2 mb-2">Buy</button></a>
+                                <button type="button" id="" name="" class="btn btn-edit-roundoutline mb-2">Edit</button></a>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="text-center"><a id="btnViewcode" name="btnViewcode" class="btn btn-megna mt-4 mb-0" data-toggle="collapse" href="#roundedoutlinebtnViewCodeSection" role="button" aria-expanded="false" aria-controls="roundedoutlinebtnViewCodeSection">View Code</a></div>
+                            </div>
+                       
+                        </div>
+                     </div>
+                </div>
+                 <!--Rounded outline buttons view code section-->
+                 <div class="col-md-6 col-12 pb-md-4 pb-4">                
+                    <div class="collapse" id="roundedoutlinebtnViewCodeSection">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-12 p-0">
+                                    <div class="card bg-light h-100">
+                                        <div class="card-body">
+                                            <nav>
+                                                <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                                                    <a class="nav-item nav-link active" id="nav-html-tab" data-codeType='html' data-toggle="tab" href="#nav-htmlcard4" role="tab" aria-controls="nav-html" aria-selected="true">HTML</a>
+                                                    <a class="nav-item nav-link" id="nav-css-tab" data-codeType='css' data-toggle="tab" href="#nav-csscard4" role="tab" aria-controls="nav-css" aria-selected="false">CSS</a>
+                                                </div>
+                                            </nav>
+                                            <div class="tab-content border-left border-right border-bottom bg-white" id="nav-tabContent">
+                                                <div class="tab-pane fade show active" id="nav-htmlcard4" role="tabpanel" aria-labelledby="nav-home-tab">
+                                                    <div class="container-fluid">
+                                                        <div class="row">
+                                                            <div class="col-12 text-right py-3">
+                                                                <button class="btn downloadbtn btn-sm" onclick="copyToClipboard('#card4HtmlCode',this)" data-toggle="tooltip" data-placement="top" title="Copy to clipboard">Copy</button>
+                                                            </div>
+                                                            <div class="col-12 px-0">
+                                                                <div class="form-group">
+     
+                                                                    <textarea id="card4HtmlCode" class="form-control code" rows="5" id="txthtml" name="txthtml" readonly>
+
+<!--Rounded outline buttons-->
+<div>
+    <button type="button" id="" name="" class="btn btn-outline-primary btn-rounded mr-2 mb-2">view</button></a>
+    <button type="button" id="" name="" class="btn btn-orange-roundoutline btn-rounded  mr-2 mb-2">Add</button></a>
+    <button type="button" id="" name="" class="btn btn-red-roundoutline btn-rounded mr-2 mb-2">save</button></a>
+    <button type="button" id="" name="" class="btn btn-outline-light btn-rounded mr-2 mb-2">Close</button></a>
+    <button type="button" id="" name="" class="btn btn-oceanblue-roundoutline btn-rounded mr-2 mb-2">Subscribe</button></a>
+    <button type="button" id="" name="" class="btn btn-outline-success btn-rounded mr-2 mb-2">Buy</button></a>
+    <button type="button" id="" name="" class="btn btn-edit-roundoutline mb-2">Edit</button></a>
+</div>
+            
+
+                                           
+                                                    
+                                                                </textarea>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+
+                                                </div>
+                                                <div class="tab-pane fade" id="nav-csscard4" role="tabpanel" aria-labelledby="nav-profile-tab">
+                                                    <div class="container-fluid">
+                                                        <div class="row">
+                                                            <div class="col-md-8 col-12 p-3 m-auto">
+                                                                <a class="btn downloadbtn btn-block" target="_blank" href="dist/downloadCss/buttons/roundedoutlinebtn.css" download>Download roundedoutlinebtn.css</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                 </div>
+            </div>
+
+
+            <!--Section-5-->
+            <div class="row">
+                <!--Button group-->
+                <div class="col-md-6 col-12 pb-md-4 pb-4">
+                    <div class="card">
+                        <div class="card-header">
+                            <h4>Group buttons sizing</h4>
+                        </div>
+                        <div class="card-body">
+                            <div class="btn-group btn-group-lg mb-3" role="group" aria-label="large button group">
+                                <button type="button" class="btn downloadbtn">Left</button>
+                                <button type="button" class="btn downloadbtn">Middle</button>
+                                <button type="button" class="btn downloadbtn">Right</button>
+                            </div>
+                            <br>
+                            <div class="btn-group mb-3" role="group" aria-label="default button group">
+                                <button type="button" class="btn btn-secondary">Left</button>
+                                <button type="button" class="btn btn-secondary">Middle</button>
+                                <button type="button" class="btn btn-secondary">Right</button>
+                            </div>
+                            <br>
+                            <div class="btn-group btn-group-sm" role="group" aria-label="small button group">
+                                <button type="button" class="btn btn-success">Left</button>
+                                <button type="button" class="btn btn-success">Middle</button>
+                                <button type="button" class="btn btn-success">Right</button>
+                            </div>
+
+                            <div class="col-md-12">
+                                <div class="text-center"><a id="btnViewcode" name="btnViewcode" class="btn btn-megna mt-4 mb-0" data-toggle="collapse" href="#groupbtnViewCodeSection" role="button" aria-expanded="false" aria-controls="groupbtnViewCodeSection">View Code</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            <!--Group button view code section-->
+                <div class="col-md-6 col-12 pb-md-4 pb-4">
+                    <div class="collapse" id="groupbtnViewCodeSection">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-12 p-0">
+                                    <div class="card bg-light h-100">
+                                        <div class="card-body">
+                                            <nav>
+                                                <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                                                    <a class="nav-item nav-link active" id="nav-html-tab" data-codeType='html' data-toggle="tab" href="#nav-htmlcard5" role="tab" aria-controls="nav-html" aria-selected="true">HTML</a>
+                                                    <a class="nav-item nav-link" id="nav-css-tab" data-codeType='css' data-toggle="tab" href="#nav-csscard5" role="tab" aria-controls="nav-css" aria-selected="false">CSS</a>
+                                                </div>
+                                            </nav>
+                                            <div class="tab-content border-left border-right border-bottom bg-white" id="nav-tabContent">
+                                                <div class="tab-pane fade show active" id="nav-htmlcard5" role="tabpanel" aria-labelledby="nav-home-tab">
+                                                    <div class="container-fluid">
+                                                        <div class="row">
+                                                            <div class="col-12 text-right py-3">
+                                                                <button class="btn downloadbtn btn-sm" onclick="copyToClipboard('#card5HtmlCode',this)" data-toggle="tooltip" data-placement="top" title="Copy to clipboard">Copy</button>
+                                                            </div>
+                                                            <div class="col-12 px-0">
+                                                                <div class="form-group">
+  
+                                                                    <textarea id="card5HtmlCode" class="form-control code" rows="5" id="txthtml" name="txthtml" readonly>
+
+<!--Button group-->
+<div class="btn-group btn-group-lg mb-3" role="group" aria-label="large button group">
+    <button type="button" class="btn downloadbtn">Left</button>
+    <button type="button" class="btn downloadbtn">Middle</button>
+    <button type="button" class="btn downloadbtn">Right</button>
+</div>
+<br>
+<div class="btn-group mb-3" role="group" aria-label="default button group">
+    <button type="button" class="btn btn-secondary">Left</button>
+    <button type="button" class="btn btn-secondary">Middle</button>
+    <button type="button" class="btn btn-secondary">Right</button>
+</div>
+<br>
+<div class="btn-group btn-group-sm" role="group" aria-label="small button group">
+    <button type="button" class="btn btn-success">Left</button>
+    <button type="button" class="btn btn-success">Middle</button>
+    <button type="button" class="btn btn-success">Right</button>
+</div>
+                                              
+                                                    
+                                                                </textarea>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+
+                                                </div>
+                                                <div class="tab-pane fade" id="nav-csscard5" role="tabpanel" aria-labelledby="nav-profile-tab">
+                                                    <div class="container-fluid">
+                                                        <div class="row">
+                                                            <div class="col-md-8 col-12 p-3 m-auto">
+                                                                <a class="btn downloadbtn btn-block" target="_blank" href="#" download>No css</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!--section-6-->
+            <div class="row">
+                <!--Outline group button-->
+                <div class="col-md-6 col-12 pb-md-4 pb-4">
+                    <div class="card">
+                        <div class="card-header">
+                            <h4>Outline Group buttons sizing</h4>
+                        </div>
+                        <div class="card-body">
+                            <div class="btn-group btn-group-lg mb-3" role="group" aria-label="large button group">
+                                <button type="button" class="btn btn-outline-primary">Left</button>
+                                <button type="button" class="btn btn-outline-primary">Middle</button>
+                                <button type="button" class="btn btn-outline-primary">Right</button>
+                            </div>
+                            <br>
+                            <div class="btn-group mb-3" role="group" aria-label="default button group">
+                                <button type="button" class="btn btn-outline-secondary">Left</button>
+                                <button type="button" class="btn btn-outline-secondary">Middle</button>
+                                <button type="button" class="btn btn-outline-secondary">Right</button>
+                            </div>
+                            <br>
+                            <div class="btn-group btn-group-sm" role="group" aria-label="small button group">
+                                <button type="button" class="btn btn-outline-success">Left</button>
+                                <button type="button" class="btn btn-outline-success">Middle</button>
+                                <button type="button" class="btn btn-outline-success">Right</button>
+                            </div>
+
+                            <div class="col-md-12">
+                                <div class="text-center"><a id="btnViewcode" name="btnViewcode" class="btn btn-megna mt-4 mb-0" data-toggle="collapse" href="#outlinegroupbtnViewCodeSection" role="button" aria-expanded="false" aria-controls="outlinegroupbtnViewCodeSection">View Code</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--outline group button-->
+                <div class="col-md-6 col-12 pb-md-4 pb-4">
+                    <div class="collapse" id="outlinegroupbtnViewCodeSection">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-12 p-0">
+                                    <div class="card bg-light h-100">
+                                        <div class="card-body">
+                                            <nav>
+                                                <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                                                    <a class="nav-item nav-link active" id="nav-html-tab" data-codeType='html' data-toggle="tab" href="#nav-htmlcard6" role="tab" aria-controls="nav-html" aria-selected="true">HTML</a>
+                                                    <a class="nav-item nav-link" id="nav-css-tab" data-codeType='css' data-toggle="tab" href="#nav-csscard6" role="tab" aria-controls="nav-css" aria-selected="false">CSS</a>
+                                                </div>
+                                            </nav>
+                                            <div class="tab-content border-left border-right border-bottom bg-white" id="nav-tabContent">
+                                                <div class="tab-pane fade show active" id="nav-htmlcard6" role="tabpanel" aria-labelledby="nav-home-tab">
+                                                    <div class="container-fluid">
+                                                        <div class="row">
+                                                            <div class="col-12 text-right py-3">
+                                                                <button class="btn downloadbtn btn-sm" onclick="copyToClipboard('#card6HtmlCode',this)" data-toggle="tooltip" data-placement="top" title="Copy to clipboard">Copy</button>
+                                                            </div>
+                                                            <div class="col-12 px-0">
+                                                                <div class="form-group">
+                                                                    <textarea id="card6HtmlCode" class="form-control code" rows="5" id="txthtml" name="txthtml" readonly>
+                                                                        
+<!--Outline group button-->
+<div class="btn-group btn-group-lg mb-3" role="group" aria-label="large button group">
+<button type="button" class="btn btn-outline-primary">Left</button>
+<button type="button" class="btn btn-outline-primary">Middle</button>
+<button type="button" class="btn btn-outline-primary">Right</button>
+</div>
+<br>
+<div class="btn-group mb-3" role="group" aria-label="default button group">
+<button type="button" class="btn btn-outline-secondary">Left</button>
+<button type="button" class="btn btn-outline-secondary">Middle</button>
+<button type="button" class="btn btn-outline-secondary">Right</button>
+</div>
+<br>
+<div class="btn-group btn-group-sm" role="group" aria-label="small button group">
+<button type="button" class="btn btn-outline-success">Left</button>
+<button type="button" class="btn btn-outline-success">Middle</button>
+<button type="button" class="btn btn-outline-success">Right</button>
+</div>
+
+                                                
+                                                    
+                                                                </textarea>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+
+                                                </div>
+                                                <div class="tab-pane fade" id="nav-csscard6" role="tabpanel" aria-labelledby="nav-profile-tab">
+                                                    <div class="container-fluid">
+                                                        <div class="row">
+                                                            <div class="col-md-8 col-12 p-3 m-auto">
+                                                                <a class="btn downloadbtn btn-block" target="_blank" href="#" download>No css</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+
+            <!--Section-7-->
+            <div class="row">
+                 <!--Button vertical group-->
+                 <div class="col-md-6 col-12 pb-md-4 pb-4">
+                    <div class="card">
+                        <div class="card-header">
+                            <h4>Button vertical group</h4>
+                        </div>
+                        <div class="card-body">
+                            <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+                                <div class="btn-group-vertical btn-group-lg mr-3" role="group" aria-label="Vertical large button group">
+                                    <button type="button" class="btn downloadbtn">Button</button>
+                                    <button type="button" class="btn downloadbtn">Button</button>
+                                    <button type="button" class="btn downloadbtn">Button</button>
+                                </div>
+                                <br>
+                                <div class="btn-group-vertical mr-3" role="group" aria-label="Vertical default button group">
+                                    <button type="button" class="btn btn-secondary">Button</button>
+                                    <button type="button" class="btn btn-secondary">Button</button>
+                                    <button type="button" class="btn btn-secondary">Button</button>
+                                </div>
+                                <br>
+                                <div class="btn-group-vertical btn-group-sm" role="group" aria-label="Vertical small button group">
+                                    <button type="button" class="btn btn-success">Button</button>
+                                    <button type="button" class="btn btn-success">Button</button>
+                                    <button type="button" class="btn btn-success">Button</button>
+                                </div>
+                            </div>
+
+                            <div class="col-md-12">
+                                <div class="text-center"><a id="btnViewcode" name="btnViewcode" class="btn btn-megna mt-4 mb-0" data-toggle="collapse" href="#verticalgroupbtnViewCodeSection" role="button" aria-expanded="false" aria-controls="verticalgroupbtnViewCodeSection">View Code</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--Button vertical group view code section-->
+                <div class="col-md-6 col-12 pb-md-4 pb-4">
+                    <div class="collapse" id="verticalgroupbtnViewCodeSection">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-12 p-0">
+                                    <div class="card bg-light h-100">
+                                        <div class="card-body">
+                                            <nav>
+                                                <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                                                    <a class="nav-item nav-link active" id="nav-html-tab" data-codeType='html' data-toggle="tab" href="#nav-htmlcard7" role="tab" aria-controls="nav-html" aria-selected="true">HTML</a>
+                                                    <a class="nav-item nav-link" id="nav-css-tab" data-codeType='css' data-toggle="tab" href="#nav-csscard7" role="tab" aria-controls="nav-css" aria-selected="false">CSS</a>
+                                                </div>
+                                            </nav>
+                                            <div class="tab-content border-left border-right border-bottom bg-white" id="nav-tabContent">
+                                                <div class="tab-pane fade show active" id="nav-htmlcard7" role="tabpanel" aria-labelledby="nav-home-tab">
+                                                    <div class="container-fluid">
+                                                        <div class="row">
+                                                            <div class="col-12 text-right py-3">
+                                                                <button class="btn downloadbtn btn-sm" onclick="copyToClipboard('#card7HtmlCode',this)" data-toggle="tooltip" data-placement="top" title="Copy to clipboard">Copy</button>
+                                                            </div>
+                                                            <div class="col-12 px-0">
+                                                                <div class="form-group">
+                                                                    <textarea id="card7HtmlCode" class="form-control code" rows="5" id="txthtml" name="txthtml" readonly>
+  
+
+<!--Button vertical group-->
+<div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+    <div class="btn-group-vertical btn-group-lg mr-3" role="group" aria-label="Vertical large button group">
+        <button type="button" class="btn downloadbtn">Button</button>
+        <button type="button" class="btn downloadbtn">Button</button>
+        <button type="button" class="btn downloadbtn">Button</button>
+    </div>
+    <br>
+    <div class="btn-group-vertical mr-3" role="group" aria-label="Vertical default button group">
+        <button type="button" class="btn btn-secondary">Button</button>
+        <button type="button" class="btn btn-secondary">Button</button>
+        <button type="button" class="btn btn-secondary">Button</button>
+    </div>
+    <br>
+    <div class="btn-group-vertical btn-group-sm" role="group" aria-label="Vertical small button group">
+        <button type="button" class="btn btn-success">Button</button>
+        <button type="button" class="btn btn-success">Button</button>
+        <button type="button" class="btn btn-success">Button</button>
+    </div>
+</div>
+
+                                              
+                                                    
+                                                                </textarea>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+
+                                                </div>
+                                                <div class="tab-pane fade" id="nav-csscard7" role="tabpanel" aria-labelledby="nav-profile-tab">
+                                                    <div class="container-fluid">
+                                                        <div class="row">
+                                                            <div class="col-md-8 col-12 p-3 m-auto">
+                                                                <a class="btn downloadbtn btn-block" target="_blank" href="#" download>No css</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!--Section-8-->
+            <div class="row">
+                <!--vertical Outline button group-->
+                <div class="col-md-6 col-12 pb-md-4 pb-4">
+                    <div class="card">
+                        <div class="card-header">
+                            <h4>Outline vertical Group buttons sizing</h4>
+                        </div>
+                        <div class="card-body">
+                            <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+                                <div class="btn-group-vertical btn-group-lg mr-3" role="group" aria-label="Vertical large button group">
+                                    <button type="button" class="btn btn-outline-primary">Button</button>
+                                    <button type="button" class="btn btn-outline-primary">Button</button>
+                                    <button type="button" class="btn btn-outline-primary">Button</button>
+                                </div>
+                                <br>
+                                <div class="btn-group-vertical mr-3" role="group" aria-label="Vertical default button group">
+                                    <button type="button" class="btn btn-outline-secondary">Button</button>
+                                    <button type="button" class="btn btn-outline-secondary">Button</button>
+                                    <button type="button" class="btn btn-outline-secondary">Button</button>
+                                </div>
+                                <br>
+                                <div class="btn-group-vertical btn-group-sm" role="group" aria-label="Vertical small button group">
+                                    <button type="button" class="btn btn-outline-success">Button</button>
+                                    <button type="button" class="btn btn-outline-success">Button</button>
+                                    <button type="button" class="btn btn-outline-success">Button</button>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="text-center"><a id="btnViewcode" name="btnViewcode" class="btn btn-megna mt-4 mb-0" data-toggle="collapse" href="#verticaloutlinegroupbtnViewCodeSection" role="button" aria-expanded="false" aria-controls="verticaloutlinegroupbtnViewCodeSection">View Code</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--vertical Outline button group-->
+                <div class="col-md-6 col-12 pb-md-4 pb-4">
+                    <div class="collapse" id="verticaloutlinegroupbtnViewCodeSection">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-12 p-0">
+                                    <div class="card bg-light h-100">
+                                        <div class="card-body">
+                                            <nav>
+                                                <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                                                    <a class="nav-item nav-link active" id="nav-html-tab" data-codeType='html' data-toggle="tab" href="#nav-htmlcard8" role="tab" aria-controls="nav-html" aria-selected="true">HTML</a>
+                                                    <a class="nav-item nav-link" id="nav-css-tab" data-codeType='css' data-toggle="tab" href="#nav-csscard8" role="tab" aria-controls="nav-css" aria-selected="false">CSS</a>
+                                                </div>
+                                            </nav>
+                                            <div class="tab-content border-left border-right border-bottom bg-white" id="nav-tabContent">
+                                                <div class="tab-pane fade show active" id="nav-htmlcard8" role="tabpanel" aria-labelledby="nav-home-tab">
+                                                    <div class="container-fluid">
+                                                        <div class="row">
+                                                            <div class="col-12 text-right py-3">
+                                                                <button class="btn downloadbtn btn-sm" onclick="copyToClipboard('#card8HtmlCode',this)" data-toggle="tooltip" data-placement="top" title="Copy to clipboard">Copy</button>
+                                                            </div>
+                                                            <div class="col-12 px-0">
+                                                                <div class="form-group">
+                                                                    <textarea id="card8HtmlCode" class="form-control code" rows="5" id="txthtml" name="txthtml" readonly>
+
+<!--vertical Outline button group-->
+<div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+    <div class="btn-group-vertical btn-group-lg mr-3" role="group" aria-label="Vertical large button group">
+        <button type="button" class="btn btn-outline-primary">Button</button>
+        <button type="button" class="btn btn-outline-primary">Button</button>
+        <button type="button" class="btn btn-outline-primary">Button</button>
+    </div>
+    <br>
+    <div class="btn-group-vertical mr-3" role="group" aria-label="Vertical default button group">
+        <button type="button" class="btn btn-outline-secondary">Button</button>
+        <button type="button" class="btn btn-outline-secondary">Button</button>
+        <button type="button" class="btn btn-outline-secondary">Button</button>
+    </div>
+    <br>
+    <div class="btn-group-vertical btn-group-sm" role="group" aria-label="Vertical small button group">
+        <button type="button" class="btn btn-outline-success">Button</button>
+        <button type="button" class="btn btn-outline-success">Button</button>
+        <button type="button" class="btn btn-outline-success">Button</button>
+    </div>
+</div>
+                                                        
+                                                                </textarea>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+
+                                                </div>
+                                                <div class="tab-pane fade" id="nav-csscard8" role="tabpanel" aria-labelledby="nav-profile-tab">
+                                                    <div class="container-fluid">
+                                                        <div class="row">
+                                                            <div class="col-md-8 col-12 p-3 m-auto">
+                                                                <a class="btn downloadbtn btn-block" target="_blank" href="#" download>No css</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!--Section-9-->
+            <div class="row">
+                <!--Block buttons-->
+                <div class="col-md-6 col-12 pb-md-4 pb-4">
+                    <div class="card">
+                        <div class="card-header">
+                            <h4>Block buttons</h4>
+                        </div>
+                        <div class="card-body">
+                            <div class=" pb-4">
+                                <button type="button" class="btn downloadbtn btn-lg btn-block">Block level button</button>
+                            </div>
+                            <div class=" pb-4">
+                                <button type="button" class="btn btn-secondary btn-block">Block level button</button>
+                            </div>
+                            <div class="">
+                                <button type="button" class="btn btn-success btn-sm btn-block">Block level button</button>
+                        </div>
+
+                        <div class="col-md-12">
+                            <div class="text-center"><a id="btnViewcode" name="btnViewcode" class="btn btn-megna mt-4 mb-0" data-toggle="collapse" href="#blockbtnViewCodeSection" role="button" aria-expanded="false" aria-controls="blockbtnViewCodeSection">View Code</a></div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--block button view code section-->
+                <div class="col-md-6 col-12 pb-md-4 pb-4">
+                    <div class="collapse" id="blockbtnViewCodeSection">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-12 p-0">
+                                    <div class="card bg-light h-100">
+                                        <div class="card-body">
+                                            <nav>
+                                                <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                                                    <a class="nav-item nav-link active" id="nav-html-tab" data-codeType='html' data-toggle="tab" href="#nav-htmlcard9" role="tab" aria-controls="nav-html" aria-selected="true">HTML</a>
+                                                    <a class="nav-item nav-link" id="nav-css-tab" data-codeType='css' data-toggle="tab" href="#nav-csscard9" role="tab" aria-controls="nav-css" aria-selected="false">CSS</a>
+                                                </div>
+                                            </nav>
+                                            <div class="tab-content border-left border-right border-bottom bg-white" id="nav-tabContent">
+                                                <div class="tab-pane fade show active" id="nav-htmlcard9" role="tabpanel" aria-labelledby="nav-home-tab">
+                                                    <div class="container-fluid">
+                                                        <div class="row">
+                                                            <div class="col-12 text-right py-3">
+                                                                <button class="btn downloadbtn btn-sm" onclick="copyToClipboard('#card8HtmlCode',this)" data-toggle="tooltip" data-placement="top" title="Copy to clipboard">Copy</button>
+                                                            </div>
+                                                            <div class="col-12 px-0">
+                                                                <div class="form-group">
+                                                                    <textarea id="card9HtmlCode" class="form-control code" rows="5" id="txthtml" name="txthtml" readonly>
+<div class="page-wrapper">
+<!--Block buttons-->
+<div class="col-md-6 col-12 pb-md-4 pb-4">
+<div class="card">
+    <div class="card-header">
+        <h4>Block buttons</h4>
+    </div>
+    <div class="card-body">
+        <div class=" pb-4">
+            <button type="button" class="btn downloadbtn btn-lg btn-block">Block level button</button>
+        </div>
+        <div class=" pb-4">
+            <button type="button" class="btn btn-secondary btn-block">Block level button</button>
+        </div>
+        <div class="">
+            <button type="button" class="btn btn-success btn-sm btn-block">Block level button</button>
+    </div>
+
+    <div class="col-md-12">
+        <div class="text-center"><a id="btnViewcode" name="btnViewcode" class="btn btn-megna mt-4 mb-0" data-toggle="collapse" href="#blockbtnViewCodeSection" role="button" aria-expanded="false" aria-controls="blockbtnViewCodeSection">View Code</a></div>
+    </div>
+    </div>
+</div>
+</div>                                    
+</div>                                                 
+                                                                </textarea>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+
+                                                </div>
+                                                <div class="tab-pane fade" id="nav-csscard9" role="tabpanel" aria-labelledby="nav-profile-tab">
+                                                    <div class="container-fluid">
+                                                        <div class="row">
+                                                            <div class="col-md-8 col-12 p-3 m-auto">
+                                                                <a class="btn downloadbtn btn-block" target="_blank" href="#" download>No css</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!--Section-10-->
+            <div class="row">
+                <!--Outline block buttons-->
+                <div class="col-md-6 col-12 pb-md-4 pb-4">
+                    <div class="card">
+                        <div class="card-header">
+                            <h4>Outline block buttons</h4>
+                        </div>
+                        <div class="card-body">
+                            <div class="pb-4">
+                                <button type="button" class="btn btn-outline-primary btn-lg btn-block">Block level button</button>
+                            </div>
+                            <div class="pb-4">
+                                 <button type="button" class="btn btn-outline-secondary btn-block">Block level button</button>
+                            </div>
+                            <div class="">
+                                <button type="button" class="btn btn-outline-success btn-sm btn-block">Block level button</button>
+                           </div>
+
+                           <div class="col-md-12">
+                            <div class="text-center"><a id="btnViewcode" name="btnViewcode" class="btn btn-megna mt-4 mb-0" data-toggle="collapse" href="#outlineblockbtnViewCodeSection" role="button" aria-expanded="false" aria-controls="outlineblockbtnViewCodeSection">View Code</a></div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Outline block button veiw code section-->
+                <div class="col-md-6 col-12 pb-md-4 pb-4">
+                    <div class="collapse" id="outlineblockbtnViewCodeSection">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-12 p-0">
+                                    <div class="card bg-light h-100">
+                                        <div class="card-body">
+                                            <nav>
+                                                <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                                                    <a class="nav-item nav-link active" id="nav-html-tab" data-codeType='html' data-toggle="tab" href="#nav-htmlcard10" role="tab" aria-controls="nav-html" aria-selected="true">HTML</a>
+                                                    <a class="nav-item nav-link" id="nav-css-tab" data-codeType='css' data-toggle="tab" href="#nav-csscard10" role="tab" aria-controls="nav-css" aria-selected="false">CSS</a>
+                                                </div>
+                                            </nav>
+                                            <div class="tab-content border-left border-right border-bottom bg-white" id="nav-tabContent">
+                                                <div class="tab-pane fade show active" id="nav-htmlcard10" role="tabpanel" aria-labelledby="nav-home-tab">
+                                                    <div class="container-fluid">
+                                                        <div class="row">
+                                                            <div class="col-12 text-right py-3">
+                                                                <button class="btn downloadbtn btn-sm" onclick="copyToClipboard('#card10HtmlCode',this)" data-toggle="tooltip" data-placement="top" title="Copy to clipboard">Copy</button>
+                                                            </div>
+                                                            <div class="col-12 px-0">
+                                                                <div class="form-group">
+                                                                    <textarea id="card10HtmlCode" class="form-control code" rows="5" id="txthtml" name="txthtml" readonly>
+<div class="page-wrapper">
+<!--Outline block buttons-->
+<div class="col-md-6 col-12 pb-md-4 pb-4">
+<div class="card">
+<div class="card-header">
+    <h4>Outline block buttons</h4>
+</div>
+<div class="card-body">
+    <div class="pb-4">
+        <button type="button" class="btn btn-outline-primary btn-lg btn-block">Block level button</button>
+    </div>
+    <div class="pb-4">
+            <button type="button" class="btn btn-outline-secondary btn-block">Block level button</button>
+    </div>
+    <div class="">
+        <button type="button" class="btn btn-outline-success btn-sm btn-block">Block level button</button>
+    </div>
+
+    <div class="col-md-12">
+    <div class="text-center"><a id="btnViewcode" name="btnViewcode" class="btn btn-megna mt-4 mb-0" data-toggle="collapse" href="#outlineblockbtnViewCodeSection" role="button" aria-expanded="false" aria-controls="outlineblockbtnViewCodeSection">View Code</a></div>
+</div>
+</div>
+</div>
+</div>
+</div>                  
+                                                    
+                                                                </textarea>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+
+                                                </div>
+                                                <div class="tab-pane fade" id="nav-csscard10" role="tabpanel" aria-labelledby="nav-profile-tab">
+                                                    <div class="container-fluid">
+                                                        <div class="row">
+                                                            <div class="col-md-8 col-12 p-3 m-auto">
+                                                                <a class="btn downloadbtn btn-block" target="_blank" href="#" download>No css</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>  
+                </div>
+            </div>
+
+
+    </div>
+
+     <!--jquery js-->
+     <script src="assets/Core/jquery-3.3.1.min.js"></script>
+     <!--popper js-->
+     <script src="assets/Core/popper/popper.min.js"></script>
+     <!--bootstrap js-->
+     <script src="assets/Core/bootstrap/dist/js/bootstrap.min.js"></script>
+     <!--Sidebarmenu js-->
+     <script src="dist/js/sidebarmenu.js"></script>
+     <!--Wave Effects js -->
+     <script src="dist/js/waves.js"></script>
+     <!-- scrollbar JavaScript -->
+     <script src="dist/js/perfect-scrollbar.jquery.min.js"></script>
+     <!--Custom JavaScript -->
+     <script src="dist/js/custom.js"></script>
+     <!--Code Mirror JS-->
+    <script src="assets/Plugins/codemirror/lib/codemirror.js"></script>
+    <script src="assets/Plugins/codemirror/mode/xml/xml.js"></script>
+    <script src="assets/Plugins/codemirror/mode/css/css.js"></script>
+    <script src="assets/Plugins/codemirror/mode/javascript/javascript.js"></script>
+    <script src="assets/Plugins/codemirror/mode/htmlmixed/htmlmixed.js"></script>
+ 
+     <!--custom js view code-->
+     <script src="dist/js/buttons.js"></script>
+
+
+     <script type="text/javascript">
+         var card1CodeInit = 0;
+         var card2CodeInit = 0;
+         var card3CodeInit = 0;
+         var card4CodeInit = 0;
+         var card5CodeInit = 0;
+         var card6CodeInit = 0;
+         var card7CodeInit = 0;
+         var card8CodeInit = 0;
+         var card9CodeInit = 0;
+         var card10CodeInit = 0;
+             $('#solidbtnViewCodeSection').on('shown.bs.collapse', function () {
+                 if(card1CodeInit == 0)
+                 {
+                     card1HtmlCodeEditor();
+                     card1CodeInit = 1;
+                 }
+                 else{
+                     return false;
+                 }
+             });
+             $('#outlinebtnViewCodeSection').on('shown.bs.collapse', function () {
+                 if(card2CodeInit == 0)
+                 {
+                     card2HtmlCodeEditor();
+                     card2CodeInit = 1;
+                 }
+                 else{
+                     return false;
+                 }
+             });
+             $('#solidroundedbtnViewCodeSection').on('shown.bs.collapse', function () {
+                 if(card3CodeInit == 0)
+                 {
+                     card3HtmlCodeEditor();
+                     card3CodeInit = 1;
+                 }
+                 else{
+                     return false;
+                 }
+             });
+             $('#roundedoutlinebtnViewCodeSection').on('shown.bs.collapse', function () {
+                 if(card4CodeInit == 0)
+                 {
+                     card4HtmlCodeEditor();
+                     card4CodeInit = 1;
+                 }
+                 else{
+                     return false;
+                 }
+             });
+             $('#groupbtnViewCodeSection').on('shown.bs.collapse', function () {
+                 if(card5CodeInit == 0)
+                 {
+                     card5HtmlCodeEditor();
+                     card5CodeInit = 1;
+                 }
+                 else{
+                     return false;
+                 }
+             });
+             $('#outlinegroupbtnViewCodeSection').on('shown.bs.collapse', function () {
+                 if(card6CodeInit == 0)
+                 {
+                     card6HtmlCodeEditor();
+                     card6CodeInit = 1;
+                 }
+                 else{
+                     return false;
+                 }
+             });
+             $('#verticalgroupbtnViewCodeSection').on('shown.bs.collapse', function () {
+                 if(card7CodeInit == 0)
+                 {
+                     card7HtmlCodeEditor();
+                     card7CodeInit = 1;
+                 }
+                 else{
+                     return false;
+                 }
+             });
+
+             $('#verticaloutlinegroupbtnViewCodeSection').on('shown.bs.collapse', function () {
+                 if(card8CodeInit == 0)
+                 {
+                     card8HtmlCodeEditor();
+                     card8CodeInit = 1;
+                 }
+                 else{
+                     return false;
+                 }
+             });
+             $('#blockbtnViewCodeSection').on('shown.bs.collapse', function () {
+                 if(card9CodeInit == 0)
+                 {
+                     card9HtmlCodeEditor();
+                     card9CodeInit = 1;
+                 }
+                 else{
+                     return false;
+                 }
+             });
+             $('#outlineblockbtnViewCodeSection').on('shown.bs.collapse', function () {
+                 if(card10CodeInit == 0)
+                 {
+                     card10HtmlCodeEditor();
+                     card10CodeInit = 1;
+                 }
+                 else{
+                     return false;
+                 }
+             });
+     </script>
+
+</body>
+ </html>
+ 

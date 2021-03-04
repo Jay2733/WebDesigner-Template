@@ -1,0 +1,774 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Extended Card</title>
+
+    <!--Bootstrap css-->
+    <link rel="stylesheet" href="assets/Core/bootstrap/dist/css/bootstrap.min.css">
+   <!--plugins of viewcode-->
+   <link rel="stylesheet" type="text/css" href="assets/Plugins/codemirror/lib/codemirror.css">
+   <link rel="stylesheet" type="text/css" href="assets/Plugins/codemirror/theme/material.css">
+  
+  
+   
+    <!--Custom css-->
+    <link rel="stylesheet" href="dist/css/style.css">
+    <link rel="stylesheet" href="dist/scss/css/extendedcards.css">
+    <link rel="stylesheet" href="dist/sidenavCss/custom.css">
+</head>
+<body class="skin-megna fixed-layout">
+
+     <!-- ============================================================== -->
+        <!-- Topbar header - style you can find in pages.scss -->
+        <!-- ============================================================== -->
+        <header class="topbar">
+            <nav class="navbar top-navbar navbar-expand-md navbar-dark">
+                <!-- ============================================================== -->
+                <!-- Logo -->
+                <!-- ============================================================== -->
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="index.html">
+                        <!-- Logo icon --><b>
+                            <!--You can put here icon as well // <i class="wi wi-sunset"></i> //-->
+                            <!-- Dark Logo icon -->
+                            <img src="assets/images/New Logo.png" alt="homepage" class="light-logo" />
+                            <!-- Light Logo icon -->
+                            <!-- <img src="../assets/images/logo-light-icon.png" alt="homepage" class="light-logo" /> -->
+                        </b>
+                        <!--End Logo icon -->
+                        <span class="hidden-xs font-bold" style="font-size: 19px">Patel Techologies</span>
+                    </a>
+                </div>
+                <!-- ============================================================== -->
+                <!-- End Logo -->
+                <!-- ============================================================== -->
+                <div class="navbar-collapse">
+                    <!-- ============================================================== -->
+                    <!-- toggle and nav items -->
+                    <!-- ============================================================== -->
+                    <ul class="navbar-nav mr-auto">
+                        <!-- This is  -->
+                        <li class="nav-item"> <a class="nav-link nav-toggler d-block d-md-none waves-effect waves-dark" href="javascript:void(0)"><i class="ti-menu"></i></a> </li>
+                        <li class="nav-item"> <a class="nav-link sidebartoggler d-none d-lg-block d-md-block waves-effect waves-dark" href="javascript:void(0)"><i class="icon-menu"></i></a> </li>
+                        <!-- ============================================================== -->
+                        <!-- Search -->
+                        <!-- ============================================================== -->
+                        <li class="nav-item d-none d-md-block d-lg-block">
+                           <form action="">
+                              <input type="search" placeholder="Search & enter">
+                              <i class="fa fa-search"></i>
+                            </form>
+                        </li>
+                    </ul>
+                   
+                </div>
+            </nav>
+        </header>
+        <!-- ============================================================== -->
+        <!-- End Topbar header -->
+        <!-- ============================================================== -->
+        <!-- ============================================================== -->
+        <!-- Left Sidebar - style you can find in  custom.css  -->
+        <!-- ============================================================== -->
+        <aside class="left-sidebar">
+            <!-- Sidebar scroll-->
+            <div class="scroll-sidebar">
+                <!-- <div class="sidebar-header">
+                    <div class="companyLogo">
+                      <img class="img-responsive img-rounded" src="assets/images/company-logo.svg"
+                        alt="Company logo">
+                    </div>
+                </div> -->
+               <!-- Sidebar navigation-->
+                <nav class="sidebar-nav">
+                    <ul id="sidebarnav">
+                       <li>
+                            <a class="has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false"><i class="mdi mdi-login"></i><span class="hide-menu">Dashboard</span></a>
+                            <ul aria-expanded="false" class="collapse">
+                                <li><a href="Dashboard1.html">Dashboard 1</a></li>
+                                <li><a href="Dashboard2.html">Dashboard 2</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false"><i class="mdi mdi-login"></i><span class="hide-menu">Login Templates</span></a>
+                            <ul aria-expanded="false" class="collapse">
+                                <li><a href="Login1.html">Login 1</a></li>
+                                <li><a href="Login2.html">Login 2</a></li>
+                                <li><a href="Login3.html">Login 3</a></li>
+                                <li><a href="Login4.html">Login 4</a></li>
+                                <li><a href="Login5.html">Login 5</a></li>
+                                <li><a href="Login6.html">Login 6</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false"><i class="ti-palette"></i><span class="hide-menu">Ui Elements</span></a>
+                            <ul aria-expanded="false" class="collapse">
+                                <li><a href="cards.html">Cards</a></li>
+                                <li><a href="buttons.html">Buttons</a></li>
+                                <li><a href="tabs.html">Tab</a></li>
+                                <li><a href="switchs.html">Switchs</a></li>
+                                <li><a href="Notification.html">Notification</a></li>
+                                <li><a href="Alert.html">Alert Box</a></li>
+                                <li><a href="carousel.html">Carousel</a></li>
+                                <li><a href="Errorpage.html">Error Page</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false"><i class="ti-layout-accordion-merged"></i><span class="hide-menu">Tables</span></a>
+                            <ul aria-expanded="false" class="collapse">
+                                <li><a href="basicTable.html">Basic Table</a></li>
+                                <li><a href="dataTable.html">Data Table</a></li>
+                                <li><a href="editable table.html">Editable Table</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false"><i class="ti-layout-media-right-alt"></i><span class="hide-menu">Forms</span></a>
+                            <ul aria-expanded="false" class="collapse">
+                                <li><a href="basicForms.html">Basic Forms</a></li>
+                                <li><a href="checkbox.html">Checkbox</a></li>
+                                <li><a href="dateTimepicker.html">Date &amp; Time Picker</a></li>
+                                <li><a href="dragdropfile.html">Drag &amp; Drop File Upload</a></li>
+                                <li><a href="sliders.html">Sliders</a></li>
+                                <li><a href="addon.html">Addon Control</a></li>
+                                <li><a href="icheck.html">Icheck Control</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false"><i class="ti-layout-media-right-alt"></i><span class="hide-menu">Components</span></a>
+                            <ul aria-expanded="false" class="collapse">
+                                <li><a href="mdbuttons.html">Material Buttons</a></li>
+                                <li><a href="badges.html">Badges</a></li>
+                                <li><a href="spinners.html">Loaders/Spinners</a></li>
+                                <li><a href="progressbar.html">ProgressBar</a></li>
+                                <li><a href="socialbutton.html">SocialButtons</a></li>
+                                <li><a href="stepper.html">Steppers</a></li>
+                                <li><a href="extendedcards.html">Extended Cards</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false"><i class="ti-layout-media-right-alt"></i><span class="hide-menu">Navigation</span></a>
+                            <ul aria-expanded="false" class="collapse">
+                                <li><a href="navbar.html">Navbar</a></li>
+                                <li><a href="breadcrumb.html">Breadcrumb</a></li>
+                                <li><a href="megamenu.html">Mega Menu</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false"><i class="mdi mdi-login"></i><span class="hide-menu">Email Templete</span></a>
+                            <ul aria-expanded="false" class="collapse">
+                               <li><a href="Email_1.html">Email Templete 1</a></li>
+                                <li><a href="Email_2.html">Email Templete 2</a></li>
+                            </ul>
+                        </li>
+                        <!--<li>
+                            <a class="has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false"><i class="ti-layout-media-right-alt"></i><span class="hide-menu">Templates</span></a>
+                            <ul aria-expanded="false" class="collapse">
+                                <li><a href="Website.html">Website</a></li>
+                            </ul>
+                        </li>-->
+                    </ul>
+                </nav>
+                <!-- End Sidebar navigation -->
+            </div>
+            <!-- End Sidebar scroll-->
+        </aside>
+        <!-- ============================================================== -->
+        <!-- End Left Sidebar - style you can find in  custom.css  -->
+        <!-- ============================================================== -->
+
+
+
+    
+
+    <div class="page-wrapper">
+        <div class="container-fluid">
+
+            <div class="row">
+                <!--ExtendedCard1-->
+                <div class="col-lg-5 col-md-5 col-12 pb-md-4 pb-4">
+                    <div class="card h-100">
+                        <div class="card-header">
+                            <h4>Product Card</h4>
+                        </div>
+                        <div class="card-body py-lg-5 px-lg-5">
+                            <div class="card1">
+                                <div class="card">
+                                    <img class="card-img" src="assets/images/Product_New.jpeg" alt="Vans">
+                                    <div class="card-img-overlay d-flex justify-content-end">
+                                      <a href="#" class="card-link text-danger like">
+                                        <i class="fas fa-heart"></i>
+                                      </a>
+                                    </div>
+                                    <div class="card-body">
+                                      <h5 class="card-title">Red Iphone</h5>
+                                      <h6 class="card-subtitle mb-2 text-muted">Style: VA33TXRJ5</h6>
+                                      <p class="card-text">
+                                        The Vans All-Weather MTE Collection features footwear            </p>
+                                      <div class="options d-flex flex-fill">
+                                         <select class="custom-select mr-1">
+                                            <option selected>Color</option>
+                                            <option value="1">Green</option>
+                                            <option value="2">Blue</option>
+                                            <option value="3">Red</option>
+                                        </select>
+                                        <select class="custom-select ml-1">
+                                            <option selected>Size</option>
+                                            <option value="1">41</option>
+                                            <option value="2">42</option>
+                                            <option value="3">43</option>
+                                        </select>
+                                      </div>
+                                      <div class="buy d-flex justify-content-between align-items-center">
+                                        <div class="price text-success"><h5 class="mt-4">$125</h5></div>
+                                         <a href="#" class="btn btn-danger mt-3"><i class="fas fa-shopping-cart"></i> Add to Cart</a>
+                                      </div>
+                                    </div>
+                                </div>
+                            </div>
+                          
+                        </div>
+                        
+                    </div>
+                </div>
+
+                 <!--ExtendedCard1 view card-->
+                <div class="col-md-7 col-md-7 pb-md-4 pb-4 p-0">
+                    <div class="collapse show" id="card1ViewCodeSection">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="card bg-light h-100">
+                                        <div class="card-body">
+                                            <nav>
+                                                <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                                                    <a class="nav-item nav-link active" id="nav-html-tab" data-codeType='html' data-toggle="tab" href="#nav-htmlcard1" role="tab" aria-controls="nav-html" aria-selected="true">HTML</a>
+                                                    <a class="nav-item nav-link" id="nav-css-tab" data-codeType='css' data-toggle="tab" href="#nav-csscard1" role="tab" aria-controls="nav-css" aria-selected="false">CSS</a>
+                                                </div>
+                                            </nav>
+                                            <div class="tab-content border-left border-right border-bottom bg-white" id="nav-tabContent">
+                                                <div class="tab-pane fade show active" id="nav-htmlcard1" role="tabpanel" aria-labelledby="nav-home-tab">
+                                                    <div class="container-fluid">
+                                                        <div class="row">
+                                                            <div class="col-12 text-right py-3">
+                                                                <button class="btn downloadbtn btn-sm" onclick="copyToClipboard('#card1HtmlCode',this)" data-toggle="tooltip" data-placement="top" title="Copy to clipboard">Copy</button>
+                                                            </div>
+                                                            <div class="col-12 px-0">
+                                                                <div class="form-group">
+                                                                    <textarea id="card1HtmlCode" class="form-control code" rows="5" id="txthtml" name="txthtml" readonly>
+
+<!--ExtendedCard1-->
+<div class="card1">
+    <div class="card">
+        <img class="card-img" src="assets/images/Product_New.jpeg" alt="Vans">
+        <div class="card-img-overlay d-flex justify-content-end">
+            <a href="#" class="card-link text-danger like">
+            <i class="fas fa-heart"></i>
+            </a>
+        </div>
+        <div class="card-body">
+            <h5 class="card-title">Red Iphone</h5>
+            <h6 class="card-subtitle mb-2 text-muted">Style: VA33TXRJ5</h6>
+            <p class="card-text">
+            The Vans All-Weather MTE Collection features footwear            </p>
+            <div class="options d-flex flex-fill">
+                <select class="custom-select mr-1">
+                <option selected>Color</option>
+                <option value="1">Green</option>
+                <option value="2">Blue</option>
+                <option value="3">Red</option>
+            </select>
+            <select class="custom-select ml-1">
+                <option selected>Size</option>
+                <option value="1">41</option>
+                <option value="2">42</option>
+                <option value="3">43</option>
+            </select>
+            </div>
+            <div class="buy d-flex justify-content-between align-items-center">
+            <div class="price text-success"><h5 class="mt-4">$125</h5></div>
+                <a href="#" class="btn btn-danger mt-3"><i class="fas fa-shopping-cart"></i> Add to Cart</a>
+            </div>
+        </div>
+    </div>
+</div>
+                                           
+                                                    
+                                                                </textarea>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+
+                                                </div>
+                                                <div class="tab-pane fade" id="nav-csscard1" role="tabpanel" aria-labelledby="nav-profile-tab">
+                                                    <div class="container-fluid">
+                                                        <div class="row">
+                                                            <div class="col-md-6 col-12 p-3 m-auto">
+                                                                <a class="btn downloadbtn btn-block" target="_blank" href="dist/downloadCss/extendedcard/productcard.css" download>Download productcard.css</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <!--ExtendedCard2-->
+                <div class="col-lg-5 col-md-5 col-12 pb-md-4 pb-4">
+                    <div class="card h-100">
+                        <div class="card-header">
+                            <h4>Image Overlay Card</h4>
+                        </div>
+                        <div class="card-body py-lg-5 px-lg-5">
+                            <div class="card2">
+                                <div class="card">
+                                    <img class="card-img" src="assets/images/bolonga.png" alt="Bologna">
+                                   <div class="card-img-overlay text-white d-flex flex-column justify-content-center">
+                                     <h4 class="card-title">Bologna</h4>
+                                     <h6 class="card-subtitle mb-2">Emilia-Romagna Region, Italy</h6>
+                                     <p class="card-text">It is the seventh most populous city in Italy, at the heart of a metropolitan area of about one million people. </p>
+                                     <div class="link d-flex">
+                                       <a href="#" class="card-link text-warning">Read More</a>
+                                       <a href="#" class="card-link text-warning">Book a Trip</a>
+                                     </div>
+                                   </div>
+                                 </div>
+                            </div>
+                        </div>
+                       
+                    </div>
+                </div>
+
+                 <!--ExtendedCard2 view Code-->
+                <div class="col-lg-7 col-md-7 col-12 pb-md-4 pb-4">
+                    <div class="collapse show" id="card2ViewCodeSection">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-12 p-0">
+                                    <div class="card bg-light h-100">
+                                        <div class="card-body">
+                                            <nav>
+                                                <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                                                    <a class="nav-item nav-link active" id="nav-html-tab" data-codeType='html' data-toggle="tab" href="#nav-htmlcard2" role="tab" aria-controls="nav-html" aria-selected="true">HTML</a>
+                                                    <a class="nav-item nav-link" id="nav-css-tab" data-codeType='css' data-toggle="tab" href="#nav-csscard2" role="tab" aria-controls="nav-css" aria-selected="false">CSS</a>
+
+                                                
+                                                </div>
+                                            </nav>
+                                            <div class="tab-content border-left border-right border-bottom bg-white" id="nav-tabContent">
+                                                <div class="tab-pane fade show active" id="nav-htmlcard2" role="tabpanel" aria-labelledby="nav-home-tab">
+                                                    <div class="container-fluid">
+                                                        <div class="row">
+                                                            <div class="col-12 text-right py-3">
+                                                                <button class="btn downloadbtn btn-sm" onclick="copyToClipboard('#card2HtmlCode',this)" data-toggle="tooltip" data-placement="top" title="Copy to clipboard">Copy</button>
+                                                            </div>
+                                                            <div class="col-12 px-0">
+                                                                <div class="form-group">
+                                                                    <textarea id="card2HtmlCode" class="form-control code" rows="5" id="txthtml" name="txthtml" readonly>
+
+<!--ExtendedCard2-->
+<div class="card2">
+    <div class="card">
+        <img class="card-img" src="assets/images/bolonga.png" alt="Bologna">
+        <div class="card-img-overlay text-white d-flex flex-column justify-content-center">
+            <h4 class="card-title">Bologna</h4>
+            <h6 class="card-subtitle mb-2">Emilia-Romagna Region, Italy</h6>
+            <p class="card-text">It is the seventh most populous city in Italy, at the heart of a metropolitan area of about one million people. </p>
+            <div class="link d-flex">
+            <a href="#" class="card-link text-warning">Read More</a>
+            <a href="#" class="card-link text-warning">Book a Trip</a>
+            </div>
+        </div>
+        </div>
+</div>
+       
+                                           
+                                                    
+                                                                </textarea>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+
+                                                </div>
+                                                <div class="tab-pane fade" id="nav-csscard2" role="tabpanel" aria-labelledby="nav-profile-tab">
+                                                    <div class="container-fluid">
+                                                        <div class="row">
+                                                            <div class="col-md-5 col-12 p-3 m-auto">
+                                                                <a class="btn downloadbtn btn-block" target="_blank" href="dist/downloadCss/extendedcard/imageoverlayCard.css" download>Download imageoverlayCard.css</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+              
+            </div>
+
+            <div class="row">
+                <!--ExtendedCard3-->
+                <div class="col-lg-5 col-md-5 col-12 pb-md-4 pb-4">
+                    <div class="card h-100">
+                        <div class="card-header">
+                            <h4>Profile Card</h4>
+                        </div>
+                        <div class="card-body py-lg-5 px-lg-5">
+                            <div class="card3">
+                                <div class="card hovercard">
+                                    <div class="cardheader">
+                    
+                                    </div>
+                                    <div class="avatar">
+                                        <img alt="" src="assets/images/SVG/Nandan.jpg">
+                                    </div>
+                                    <div class="info">
+                                        <div class="title">
+                                            <a target="_blank" href="https://scripteden.com/">Nandan Patel</a>
+                                        </div>
+                                        <div class="desc">Passionate designer</div>
+                                        <div class="desc">Curious developer</div>
+                                        <div class="desc">Tech geek</div>
+                                    </div>
+                                    <div class="bottom">
+                                        <a class="btn downloadbtn btn-twitter btn-sm" href="#">
+                                            <i class="fab fa-lg fa-twitter 2x icon"></i>
+                                        </a>
+                                        <a class="btn btn-danger btn-sm" rel="publisher"
+                                           href="#">
+                                            <i class="fab fa-lg fa-google-plus-g icon"></i>
+                                        </a>
+                                        <a class="btn downloadbtn btn-sm" rel="publisher"
+                                           href="#">
+                                            <i class="fab fa-lg fa-facebook-f  icon"></i>
+                                        </a>
+                                        <a class="btn btn-info btn-sm" rel="publisher" href="#">
+                                            <i class="fab fa-lg fa-linkedin-in icon"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                       
+                    </div>
+                </div>
+
+                 <!--ExtendedCard3 view code-->
+                <div class="col-md-7 pb-md-4 pb-4 p-0">
+                    <div class="collapse show" id="card3ViewCodeSection">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="card bg-light h-100">
+                                        <div class="card-body">
+                                            <nav>
+                                                <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                                                    <a class="nav-item nav-link active" id="nav-html-tab" data-codeType='html' data-toggle="tab" href="#nav-htmlcard3" role="tab" aria-controls="nav-html" aria-selected="true">HTML</a>
+                                                    <a class="nav-item nav-link" id="nav-css-tab" data-codeType='css' data-toggle="tab" href="#nav-csscard3" role="tab" aria-controls="nav-css" aria-selected="false">CSS</a>
+
+                                                
+                                                </div>
+                                            </nav>
+                                            <div class="tab-content border-left border-right border-bottom bg-white" id="nav-tabContent">
+                                                <div class="tab-pane fade show active" id="nav-htmlcard3" role="tabpanel" aria-labelledby="nav-home-tab">
+                                                    <div class="container-fluid">
+                                                        <div class="row">
+                                                            <div class="col-12 text-right py-3">
+                                                                <button class="btn downloadbtn btn-sm" onclick="copyToClipboard('#card3HtmlCode',this)" data-toggle="tooltip" data-placement="top" title="Copy to clipboard">Copy</button>
+                                                            </div>
+                                                            <div class="col-12 px-0">
+                                                                <div class="form-group">
+                                                                    <textarea id="card3HtmlCode" class="form-control code" rows="5" id="txthtml" name="txthtml" readonly>
+
+<!--ExtendedCard3-->
+<div class="card3">
+    <div class="card hovercard">
+        <div class="cardheader">
+
+        </div>
+        <div class="avatar">
+            <img alt="" src="assets/images/SVG/Nandan.jpg">
+        </div>
+        <div class="info">
+            <div class="title">
+                <a target="_blank" href="https://scripteden.com/">Nandan Patel</a>
+            </div>
+            <div class="desc">Passionate designer</div>
+            <div class="desc">Curious developer</div>
+            <div class="desc">Tech geek</div>
+        </div>
+        <div class="bottom">
+            <a class="btn downloadbtn btn-twitter btn-sm" href="#">
+                <i class="fab fa-lg fa-twitter 2x icon"></i>
+            </a>
+            <a class="btn btn-danger btn-sm" rel="publisher"
+                href="#">
+                <i class="fab fa-lg fa-google-plus-g icon"></i>
+            </a>
+            <a class="btn downloadbtn btn-sm" rel="publisher"
+                href="#">
+                <i class="fab fa-lg fa-facebook-f  icon"></i>
+            </a>
+            <a class="btn btn-info btn-sm" rel="publisher" href="#">
+                <i class="fab fa-lg fa-linkedin-in icon"></i>
+            </a>
+        </div>
+    </div>
+</div>
+        
+                                           
+                                                    
+                                                                </textarea>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+
+                                                </div>
+                                                <div class="tab-pane fade" id="nav-csscard3" role="tabpanel" aria-labelledby="nav-profile-tab">
+                                                    <div class="container-fluid">
+                                                        <div class="row">
+                                                            <div class="col-md-4 col-12 p-3 m-auto">
+                                                                <a class="btn downloadbtn btn-block" target="_blank" href="dist/downloadCss/extendedcard/profileCard.css" download>Download profileCard.css</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                               
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+
+
+            <div class="row">
+                <!--ExtendedCard4-->
+                <div class="col-lg-5 col-md-5 col-12 pb-md-4 pb-4">
+                    <div class="card h-100">
+                        <div class="card-header">
+                            <h4>Flipping Card</h4>
+                        </div>
+                        <div class="card-body py-lg-5 px-lg-5">
+                            <div class="card4">
+                                <div class="card-flip">
+                                    <div class="flip">
+                                        <div class="front">
+                                            <!-- front content -->
+                                            <div class="card">
+                                              <img class="card-img-top" src="assets/images/profile.jpg" alt="100%x180" style="height: 180px; width: 100%; display: block;" data-holder-rendered="true">
+                                              <div class="card-block">
+                                                <h4 class="card-title">Card Flip</h4>
+                                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                                <a href="#" class="btn downloadbtn">Go somewhere</a>
+                                              </div>
+                                            </div>
+                                        </div>
+                                        <div class="back">
+                                            <!-- back content -->
+                                            <div class="card">
+                                              <div class="card-block">
+                                                <h4 class="card-title">Card Flip</h4>
+                                                <h6 class="card-subtitle text-muted">Support card subtitle</h6>
+                                              </div>
+                                              <img src="assets/images/profile.jpg" alt="Image [100%x180]" data-holder-rendered="true" style="height: 180px; width: 100%; display: block;">
+                                              <div class="card-block">
+                                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                                <a href="#" class="card-link">Card link</a>
+                                                <a href="#" class="card-link">Another link</a>
+                                              </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                       
+                    </div>
+                </div>
+
+                 <!--ExtendedCard4 view code-->
+                <div class="col-md-7 pb-md-4 pb-4 p-0">
+                    <div class="collapse show" id="card4ViewCodeSection">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="card bg-light h-100">
+                                        <div class="card-body">
+                                            <nav>
+                                                <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                                                    <a class="nav-item nav-link active" id="nav-html-tab" data-codeType='html' data-toggle="tab" href="#nav-htmlcard4" role="tab" aria-controls="nav-html" aria-selected="true">HTML</a>
+                                                    <a class="nav-item nav-link" id="nav-css-tab" data-codeType='css' data-toggle="tab" href="#nav-csscard4" role="tab" aria-controls="nav-css" aria-selected="false">CSS</a>
+                                                    <a class="nav-item nav-link" id="nav-js-tab" data-codeType='js' data-toggle="tab" href="#nav-jscard4" role="tab" aria-controls="nav-js" aria-selected="false">JS</a>
+
+                                                
+                                                </div>
+                                            </nav>
+                                            <div class="tab-content border-left border-right border-bottom bg-white" id="nav-tabContent">
+                                                <div class="tab-pane fade show active" id="nav-htmlcard4" role="tabpanel" aria-labelledby="nav-home-tab">
+                                                    <div class="container-fluid">
+                                                        <div class="row">
+                                                            <div class="col-12 text-right py-3">
+                                                                <button class="btn downloadbtn btn-sm" onclick="copyToClipboard('#card4HtmlCode',this)" data-toggle="tooltip" data-placement="top" title="Copy to clipboard">Copy</button>
+                                                            </div>
+                                                            <div class="col-12 px-0">
+                                                                <div class="form-group">
+                                                                    <textarea id="card4HtmlCode" class="form-control code" rows="5" id="txthtml" name="txthtml" readonly>
+
+<!--ExtendedCard4-->
+<div class="card4">
+    <div class="card-flip">
+        <div class="flip">
+            <div class="front">
+                <!-- front content -->
+                <div class="card">
+                    <img class="card-img-top" src="assets/images/profile.jpg" alt="100%x180" style="height: 180px; width: 100%; display: block;" data-holder-rendered="true">
+                    <div class="card-block">
+                    <h4 class="card-title">Card Flip</h4>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn downloadbtn">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+            <div class="back">
+                <!-- back content -->
+                <div class="card">
+                    <div class="card-block">
+                    <h4 class="card-title">Card Flip</h4>
+                    <h6 class="card-subtitle text-muted">Support card subtitle</h6>
+                    </div>
+                    <img src="assets/images/profile.jpg" alt="Image [100%x180]" data-holder-rendered="true" style="height: 180px; width: 100%; display: block;">
+                    <div class="card-block">
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="card-link">Card link</a>
+                    <a href="#" class="card-link">Another link</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+       
+                                           
+                                                    
+                                                                </textarea>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+
+                                                </div>
+                                                <div class="tab-pane fade" id="nav-csscard4" role="tabpanel" aria-labelledby="nav-profile-tab">
+                                                    <div class="container-fluid">
+                                                        <div class="row">
+                                                            <div class="col-md-4 col-12 p-3 m-auto">
+                                                                <a class="btn downloadbtn btn-block" target="_blank" href="dist/downloadCss/extendedcard/flipCard.css" download>Download flipCard.css</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="tab-pane fade" id="nav-jscard4" role="tabpanel" aria-labelledby="nav-profile-tab">
+                                                    <div class="container-fluid">
+                                                        <div class="row">
+                                                            <div class="ol-md-4 col-12 p-3 m-auto">
+                                                                <a class="btn downloadbtn btn-block" target="_blank" href="dist/downloadjquery/extendedCard/flipCard.js" download>Download flipCard.js</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+     <!--jquery js-->
+     <script src="assets/Core/jquery-3.3.1.min.js"></script>
+     <!--popper js-->
+     <script src="assets/Core/popper/popper.min.js"></script>
+     <!--bootstrap js-->
+     <script src="assets/Core/bootstrap/dist/js/bootstrap.min.js"></script>
+     <!--Sidebarmenu js-->
+     <script src="dist/js/sidebarmenu.js"></script>
+     <!--Wave Effects js -->
+     <script src="dist/js/waves.js"></script>
+     <!-- scrollbar JavaScript -->
+     <script src="dist/js/perfect-scrollbar.jquery.min.js"></script>
+     <!--Custom JavaScript -->
+     <script src="dist/js/custom.js"></script>
+     
+    
+     <!--Code Mirror JS-->
+    <script src="assets/Plugins/codemirror/lib/codemirror.js"></script>
+    <script src="assets/Plugins/codemirror/mode/xml/xml.js"></script>
+    <script src="assets/Plugins/codemirror/mode/css/css.js"></script>
+    <script src="assets/Plugins/codemirror/mode/javascript/javascript.js"></script>
+    <script src="assets/Plugins/codemirror/mode/htmlmixed/htmlmixed.js"></script>
+ 
+     <!--custom js view code-->
+     <script src="dist/js/extendedcards.js"></script>
+ 
+   <script type="text/javascript">
+        document.querySelector(".card-flip").classList.toggle("flip");
+
+        /* 
+        * Holder.js for demo image
+        * Just for demo purpose
+        */
+        // Holder.addTheme('gray', {
+        // bg: '#777',
+        // fg: 'rgba(255,255,255,.75)',
+        // font: 'Helvetica',
+        // fontweight: 'normal'
+        // });
+
+    </script>
+     
+     <script type="text/javascript">
+         $(document).ready(function(){
+            card1HtmlCodeEditor();
+            card2HtmlCodeEditor();
+            card3HtmlCodeEditor();
+            card4HtmlCodeEditor();
+            card5HtmlCodeEditor();
+            card6HtmlCodeEditor();
+            card7HtmlCodeEditor();
+        });
+     </script>
+ 
+ </body>
+ </html>
+ 

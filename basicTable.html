@@ -1,0 +1,1385 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Table</title>
+
+    <!--Bootstrap css-->
+    <link rel="stylesheet" href="assets/Core/bootstrap/dist/css/bootstrap.min.css">
+   <!--plugins of viewcode-->
+   <link rel="stylesheet" type="text/css" href="assets/Plugins/codemirror/lib/codemirror.css">
+   <link rel="stylesheet" type="text/css" href="assets/Plugins/codemirror/theme/material.css">
+   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+    <!--Custom css-->
+    <link rel="stylesheet" href="dist/css/style.css">
+    <link rel="stylesheet" href="dist/scss/css/basicTable.css">
+    <link rel="stylesheet" href="dist/sidenavCss/custom.css">
+</head>
+<body class="skin-megna fixed-layout">
+
+    <!-- ============================================================== -->
+        <!-- Topbar header - style you can find in pages.scss -->
+        <!-- ============================================================== -->
+        <header class="topbar">
+            <nav class="navbar top-navbar navbar-expand-md navbar-dark">
+                <!-- ============================================================== -->
+                <!-- Logo -->
+                <!-- ============================================================== -->
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="index.html">
+                        <!-- Logo icon --><b>
+                            <!--You can put here icon as well // <i class="wi wi-sunset"></i> //-->
+                            <!-- Dark Logo icon -->
+                            <img src="assets/images/New Logo.png" alt="homepage" class="light-logo" />
+                            <!-- Light Logo icon -->
+                            <!-- <img src="../assets/images/logo-light-icon.png" alt="homepage" class="light-logo" /> -->
+                        </b>
+                        <!--End Logo icon -->
+                        <span class="hidden-xs font-bold" style="font-size: 19px">Patel Techologies</span>
+                    </a>
+                </div>
+                <!-- ============================================================== -->
+                <!-- End Logo -->
+                <!-- ============================================================== -->
+                <div class="navbar-collapse">
+                    <!-- ============================================================== -->
+                    <!-- toggle and nav items -->
+                    <!-- ============================================================== -->
+                    <ul class="navbar-nav mr-auto">
+                        <!-- This is  -->
+                        <li class="nav-item"> <a class="nav-link nav-toggler d-block d-md-none waves-effect waves-dark" href="javascript:void(0)"><i class="ti-menu"></i></a> </li>
+                        <li class="nav-item"> <a class="nav-link sidebartoggler d-none d-lg-block d-md-block waves-effect waves-dark" href="javascript:void(0)"><i class="icon-menu"></i></a> </li>
+                        <!-- ============================================================== -->
+                        <!-- Search -->
+                        <!-- ============================================================== -->
+                        <li class="nav-item d-none d-md-block d-lg-block">
+                           <form action="">
+                              <input type="search" placeholder="Search & enter">
+                              <i class="fa fa-search"></i>
+                            </form>
+                        </li>
+                    </ul>
+                   
+                </div>
+            </nav>
+        </header>
+        <!-- ============================================================== -->
+        <!-- End Topbar header -->
+        <!-- ============================================================== -->
+        <!-- ============================================================== -->
+        <!-- Left Sidebar - style you can find in  custom.css  -->
+        <!-- ============================================================== -->
+        <aside class="left-sidebar">
+            <!-- Sidebar scroll-->
+            <div class="scroll-sidebar">
+                <!-- <div class="sidebar-header">
+                    <div class="companyLogo">
+                      <img class="img-responsive img-rounded" src="assets/images/company-logo.svg"
+                        alt="Company logo">
+                    </div>
+                </div> -->
+               <!-- Sidebar navigation-->
+                <nav class="sidebar-nav">
+                    <ul id="sidebarnav">
+                        
+                        <li>
+                            <a class="has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false"><i class="mdi mdi-login"></i><span class="hide-menu">Dashboard</span></a>
+                            <ul aria-expanded="false" class="collapse">
+                                <li><a href="Dashboard1.html">Dashboard 1</a></li>
+                                <li><a href="Dashboard2.html">Dashboard 2</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false"><i class="mdi mdi-login"></i><span class="hide-menu">Login Templates</span></a>
+                            <ul aria-expanded="false" class="collapse">
+                                <li><a href="Login1.html">Login 1</a></li>
+                                <li><a href="Login2.html">Login 2</a></li>
+                                <li><a href="Login3.html">Login 3</a></li>
+                                <li><a href="Login4.html">Login 4</a></li>
+                                <li><a href="Login5.html">Login 5</a></li>
+                                <li><a href="Login6.html">Login 6</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false"><i class="ti-palette"></i><span class="hide-menu">Ui Elements</span></a>
+                            <ul aria-expanded="false" class="collapse">
+                                <li><a href="cards.html">Cards</a></li>
+                                <li><a href="buttons.html">Buttons</a></li>
+                                <li><a href="tabs.html">Tab</a></li>
+                                <li><a href="switchs.html">Switchs</a></li>
+                                <li><a href="Notification.html">Notification</a></li>
+                                <li><a href="Alert.html">Alert Box</a></li>
+                                <li><a href="carousel.html">Carousel</a></li>
+                                <li><a href="Errorpage.html">Error Page</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false"><i class="ti-layout-accordion-merged"></i><span class="hide-menu">Tables</span></a>
+                            <ul aria-expanded="false" class="collapse">
+                                <li><a href="basicTable.html">Basic Table</a></li>
+                                <li><a href="dataTable.html">Data Table</a></li>
+                                <li><a href="editable table.html">Editable Table</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false"><i class="ti-layout-media-right-alt"></i><span class="hide-menu">Forms</span></a>
+                            <ul aria-expanded="false" class="collapse">
+                                <li><a href="basicForms.html">Basic Forms</a></li>
+                                <li><a href="checkbox.html">Checkbox</a></li>
+                                <li><a href="dateTimepicker.html">Date &amp; Time Picker</a></li>
+                                <li><a href="dragdropfile.html">Drag &amp; Drop File Upload</a></li>
+                                <li><a href="sliders.html">Sliders</a></li>
+                                <li><a href="addon.html">Addon Control</a></li>
+                                <li><a href="icheck.html">Icheck Control</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false"><i class="ti-layout-media-right-alt"></i><span class="hide-menu">Components</span></a>
+                            <ul aria-expanded="false" class="collapse">
+                                <li><a href="mdbuttons.html">Material Buttons</a></li>
+                                <li><a href="badges.html">Badges</a></li>
+                                <li><a href="spinners.html">Loaders/Spinners</a></li>
+                                <li><a href="progressbar.html">ProgressBar</a></li>
+                                <li><a href="socialbutton.html">SocialButtons</a></li>
+                                <li><a href="stepper.html">Steppers</a></li>
+                                <li><a href="extendedcards.html">Extended Cards</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false"><i class="ti-layout-media-right-alt"></i><span class="hide-menu">Navigation</span></a>
+                            <ul aria-expanded="false" class="collapse">
+                                <li><a href="navbar.html">Navbar</a></li>
+                                <li><a href="breadcrumb.html">Breadcrumb</a></li>
+                                <li><a href="megamenu.html">Mega Menu</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false"><i class="mdi mdi-login"></i><span class="hide-menu">Email Templete</span></a>
+                            <ul aria-expanded="false" class="collapse">
+                               <li><a href="Email_1.html">Email Templete 1</a></li>
+                                <li><a href="Email_2.html">Email Templete 2</a></li>
+                            </ul>
+                        </li>
+                        <!--<li>
+                            <a class="has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false"><i class="ti-layout-media-right-alt"></i><span class="hide-menu">Templates</span></a>
+                            <ul aria-expanded="false" class="collapse">
+                                <li><a href="Website.html">Website</a></li>
+                            </ul>
+                        </li>-->
+                    </ul>
+                </nav>
+                <!-- End Sidebar navigation -->
+            </div>
+            <!-- End Sidebar scroll-->
+        </aside>
+        <!-- ============================================================== -->
+        <!-- End Left Sidebar - style you can find in  custom.css  -->
+        <!-- ============================================================== -->
+
+
+    <div class="page-wrapper">
+        <div class="container-fluid">
+
+           <!--Section1-->
+            <div class="row">
+
+                 <!--Basic Table-->
+                <div class="col-md-12 col-12 pb-md-4 pb-4">
+                    <div class="card">
+                        <div class="card-header">
+                            <h4>Basic Table</h4>
+                        </div>
+                        <div class="card-body">
+                            <div class="col-md-12 col-12 p-0">
+                                <div class="table1 table-responsive-sm pb-3 ">
+                                    <table class="table">
+                                        <thead>
+                                          <tr>
+                                            <th scope="col">#</th>
+                                            <th scope="col">First Name</th>
+                                            <th scope="col">Last Name</th>
+                                            <th scope="col">Username</th>
+                                            <th scope="col">Role</th>
+                                            <th scope="col"></th>
+                                           
+                                          </tr>
+                                        </thead>
+                                        <tbody>
+                                          <tr>
+                                            <th scope="row">1</th>
+                                            <td>Nandan</td>
+                                            <td>Patel</td>
+                                            <td>Nandan123</td>
+                                            <td>Admin</td>
+                                            <td> 
+                                                <a class="add"  data-toggle="tooltip"><i class="material-icons">&#xE03B;</i></a>
+                                                <a class="edit"  data-toggle="tooltip"><i class="material-icons">&#xE254;</i></a>
+                                            </td>
+                                          </tr>
+                                          <tr>
+                                            <th scope="row">2</th>
+                                            <td>Akki</td>
+                                            <td>Patel</td>
+                                            <td>Akki1234</td>
+                                            <td>Web Designer</td>
+                                            <td> 
+                                                <a class="add"  data-toggle="tooltip"><i class="material-icons">&#xE03B;</i></a>
+                                                <a class="edit"  data-toggle="tooltip"><i class="material-icons">&#xE254;</i></a>
+                                            </td>
+
+                                          </tr>
+                                          <tr>
+                                            <th scope="row">3</th>
+                                            <td>Pritesh</td>
+                                            <td>Lakhaniya</td>
+                                            <td>Pritesh.Lakhaniya@123</td>
+                                            <td>Web Developer</td>
+                                            <td> 
+                                                <a class="add"  data-toggle="tooltip"><i class="material-icons">&#xE03B;</i></a>
+                                                <a class="edit"  data-toggle="tooltip"><i class="material-icons">&#xE254;</i></a>
+                                            </td>
+
+                                          </tr>
+
+                                          <tr>
+                                            <th scope="row">4</th>
+                                            <td>Meet</td>
+                                            <td>Patel</td>
+                                            <td>Meet_Patel_12345</td>
+                                            <td>Developer</td>
+                                            <td> 
+                                                <a class="add"  data-toggle="tooltip"><i class="material-icons">&#xE03B;</i></a>
+                                                <a class="edit"  data-toggle="tooltip"><i class="material-icons">&#xE254;</i></a>
+                                            </td>
+
+                                          </tr>
+
+                                          <tr>
+                                            <th scope="row">5</th>
+                                            <td>Jay</td>
+                                            <td>Patel</td>
+                                            <td>Jay-Patel@124</td>
+                                            <td>Developer</td>
+                                            <td>
+                                                <a class="add"  data-toggle="tooltip"><i class="material-icons">&#xE03B;</i></a>
+                                                 <a class="edit" data-toggle="tooltip"><i class="material-icons">&#xE254;</i></a>
+                                            </td>
+
+                                          </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card-footer">
+                            <div class="text-center"><a id="btnViewcode1" name="btnViewcode1" class="btn btn-megna" data-toggle="collapse" href="#table1ViewCodeSection" role="button" aria-expanded="false" aria-controls="table1ViewCodeSection">View Code</a></div>
+                        </div>
+                    </div>
+                </div>   
+                
+                 <!--Basic Table View code-->
+                 <div class="col-md-12 col-12 pb-md-4 pb-4">
+                    <div class="collapse" id="table1ViewCodeSection">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-12 p-0">
+                                    <div class="card bg-light h-100">
+                                        <div class="card-body">
+                                            <nav>
+                                                <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                                                    <a class="nav-item nav-link active" id="nav-html-tab" data-codeType='html' data-toggle="tab" href="#nav-htmltable1" role="tab" aria-controls="nav-html" aria-selected="true">HTML</a>
+                                                    <a class="nav-item nav-link" id="nav-css-tab" data-codeType='css' data-toggle="tab" href="#nav-csstable1" role="tab" aria-controls="nav-css" aria-selected="false">CSS</a>
+                                                    <a class="nav-item nav-link" id="nav-jquery-tab" data-codeType='js' data-toggle="tab" href="#nav-jquerytable1" role="tab" aria-controls="nav-jquery" aria-selected="false">JS</a>
+                                                </div>
+                                            </nav>
+                                            <div class="tab-content border-left border-right border-bottom bg-white" id="nav-tabContent">
+                                                <div class="tab-pane fade show active" id="nav-htmltable1" role="tabpanel" aria-labelledby="nav-home-tab">
+                                                    <div class="container-fluid">
+                                                        <div class="row">
+                                                            <div class="col-12 text-right py-3">
+                                                                <button class="btn downloadbtn btn-sm" onclick="copyToClipboard('#card1HtmlCode',this)" data-toggle="tooltip" data-placement="top" title="Copy to clipboard">Copy</button>
+                                                            </div>
+                                                            <div class="col-12 px-0">
+                                                                <div class="form-group">
+                                                                <textarea id="card1HtmlCode" class="form-control code" rows="5" id="txthtml" name="txthtml" readonly>
+
+ <!--Basic Table-->
+<div class="table1 table-responsive-sm ">
+    <table class="table">
+        <thead>
+            <tr>
+            <th scope="col">#</th>
+            <th scope="col">First Name</th>
+            <th scope="col">Last Name</th>
+            <th scope="col">Username</th>
+            <th scope="col">Role</th>
+            <th scope="col"></th>
+            
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+            <th scope="row">1</th>
+            <td>Nandan</td>
+            <td>Patel</td>
+            <td>Nandan123</td>
+            <td>Admin</td>
+            <td> 
+                <a class="add"  data-toggle="tooltip"><i class="material-icons">&#xE03B;</i></a>
+                <a class="edit"  data-toggle="tooltip"><i class="material-icons">&#xE254;</i></a>
+            </td>
+            </tr>
+            <tr>
+            <th scope="row">2</th>
+            <td>Akki</td>
+            <td>Patel</td>
+            <td>Akki1234</td>
+            <td>Web Designer</td>
+            <td> 
+                <a class="add"  data-toggle="tooltip"><i class="material-icons">&#xE03B;</i></a>
+                <a class="edit"  data-toggle="tooltip"><i class="material-icons">&#xE254;</i></a>
+            </td>
+
+            </tr>
+            <tr>
+            <th scope="row">3</th>
+            <td>Pritesh</td>
+            <td>Lakhaniya</td>
+            <td>Pritesh.Lakhaniya@123</td>
+            <td>Web Developer</td>
+            <td> 
+                <a class="add"  data-toggle="tooltip"><i class="material-icons">&#xE03B;</i></a>
+                <a class="edit"  data-toggle="tooltip"><i class="material-icons">&#xE254;</i></a>
+            </td>
+
+            </tr>
+
+            <tr>
+            <th scope="row">4</th>
+            <td>Meet</td>
+            <td>Patel</td>
+            <td>v_Patel_12345</td>
+            <td>Developer</td>
+            <td> 
+                <a class="add"  data-toggle="tooltip"><i class="material-icons">&#xE03B;</i></a>
+                <a class="edit"  data-toggle="tooltip"><i class="material-icons">&#xE254;</i></a>
+            </td>
+
+            </tr>
+
+            <tr>
+            <th scope="row">5</th>
+            <td>Jay</td>
+            <td>Patel</td>
+            <td>Jay-Patel@124</td>
+            <td>Developer</td>
+            <td>
+                <a class="add"  data-toggle="tooltip"><i class="material-icons">&#xE03B;</i></a>
+                    <a class="edit" data-toggle="tooltip"><i class="material-icons">&#xE254;</i></a>
+            </td>
+
+            </tr>
+        </tbody>
+    </table>
+</div>
+                                                
+                                                    
+                                                                </textarea>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+
+                                                </div>
+                                                <div class="tab-pane fade" id="nav-csstable1" role="tabpanel" aria-labelledby="nav-profile-tab">
+                                                    <div class="container-fluid">
+                                                        <div class="row">
+                                                            <div class="col-md-4 col-12 p-3 m-auto">
+                                                                <a class="btn downloadbtn btn-block" target="_blank" href="dist/downloadCss/basicTable/Table1.css" download>Download Table1.css</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="tab-pane fade" id="nav-jquerytable1" role="tabpanel" aria-labelledby="nav-profile-tab">
+                                                    <div class="container-fluid">
+                                                        <div class="row">
+                                                            <div class="col-md-4 col-12 p-3 m-auto">
+                                                                <a class="btn downloadbtn btn-block" target="_blank" href="dist/downloadjquery/Tables/BasicTable/basicTable.js" download>Download basicTable.js</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                 </div>
+            </div>
+
+            <!--Section2-->
+            <div class="row">
+
+                    <!--Hover Table-->  
+                    <div class="col-md-12 col-12 pb-md-4 pb-4">
+                        <div class="card">
+                            <div class="card-header">
+                                <h4>Table Hover</h4>
+                            </div>
+                            <div class="card-body">
+                                <div class="col-md-12 col-12 p-0">
+                                    <div class="table2 table-responsive-sm table-hover pb-3 ">
+                                        <table class="table">
+                                            <thead>
+                                                <tr>
+                                                <th scope="col">#</th>
+                                                <th scope="col">First Name</th>
+                                                <th scope="col">Last Name</th>
+                                                <th scope="col">Username</th>
+                                                <th scope="col">Role</th>
+                                                <th scope="col"></th>
+                                                
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                <th scope="row">1</th>
+                                                <td>Nandan</td>
+                                                <td>Patel</td>
+                                                <td>Nandan123</td>
+                                                <td>Admin</td>
+                                                <td> 
+                                                    <a class="add"  data-toggle="tooltip"><i class="material-icons">&#xE03B;</i></a>
+                                                    <a class="edit"  data-toggle="tooltip"><i class="material-icons">&#xE254;</i></a>
+                                                </td>
+                                                </tr>
+                                                <tr>
+                                                <th scope="row">2</th>
+                                                <td>Akki</td>
+                                                <td>Patel</td>
+                                                <td>Akki1234</td>
+                                                <td>Web Designer</td>
+                                                <td> 
+                                                    <a class="add"  data-toggle="tooltip"><i class="material-icons">&#xE03B;</i></a>
+                                                    <a class="edit"  data-toggle="tooltip"><i class="material-icons">&#xE254;</i></a>
+                                                </td>
+
+                                                </tr>
+                                                <tr>
+                                                <th scope="row">3</th>
+                                                <td>Pritesh</td>
+                                                <td>Lakhaniya</td>
+                                                <td>Pritesh.Lakhaniya@123</td>
+                                                <td>Web Developer</td>
+                                                <td> 
+                                                    <a class="add"  data-toggle="tooltip"><i class="material-icons">&#xE03B;</i></a>
+                                                    <a class="edit"  data-toggle="tooltip"><i class="material-icons">&#xE254;</i></a>
+                                                </td>
+
+                                                </tr>
+
+                                                <tr>
+                                                <th scope="row">4</th>
+                                                <td>Meet</td>
+                                                <td>Patel</td>
+                                                <td>v_Patel_12345</td>
+                                                <td>Developer</td>
+                                                <td> 
+                                                    <a class="add"  data-toggle="tooltip"><i class="material-icons">&#xE03B;</i></a>
+                                                    <a class="edit"  data-toggle="tooltip"><i class="material-icons">&#xE254;</i></a>
+                                                </td>
+
+                                                </tr>
+
+                                                <tr>
+                                                <th scope="row">5</th>
+                                                <td>Jay</td>
+                                                <td>Patel</td>
+                                                <td>Jay-Patel@124</td>
+                                                <td>Developer</td>
+                                                <td>
+                                                    <a class="add"  data-toggle="tooltip"><i class="material-icons">&#xE03B;</i></a>
+                                                        <a class="edit" data-toggle="tooltip"><i class="material-icons">&#xE254;</i></a>
+                                                </td>
+
+                                                </tr>
+                                            </tbody>
+                                            </table>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card-footer">
+                                <div class="text-center"><a id="btnViewcode1" name="btnViewcode1" class="btn btn-megna" data-toggle="collapse" href="#table2ViewCodeSection" role="button" aria-expanded="false" aria-controls="table2ViewCodeSection">View Code</a></div>
+                            </div>
+                        </div>
+                    </div>    
+                    
+                    <!--Hover Table view code--> 
+                    <div class="col-md-12 col-12 pb-md-4 pb-4">
+                        <div class="collapse" id="table2ViewCodeSection">
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-12 p-0">
+                                        <div class="card bg-light h-100">
+                                            <div class="card-body">
+                                                <nav>
+                                                    <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                                                        <a class="nav-item nav-link active" id="nav-html-tab" data-codeType='html' data-toggle="tab" href="#nav-htmltable2" role="tab" aria-controls="nav-html" aria-selected="true">HTML</a>
+                                                        <a class="nav-item nav-link" id="nav-css-tab" data-codeType='css' data-toggle="tab" href="#nav-csstable2" role="tab" aria-controls="nav-css" aria-selected="false">CSS</a>
+                                                        <a class="nav-item nav-link" id="nav-jquery-tab" data-codeType='js' data-toggle="tab" href="#nav-jquerytable2" role="tab" aria-controls="nav-jquery" aria-selected="false">JS</a>
+                                                    </div>
+                                                </nav>
+                                                <div class="tab-content border-left border-right border-bottom bg-white" id="nav-tabContent">
+                                                    <div class="tab-pane fade show active" id="nav-htmltable2" role="tabpanel" aria-labelledby="nav-home-tab">
+                                                        <div class="container-fluid">
+                                                            <div class="row">
+                                                                <div class="col-12 text-right py-3">
+                                                                    <button class="btn downloadbtn btn-sm" onclick="copyToClipboard('#card2HtmlCode',this)" data-toggle="tooltip" data-placement="top" title="Copy to clipboard">Copy</button>
+                                                                </div>
+                                                                <div class="col-12 px-0">
+                                                                    <div class="form-group">
+                                                                    <textarea id="card2HtmlCode" class="form-control code" rows="5" id="txthtml" name="txthtml" readonly>
+        
+<!--Hover Table-->       
+<div class="table2 table-responsive-sm table-hover pb-3 ">
+    <table class="table">
+        <thead>
+            <tr>
+            <th scope="col">#</th>
+            <th scope="col">First Name</th>
+            <th scope="col">Last Name</th>
+            <th scope="col">Username</th>
+            <th scope="col">Role</th>
+            <th scope="col"></th>
+            
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+            <th scope="row">1</th>
+            <td>Nandan</td>
+            <td>Patel</td>
+            <td>Nandan123</td>
+            <td>Admin</td>
+            <td> 
+                <a class="add"  data-toggle="tooltip"><i class="material-icons">&#xE03B;</i></a>
+                <a class="edit"  data-toggle="tooltip"><i class="material-icons">&#xE254;</i></a>
+            </td>
+            </tr>
+            <tr>
+            <th scope="row">2</th>
+            <td>Akki</td>
+            <td>Patel</td>
+            <td>Akki1234</td>
+            <td>Web Designer</td>
+            <td> 
+                <a class="add"  data-toggle="tooltip"><i class="material-icons">&#xE03B;</i></a>
+                <a class="edit"  data-toggle="tooltip"><i class="material-icons">&#xE254;</i></a>
+            </td>
+
+            </tr>
+            <tr>
+            <th scope="row">3</th>
+            <td>Pritesh</td>
+            <td>Lakhaniya</td>
+            <td>Pritesh.Lakhaniya@123</td>
+            <td>Web Developer</td>
+            <td> 
+                <a class="add"  data-toggle="tooltip"><i class="material-icons">&#xE03B;</i></a>
+                <a class="edit"  data-toggle="tooltip"><i class="material-icons">&#xE254;</i></a>
+            </td>
+
+            </tr>
+
+            <tr>
+            <th scope="row">4</th>
+            <td>Meet</td>
+            <td>Patel</td>
+            <td>v_Patel_12345</td>
+            <td>Developer</td>
+            <td> 
+                <a class="add"  data-toggle="tooltip"><i class="material-icons">&#xE03B;</i></a>
+                <a class="edit"  data-toggle="tooltip"><i class="material-icons">&#xE254;</i></a>
+            </td>
+
+            </tr>
+
+            <tr>
+            <th scope="row">5</th>
+            <td>Jay</td>
+            <td>Patel</td>
+            <td>Jay-Patel@124</td>
+            <td>Developer</td>
+            <td>
+                <a class="add"  data-toggle="tooltip"><i class="material-icons">&#xE03B;</i></a>
+                    <a class="edit" data-toggle="tooltip"><i class="material-icons">&#xE254;</i></a>
+            </td>
+
+            </tr>
+        </tbody>
+        </table>
+</div>
+                                                      
+                                                        
+                                                                    </textarea>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                        </div>
+
+                                                    </div>
+                                                    <div class="tab-pane fade" id="nav-csstable2" role="tabpanel" aria-labelledby="nav-profile-tab">
+                                                        <div class="container-fluid">
+                                                            <div class="row">
+                                                                <div class="col-md-4 col-12 p-3 m-auto">
+                                                                    <a class="btn downloadbtn btn-block" target="_blank" href="dist/downloadCss/basicTable/hoverTable.css" download>Download hoverTable.css</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="tab-pane fade" id="nav-jquerytable2" role="tabpanel" aria-labelledby="nav-profile-tab">
+                                                        <div class="container-fluid">
+                                                            <div class="row">
+                                                                <div class="col-md-4 col-12 p-3 m-auto">
+                                                                    <a class="btn downloadbtn btn-block" target="_blank" href="dist/downloadjquery/Tables/BasicTable/hoverTable.js" download>Download hoverTable.js</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> 
+                    </div> 
+            </div>
+
+            <!--Section3-->
+            <div class="row">
+                    <!--Bordered Table-->  
+                    <div class="col-md-12 col-12 pb-md-4 pb-4 ">
+                        <div class="card">
+                            <div class="card-header">
+                                <h4>Bordered Table</h4>
+                            </div>
+                            <div class="card-body">
+                                <div class="col-md-12 col-12 p-0">
+                                    <div class="table3 table-responsive-sm  pb-3 p-md-4">
+                                        <table class="table">
+                                            <thead>
+                                                <tr>
+                                                <th scope="col">#</th>
+                                                <th scope="col">First Name</th>
+                                                <th scope="col">Last Name</th>
+                                                <th scope="col">Username</th>
+                                                <th scope="col">Role</th>
+                                                <th scope="col">Status</th>
+                                                <th scope="col"></th>
+                                                
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                <th scope="row">1</th>
+                                                <td>Nandan</td>
+                                                <td>Patel</td>
+                                                <td>Nandan123</td>
+                                                <td>Admin</td>
+                                                <td>
+                                                    <div class="onoffswitchGreen">
+                                                    <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitchcard3" checked="">
+                                                    <label class="onoffswitch-label" for="myonoffswitchcard3">
+                                                        <span class="onoffswitch-inner"></span>
+                                                        <span class="onoffswitch-switch"></span>
+                                                    </label>
+                                                    </div>
+                                                </td>
+                                                <td> 
+                                                    <a class="add"  data-toggle="tooltip"><i class="material-icons">&#xE03B;</i></a>
+                                                    <a class="edit"  data-toggle="tooltip"><i class="material-icons">&#xE254;</i></a>
+                                                </td>
+                                                </tr>
+                                                <tr>
+                                                <th scope="row">2</th>
+                                                <td>Akki</td>
+                                                <td>Patel</td>
+                                                <td>Akki1234</td>
+                                                <td>Web Designer</td>
+                                                <td>
+                                                        <div class="onoffswitchGreen">
+                                                        <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitchcard3">
+                                                        <label class="onoffswitch-label" for="myonoffswitchcard3">
+                                                            <span class="onoffswitch-inner"></span>
+                                                            <span class="onoffswitch-switch"></span>
+                                                        </label>
+                                                        </div>
+                                                </td>
+                                                <td> 
+                                                    <a class="add" data-toggle="tooltip"><i class="material-icons">&#xE03B;</i></a>
+                                                    <a class="edit"  data-toggle="tooltip"><i class="material-icons">&#xE254;</i></a>
+                                                </td>
+
+                                                </tr>
+                                                <tr>
+                                                <th scope="row">3</th>
+                                                <td>Pritesh</td>
+                                                <td>Lakhaniya</td>
+                                                <td>Pritesh.Lakhaniya@123</td>
+                                                <td>Web Developer</td>
+                                                <td>
+                                                    <div class="onoffswitchGreen">
+                                                    <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitchcard3" checked="">
+                                                    <label class="onoffswitch-label" for="myonoffswitchcard3">
+                                                        <span class="onoffswitch-inner"></span>
+                                                        <span class="onoffswitch-switch"></span>
+                                                    </label>
+                                                    </div>
+                                            </td>
+                                                <td> 
+                                                    <a class="add"  data-toggle="tooltip"><i class="material-icons">&#xE03B;</i></a>
+                                                    <a class="edit"  data-toggle="tooltip"><i class="material-icons">&#xE254;</i></a>
+                                                </td>
+
+                                                </tr>
+
+                                                <tr>
+                                                <th scope="row">4</th>
+                                                <td>Meet</td>
+                                                <td>Patel</td>
+                                                <td>v_Patel_12345</td>
+                                                <td>Developer</td>
+                                                <td>
+                                                    <div class="onoffswitchGreen">
+                                                    <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitchcard3">
+                                                    <label class="onoffswitch-label" for="myonoffswitchcard3">
+                                                        <span class="onoffswitch-inner"></span>
+                                                        <span class="onoffswitch-switch"></span>
+                                                    </label>
+                                                    </div>
+                                            </td>
+                                                <td> 
+                                                    <a class="add"  data-toggle="tooltip"><i class="material-icons">&#xE03B;</i></a>
+                                                    <a class="edit"  data-toggle="tooltip"><i class="material-icons">&#xE254;</i></a>
+                                                </td>
+
+                                                </tr>
+
+                                                <tr>
+                                                <th scope="row">5</th>
+                                                <td>Jay</td>
+                                                <td>Patel</td>
+                                                <td>Jay-Patel@124</td>
+                                                <td>Developer</td>
+                                                <td>
+                                                    <div class="onoffswitchGreen">
+                                                    <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitchcard3">
+                                                    <label class="onoffswitch-label" for="myonoffswitchcard3">
+                                                        <span class="onoffswitch-inner"></span>
+                                                        <span class="onoffswitch-switch"></span>
+                                                    </label>
+                                                    </div>
+                                            </td>
+                                                <td>
+                                                    <a class="add"  data-toggle="tooltip"><i class="material-icons">&#xE03B;</i></a>
+                                                        <a class="edit" data-toggle="tooltip"><i class="material-icons">&#xE254;</i></a>
+                                                </td>
+
+                                                </tr>
+                                            </tbody>
+                                            </table>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card-footer">
+                                <div class="text-center"><a id="btnViewcode1" name="btnViewcode1" class="btn btn-megna" data-toggle="collapse" href="#table3ViewCodeSection" role="button" aria-expanded="false" aria-controls="table3ViewCodeSection">View Code</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!--Bordered view code--> 
+                    <div class="col-md-12 col-12 pb-md-4 pb-4">
+                        <div class="collapse" id="table3ViewCodeSection">
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-12 p-0">
+                                        <div class="card bg-light h-100">
+                                            <div class="card-body">
+                                                <nav>
+                                                    <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                                                        <a class="nav-item nav-link active" id="nav-html-tab" data-codeType='html' data-toggle="tab" href="#nav-htmltable3" role="tab" aria-controls="nav-html" aria-selected="true">HTML</a>
+                                                        <a class="nav-item nav-link" id="nav-css-tab" data-codeType='css' data-toggle="tab" href="#nav-csstable3" role="tab" aria-controls="nav-css" aria-selected="false">CSS</a>
+                                                        <a class="nav-item nav-link" id="nav-jquery-tab" data-codeType='js' data-toggle="tab" href="#nav-jquerytable3" role="tab" aria-controls="nav-jquery" aria-selected="false">JS</a>
+                                                    </div>
+                                                </nav>
+                                                <div class="tab-content border-left border-right border-bottom bg-white" id="nav-tabContent">
+                                                    <div class="tab-pane fade show active" id="nav-htmltable3" role="tabpanel" aria-labelledby="nav-home-tab">
+                                                        <div class="container-fluid">
+                                                            <div class="row">
+                                                                <div class="col-12 text-right py-3">
+                                                                    <button class="btn downloadbtn btn-sm" onclick="copyToClipboard('#card3HtmlCode',this)" data-toggle="tooltip" data-placement="top" title="Copy to clipboard">Copy</button>
+                                                                </div>
+                                                                <div class="col-12 px-0">
+                                                                    <div class="form-group">
+                                                                    <textarea id="card3HtmlCode" class="form-control code" rows="5" id="txthtml" name="txthtml" readonly>
+     
+<!--Bordered Table-->   
+<div class="table3 table-responsive-sm  pb-3 p-md-4">
+    <table class="table">
+        <thead>
+            <tr>
+            <th scope="col">#</th>
+            <th scope="col">First Name</th>
+            <th scope="col">Last Name</th>
+            <th scope="col">Username</th>
+            <th scope="col">Role</th>
+            <th scope="col">Status</th>
+            <th scope="col"></th>
+            
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+            <th scope="row">1</th>
+            <td>Nandan</td>
+            <td>Patel</td>
+            <td>Nandan123</td>
+            <td>Admin</td>
+            <td>
+                <div class="onoffswitchGreen">
+                <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitchcard3" checked="">
+                <label class="onoffswitch-label" for="myonoffswitchcard3">
+                    <span class="onoffswitch-inner"></span>
+                    <span class="onoffswitch-switch"></span>
+                </label>
+                </div>
+            </td>
+            <td> 
+                <a class="add"  data-toggle="tooltip"><i class="material-icons">&#xE03B;</i></a>
+                <a class="edit"  data-toggle="tooltip"><i class="material-icons">&#xE254;</i></a>
+            </td>
+            </tr>
+            <tr>
+            <th scope="row">2</th>
+            <td>Akki</td>
+            <td>Patel</td>
+            <td>Akki1234</td>
+            <td>Web Designer</td>
+            <td>
+                    <div class="onoffswitchGreen">
+                    <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitchcard3">
+                    <label class="onoffswitch-label" for="myonoffswitchcard3">
+                        <span class="onoffswitch-inner"></span>
+                        <span class="onoffswitch-switch"></span>
+                    </label>
+                    </div>
+            </td>
+            <td> 
+                <a class="add" data-toggle="tooltip"><i class="material-icons">&#xE03B;</i></a>
+                <a class="edit"  data-toggle="tooltip"><i class="material-icons">&#xE254;</i></a>
+            </td>
+
+            </tr>
+            <tr>
+            <th scope="row">3</th>
+            <td>Pritesh</td>
+            <td>Lakhaniya</td>
+            <td>Pritesh.Lakhaniya@123</td>
+            <td>Web Developer</td>
+            <td>
+                <div class="onoffswitchGreen">
+                <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitchcard3" checked="">
+                <label class="onoffswitch-label" for="myonoffswitchcard3">
+                    <span class="onoffswitch-inner"></span>
+                    <span class="onoffswitch-switch"></span>
+                </label>
+                </div>
+        </td>
+            <td> 
+                <a class="add"  data-toggle="tooltip"><i class="material-icons">&#xE03B;</i></a>
+                <a class="edit"  data-toggle="tooltip"><i class="material-icons">&#xE254;</i></a>
+            </td>
+
+            </tr>
+
+            <tr>
+            <th scope="row">4</th>
+            <td>Meet</td>
+            <td>Patel</td>
+            <td>v_Patel_12345</td>
+            <td>Developer</td>
+            <td>
+                <div class="onoffswitchGreen">
+                <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitchcard3">
+                <label class="onoffswitch-label" for="myonoffswitchcard3">
+                    <span class="onoffswitch-inner"></span>
+                    <span class="onoffswitch-switch"></span>
+                </label>
+                </div>
+        </td>
+            <td> 
+                <a class="add"  data-toggle="tooltip"><i class="material-icons">&#xE03B;</i></a>
+                <a class="edit"  data-toggle="tooltip"><i class="material-icons">&#xE254;</i></a>
+            </td>
+
+            </tr>
+
+            <tr>
+            <th scope="row">5</th>
+            <td>Jay</td>
+            <td>Patel</td>
+            <td>Jay-Patel@124</td>
+            <td>Developer</td>
+            <td>
+                <div class="onoffswitchGreen">
+                <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitchcard3">
+                <label class="onoffswitch-label" for="myonoffswitchcard3">
+                    <span class="onoffswitch-inner"></span>
+                    <span class="onoffswitch-switch"></span>
+                </label>
+                </div>
+        </td>
+            <td>
+                <a class="add"  data-toggle="tooltip"><i class="material-icons">&#xE03B;</i></a>
+                    <a class="edit" data-toggle="tooltip"><i class="material-icons">&#xE254;</i></a>
+            </td>
+
+            </tr>
+        </tbody>
+        </table>
+</div>
+                                                         
+                                                        
+                                                                    </textarea>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                        </div>
+
+                                                    </div>
+                                                    <div class="tab-pane fade" id="nav-csstable3" role="tabpanel" aria-labelledby="nav-profile-tab">
+                                                        <div class="container-fluid">
+                                                            <div class="row">
+                                                                <div class="col-md-4 col-12 p-3 m-auto">
+                                                                    <a class="btn downloadbtn btn-block" target="_blank" href="dist/downloadCss/basicTable/borderedTable.css" download>Download borderedTable.css</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="tab-pane fade" id="nav-jquerytable3" role="tabpanel" aria-labelledby="nav-profile-tab">
+                                                        <div class="container-fluid">
+                                                            <div class="row">
+                                                                <div class="col-md-4 col-12 p-3 m-auto">
+                                                                    <a class="btn downloadbtn btn-block" target="_blank" href="dist/downloadjquery/Tables/BasicTable/borderedTable.js" download>Download borderedTable.js</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> 
+                    </div>
+            </div>
+
+            <!--Section4-->
+            <div class="row">
+                  <!--Table head options-->
+                <div class="col-md-12 col-12 pb-md-4 pb-4 ">
+                    <div class="card">
+                        <div class="card-header">
+                            <h4>Table head options</h4>
+                        </div>
+                        <div class="card-body">
+                            <div class="col-md-12 col-12 p-0">
+                                <div class="table4 table-responsive-sm table-striped pb-3 ">
+                                    <table class="table">
+                                        <thead>
+                                            <tr>
+                                            <th scope="col">#</th>
+                                            <th scope="col">First Name</th>
+                                            <th scope="col">Last Name</th>
+                                            <th scope="col">Username</th>
+                                            <th scope="col">Role</th>
+                                          
+                                            <th scope="col"></th>
+                                            
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                            <th scope="row">1</th>
+                                            <td>Nandan</td>
+                                            <td>Patel</td>
+                                            <td>Nandan123</td>
+                                            <td>Admin</td>
+                                            <td> 
+                                                <a class="add"  data-toggle="tooltip"><i class="material-icons">&#xE03B;</i></a>
+                                                <a class="edit"  data-toggle="tooltip"><i class="material-icons">&#xE254;</i></a>
+                                            </td>
+                                            </tr>
+                                            <tr>
+                                            <th scope="row">2</th>
+                                            <td>Akki</td>
+                                            <td>Patel</td>
+                                            <td>Akki1234</td>
+                                            <td>Web Designer</td>
+                                          
+                                            <td> 
+                                                <a class="add"  data-toggle="tooltip"><i class="material-icons">&#xE03B;</i></a>
+                                                <a class="edit"  data-toggle="tooltip"><i class="material-icons">&#xE254;</i></a>
+                                            </td>
+    
+                                            </tr>
+                                            <tr>
+                                            <th scope="row">3</th>
+                                            <td>Pritesh</td>
+                                            <td>Lakhaniya</td>
+                                            <td>Pritesh.Lakhaniya@123</td>
+                                            <td>Web Developer</td>
+                                           
+                                            <td> 
+                                                <a class="add"  data-toggle="tooltip"><i class="material-icons">&#xE03B;</i></a>
+                                                <a class="edit"  data-toggle="tooltip"><i class="material-icons">&#xE254;</i></a>
+                                            </td>
+    
+                                            </tr>
+    
+                                            <tr>
+                                            <th scope="row">4</th>
+                                            <td>Meet</td>
+                                            <td>Patel</td>
+                                            <td>v_Patel_12345</td>
+                                            <td>Developer</td>
+                                            
+                                            <td> 
+                                                <a class="add"  data-toggle="tooltip"><i class="material-icons">&#xE03B;</i></a>
+                                                <a class="edit"  data-toggle="tooltip"><i class="material-icons">&#xE254;</i></a>
+                                            </td>
+    
+                                            </tr>
+    
+                                            <tr>
+                                            <th scope="row">5</th>
+                                            <td>Jay</td>
+                                            <td>Patel</td>
+                                            <td>Jay-Patel@124</td>
+                                            <td>Developer</td>
+                                          
+                                            <td>
+                                                <a class="add"  data-toggle="tooltip"><i class="material-icons">&#xE03B;</i></a>
+                                                    <a class="edit" data-toggle="tooltip"><i class="material-icons">&#xE254;</i></a>
+                                            </td>
+    
+                                            </tr>
+                                        </tbody>
+                                        </table>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card-footer">
+                            <div class="text-center"><a id="btnViewcode1" name="btnViewcode1" class="btn btn-megna" data-toggle="collapse" href="#table4ViewCodeSection" role="button" aria-expanded="false" aria-controls="table4ViewCodeSection">View Code</a></div>
+                        </div>
+                    </div>
+                </div> 
+                
+                 <!--Table head options view code--> 
+                 <div class="col-md-12 col-12 pb-md-4 pb-4">
+                    <div class="collapse" id="table4ViewCodeSection">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-12 p-0">
+                                    <div class="card bg-light h-100">
+                                        <div class="card-body">
+                                            <nav>
+                                                <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                                                    <a class="nav-item nav-link active" id="nav-html-tab" data-codeType='html' data-toggle="tab" href="#nav-htmltable4" role="tab" aria-controls="nav-html" aria-selected="true">HTML</a>
+                                                    <a class="nav-item nav-link" id="nav-css-tab" data-codeType='css' data-toggle="tab" href="#nav-csstable4" role="tab" aria-controls="nav-css" aria-selected="false">CSS</a>
+                                                    <a class="nav-item nav-link" id="nav-jquery-tab" data-codeType='js' data-toggle="tab" href="#nav-jquerytable4" role="tab" aria-controls="nav-jquery" aria-selected="false">JS</a>
+                                                </div>
+                                            </nav>
+                                            <div class="tab-content border-left border-right border-bottom bg-white" id="nav-tabContent">
+                                                <div class="tab-pane fade show active" id="nav-htmltable4" role="tabpanel" aria-labelledby="nav-home-tab">
+                                                    <div class="container-fluid">
+                                                        <div class="row">
+                                                            <div class="col-12 text-right py-3">
+                                                                <button class="btn downloadbtn btn-sm" onclick="copyToClipboard('#card4HtmlCode',this)" data-toggle="tooltip" data-placement="top" title="Copy to clipboard">Copy</button>
+                                                            </div>
+                                                            <div class="col-12 px-0">
+                                                                <div class="form-group">
+                                                                <textarea id="card4HtmlCode" class="form-control code" rows="5" id="txthtml" name="txthtml" readonly>
+
+<!--Table head options-->
+<div class="table4 table-responsive-sm table-striped pb-3 ">
+    <table class="table">
+        <thead>
+            <tr>
+            <th scope="col">#</th>
+            <th scope="col">First Name</th>
+            <th scope="col">Last Name</th>
+            <th scope="col">Username</th>
+            <th scope="col">Role</th>
+            
+            <th scope="col"></th>
+            
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+            <th scope="row">1</th>
+            <td>Nandan</td>
+            <td>Patel</td>
+            <td>Nandan123</td>
+            <td>Admin</td>
+            <td> 
+                <a class="add"  data-toggle="tooltip"><i class="material-icons">&#xE03B;</i></a>
+                <a class="edit"  data-toggle="tooltip"><i class="material-icons">&#xE254;</i></a>
+            </td>
+            </tr>
+            <tr>
+            <th scope="row">2</th>
+            <td>Akki</td>
+            <td>Patel</td>
+            <td>Akki1234</td>
+            <td>Web Designer</td>
+            
+            <td> 
+                <a class="add"  data-toggle="tooltip"><i class="material-icons">&#xE03B;</i></a>
+                <a class="edit"  data-toggle="tooltip"><i class="material-icons">&#xE254;</i></a>
+            </td>
+
+            </tr>
+            <tr>
+            <th scope="row">3</th>
+            <td>Pritesh</td>
+            <td>Lakhaniya</td>
+            <td>Pritesh.Lakhaniya@123</td>
+            <td>Web Developer</td>
+            
+            <td> 
+                <a class="add"  data-toggle="tooltip"><i class="material-icons">&#xE03B;</i></a>
+                <a class="edit"  data-toggle="tooltip"><i class="material-icons">&#xE254;</i></a>
+            </td>
+
+            </tr>
+
+            <tr>
+            <th scope="row">4</th>
+            <td>Meet</td>
+            <td>Patel</td>
+            <td>v_Patel_12345</td>
+            <td>Developer</td>
+            
+            <td> 
+                <a class="add"  data-toggle="tooltip"><i class="material-icons">&#xE03B;</i></a>
+                <a class="edit"  data-toggle="tooltip"><i class="material-icons">&#xE254;</i></a>
+            </td>
+
+            </tr>
+
+            <tr>
+            <th scope="row">5</th>
+            <td>Jay</td>
+            <td>Patel</td>
+            <td>Jay-Patel@124</td>
+            <td>Developer</td>
+            
+            <td>
+                <a class="add"  data-toggle="tooltip"><i class="material-icons">&#xE03B;</i></a>
+                    <a class="edit" data-toggle="tooltip"><i class="material-icons">&#xE254;</i></a>
+            </td>
+
+            </tr>
+        </tbody>
+        </table>
+</div>
+                                                    
+                                                    
+                                                                </textarea>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+
+                                                </div>
+                                                <div class="tab-pane fade" id="nav-csstable4" role="tabpanel" aria-labelledby="nav-profile-tab">
+                                                    <div class="container-fluid">
+                                                        <div class="row">
+                                                            <div class="col-md-4 col-12 p-3 m-auto">
+                                                                <a class="btn downloadbtn btn-block" target="_blank" href="dist/downloadCss/basicTable/tableHeadOption.css" download>Download tableHeadOption.css</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="tab-pane fade" id="nav-jquerytable4" role="tabpanel" aria-labelledby="nav-profile-tab">
+                                                    <div class="container-fluid">
+                                                        <div class="row">
+                                                            <div class="col-md-4 col-12 p-3 m-auto">
+                                                                <a class="btn downloadbtn btn-block" target="_blank" href="dist/downloadjquery/Tables/BasicTable/tableHeadOption.js" download>Download tableHeadOption.js</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> 
+                </div>  
+            </div>
+    
+        </div>
+    </div>
+
+
+
+
+
+
+<!--jquery js-->
+ <script src="assets/Core/jquery-3.3.1.min.js"></script>
+ <!--popper js-->
+ <script src="assets/Core/popper/popper.min.js"></script>
+ <!--bootstrap js-->
+ <script src="assets/Core/bootstrap/dist/js/bootstrap.min.js"></script>
+ <!--Sidebarmenu js-->
+ <script src="dist/js/sidebarmenu.js"></script>
+ <!--Wave Effects js -->
+ <script src="dist/js/waves.js"></script>
+ <!-- scrollbar JavaScript -->
+ <script src="dist/js/perfect-scrollbar.jquery.min.js"></script>
+ <!--Custom JavaScript -->
+ <script src="dist/js/custom.js"></script>
+ <!--Code Mirror JS-->
+<script src="assets/Plugins/codemirror/lib/codemirror.js"></script>
+<script src="assets/Plugins/codemirror/mode/xml/xml.js"></script>
+<script src="assets/Plugins/codemirror/mode/css/css.js"></script>
+<script src="assets/Plugins/codemirror/mode/javascript/javascript.js"></script>
+<script src="assets/Plugins/codemirror/mode/htmlmixed/htmlmixed.js"></script>
+
+ <!--custom js view code-->
+ <script src="dist/js/switch.js"></script>
+
+    <script type="text/javascript">
+    $(document).ready(function(){
+        $('[data-toggle="tooltip"]').tooltip();
+        var actions = $("table td:last-child").html();
+        // Append table with add row form on add new button click
+        $(".add-new").click(function(){
+            $(this).attr("disabled", "disabled");
+            var index = $("table tbody tr:last-child").index();
+            var row = '<tr>' +
+                '<td><input type="text" class="form-control" name="name" id="name"></td>' +
+                '<td><input type="text" class="form-control" name="department" id="department"></td>' +
+                '<td><input type="text" class="form-control" name="phone" id="phone"></td>' +
+                '<td>' + actions + '</td>' +
+            '</tr>';
+            $("table").append(row);		
+            $("table tbody tr").eq(index + 1).find(".add, .edit").toggle();
+            $('[data-toggle="tooltip"]').tooltip();
+        });
+        // Add row on add button click
+        $(document).on("click", ".add", function(){
+            var empty = false;
+            var input = $(this).parents("tr").find('input[type="text"]');
+            input.each(function(){
+                if(!$(this).val()){
+                    $(this).addClass("error");
+                    empty = true;
+                } else{
+                    $(this).removeClass("error");
+                }
+            });
+            $(this).parents("tr").find(".error").first().focus();
+            if(!empty){
+                input.each(function(){
+                    $(this).parent("td").html($(this).val());
+                });			
+                $(this).parents("tr").find(".add, .edit").toggle();
+                $(".add-new").removeAttr("disabled");
+            }		
+        });
+        // Edit row on edit button click
+        $(document).on("click", ".edit", function(){		
+            $(this).parents("tr").find("td:not(:last-child)").each(function(){
+                $(this).html('<input type="text" class="form-control" value="' + $(this).text() + '">');
+            });		
+            $(this).parents("tr").find(".add, .edit").toggle();
+            $(".add-new").attr("disabled", "disabled");
+        });
+        // Delete row on delete button click
+        $(document).on("click", ".delete", function(){
+            $(this).parents("tr").remove();
+            $(".add-new").removeAttr("disabled");
+        });
+    });
+    </script>
+ <script type="text/javascript">
+     var card1CodeInit = 0;
+     var card2CodeInit = 0;
+     var card3CodeInit = 0;
+     var card4CodeInit = 0;
+    
+         $('#table1ViewCodeSection').on('shown.bs.collapse', function () {
+             if(card1CodeInit == 0)
+             {
+                 card1HtmlCodeEditor();
+                 card1CodeInit = 1;
+             }
+             else{
+                 return false;
+             }
+         });
+         $('#table2ViewCodeSection').on('shown.bs.collapse', function () {
+             if(card2CodeInit == 0)
+             {
+                 card2HtmlCodeEditor();
+                 card2CodeInit = 1;
+             }
+             else{
+                 return false;
+             }
+         });
+         $('#table3ViewCodeSection').on('shown.bs.collapse', function () {
+             if(card3CodeInit == 0)
+             {
+                 card3HtmlCodeEditor();
+                 card3CodeInit = 1;
+             }
+             else{
+                 return false;
+             }
+         });
+         $('#table4ViewCodeSection').on('shown.bs.collapse', function () {
+             if(card4CodeInit == 0)
+             {
+                 card4HtmlCodeEditor();
+                 card4CodeInit = 1;
+             }
+             else{
+                 return false;
+             }
+         });
+
+ </script>
+
+</body>
+</html>

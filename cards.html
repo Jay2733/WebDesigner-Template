@@ -1,0 +1,903 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cards</title>
+    <!--Bootstrap css-->
+    <link rel="stylesheet" href="assets/Core/bootstrap/dist/css/bootstrap.min.css">
+    <!--plugins of viewcode-->
+    <link rel="stylesheet" type="text/css" href="assets/Plugins/codemirror/lib/codemirror.css">
+    <link rel="stylesheet" type="text/css" href="assets/Plugins/codemirror/theme/material.css">
+    <!--Custom css-->
+    <link rel="stylesheet" href="dist/css/style.css">
+    <link rel="stylesheet" href="dist/scss/css/cards.css">
+    <link rel="stylesheet" href="dist/sidenavCss/custom.css">
+</head>
+<body class="skin-megna fixed-layout">
+     <!-- ============================================================== -->
+        <!-- Topbar header - style you can find in pages.scss -->
+        <!-- ============================================================== -->
+        <header class="topbar">
+            <nav class="navbar top-navbar navbar-expand-md navbar-dark">
+                <!-- ============================================================== -->
+                <!-- Logo -->
+                <!-- ============================================================== -->
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="index.html">
+                        <!-- Logo icon --><b>
+                            <!--You can put here icon as well // <i class="wi wi-sunset"></i> //-->
+                            <!-- Dark Logo icon -->
+                            <img src="assets/images/New Logo.png" alt="homepage" class="light-logo" />
+                            <!-- Light Logo icon -->
+                            <!-- <img src="../assets/images/logo-light-icon.png" alt="homepage" class="light-logo" /> -->
+                        </b>
+                        <!--End Logo icon -->
+                        <span class="hidden-xs font-bold" style="font-size: 19px">Patel Techologies</span>
+                    </a>
+                </div>
+                <!-- ============================================================== -->
+                <!-- End Logo -->
+                <!-- ============================================================== -->
+                <div class="navbar-collapse">
+                    <!-- ============================================================== -->
+                    <!-- toggle and nav items -->
+                    <!-- ============================================================== -->
+                    <ul class="navbar-nav mr-auto">
+                        <!-- This is  -->
+                        <li class="nav-item"> <a class="nav-link nav-toggler d-block d-md-none waves-effect waves-dark" href="javascript:void(0)"><i class="ti-menu"></i></a> </li>
+                        <li class="nav-item"> <a class="nav-link sidebartoggler d-none d-lg-block d-md-block waves-effect waves-dark" href="javascript:void(0)"><i class="icon-menu"></i></a> </li>
+                        <!-- ============================================================== -->
+                        <!-- Search -->
+                        <!-- ============================================================== -->
+                        <li class="nav-item d-none d-md-block d-lg-block">
+                           <form action="">
+                              <input type="search" placeholder="Search & enter">
+                              <i class="fa fa-search"></i>
+                            </form>
+                        </li>
+                    </ul>
+                   
+                </div>
+            </nav>
+        </header>
+        <!-- ============================================================== -->
+        <!-- End Topbar header -->
+        <!-- ============================================================== -->
+        <!-- ============================================================== -->
+        <!-- Left Sidebar - style you can find in  custom.css  -->
+        <!-- ============================================================== -->
+        <aside class="left-sidebar">
+            <!-- Sidebar scroll-->
+            <div class="scroll-sidebar">
+                <!-- <div class="sidebar-header">
+                    <div class="companyLogo">
+                      <img class="img-responsive img-rounded" src="assets/images/company-logo.svg"
+                        alt="Company logo">
+                    </div>
+                </div> -->
+               <!-- Sidebar navigation-->
+                <nav class="sidebar-nav">
+                    <ul id="sidebarnav">
+                        <li>
+                            <a class="has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false"><i class="mdi mdi-login"></i><span class="hide-menu">Dashboard</span></a>
+                            <ul aria-expanded="false" class="collapse">
+                                <li><a href="Dashboard1.html">Dashboard 1</a></li>
+                                <li><a href="Dashboard2.html">Dashboard 2</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false"><i class="mdi mdi-login"></i><span class="hide-menu">Login Templates</span></a>
+                            <ul aria-expanded="false" class="collapse">
+                                <li><a href="Login1.html">Login 1</a></li>
+                                <li><a href="Login2.html">Login 2</a></li>
+                                <li><a href="Login3.html">Login 3</a></li>
+                                <li><a href="Login4.html">Login 4</a></li>
+                                <li><a href="Login5.html">Login 5</a></li>
+                                <li><a href="Login6.html">Login 6</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false"><i class="ti-palette"></i><span class="hide-menu">Ui Elements</span></a>
+                            <ul aria-expanded="false" class="collapse">
+                                <li><a href="cards.html">Cards</a></li>
+                                <li><a href="buttons.html">Buttons</a></li>
+                                <li><a href="tabs.html">Tab</a></li>
+                                <li><a href="switchs.html">Switchs</a></li>
+                                <li><a href="Notification.html">Notification</a></li>
+                                <li><a href="Alert.html">Alert Box</a></li>
+                                <li><a href="carousel.html">Carousel</a></li>
+                                <li><a href="Errorpage.html">Error Page</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false"><i class="ti-layout-accordion-merged"></i><span class="hide-menu">Tables</span></a>
+                            <ul aria-expanded="false" class="collapse">
+                                <li><a href="basicTable.html">Basic Table</a></li>
+                                <li><a href="dataTable.html">Data Table</a></li>
+                                <li><a href="editable table.html">Editable Table</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false"><i class="ti-layout-media-right-alt"></i><span class="hide-menu">Forms</span></a>
+                            <ul aria-expanded="false" class="collapse">
+                                <li><a href="basicForms.html">Basic Forms</a></li>
+                                <li><a href="checkbox.html">Checkbox</a></li>
+                                <li><a href="dateTimepicker.html">Date &amp; Time Picker</a></li>
+                                <li><a href="dragdropfile.html">Drag &amp; Drop File Upload</a></li>
+                                <li><a href="sliders.html">Sliders</a></li>
+                                <li><a href="addon.html">Addon Control</a></li>
+                                <li><a href="icheck.html">Icheck Control</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false"><i class="ti-layout-media-right-alt"></i><span class="hide-menu">Components</span></a>
+                            <ul aria-expanded="false" class="collapse">
+                                <li><a href="mdbuttons.html">Material Buttons</a></li>
+                                <li><a href="badges.html">Badges</a></li>
+                                <li><a href="spinners.html">Loaders/Spinners</a></li>
+                                <li><a href="progressbar.html">ProgressBar</a></li>
+                                <li><a href="socialbutton.html">SocialButtons</a></li>
+                                <li><a href="stepper.html">Steppers</a></li>
+                                <li><a href="extendedcards.html">Extended Cards</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false"><i class="ti-layout-media-right-alt"></i><span class="hide-menu">Navigation</span></a>
+                            <ul aria-expanded="false" class="collapse">
+                                <li><a href="navbar.html">Navbar</a></li>
+                                <li><a href="breadcrumb.html">Breadcrumb</a></li>
+                                <li><a href="megamenu.html">Mega Menu</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false"><i class="mdi mdi-login"></i><span class="hide-menu">Email Templete</span></a>
+                            <ul aria-expanded="false" class="collapse">
+                               <li><a href="Email_1.html">Email Templete 1</a></li>
+                                <li><a href="Email_2.html">Email Templete 2</a></li>
+                            </ul>
+                        </li>
+                        <!--<li>
+                            <a class="has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false"><i class="ti-layout-media-right-alt"></i><span class="hide-menu">Templates</span></a>
+                            <ul aria-expanded="false" class="collapse">
+                                <li><a href="Website.html">Website</a></li>
+                            </ul>
+                        </li>-->
+                    </ul>
+                </nav>
+                <!-- End Sidebar navigation -->
+            </div>
+            <!-- End Sidebar scroll-->
+        </aside>
+        <!-- ============================================================== -->
+        <!-- End Left Sidebar - style you can find in  custom.css  -->
+        <!-- ============================================================== -->
+     <div class="page-wrapper">
+        <!-- Card 1 Strat -->
+        <div class="container-fluid">
+            <div class="row">
+                <!--Card 1 start-->
+                <div class="col-lg-12 col-12 pb-4">
+                    <div class="card h-100">
+                        <h4 class="card-header">Card with Image</h4>
+                           <div class="row m-3">
+                            <!-- column -->
+                            <div class="col-lg-3 col-md-6">
+                                <!-- Card -->
+                                <div class="card">
+                                    <img class="card-img-top img-responsive" src="assets/images/Card/img1.jpg" alt="Card image cap">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Card title</h4>
+                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                        <a href="javascript:void(0)" class="btn bg-color-primary btn-md btn-block">Go somewhere</a>
+                                    </div>
+                                </div>
+                                <!-- Card -->
+                            </div>
+                            <!-- column -->
+                            <!-- column -->
+                            <div class="col-lg-3 col-md-6">
+                                <!-- Card -->
+                                <div class="card">
+                                    <img class="card-img-top img-responsive" src="assets/images/Card/img2.jpg" alt="Card image cap">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Card title</h4>
+                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                        <a href="javascript:void(0)" class="btn bg-color-primary btn-md btn-block ">Go somewhere</a>
+
+                                    </div>
+                                </div>
+                                <!-- Card -->
+                            </div>
+                            <!-- column -->
+                            <!-- column -->
+                            <div class="col-lg-3 col-md-6">
+                                <!-- Card -->
+                                <div class="card">
+                                    <img class="card-img-top img-responsive" src="assets/images/Card/img3.jpg" alt="Card image cap">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Card title</h4>
+                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                        <a href="javascript:void(0)" class="btn bg-color-primary btn-md btn-block">Go somewhere</a>
+                                    </div>
+                                </div>
+                                <!-- Card -->
+                            </div>
+                            <!-- column -->
+                            <!-- column -->
+                            <div class="col-lg-3 col-md-6 img-responsive">
+                                <!-- Card -->
+                                <div class="card">
+                                    <img class="card-img-top img-responsive" src="assets/images/Card/img4.jpg" alt="Card image cap">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Card title</h4>
+                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                        <a href="javascript:void(0)" class="btn bg-color-primary btn-md btn-block">Go somewhere</a>
+                                    </div>
+                                </div>
+                                <!-- Card -->
+                            </div>
+                            <!-- column -->
+                           </div>                 
+                        </div>
+                 </div>
+                 <!--Card 1 End-->
+            </div>
+            <div class="col-md-12 mb-4">
+                <div class="text-center"><a id="card1" name="btnViewcode" class="btn btn-megna m-0" data-toggle="collapse" href="#Card1ViewCodeSection" role="button" aria-expanded="false" aria-controls="Card1ViewCodeSection">View Code</a></div>
+             </div>
+        </div>
+         <!--Card View Code Section Start-->
+         <div class="collapse" id="Card1ViewCodeSection">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="card my-4 bg-light">
+                            <div class="card-body">
+                                <nav>
+                                    <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                                        <a class="nav-item nav-link active" id="nav-html-tab" data-codeType='html' data-toggle="tab" href="#nav-html-card1" role="tab" aria-controls="nav-html" aria-selected="true">HTML</a>
+                                        <a class="nav-item nav-link" id="nav-css-tab" data-codeType='css' data-toggle="tab" href="#nav-css-card1" role="tab" aria-controls="nav-css" aria-selected="false">CSS</a>
+                                        
+                                    </div>
+                                </nav>
+                                <div class="tab-content border-left border-right border-bottom bg-white" id="nav-tabContent">
+                                    <div class="tab-pane fade show active" id="nav-html-card1" role="tabpanel" aria-labelledby="nav-home-tab">
+                                        <div class="container-fluid">
+                                            <div class="row">
+                                                <div class="col-12 text-right py-3">
+                                                    <button class="btn btn-megna m-0" onclick="copyToClipboard('#card1HtmlCode',this)" data-toggle="tooltip" data-placement="top" title="Copy to clipboard">Copy</button>
+                                                </div>
+                                                            <div class="col-12 px-0">
+                                                                <div class="form-group">
+                                                                    <textarea id="card1HtmlCode" class="form-control code" rows="5" id="txthtml" name="txthtml" readonly>
+                                                                         <!--Card 1 start-->
+                                                                            <div class="col-lg-12 col-12 pb-4">
+                                                                               <div class="card h-100">
+                                                                                    <h4 class="card-header">Card with Image</h4>
+                                                                                    <div class="row m-3">
+                                                                                    <!-- column -->
+                                                                                    <div class="col-lg-3 col-md-6">
+                                <!-- Card -->
+                                <div class="card">
+                                    <img class="card-img-top img-responsive" src="assets/images/Card/img1.jpg" alt="Card image cap">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Card title</h4>
+                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                        <a href="javascript:void(0)" class="btn bg-color-primary btn-md btn-block">Go somewhere</a>
+                                    </div>
+                                </div>
+                                <!-- Card -->
+                                                                                    </div>
+                                                                                    <!-- column -->
+                                                                                    <!-- column -->
+                                                                                    <div class="col-lg-3 col-md-6">
+                                <!-- Card -->
+                                <div class="card">
+                                    <img class="card-img-top img-responsive" src="assets/images/Card/img2.jpg" alt="Card image cap">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Card title</h4>
+                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                        <a href="javascript:void(0)" class="btn bg-color-primary btn-md btn-block ">Go somewhere</a>
+
+                                    </div>
+                                </div>
+                                <!-- Card -->
+                                                                                    </div>
+                                                                                    <!-- column -->
+                                                                                    <!-- column -->
+                                                                                    <div class="col-lg-3 col-md-6">
+                                <!-- Card -->
+                                <div class="card">
+                                    <img class="card-img-top img-responsive" src="assets/images/Card/img3.jpg" alt="Card image cap">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Card title</h4>
+                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                        <a href="javascript:void(0)" class="btn bg-color-primary btn-md btn-block">Go somewhere</a>
+                                    </div>
+                                </div>
+                                <!-- Card -->
+                                                                                    </div>
+                                                                                    <!-- column -->
+                                                                                    <!-- column -->
+                                                                                    <div class="col-lg-3 col-md-6 img-responsive">
+                                <!-- Card -->
+                                <div class="card">
+                                    <img class="card-img-top img-responsive" src="assets/images/Card/img4.jpg" alt="Card image cap">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Card title</h4>
+                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                        <a href="javascript:void(0)" class="btn bg-color-primary btn-md btn-block">Go somewhere</a>
+                                    </div>
+                                </div>
+                                <!-- Card -->
+                                                                                    </div>
+                                                                                    <!-- column -->
+                                                                                    </div>                 
+                                                                                </div>
+                                                                            </div>
+                                                                          <!--Card 1 End-->
+                                                                     </textarea>
+                                                                  </div>
+                                                             </div>
+                                                         </div>
+                                                     </div>
+                                                 </div>
+                                                  <div class="tab-pane fade" id="nav-css-card1" role="tabpanel" aria-labelledby="nav-profile-tab">
+                                        <div class="container-fluid">
+                                            <div class="row">
+                                                <div class="col-12 p-3 text-center">
+                                                    <a class="btn btn-megna m-0" target="_blank" href="dist/scss/css/card.css" download>Download Card.css</a>
+                                                </div>
+                                            </div>
+                                        </div>n
+                                    </div>
+                                             </div>
+                                   
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+         <!--Card 1 View Code Section End-->
+          <!-- Card 1 End -->
+<!-------------------------------------------------------Card 2 Start----------------------------------------------------------->
+
+        <div class="container-fluid">
+            <div class="row">
+                <!--Card 2 start-->
+                <div class="col-lg-12 col-12 pb-4">
+                    <div class="card h-100">
+                        <h4 class="card-header">Card 2</h4>
+                           <div class="row m-3">
+                            <!--card start-->
+                        <div class="col-12">
+                            <div class="row">
+                                <div class="card detilsCard m-auto">    
+                                  <div class="card-body text-center">       
+                                       <div class="media">
+                                        <div class="media-left">
+                                            <img src="assets/images/Card/Nandan.jpg" class="media-object" alt="user photo">
+                                        </div>
+                                        <div class="media-body">
+                                            <h6 class="card-title" style="text-align: left;">
+                                               Nandan Patel
+                                            </h6>
+                                            <p class="userDetails"><i class="mdi mdi-account infoIcon"></i><span>Admin</span></p>
+                                            <p class="userDetails"><i class="mdi mdi-email infoIcon"></i><span>nandan.patel@patel.com</span></p>
+                                            <p class="userDetails"><i class="mdi mdi-cellphone-iphone infoIcon"></i><span>+91 9574813299</span></p>
+                                            <p class="userDetails"><i class="mdi mdi-map-marker infoIcon"></i><span>Vadodara, Gujarat-390009</span></p>
+                                            <p class="userDetails"><i class="mdi mdi-cake-variant infoIcon"></i><span>25-07-1995</span></p>
+                                        </div>
+                                       </div>  
+                                  </div>
+                                </div>                                                                                                                                                                                  
+                           </div> 
+                        </div>
+                        <!--card End-->
+                            </div>
+                        </div>
+                 </div>
+                 <!--Card 1 End-->
+            </div>
+            <div class="col-md-12 mb-4">
+                <div class="text-center"><a id="card1" name="btnViewcode" class="btn btn-megna m-0" data-toggle="collapse" href="#Card2ViewCodeSection" role="button" aria-expanded="false" aria-controls="Card2ViewCodeSection">View Code</a></div>
+             </div>
+        </div>
+         <!--Card2 View Code Section Start-->
+         <div class="collapse" id="Card2ViewCodeSection">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="card my-4 bg-light">
+                            <div class="card-body">
+                                <nav>
+                                    <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                                        <a class="nav-item nav-link active" id="nav-html-tab" data-codeType='html' data-toggle="tab" href="#nav-html-card2" role="tab" aria-controls="nav-html" aria-selected="true">HTML</a>
+                                        <a class="nav-item nav-link" id="nav-css-tab" data-codeType='css' data-toggle="tab" href="#nav-css-card2" role="tab" aria-controls="nav-css" aria-selected="false">CSS</a>
+                                        
+                                    </div>
+                                </nav>
+                                <div class="tab-content border-left border-right border-bottom bg-white" id="nav-tabContent">
+                                    <div class="tab-pane fade show active" id="nav-html-card2" role="tabpanel" aria-labelledby="nav-home-tab">
+                                        <div class="container-fluid">
+                                            <div class="row">
+                                                <div class="col-12 text-right py-3">
+                                                    <button class="btn btn-megna m-0" onclick="copyToClipboard('#card2HtmlCode',this)" data-toggle="tooltip" data-placement="top" title="Copy to clipboard">Copy</button>
+                                                </div>
+                                                            <div class="col-12 px-0">
+                                                                <div class="form-group">
+                                                                    <textarea id="card2HtmlCode" class="form-control code" rows="5" id="txthtml" name="txthtml" readonly>
+                                                                          <!--card start-->
+                       <div class="col-12">
+                            <div class="row">
+                                <div class="card detilsCard m-auto">    
+                                  <div class="card-body text-center">       
+                                       <div class="media">
+                                        <div class="media-left">
+                                            <img src="assets/images/Card/Nandan.jpg" class="media-object" alt="user photo">
+                                        </div>
+                                        <div class="media-body">
+                                            <h6 class="card-title" style="text-align: left;">
+                                               Nandan Patel
+                                            </h6>
+                                            <p class="userDetails"><i class="mdi mdi-account infoIcon"></i><span>Admin</span></p>
+                                            <p class="userDetails"><i class="mdi mdi-email infoIcon"></i><span>nandan.patel@patel.com</span></p>
+                                            <p class="userDetails"><i class="mdi mdi-cellphone-iphone infoIcon"></i><span>+91 9574813299</span></p>
+                                            <p class="userDetails"><i class="mdi mdi-map-marker infoIcon"></i><span>Vadodara, Gujarat-390009</span></p>
+                                            <p class="userDetails"><i class="mdi mdi-cake-variant infoIcon"></i><span>25-07-1995</span></p>
+                                        </div>
+                                       </div>  
+                                  </div>
+                                </div>                                                                                                                                                                                  
+                           </div> 
+                        </div>
+                        <!--card End-->
+                                                                     </textarea>
+                                                                  </div>
+                                                             </div>
+                                                         </div>
+                                                     </div>
+                                                 </div>
+                                                  <div class="tab-pane fade" id="nav-css-card2" role="tabpanel" aria-labelledby="nav-profile-tab">
+                                        <div class="container-fluid">
+                                            <div class="row">
+                                                <div class="col-12 p-3 text-center">
+                                                    <a class="btn btn-megna m-0" target="_blank" href="dist/scss/css/card4.css" download>Download Card4.css</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                             </div>
+                                   
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+         <!--Card 2 View Code Section End-->
+          <!-- Card 2 End -->
+<!-------------------------------------------------------Card 3 Start----------------------------------------------------------->
+     <div class="container-fluid">
+            <div class="row">
+                <!--Card 3 start-->
+                <div class="col-lg-12 col-12 pb-4">
+                    <div class="card h-100">
+                        <h4 class="card-header">Card 3</h4>
+                           <div class="row m-3">
+                            <!--card start-->
+                        <div class="col-12">
+                            <div class="row">
+                                          <div class="card imagecardWrapper d-flex flex-column m-auto">
+                                            <span class="badge badge-success">$100</span>   
+                                             <img src="assets/images/Card/foor.jpg" alt="image card" class="cardBG">  
+                                               <div class="row">           
+                                                <div class="photo-item--overlay p-0">           
+                                                 <div class="">          
+                                                    <div class="cardimageText mt-auto align-text-bottom">                   
+                                                     <div class="col-8">                        
+                                                        <h6 class="text-white">Special title treatment</h6>                        <p class="text-white small">Lorem ipsum dolor sit amet.</p>              
+                                                     </div>                  
+                                                          <div class="col-4">                        
+                                                            <a href="javascript:void(0)" class="btn btn-primary card-button">Buy</a>                    
+                                                          </div>                
+                                                    </div>           
+                                                   </div>       
+                                                </div>   
+                                              </div>
+                           </div> 
+                        </div>
+                        <!--card End-->
+                            </div>
+                        </div>
+                 </div>
+                 <!--Card 1 End-->
+            </div>
+            <div class="col-md-12 mb-4">
+                <div class="text-center"><a id="card1" name="btnViewcode" class="btn btn-megna m-0" data-toggle="collapse" href="#Card3ViewCodeSection" role="button" aria-expanded="false" aria-controls="Card2ViewCodeSection">View Code</a></div>
+             </div>
+        </div>
+         <!--Card3 View Code Section Start-->
+         <div class="collapse" id="Card3ViewCodeSection">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="card my-4 bg-light">
+                            <div class="card-body">
+                                <nav>
+                                    <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                                        <a class="nav-item nav-link active" id="nav-html-tab" data-codeType='html' data-toggle="tab" href="#nav-html-card3" role="tab" aria-controls="nav-html" aria-selected="true">HTML</a>
+                                        <a class="nav-item nav-link" id="nav-css-tab" data-codeType='css' data-toggle="tab" href="#nav-css-card3" role="tab" aria-controls="nav-css" aria-selected="false">CSS</a>
+                                        
+                                    </div>
+                                </nav>
+                                <div class="tab-content border-left border-right border-bottom bg-white" id="nav-tabContent">
+                                    <div class="tab-pane fade show active" id="nav-html-card3" role="tabpanel" aria-labelledby="nav-home-tab">
+                                        <div class="container-fluid">
+                                            <div class="row">
+                                                <div class="col-12 text-right py-3">
+                                                    <button class="btn btn-megna m-0" onclick="copyToClipboard('#card3HtmlCode',this)" data-toggle="tooltip" data-placement="top" title="Copy to clipboard">Copy</button>
+                                                </div>
+                                                            <div class="col-12 px-0">
+                                                                <div class="form-group">
+                                                                    <textarea id="card3HtmlCode" class="form-control code" rows="5" id="txthtml" name="txthtml" readonly>
+                                                                        <!--card start-->
+                        <div class="col-12">
+                            <div class="row">
+                                         <div class="card imagecardWrapper d-flex flex-column m-auto">
+                                            <span class="badge badge-success">$100</span>   
+                                             <img src="assets/images/Card/foor.jpg" alt="image card" class="cardBG">    
+                                               <div class="row">           
+                                                <div class="photo-item--overlay p-0">           
+                                                 <div class="">          
+                                                    <div class="cardimageText mt-auto align-text-bottom">                   
+                                                     <div class="col-8">                        
+                                                        <h6 class="text-white">Special title treatment</h6>                        <p class="text-white small">Lorem ipsum dolor sit amet.</p>              
+                                                     </div>                  
+                                                          <div class="col-4">                        
+                                                            <a href="javascript:void(0)" class="btn btn-megna">Buy</a>                    
+                                                          </div>                
+                                                    </div>           
+                                                   </div>       
+                                                </div>   
+                                              </div>
+                           </div> 
+                        </div>
+                        <!--card End-->
+                        
+                                                                     </textarea>
+                                                                  </div>
+                                                             </div>
+                                                         </div>
+                                                     </div>
+                                                 </div>
+                                                  <div class="tab-pane fade" id="nav-css-card3" role="tabpanel" aria-labelledby="nav-profile-tab">
+                                        <div class="container-fluid">
+                                            <div class="row">
+                                                <div class="col-12 p-3 text-center">
+                                                    <a class="btn btn-megna m-0" target="_blank" href="dist/scss/css/card3.css" download>Download Card3.css</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                             </div>
+                                   
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+         <!--Card 3 View Code Section End-->
+          <!-- Card 3 End -->
+<!-------------------------------------------------------Card 4 Start----------------------------------------------------------->
+     <div class="container-fluid">
+            <div class="row">
+                <!--Card 4 start-->
+                <div class="col-lg-12 col-12 pb-4">
+                    <div class="card h-100">
+                        <h4 class="card-header">Card 4</h4>
+                           <div class="row m-3">
+                            <!--card start-->
+                        <div class="col-12">
+                            <div class="row">
+                                         <!--Main card-->
+                                         <div class="card cardWrapper">  
+                                           <div class="card-body">     
+                                              <div class="media">         
+                                                 <div class="media-left">            
+                                                     <img src="assets/images/cards-img/lasagania.png" class="media-object" alt="Lasagania Image">        
+                                                </div>
+                                                  <div class="media-body">                
+                                                    <h6 class="media-heading">Pizza</h6>                
+                                                    <p>Italian, Low Sodium, Desserts</p>               
+                                                     <!--Ratings-->               
+                                                      <ul class="list-unstyled list-inline rating mb-0 m-cardicon f-s-normal" id="Stars10591">                    
+                                                        <li class="list-inline-item mr-0"><i class="far fa-star amber-text" aria-hidden="true"></i></li>                    
+                                                         <li class="list-inline-item mr-0"><i class="far fa-star amber-text" aria-hidden="true"></i></li>                     
+                                                         <li class="list-inline-item mr-0"><i class="far fa-star amber-text" aria-hidden="true"></i></li>                    
+                                                          <li class="list-inline-item mr-0"><i class="far fa-star amber-text" aria-hidden="true"></i></li>                     
+                                                          <li class="list-inline-item mr-0"><i class="far fa-star amber-text" aria-hidden="true"></i></li>                 
+                                                       </ul>                
+                                                       <span class="badge badge-primary">50 Craves</span>            
+                                                   </div>       
+                                                    </div>        
+                                                    <div class="detailsSection">            
+                                                        <div class="media">                
+                                                            <div class="media-left">                    
+                                                                <img src="assets/images/cards-img/person.jpg" class="media-object" alt="Person Image">               
+                                                            </div>                
+                                                            <div class="media-body">                    
+                                                                <h6 class="media-heading">Nandan Patel</h6>                    <p>Nandam.Patel@patel.com</p>                    <p>9574813299</p>               
+                                                                 </div>            
+                                                             </div>       
+                                                              </div>       
+                                                               <div class="row">           
+                                                                <div class="col-sm">                
+                                                                    <div class="card-text">Entered Date:</div>                
+                                                                    <div class="active-text">12-8-2020</div>           
+                                                                     </div>            
+                                                                     <div class="col-sm">                
+                                                                        <div class="card-text">Modified Date:</div>                <div class="active-text">16-3-2020</div>            
+                                                                    </div>            
+                                                                    <div class="col-sm">                
+                                                                        <div class="card-text">Price:</div>                
+                                                                        <div class="active-text">$50</div>            
+                                                                    </div>            
+                                                                    <div class="col-sm">                
+                                                                        <div class="card-text">No of Orders:</div>                
+                                                                        <div class="active-text"s>100</div>            
+                                                                    </div>        
+                                                                </div>    
+                                                            </div>    
+                                                            <div class="card-footer">        
+                                                                <div class="row">           
+                                                                 <div class="col-md-6 col-12">                
+                                                                        <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitchcard2" checked="">                    
+                                                                        <label class="onoffswitch-label" for="myonoffswitchcard2">                        
+                                                                            <span class="onoffswitch-inner">
+                                                                                
+                                                                            </span>                        
+                                                                            <span class="onoffswitch-switch"></span>              </label>                
+                                                                        </div>            
+                                                                    </div>            
+                                                                    <div class="col-md-6 col-12">                
+                                                                        <ul class="list-unstyled d-flex mb-0 float-md-right float-none">                    
+                                                                            <li>                        
+                                                                                <a href="#">                            
+                                                                                    <img src="assets/images/cards-img/card-icons/share.svg" class="action-icons deactive" alt="share img">                            
+                                                                                    <img src="assets/images/cards-img/card-icons/share-hover.svg" class="action-icons active" alt="share active img">                        </a>                    
+                                                                                </li>                   
+                                                                                 <li>                        
+                                                                                    <a href="#">                           
+                                                                                     <img src="assets/images/cards-img/card-icons/heart.svg" class="action-icons deactive" alt="heart img">                            
+                                                                                     <img src="assets/images/cards-img/card-icons/heart-hover.svg" class="action-icons active" alt="heart active img">                        
+                                                                                 </a>                    
+                                                                             </li>                   
+                                                                              <li>                        
+                                                                                <a href="#">                           
+                                                                                 <img src="assets/images/cards-img/card-icons/smiley.svg" class="action-icons deactive" alt="smiley img">                            
+                                                                                 <img src="assets/images/cards-img/card-icons/smiley-hover.svg" class="action-icons active" alt="smiley active img">                        
+                                                                             </a>                    
+                                                                         </li>                    
+                                                                         <li><a href="javascript:void(0)" class="btn btn-primary card-button">Buy</a>
+                                                                         </li>                
+                                                                     </ul>           
+                                                                      </div>      
+                                                                        </div>   
+                                                                         </div>
+                                                                     </div>                                                                                                                    
+                                         </div>
+                        <!--card End-->
+                            </div>
+                        </div>
+                 </div>
+                 <!--Card 4 End-->
+            </div>
+            <div class="col-md-12 mb-4">
+                <div class="text-center"><a id="card1" name="btnViewcode" class="btn btn-megna m-0" data-toggle="collapse" href="#Card4ViewCodeSection" role="button" aria-expanded="false" aria-controls="Card2ViewCodeSection">View Code</a></div>
+             </div>
+        </div>
+         <!--Card3 View Code Section Start-->
+         <div class="collapse" id="Card4ViewCodeSection">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="card my-4 bg-light">
+                            <div class="card-body">
+                                <nav>
+                                    <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                                        <a class="nav-item nav-link active" id="nav-html-tab" data-codeType='html' data-toggle="tab" href="#nav-html-card4" role="tab" aria-controls="nav-html" aria-selected="true">HTML</a>
+                                        <a class="nav-item nav-link" id="nav-css-tab" data-codeType='css' data-toggle="tab" href="#nav-css-card4" role="tab" aria-controls="nav-css" aria-selected="false">CSS</a>
+                                        
+                                    </div>
+                                </nav>
+                                <div class="tab-content border-left border-right border-bottom bg-white" id="nav-tabContent">
+                                    <div class="tab-pane fade show active" id="nav-html-card4" role="tabpanel" aria-labelledby="nav-home-tab">
+                                        <div class="container-fluid">
+                                            <div class="row">
+                                                <div class="col-12 text-right py-3">
+                                                    <button class="btn btn-megna m-0" onclick="copyToClipboard('#card4HtmlCode',this)" data-toggle="tooltip" data-placement="top" title="Copy to clipboard">Copy</button>
+                                                </div>
+                                                            <div class="col-12 px-0">
+                                                                <div class="form-group">
+                                                                    <textarea id="card4HtmlCode" class="form-control code" rows="5" id="txthtml" name="txthtml" readonly>
+                                                                        <!--Main card-->
+                                         <div class="card cardWrapper">  
+                                           <div class="card-body">     
+                                              <div class="media">         
+                                                 <div class="media-left">            
+                                                     <img src="assets/images/cards-img/lasagania.png" class="media-object" alt="Lasagania Image">        
+                                                </div>
+                                                  <div class="media-body">                
+                                                    <h6 class="media-heading">Sweet Pepper Focaccia Pizza</h6>                
+                                                    <p>Italian, Low Sodium, Desserts</p>               
+                                                     <!--Ratings-->               
+                                                      <ul class="list-unstyled list-inline rating mb-0 m-cardicon f-s-normal" id="Stars10591">                    
+                                                        <li class="list-inline-item mr-0"><i class="far fa-star amber-text" aria-hidden="true"></i></li>                    
+                                                         <li class="list-inline-item mr-0"><i class="far fa-star amber-text" aria-hidden="true"></i></li>                     
+                                                         <li class="list-inline-item mr-0"><i class="far fa-star amber-text" aria-hidden="true"></i></li>                    
+                                                          <li class="list-inline-item mr-0"><i class="far fa-star amber-text" aria-hidden="true"></i></li>                     
+                                                          <li class="list-inline-item mr-0"><i class="far fa-star amber-text" aria-hidden="true"></i></li>                 
+                                                       </ul>                
+                                                       <span class="badge badge-primary">50 Craves</span>            
+                                                   </div>       
+                                                    </div>        
+                                                    <div class="detailsSection">            
+                                                        <div class="media">                
+                                                            <div class="media-left">                    
+                                                                <img src="assets/images/cards-img/person.jpg" class="media-object" alt="Person Image">               
+                                                            </div>                
+                                                            <div class="media-body">                    
+                                                                <h6 class="media-heading">Nandan Patelr</h6>                    <p>Nandan.patel@patel.com</p>                    <p>+91 9574813299</p>               
+                                                                 </div>            
+                                                             </div>       
+                                                              </div>       
+                                                               <div class="row">           
+                                                                <div class="col-sm">                
+                                                                    <div class="card-text">Entered Date:</div>                
+                                                                    <div class="active-text">12-1-2020</div>           
+                                                                     </div>            
+                                                                     <div class="col-sm">                
+                                                                        <div class="card-text">Modified Date:</div>                <div class="active-text">16-3-2020</div>            
+                                                                    </div>            
+                                                                    <div class="col-sm">                
+                                                                        <div class="card-text">Price:</div>                
+                                                                        <div class="active-text">$50</div>            
+                                                                    </div>            
+                                                                    <div class="col-sm">                
+                                                                        <div class="card-text">No of Orders:</div>                
+                                                                        <div class="active-text"s>100</div>            
+                                                                    </div>        
+                                                                </div>    
+                                                            </div>    
+                                                            <div class="card-footer">        
+                                                                <div class="row">           
+                                                                 <div class="col-md-6 col-12">                
+                                                                        <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitchcard2" checked="">                    
+                                                                        <label class="onoffswitch-label" for="myonoffswitchcard2">                        
+                                                                            <span class="onoffswitch-inner">
+                                                                                
+                                                                            </span>                        
+                                                                            <span class="onoffswitch-switch"></span>              </label>                
+                                                                        </div>            
+                                                                    </div>            
+                                                                    <div class="col-md-6 col-12">                
+                                                                        <ul class="list-unstyled d-flex mb-0 float-md-right float-none">                    
+                                                                            <li>                        
+                                                                                <a href="#">                            
+                                                                                    <img src="assets/images/cards-img/card-icons/share.svg" class="action-icons deactive" alt="share img">                            
+                                                                                    <img src="assets/images/cards-img/card-icons/share-hover.svg" class="action-icons active" alt="share active img">                        </a>                    
+                                                                                </li>                   
+                                                                                 <li>                        
+                                                                                    <a href="#">                           
+                                                                                     <img src="assets/images/cards-img/card-icons/heart.svg" class="action-icons deactive" alt="heart img">                            
+                                                                                     <img src="assets/images/cards-img/card-icons/heart-hover.svg" class="action-icons active" alt="heart active img">                        
+                                                                                 </a>                    
+                                                                             </li>                   
+                                                                              <li>                        
+                                                                                <a href="#">                           
+                                                                                 <img src="assets/images/cards-img/card-icons/smiley.svg" class="action-icons deactive" alt="smiley img">                            
+                                                                                 <img src="assets/images/cards-img/card-icons/smiley-hover.svg" class="action-icons active" alt="smiley active img">                        
+                                                                             </a>                    
+                                                                         </li>                    
+                                                                         <li><a href="javascript:void(0)" class="btn btn-primary card-button">Buy</a>
+                                                                         </li>                
+                                                                     </ul>           
+                                                                      </div>      
+                                                                        </div>   
+                                                                         </div>
+                                                                     </div>                                                                                                                    
+                                         </div>
+                        <!--card End-->
+                                                                     </textarea>
+                                                                  </div>
+                                                             </div>
+                                                         </div>
+                                                     </div>
+                                                 </div>
+                                                  <div class="tab-pane fade" id="nav-css-card4" role="tabpanel" aria-labelledby="nav-profile-tab">
+                                        <div class="container-fluid">
+                                            <div class="row">
+                                                <div class="col-12 p-3 text-center">
+                                                    <a class="btn btn-megna m-0" target="_blank" href="dist/downloadCss/cards/card2.css" download>Download Card2.css</a>
+                                                    
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                             </div>
+                                   
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+         <!--Card 3 View Code Section End-->
+          <!-- Card 3 End -->
+
+        </div>
+    
+    <!--jquery js-->
+    <script src="assets/Core/jquery-3.3.1.min.js"></script>
+    <!--popper js-->
+    <script src="assets/Core/popper/popper.min.js"></script>
+    <!--bootstrap js-->
+    <script src="assets/Core/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!--Sidebarmenu js-->
+    <script src="dist/js/sidebarmenu.js"></script>
+    <!--Wave Effects js -->
+    <script src="dist/js/waves.js"></script>
+    <!-- scrollbar JavaScript -->
+    <script src="dist/js/perfect-scrollbar.jquery.min.js"></script>
+    <!--Custom JavaScript -->
+    <script src="dist/js/custom.js"></script>
+    <!--Code Mirror JS-->
+    <script src="assets/Plugins/codemirror/lib/codemirror.js"></script>
+    <script src="assets/Plugins/codemirror/mode/xml/xml.js"></script>
+    <script src="assets/Plugins/codemirror/mode/css/css.js"></script>
+    <script src="assets/Plugins/codemirror/mode/javascript/javascript.js"></script>
+    <script src="assets/Plugins/codemirror/mode/htmlmixed/htmlmixed.js"></script>
+    <!--custom js view code-->
+    <script src="dist/js/cards.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            card1HtmlCodeEditor();
+            card2HtmlCodeEditor();
+            card3HtmlCodeEditor();
+            card4HtmlCodeEditor();
+            card5HtmlCodeEditor();
+            card6HtmlCodeEditor();
+            card7HtmlCodeEditor();
+        });
+        <script type="text/javascript">
+    var Card1CodeInit = 0;
+        $('#card1ViewCodeSection').on('shown.bs.collapse', function () {
+            if(Card1CodeInit == 0)
+            {
+                Card1HtmlCodeEditor();
+                Card1CodeInit = 1;
+            }
+            else{
+                return false;
+            }
+        });
+         var Card2CodeInit = 0;
+        $('#card1ViewCodeSection').on('shown.bs.collapse', function () {
+            if(Card2CodeInit == 0)
+            {
+                Card24HtmlCodeEditor();
+                Card2CodeInit = 1;
+            }
+            else{
+                return false;
+            }
+        });
+        
+    </script>
+    </script>
+</body>
+</html>

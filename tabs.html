@@ -1,0 +1,1234 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabs</title>
+
+    <!--Bootstrap css-->
+    <link rel="stylesheet" href="assets/Core/bootstrap/dist/css/bootstrap.min.css">
+    <!--plugins of viewcode-->
+   <link rel="stylesheet" type="text/css" href="assets/Plugins/codemirror/lib/codemirror.css">
+   <link rel="stylesheet" type="text/css" href="assets/Plugins/codemirror/theme/material.css">
+    <!--Custom css-->
+    <link rel="stylesheet" href="dist/css/style.css">
+    <link rel="stylesheet" href="dist/scss/css/tabs.css">
+    
+    <link rel="stylesheet" href="dist/sidenavCss/custom.css">
+    <link rel="stylesheet" type="text/css" href="assets/Plugins/codemirror/lib/codemirror.css">
+    <link rel="stylesheet" type="text/css" href="assets/Plugins/codemirror/theme/material.css">
+</head>
+<body class="skin-megna fixed-layout">
+
+     <!-- ============================================================== -->
+        <!-- Topbar header - style you can find in pages.scss -->
+        <!-- ============================================================== -->
+        <header class="topbar">
+            <nav class="navbar top-navbar navbar-expand-md navbar-dark">
+                <!-- ============================================================== -->
+                <!-- Logo -->
+                <!-- ============================================================== -->
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="index.html">
+                        <!-- Logo icon --><b>
+                            <!--You can put here icon as well // <i class="wi wi-sunset"></i> //-->
+                            <!-- Dark Logo icon -->
+                            <img src="assets/images/New Logo.png" alt="homepage" class="light-logo" />
+                            <!-- Light Logo icon -->
+                            <!-- <img src="../assets/images/logo-light-icon.png" alt="homepage" class="light-logo" /> -->
+                        </b>
+                        <!--End Logo icon -->
+                        <span class="hidden-xs font-bold" style="font-size: 19px">Patel Techologies</span>
+                    </a>
+                </div>
+                <!-- ============================================================== -->
+                <!-- End Logo -->
+                <!-- ============================================================== -->
+                <div class="navbar-collapse">
+                    <!-- ============================================================== -->
+                    <!-- toggle and nav items -->
+                    <!-- ============================================================== -->
+                    <ul class="navbar-nav mr-auto">
+                        <!-- This is  -->
+                        <li class="nav-item"> <a class="nav-link nav-toggler d-block d-md-none waves-effect waves-dark" href="javascript:void(0)"><i class="ti-menu"></i></a> </li>
+                        <li class="nav-item"> <a class="nav-link sidebartoggler d-none d-lg-block d-md-block waves-effect waves-dark" href="javascript:void(0)"><i class="icon-menu"></i></a> </li>
+                        <!-- ============================================================== -->
+                        <!-- Search -->
+                        <!-- ============================================================== -->
+                        <li class="nav-item d-none d-md-block d-lg-block">
+                           <form action="">
+                              <input type="search" placeholder="Search & enter">
+                              <i class="fa fa-search"></i>
+                            </form>
+                        </li>
+                    </ul>
+                   
+                </div>
+            </nav>
+        </header>
+        <!-- ============================================================== -->
+        <!-- End Topbar header -->
+        <!-- ============================================================== -->
+        <!-- ============================================================== -->
+        <!-- Left Sidebar - style you can find in  custom.css  -->
+        <!-- ============================================================== -->
+        <aside class="left-sidebar">
+            <!-- Sidebar scroll-->
+            <div class="scroll-sidebar">
+                <!-- <div class="sidebar-header">
+                    <div class="companyLogo">
+                      <img class="img-responsive img-rounded" src="assets/images/company-logo.svg"
+                        alt="Company logo">
+                    </div>
+                </div> -->
+               <!-- Sidebar navigation-->
+                <nav class="sidebar-nav">
+                    <ul id="sidebarnav">
+                        <li>
+                            <a class="has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false"><i class="mdi mdi-login"></i><span class="hide-menu">Dashboard</span></a>
+                            <ul aria-expanded="false" class="collapse">
+                                <li><a href="Dashboard1.html">Dashboard 1</a></li>
+                                <li><a href="Dashboard2.html">Dashboard 2</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false"><i class="mdi mdi-login"></i><span class="hide-menu">Login Templates</span></a>
+                            <ul aria-expanded="false" class="collapse">
+                                <li><a href="Login1.html">Login 1</a></li>
+                                <li><a href="Login2.html">Login 2</a></li>
+                                <li><a href="Login3.html">Login 3</a></li>
+                                <li><a href="Login4.html">Login 4</a></li>
+                                <li><a href="Login5.html">Login 5</a></li>
+                                <li><a href="Login6.html">Login 6</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false"><i class="ti-palette"></i><span class="hide-menu">Ui Elements</span></a>
+                            <ul aria-expanded="false" class="collapse">
+                                <li><a href="cards.html">Cards</a></li>
+                                <li><a href="buttons.html">Buttons</a></li>
+                                <li><a href="tabs.html">Tab</a></li>
+                                <li><a href="switchs.html">Switchs</a></li>
+                                <li><a href="Notification.html">Notification</a></li>
+                                <li><a href="Alert.html">Alert Box</a></li>
+                                <li><a href="carousel.html">Carousel</a></li>
+                                <li><a href="Errorpage.html">Error Page</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false"><i class="ti-layout-accordion-merged"></i><span class="hide-menu">Tables</span></a>
+                            <ul aria-expanded="false" class="collapse">
+                                <li><a href="basicTable.html">Basic Table</a></li>
+                                <li><a href="dataTable.html">Data Table</a></li>
+                                <li><a href="editable table.html">Editable Table</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false"><i class="ti-layout-media-right-alt"></i><span class="hide-menu">Forms</span></a>
+                            <ul aria-expanded="false" class="collapse">
+                                <li><a href="basicForms.html">Basic Forms</a></li>
+                                <li><a href="checkbox.html">Checkbox</a></li>
+                                <li><a href="dateTimepicker.html">Date &amp; Time Picker</a></li>
+                                <li><a href="dragdropfile.html">Drag &amp; Drop File Upload</a></li>
+                                <li><a href="sliders.html">Sliders</a></li>
+                                <li><a href="addon.html">Addon Control</a></li>
+                                <li><a href="icheck.html">Icheck Control</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false"><i class="ti-layout-media-right-alt"></i><span class="hide-menu">Components</span></a>
+                            <ul aria-expanded="false" class="collapse">
+                                <li><a href="mdbuttons.html">Material Buttons</a></li>
+                                <li><a href="badges.html">Badges</a></li>
+                                <li><a href="spinners.html">Loaders/Spinners</a></li>
+                                <li><a href="progressbar.html">ProgressBar</a></li>
+                                <li><a href="socialbutton.html">SocialButtons</a></li>
+                                <li><a href="stepper.html">Steppers</a></li>
+                                <li><a href="extendedcards.html">Extended Cards</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false"><i class="ti-layout-media-right-alt"></i><span class="hide-menu">Navigation</span></a>
+                            <ul aria-expanded="false" class="collapse">
+                                <li><a href="navbar.html">Navbar</a></li>
+                                <li><a href="breadcrumb.html">Breadcrumb</a></li>
+                                <li><a href="megamenu.html">Mega Menu</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false"><i class="mdi mdi-login"></i><span class="hide-menu">Email Templete</span></a>
+                            <ul aria-expanded="false" class="collapse">
+                               <li><a href="Email_1.html">Email Templete 1</a></li>
+                               <li><a href="Email_2.html">Email Templete 2</a></li>
+                            </ul>
+                        </li>
+                        <li class="d-none">
+                            <a class="has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false"><i class="ti-layout-media-right-alt"></i><span class="hide-menu">Templates</span></a>
+                            <ul aria-expanded="false" class="collapse">
+                                <li><a href="Website.html">Website</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+                <!-- End Sidebar navigation -->
+            </div>
+            <!-- End Sidebar scroll-->
+        </aside>
+        <!-- ============================================================== -->
+        <!-- End Left Sidebar - style you can find in  custom.css  -->
+        <!-- ============================================================== -->
+
+    <div class="page-wrapper">
+        <div class="container-fluid">
+
+
+            <!--Section-1-->
+            <div class="row pb-md-4 pb-4">
+                <!--Tab1 section-->
+                <div class="col-md-12">
+                    <div class="card">
+                        <div class="card-header">
+                            <h4>Tabs1</h4>
+                        </div>
+                        <div class="card-body">
+                            <!---tab-section-->
+                            <div class="tabs pb-3">
+                            <nav>
+                                <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                                  <a class="nav-item nav-link active" id="nav-overview-tab" data-toggle="tab" href="#nav-overview" role="tab" aria-controls="nav-overview" aria-selected="true">Overview</a>
+                                  <a class="nav-item nav-link" id="nav-feature-tab" data-toggle="tab" href="#nav-feature" role="tab" aria-controls="nav-feature" aria-selected="false">Features</a>
+                                  <a class="nav-item nav-link" id="nav-doc-tab" data-toggle="tab" href="#nav-doc" role="tab" aria-controls="nav-doc" aria-selected="false">Docs</a>
+                                  <a class="nav-item nav-link" id="nav-example-tab" data-toggle="tab" href="#nav-example" role="tab" aria-controls="nav-example" aria-selected="false">Examples</a>
+                                  <a class="nav-item nav-link" id="nav-theme-tab" data-toggle="tab" href="#nav-theme" role="tab" aria-controls="nav-theme" aria-selected="false">Themes</a>
+                                  <a class="nav-item nav-link" id="nav-purchase-tab" data-toggle="tab" href="#nav-purchase" role="tab" aria-controls="nav-purchase" aria-selected="false">Purchase</a>
+                                  <a class="nav-item nav-link" id="nav-mobile-tab" data-toggle="tab" href="#nav-mobile" role="tab" aria-controls="nav-mobile" aria-selected="false">Mobile</a>
+                                  <a class="nav-item nav-link" id="nav-social-tab" data-toggle="tab" href="#nav-social" role="tab" aria-controls="nav-social" aria-selected="false">Social</a>
+                                </div>
+                            </nav>
+                            <!--tab-Content-->
+                              <div class="col-12 tab-content m-md-3" id="nav-tabContent">
+                                <div class="tab-pane fade show active" id="nav-overview" role="tabpanel" aria-labelledby="nav-overview-tab">
+                                    <h3>Overview</h3>
+                                    <p class="mt-md-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua<br>do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                   <p class="mt-md-3"><span class="tab-discription"></span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                </div>
+
+                                <div class="tab-pane fade" id="nav-feature" role="tabpanel" aria-labelledby="nav-feature-tab">
+                                    <h3>Features</h3>
+                                    <p class="mt-md-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua<br>do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+                                    <p class="mt-md-3"><span class="tab-discription"></span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                </div>
+
+                                <div class="tab-pane fade" id="nav-doc" role="tabpanel" aria-labelledby="nav-doc-tab">
+                                    <h3>Documentation</h3>
+                                    <p class="mt-md-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua<br>do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+                                    <p class="mt-md-3"><span class="tab-discription"></span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                </div>
+
+                                <div class="tab-pane fade" id="nav-example" role="tabpanel" aria-labelledby="nav-example-tab">
+                                    <h3>Examples</h3>
+                                    <p class="mt-md-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua<br>do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+                                    <p class="mt-md-3"><span class="tab-discription"></span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                </div>
+
+                                <div class="tab-pane fade" id="nav-theme" role="tabpanel" aria-labelledby="nav-theme-tab">
+                                    <h3>Theme</h3>
+                                    <p class="mt-md-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua<br>do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+                                    <p class="mt-md-3"><span class="tab-discription"></span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                </div>
+
+                                <div class="tab-pane fade" id="nav-purchase" role="tabpanel" aria-labelledby="nav-purchase-tab">
+                                    <h3>Purchase</h3>
+                                    <p class="mt-md-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua<br>do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+                                    <p class="mt-md-3"><span class="tab-discription"></span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                </div>
+
+                                <div class="tab-pane fade" id="nav-mobile" role="tabpanel" aria-labelledby="nav-mobile-tab">
+                                    <h3>Mobile</h3>
+                                    <p class="mt-md-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua<br>do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+                                    <p class="mt-md-3"><span class="tab-discription"></span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                </div>
+
+                                <div class="tab-pane fade" id="nav-social" role="tabpanel" aria-labelledby="nav-social-tab">
+                                    <h3>Social</h3>
+                                    <p class="mt-md-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua<br>do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+                                    <p class="mt-md-3"><span class="tab-discription"></span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                </div>
+                              </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="text-center"><a id="btnViewcode" name="btnViewcode" class="btn btn-megna" data-toggle="collapse" href="#tab1ViewCodeSection" role="button" aria-expanded="false" aria-controls="tab1ViewCodeSection">View Code</a></div>
+                        </div>
+                    </div>
+                </div>
+                <!--Tab1 view code section-->
+                <div class="col-md-12 col-12 p-0 mt-3">
+                    <div class="collapse" id="tab1ViewCodeSection">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="card bg-light h-100">
+                                        <div class="card-body">
+                                            <nav>
+                                                <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                                                    <a class="nav-item nav-link active" id="nav-html-tab" data-codeType='html' data-toggle="tab" href="#nav-htmltab1" role="tab" aria-controls="nav-html" aria-selected="true">HTML</a>
+                                                    <a class="nav-item nav-link" id="nav-css-tab" data-codeType='css' data-toggle="tab" href="#nav-csstab1" role="tab" aria-controls="nav-css" aria-selected="false">CSS</a>
+                                                </div>
+                                            </nav>
+                                            <div class="tab-content border-left border-right border-bottom bg-white" id="nav-tabContent">
+                                                <div class="tab-pane fade show active" id="nav-htmltab1" role="tabpanel" aria-labelledby="nav-home-tab">
+                                                    <div class="container-fluid">
+                                                        <div class="row">
+                                                            <div class="col-12 text-right py-3">
+                                                                <button class="btn downloadbtn btn-sm" onclick="copyToClipboard('#card1HtmlCode',this)" data-toggle="tooltip" data-placement="top" title="Copy to clipboard">Copy</button>
+                                                            </div>
+                                                            <div class="col-12 px-0">
+                                                                <div class="form-group">
+                                                                <textarea id="card1HtmlCode" class="form-control code" rows="5" id="txthtml" name="txthtml" readonly>
+
+<!--Tab1 section-->
+<div class="tabs pb-3">
+<nav>
+    <div class="nav nav-tabs" id="nav-tab" role="tablist">
+        <a class="nav-item nav-link active" id="nav-overview-tab" data-toggle="tab" href="#nav-overview" role="tab" aria-controls="nav-overview" aria-selected="true">Overview</a>
+        <a class="nav-item nav-link" id="nav-feature-tab" data-toggle="tab" href="#nav-feature" role="tab" aria-controls="nav-feature" aria-selected="false">Features</a>
+        <a class="nav-item nav-link" id="nav-doc-tab" data-toggle="tab" href="#nav-doc" role="tab" aria-controls="nav-doc" aria-selected="false">Docs</a>
+        <a class="nav-item nav-link" id="nav-example-tab" data-toggle="tab" href="#nav-example" role="tab" aria-controls="nav-example" aria-selected="false">Examples</a>
+        <a class="nav-item nav-link" id="nav-theme-tab" data-toggle="tab" href="#nav-theme" role="tab" aria-controls="nav-theme" aria-selected="false">Themes</a>
+        <a class="nav-item nav-link" id="nav-purchase-tab" data-toggle="tab" href="#nav-purchase" role="tab" aria-controls="nav-purchase" aria-selected="false">Purchase</a>
+        <a class="nav-item nav-link" id="nav-mobile-tab" data-toggle="tab" href="#nav-mobile" role="tab" aria-controls="nav-mobile" aria-selected="false">Mobile</a>
+        <a class="nav-item nav-link" id="nav-social-tab" data-toggle="tab" href="#nav-social" role="tab" aria-controls="nav-social" aria-selected="false">Social</a>
+    </div>
+</nav>
+
+<!--tab-Content-->
+    <div class="col-12 tab-content m-md-3" id="nav-tabContent">
+    <div class="tab-pane fade show active" id="nav-overview" role="tabpanel" aria-labelledby="nav-overview-tab">
+        <h3>Overview</h3>
+        <p class="mt-md-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua<br>do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <p class="mt-md-3"><span class="tab-discription"></span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    </div>
+
+    <div class="tab-pane fade" id="nav-feature" role="tabpanel" aria-labelledby="nav-feature-tab">
+        <h3>Features</h3>
+        <p class="mt-md-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua<br>do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+        <p class="mt-md-3"><span class="tab-discription"></span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    </div>
+
+    <div class="tab-pane fade" id="nav-doc" role="tabpanel" aria-labelledby="nav-doc-tab">
+        <h3>Documentation</h3>
+        <p class="mt-md-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua<br>do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+        <p class="mt-md-3"><span class="tab-discription"></span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    </div>
+
+    <div class="tab-pane fade" id="nav-example" role="tabpanel" aria-labelledby="nav-example-tab">
+        <h3>Examples</h3>
+        <p class="mt-md-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua<br>do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+        <p class="mt-md-3"><span class="tab-discription"></span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    </div>
+
+    <div class="tab-pane fade" id="nav-theme" role="tabpanel" aria-labelledby="nav-theme-tab">
+        <h3>Theme</h3>
+        <p class="mt-md-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua<br>do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+        <p class="mt-md-3"><span class="tab-discription"></span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    </div>
+
+    <div class="tab-pane fade" id="nav-purchase" role="tabpanel" aria-labelledby="nav-purchase-tab">
+        <h3>Purchase</h3>
+        <p class="mt-md-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua<br>do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+        <p class="mt-md-3"><span class="tab-discription"></span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    </div>
+
+    <div class="tab-pane fade" id="nav-mobile" role="tabpanel" aria-labelledby="nav-mobile-tab">
+        <h3>Mobile</h3>
+        <p class="mt-md-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua<br>do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+        <p class="mt-md-3"><span class="tab-discription"></span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    </div>
+
+    <div class="tab-pane fade" id="nav-social" role="tabpanel" aria-labelledby="nav-social-tab">
+        <h3>Social</h3>
+        <p class="mt-md-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua<br>do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+        <p class="mt-md-3"><span class="tab-discription"></span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    </div>
+    </div>
+</div>
+                                        
+                                                    
+                                                                </textarea>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+
+                                                </div>
+                                                <div class="tab-pane fade" id="nav-csstab1" role="tabpanel" aria-labelledby="nav-profile-tab">
+                                                    <div class="container-fluid">
+                                                        <div class="row">
+                                                            <div class="col-md-4 col-12 p-3 m-auto">
+                                                                <a class="btn downloadbtn btn-block" target="_blank" href="dist/downloadCss/tabs/tab1.css" download>Download tab1.css</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!--Section-2 -->
+            <div class="row pb-md-4 pb-4">
+                <!--Tab2 section-->
+                <div class="col-md-12 col-12">
+                    <div class="card">
+                        <div class="card-header">
+                            <h4>Tabs2</h4>
+                        </div>
+                        <div class="card-body col-12">
+                            
+                            <!-- Nav tabs -->
+                            <div class="verticalTabs p-md-4">
+                                <ul class="nav nav-tabs tabs-vertical" role="tablist">
+                                    <li class="nav-item"> <a class="nav-link active" data-toggle="tab" href="#overview" role="tab"><span class="hidden-sm-up"></span> <span class="hidden-xs-down">Overview</span> </a> </li>
+                                    <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#features" role="tab"><span class="hidden-sm-up"></span> <span class="hidden-xs-down">Features</span></a> </li>
+                                    <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#docs" role="tab"><span class="hidden-sm-up"></span> <span class="hidden-xs-down">Documentation</span></a> </li>
+                                    <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#example" role="tab"><span class="hidden-sm-up"></span> <span class="hidden-xs-down">Examples</span></a> </li>
+                                    <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#theme" role="tab"><span class="hidden-sm-up"></span> <span class="hidden-xs-down">Themes</span></a> </li>
+                                    <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#purchase" role="tab"><span class="hidden-sm-up"></span> <span class="hidden-xs-down">Purchase</span></a> </li>
+                                    <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#mobile" role="tab"><span class="hidden-sm-up"></span> <span class="hidden-xs-down">Mobile</span></a> </li>
+                                    <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#social" role="tab"><span class="hidden-sm-up"></span> <span class="hidden-xs-down">Social</span></a> </li>
+                      
+                                </ul>
+                                <!-- Tab panes -->
+                                <div class="tab-content">
+                                    <div class="tab-pane active" id="overview" role="tabpanel">
+                                        <div class="p-20">
+                                            <h3 class="horizontalTabtitle">Overview</h3>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<br>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                           <p class="mt-md-3"><span class="tab-discription"></span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>  
+                                        </div>
+                                    </div>
+
+                                    <div class="tab-pane p-20" id="features" role="tabpanel">
+
+                                        <h3 class="horizontalTabtitle">Features</h3>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<br>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                       <p class="mt-md-3"><span class="tab-discription"></span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                    </div>
+
+                                    <div class="tab-pane p-20" id="docs" role="tabpanel">
+                                        <h3 class="horizontalTabtitle">Documentation</h3>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<br>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                           <p class="mt-md-3"><span class="tab-discription"></span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>  
+                                    </div>
+
+                                    <div class="tab-pane p-20" id="example" role="tabpanel">
+                                        <h3 class="horizontalTabtitle">Examples</h3>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<br>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                           <p class="mt-md-3"><span class="tab-discription"></span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>  
+                                    </div>
+
+                                    <div class="tab-pane p-20" id="theme" role="tabpanel">
+                                        <h3 class="horizontalTabtitle">Themes</h3>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<br>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                           <p class="mt-md-3"><span class="tab-discription"></span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>  
+                                    </div>
+                                    <div class="tab-pane p-20" id="purchase" role="tabpanel">
+                                        <h3 class="horizontalTabtitle">Purchase</h3>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<br>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                           <p class="mt-md-3"><span class="tab-discription"></span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>  
+                                    </div>
+
+                                    <div class="tab-pane p-20" id="mobile" role="tabpanel">
+                                        <h3 class="horizontalTabtitle">Mobile</h3>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<br>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                           <p class="mt-md-3"><span class="tab-discription"></span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>  
+                                    </div>
+
+                                    <div class="tab-pane p-20" id="social" role="tabpanel">
+                                        <h3 class="horizontalTabtitle">Social</h3>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<br>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                           <p class="mt-md-3"><span class="tab-discription"></span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>  
+                                    </div>
+
+                                   
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="text-center"><a id="btnViewcode" name="btnViewcode" class="btn btn-megna" data-toggle="collapse" href="#tab2ViewCodeSection" role="button" aria-expanded="false" aria-controls="tab2ViewCodeSection">View Code</a></div>
+                        </div>
+                    </div>
+                        <!-- Nav tabs -->
+                </div>
+
+                <!--Tab2 view code section-->
+                <div class="col-md-12 col-12 p-0 mt-3">
+                    <div class="collapse" id="tab2ViewCodeSection">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="card bg-light h-100">
+                                        <div class="card-body">
+                                            <nav>
+                                                <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                                                    <a class="nav-item nav-link active" id="nav-html-tab" data-codeType='html' data-toggle="tab" href="#nav-htmltab2" role="tab" aria-controls="nav-html" aria-selected="true">HTML</a>
+                                                    <a class="nav-item nav-link" id="nav-css-tab" data-codeType='css' data-toggle="tab" href="#nav-csstab2" role="tab" aria-controls="nav-css" aria-selected="false">CSS</a>
+                                                </div>
+                                            </nav>
+                                            <div class="tab-content border-left border-right border-bottom bg-white" id="nav-tabContent">
+                                                <div class="tab-pane fade show active" id="nav-htmltab2" role="tabpanel" aria-labelledby="nav-home-tab">
+                                                    <div class="container-fluid">
+                                                        <div class="row">
+                                                            <div class="col-12 text-right py-3">
+                                                                <button class="btn downloadbtn btn-sm" onclick="copyToClipboard('#card2HtmlCode',this)" data-toggle="tooltip" data-placement="top" title="Copy to clipboard">Copy</button>
+                                                            </div>
+                                                            <div class="col-12 px-0">
+                                                                <div class="form-group">
+                                                                <textarea id="card2HtmlCode" class="form-control code" rows="5" id="txthtml" name="txthtml" readonly>
+
+<!--Tab2 section-->
+<div class="verticalTabs p-md-4">
+    <ul class="nav nav-tabs tabs-vertical" role="tablist">
+        <li class="nav-item"> <a class="nav-link active" data-toggle="tab" href="#overview" role="tab"><span class="hidden-sm-up"></span> <span class="hidden-xs-down">Overview</span> </a> </li>
+        <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#features" role="tab"><span class="hidden-sm-up"></span> <span class="hidden-xs-down">Features</span></a> </li>
+        <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#docs" role="tab"><span class="hidden-sm-up"></span> <span class="hidden-xs-down">Documentation</span></a> </li>
+        <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#example" role="tab"><span class="hidden-sm-up"></span> <span class="hidden-xs-down">Examples</span></a> </li>
+        <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#theme" role="tab"><span class="hidden-sm-up"></span> <span class="hidden-xs-down">Themes</span></a> </li>
+        <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#purchase" role="tab"><span class="hidden-sm-up"></span> <span class="hidden-xs-down">Purchase</span></a> </li>
+        <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#mobile" role="tab"><span class="hidden-sm-up"></span> <span class="hidden-xs-down">Mobile</span></a> </li>
+        <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#social" role="tab"><span class="hidden-sm-up"></span> <span class="hidden-xs-down">Social</span></a> </li>
+
+    </ul>
+    <!-- Tab panes -->
+    <div class="tab-content">
+        <div class="tab-pane active" id="overview" role="tabpanel">
+            <div class="p-20">
+                <h3 class="horizontalTabtitle">Overview</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<br>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <p class="mt-md-3"><span class="tab-discription"></span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>  
+            </div>
+        </div>
+
+        <div class="tab-pane p-20" id="features" role="tabpanel">
+
+            <h3 class="horizontalTabtitle">Features</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<br>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <p class="mt-md-3"><span class="tab-discription"></span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+
+        <div class="tab-pane p-20" id="docs" role="tabpanel">
+            <h3 class="horizontalTabtitle">Documentation</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<br>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <p class="mt-md-3"><span class="tab-discription"></span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>  
+        </div>
+
+        <div class="tab-pane p-20" id="example" role="tabpanel">
+            <h3 class="horizontalTabtitle">Examples</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<br>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <p class="mt-md-3"><span class="tab-discription"></span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>  
+        </div>
+
+        <div class="tab-pane p-20" id="theme" role="tabpanel">
+            <h3 class="horizontalTabtitle">Themes</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<br>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <p class="mt-md-3"><span class="tab-discription"></span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>  
+        </div>
+        <div class="tab-pane p-20" id="purchase" role="tabpanel">
+            <h3 class="horizontalTabtitle">Purchase</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<br>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <p class="mt-md-3"><span class="tab-discription"></span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>  
+        </div>
+
+        <div class="tab-pane p-20" id="mobile" role="tabpanel">
+            <h3 class="horizontalTabtitle">Mobile</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<br>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <p class="mt-md-3"><span class="tab-discription"></span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>  
+        </div>
+
+        <div class="tab-pane p-20" id="social" role="tabpanel">
+            <h3 class="horizontalTabtitle">Social</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<br>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <p class="mt-md-3"><span class="tab-discription"></span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>  
+        </div>
+    </div>
+</div>
+                                         
+                                                    
+                                                                </textarea>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+
+                                                </div>
+                                                <div class="tab-pane fade" id="nav-csstab2" role="tabpanel" aria-labelledby="nav-profile-tab">
+                                                    <div class="container-fluid">
+                                                        <div class="row">
+                                                            <div class="col-md-4 col-12 p-3 m-auto">
+                                                                <a class="btn downloadbtn btn-block" target="_blank" href="dist/downloadCss/tabs/tab2.css" download>Download tab2.css</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!--Section-3-->
+            <div class="row pb-md-4 pb-4">
+                <!--Tab3 section-->
+                <div class="col-md-12 col-12">
+                    <div class="card">
+                        <div class="card-header">
+                            <h4>Tab3</h4>
+                        </div>
+                        <div class="card-body">
+                            <div class="horizontalTabs">
+                             
+                                    <div class="nav horizontalnavbar nav-tabs nav-fill" id="nav-tab" role="tablist">
+                                        <a class="nav-item nav-link active" id="horizontalOverview" data-toggle="tab" href="#horizontal-overview" role="tab" aria-controls="horizontal-overview" aria-selected="true">Overview</a>
+                                        <a class="nav-item nav-link" id="horizontalFeature" data-toggle="tab" href="#horizontal-features" role="tab" aria-controls="horizontal-features" aria-selected="false">Features</a>
+                                        <a class="nav-item nav-link" id="horizontalDocs" data-toggle="tab" href="#horizontal-docs" role="tab" aria-controls="horizontal-docs" aria-selected="false">Documentation</a>
+                                        <a class="nav-item nav-link" id="horizontalExample" data-toggle="tab" href="#horizontal-example" role="tab" aria-controls="horizontal-example" aria-selected="false">Examples</a>
+                                        <a class="nav-item nav-link" id="horizontalTheme" data-toggle="tab" href="#horizontal-theme" role="tab" aria-controls="horizontal-theme" aria-selected="false">Themes</a>
+
+                                    </div>
+                             
+                                <div class="tab-content p-4" id="nav-tabContent">
+                                    <div class="tab-pane fade show active" id="horizontal-overview" role="tabpanel" aria-labelledby="horizontalOverview">
+                                        <h3 class="horizontalTabtitle">Overview</h3>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<br>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                       <p class="mt-md-3"><span class="tab-discription"></span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                    </div>
+
+                                    <div class="tab-pane fade" id="horizontal-features" role="tabpanel" aria-labelledby="horizontalFeature">
+                                        <h3 class="horizontalTabtitle">Features</h3>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<br>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                       <p class="mt-md-3"><span class="tab-discription"></span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                    </div>
+
+                                    <div class="tab-pane fade" id="horizontal-docs" role="tabpanel" aria-labelledby="horizontalDocs">
+                                        <h3 class="horizontalTabtitle">Documentation</h3>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<br>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                       <p class="mt-md-3"><span class="tab-discription"></span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                    </div>
+
+                                    <div class="tab-pane fade" id="horizontal-example" role="tabpanel" aria-labelledby="horizontalExample">
+                                        <h3 class="horizontalTabtitle">Examples</h3>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<br>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                       <p class="mt-md-3"><span class="tab-discription"></span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                    </div>
+
+                                    <div class="tab-pane fade" id="horizontal-theme" role="tabpanel" aria-labelledby="horizontalTheme">
+                                        <h3 class="horizontalTabtitle">Themes</h3>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<br>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                       <p class="mt-md-3"><span class="tab-discription"></span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>                                    </div>
+                                </div>    
+                              
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="text-center"><a id="btnViewcode" name="btnViewcode" class="btn btn-megna" data-toggle="collapse" href="#tab3ViewCodeSection" role="button" aria-expanded="false" aria-controls="tab3ViewCodeSection">View Code</a></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Tab3 view code section-->
+                <div class="col-md-12 col-12 p-0 mt-3">
+                    <div class="collapse" id="tab3ViewCodeSection">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="card bg-light h-100">
+                                        <div class="card-body">
+                                            <nav>
+                                                <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                                                    <a class="nav-item nav-link active" id="nav-html-tab" data-codeType='html' data-toggle="tab" href="#nav-htmltab3" role="tab" aria-controls="nav-html" aria-selected="true">HTML</a>
+                                                    <a class="nav-item nav-link" id="nav-css-tab" data-codeType='css' data-toggle="tab" href="#nav-csstab3" role="tab" aria-controls="nav-css" aria-selected="false">CSS</a>
+                                                </div>
+                                            </nav>
+                                            <div class="tab-content border-left border-right border-bottom bg-white" id="nav-tabContent">
+                                                <div class="tab-pane fade show active" id="nav-htmltab3" role="tabpanel" aria-labelledby="nav-home-tab">
+                                                    <div class="container-fluid">
+                                                        <div class="row">
+                                                            <div class="col-12 text-right py-3">
+                                                                <button class="btn downloadbtn btn-sm" onclick="copyToClipboard('#card3HtmlCode',this)" data-toggle="tooltip" data-placement="top" title="Copy to clipboard">Copy</button>
+                                                            </div>
+                                                            <div class="col-12 px-0">
+                                                                <div class="form-group">
+                                                                <textarea id="card3HtmlCode" class="form-control code" rows="5" id="txthtml" name="txthtml" readonly>
+
+<!--Tab3 section-->
+<div class="horizontalTabs">
+    
+        <div class="nav horizontalnavbar nav-tabs nav-fill" id="nav-tab" role="tablist">
+            <a class="nav-item nav-link active" id="horizontalOverview" data-toggle="tab" href="#horizontal-overview" role="tab" aria-controls="horizontal-overview" aria-selected="true">Overview</a>
+            <a class="nav-item nav-link" id="horizontalFeature" data-toggle="tab" href="#horizontal-features" role="tab" aria-controls="horizontal-features" aria-selected="false">Features</a>
+            <a class="nav-item nav-link" id="horizontalDocs" data-toggle="tab" href="#horizontal-docs" role="tab" aria-controls="horizontal-docs" aria-selected="false">Documentation</a>
+            <a class="nav-item nav-link" id="horizontalExample" data-toggle="tab" href="#horizontal-example" role="tab" aria-controls="horizontal-example" aria-selected="false">Examples</a>
+            <a class="nav-item nav-link" id="horizontalTheme" data-toggle="tab" href="#horizontal-theme" role="tab" aria-controls="horizontal-theme" aria-selected="false">Themes</a>
+
+        </div>
+    
+    <div class="tab-content p-4" id="nav-tabContent">
+        <div class="tab-pane fade show active" id="horizontal-overview" role="tabpanel" aria-labelledby="horizontalOverview">
+            <h3 class="horizontalTabtitle">Overview</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<br>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <p class="mt-md-3"><span class="tab-discription"></span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+
+        <div class="tab-pane fade" id="horizontal-features" role="tabpanel" aria-labelledby="horizontalFeature">
+            <h3 class="horizontalTabtitle">Features</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<br>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <p class="mt-md-3"><span class="tab-discription"></span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+
+        <div class="tab-pane fade" id="horizontal-docs" role="tabpanel" aria-labelledby="horizontalDocs">
+            <h3 class="horizontalTabtitle">Documentation</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<br>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <p class="mt-md-3"><span class="tab-discription"></span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+
+        <div class="tab-pane fade" id="horizontal-example" role="tabpanel" aria-labelledby="horizontalExample">
+            <h3 class="horizontalTabtitle">Examples</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<br>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <p class="mt-md-3"><span class="tab-discription"></span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+
+        <div class="tab-pane fade" id="horizontal-theme" role="tabpanel" aria-labelledby="horizontalTheme">
+            <h3 class="horizontalTabtitle">Themes</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<br>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <p class="mt-md-3"><span class="tab-discription"></span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>                                    </div>
+    </div>    
+    
+</div>
+                                         
+                                                    
+                                                                </textarea>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+
+                                                </div>
+                                                <div class="tab-pane fade" id="nav-csstab3" role="tabpanel" aria-labelledby="nav-profile-tab">
+                                                    <div class="container-fluid">
+                                                        <div class="row">
+                                                            <div class="col-md-4 col-12 p-3 m-auto">
+                                                                <a class="btn downloadbtn btn-block" target="_blank" href="dist/downloadCss/tabs/tab3.css" download>Download tab3.css</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!--Section-4-->
+            <div class="row pb-md-4 pb-4">
+                <!--Tab4 section-->
+                <div class="col-md-12 col-12">
+                    <div class="card">
+                        <div class="card-header">
+                            <h4>Tab4</h4>
+                        </div>
+                        <div class="card-body">
+                            <div class="roundedTab p-md-4 p-4">
+                                <div class="roundNav justify-content-md-center d-md-flex">
+                                    <ul class="nav nav-tabs justify-content-md-center" role="tablist">
+                                        <li class="nav-item  pr-2">
+                                          <a class="nav-link active" data-toggle="tab" href="#rounded-tab1" role="tab">
+                                            First Tab
+                                          </a>
+                                        </li>
+                                        <li class="nav-item pr-2">
+                                          <a class="nav-link" data-toggle="tab" href="#rounded-tab2" role="tab">
+                                           Second Tab
+                                          </a>
+                                        </li>
+                                        <li class="nav-item pr-2">
+                                          <a class="nav-link" data-toggle="tab" href="#rounded-tab3" role="tab">
+                                           Third Tab
+                                          </a>
+                                        </li>
+                                        <li class="nav-item pr-2">
+                                          <a class="nav-link" data-toggle="tab" href="#rounded-tab4" role="tab">
+                                            Fourth Tab
+                                          </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" data-toggle="tab" href="#rounded-tab5" role="tab">
+                                              Fifth Tab
+                                            </a>
+                                          </li>
+                                      </ul>
+                                </div>
+                                
+                                <div class="tab-content text-left mt-md-4">
+                                    <div class="tab-pane active" id="rounded-tab1" role="tabpanel">
+                                        <h3 class="roundedTabtitle mt-3">Lorem ipsum dolor sit amet</h3>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,sed do<br>  eiusmod tempor incididunt ut labore et dolore magna aliqua.<br>sed do eiusmod tempor magna aliqua.</p>
+                                       <p class="mt-md-3 roundedTabcontent">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+                                    </div>
+
+                                    <div class="tab-pane" id="rounded-tab2" role="tabpanel">
+                                        <h3 class="roundedTabtitle1 mt-3">Lorem ipsum dolor sit amet</h3>
+                                        <p class="titlegrey">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut</p>
+                                        <p class="roundedTabcontent">Lorem ipsum dolor sit amet, consectetur adipiscing elit,sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.sed do eiusmod tempor magna aliqua. sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+                                       <p class="mt-md-3 roundedTabcontent">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+                                    </div>
+
+                                    <div class="tab-pane" id="rounded-tab3" role="tabpanel">
+                                        <h3 class="roundedTabtitle mt-3">Lorem ipsum dolor sit amet</h3>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,sed do<br>  eiusmod tempor incididunt ut labore et dolore magna aliqua.<br>sed do eiusmod tempor magna aliqua.</p>
+                                       <p class="mt-md-3 roundedTabcontent">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>                          
+                                    </div>
+                                    
+                                    <div class="tab-pane" id="rounded-tab4" role="tabpanel">
+                                        <h3 class="roundedTabtitle1 mt-3">Lorem ipsum dolor sit amet</h3>
+                                        <p class="titlegrey">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut</p>
+                                        <p class="titlegrey">Lorem ipsum dolor sit amet, consectetur adipiscing elit,sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.sed do eiusmod tempor magna aliqua. sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+                                       <p class="titlegrey">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+                                    </div>
+
+                                    <div class="tab-pane" id="rounded-tab5" role="tabpanel">
+                                        
+                                            <h3 class="roundedTabtitle1 mt-3">Lorem ipsum dolor sit amet</h3>
+                                            <p class="titlegrey">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut</p>
+                                            <p class="roundedTabcontent">Lorem ipsum dolor sit amet, consectetur adipiscing elit,sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.sed do eiusmod tempor magna aliqua. sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+                                           <p class="mt-md-3 roundedTabcontent">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="text-center"><a id="btnViewcode" name="btnViewcode" class="btn btn-megna" data-toggle="collapse" href="#tab4ViewCodeSection" role="button" aria-expanded="false" aria-controls="tab4ViewCodeSection">View Code</a></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Tab4 view code section-->
+                <div class="col-md-12 col-12 p-0 mt-3">
+                    <div class="collapse" id="tab4ViewCodeSection">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="card bg-light h-100">
+                                        <div class="card-body">
+                                            <nav>
+                                                <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                                                    <a class="nav-item nav-link active" id="nav-html-tab" data-codeType='html' data-toggle="tab" href="#nav-htmltab4" role="tab" aria-controls="nav-html" aria-selected="true">HTML</a>
+                                                    <a class="nav-item nav-link" id="nav-css-tab" data-codeType='css' data-toggle="tab" href="#nav-csstab4" role="tab" aria-controls="nav-css" aria-selected="false">CSS</a>
+                                                </div>
+                                            </nav>
+                                            <div class="tab-content border-left border-right border-bottom bg-white" id="nav-tabContent">
+                                                <div class="tab-pane fade show active" id="nav-htmltab4" role="tabpanel" aria-labelledby="nav-home-tab">
+                                                    <div class="container-fluid">
+                                                        <div class="row">
+                                                            <div class="col-12 text-right py-3">
+                                                                <button class="btn downloadbtn btn-sm" onclick="copyToClipboard('#card4HtmlCode',this)" data-toggle="tooltip" data-placement="top" title="Copy to clipboard">Copy</button>
+                                                            </div>
+                                                            <div class="col-12 px-0">
+                                                                <div class="form-group">
+                                                                <textarea id="card4HtmlCode" class="form-control code" rows="5" id="txthtml" name="txthtml" readonly>
+
+<!--Tab4 section-->
+<div class="roundedTab p-md-4 p-4">
+    <div class="roundNav justify-content-md-center d-md-flex">
+        <ul class="nav nav-tabs justify-content-md-center" role="tablist">
+            <li class="nav-item  pr-2">
+                <a class="nav-link active" data-toggle="tab" href="#rounded-tab1" role="tab">
+                First Tab
+                </a>
+            </li>
+            <li class="nav-item pr-2">
+                <a class="nav-link" data-toggle="tab" href="#rounded-tab2" role="tab">
+                Second Tab
+                </a>
+            </li>
+            <li class="nav-item pr-2">
+                <a class="nav-link" data-toggle="tab" href="#rounded-tab3" role="tab">
+                Third Tab
+                </a>
+            </li>
+            <li class="nav-item pr-2">
+                <a class="nav-link" data-toggle="tab" href="#rounded-tab4" role="tab">
+                Fourth Tab
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="#rounded-tab5" role="tab">
+                    Fifth Tab
+                </a>
+                </li>
+            </ul>
+    </div>
+    
+    <div class="tab-content text-left mt-md-4">
+        <div class="tab-pane active" id="rounded-tab1" role="tabpanel">
+            <h3 class="roundedTabtitle mt-3">Lorem ipsum dolor sit amet</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,sed do<br>  eiusmod tempor incididunt ut labore et dolore magna aliqua.<br>sed do eiusmod tempor magna aliqua.</p>
+            <p class="mt-md-3 roundedTabcontent">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+        </div>
+
+        <div class="tab-pane" id="rounded-tab2" role="tabpanel">
+            <h3 class="roundedTabtitle1 mt-3">Lorem ipsum dolor sit amet</h3>
+            <p class="titlegrey">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut</p>
+            <p class="roundedTabcontent">Lorem ipsum dolor sit amet, consectetur adipiscing elit,sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.sed do eiusmod tempor magna aliqua. sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+            <p class="mt-md-3 roundedTabcontent">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+        </div>
+
+        <div class="tab-pane" id="rounded-tab3" role="tabpanel">
+            <h3 class="roundedTabtitle mt-3">Lorem ipsum dolor sit amet</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,sed do<br>  eiusmod tempor incididunt ut labore et dolore magna aliqua.<br>sed do eiusmod tempor magna aliqua.</p>
+            <p class="mt-md-3 roundedTabcontent">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>                          
+        </div>
+        
+        <div class="tab-pane" id="rounded-tab4" role="tabpanel">
+            <h3 class="roundedTabtitle1 mt-3">Lorem ipsum dolor sit amet</h3>
+            <p class="titlegrey">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut</p>
+            <p class="titlegrey">Lorem ipsum dolor sit amet, consectetur adipiscing elit,sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.sed do eiusmod tempor magna aliqua. sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+            <p class="titlegrey">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+        </div>
+
+        <div class="tab-pane" id="rounded-tab5" role="tabpanel">
+            
+                <h3 class="roundedTabtitle1 mt-3">Lorem ipsum dolor sit amet</h3>
+                <p class="titlegrey">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut</p>
+                <p class="roundedTabcontent">Lorem ipsum dolor sit amet, consectetur adipiscing elit,sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.sed do eiusmod tempor magna aliqua. sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+                <p class="mt-md-3 roundedTabcontent">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>                                        </p>
+        </div>
+    </div>
+</div>
+                                           
+                                                    
+                                                                </textarea>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+
+                                                </div>
+                                                <div class="tab-pane fade" id="nav-csstab4" role="tabpanel" aria-labelledby="nav-profile-tab">
+                                                    <div class="container-fluid">
+                                                        <div class="row">
+                                                            <div class="col-md-4 col-12 p-3 m-auto">
+                                                                <a class="btn downloadbtn btn-block" target="_blank" href="dist/downloadCss/tabs/tab4.css" download>Download tab4.css</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!--Section-5-->
+            <div class="row pb-mb-4 pb-4">
+                <!--Tab5 section-->
+                <div class="col-md-12 col-12">
+                    <div class="card">
+                        <div class="card-header">
+                            <h4>Tab5</h4>
+                        </div>
+                        <div class="card-body">
+                            <div class="row animatedTab mx-2">
+                                <nav class="col-lg-1 col-md-2 animatedNav pl-0">
+                                    <div class="nav nav-pills flex-column text-center" id="nav-tab" role="tablist">
+                                        <a class="nav-item nav-link text-center show active" id="animatedTab1" data-toggle="tab" href="#navFirstTab" role="tab" aria-controls="#navFirstTab" aria-selected="true">First Tab</a>
+                                        <a class="nav-item nav-link text-center show " id="animatedTab2" data-toggle="tab" href="#navSecondTab" role="tab" aria-controls="#navSecondTab" aria-selected="false">Second Tab</a>
+                                        <a class="nav-item nav-link text-center show " id="animatedTab3" data-toggle="tab" href="#navThirdTab" role="tab" aria-controls="#navThirdTab" aria-selected="false">Third Tab</a>
+                                        <a class="nav-item nav-link text-center show" id="animatedTab4" data-toggle="tab" href="#navFourthTab" role="tab" aria-controls="#navFourthTab" aria-selected="false">Fourth Tab</a>
+                                        <a class="nav-item nav-link text-center show " id="animatedTab5" data-toggle="tab" href="#navFifthTab" role="tab" aria-controls="#navFifthTab" aria-selected="false">Fifth Tab</a>
+
+                                    </div>
+                                </nav>
+
+                                <div class="col-lg-11 col-md-10 tab-content text-left mt-md-4 pl-lg-3 pl-md-0 ">
+                                    <div class="tab-pane active" id="navFirstTab" role="tabpanel">
+                                        <h3 class="roundedTabtitle mt-3">Lorem ipsum dolor sit amet</h3>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,sed do<br>  eiusmod tempor incididunt ut labore et dolore magna aliqua.<br>sed do eiusmod tempor magna aliqua.</p>
+                                       <p class="mt-md-3 roundedTabcontent">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+                                    </div>
+
+                                    <div class="tab-pane fade" id="navSecondTab" role="tabpanel">
+                                        <h3 class="roundedTabtitle1 mt-3">Lorem ipsum dolor sit amet</h3>
+                                        <p class="titlegrey">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut</p>
+                                        <p class="roundedTabcontent">Lorem ipsum dolor sit amet, consectetur adipiscing elit,sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.sed do eiusmod tempor magna aliqua. sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+                                       <p class="mt-md-3 roundedTabcontent">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+                                    </div>
+
+                                    <div class="tab-pane fade" id="navThirdTab" role="tabpanel">
+                                        <h3 class="roundedTabtitle mt-3">Lorem ipsum dolor sit amet</h3>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,sed do<br>  eiusmod tempor incididunt ut labore et dolore magna aliqua.<br>sed do eiusmod tempor magna aliqua.</p>
+                                       <p class="mt-md-3 roundedTabcontent">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>                          
+                                    </div>
+                                    
+                                    <div class="tab-pane fade" id="navFourthTab" role="tabpanel">
+                                        <h3 class="roundedTabtitle1 mt-3">Lorem ipsum dolor sit amet</h3>
+                                        <p class="titlegrey">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut</p>
+                                        <p class="titlegrey">Lorem ipsum dolor sit amet, consectetur adipiscing elit,sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.sed do eiusmod tempor magna aliqua. sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+                                       <p class="titlegrey">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+                                    </div>
+
+                                    <div class="tab-pane fade" id="navFifthTab" role="tabpanel">
+                                        
+                                            <h3 class="roundedTabtitle1 mt-3">Lorem ipsum dolor sit amet</h3>
+                                            <p class="titlegrey">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut</p>
+                                            <p class="roundedTabcontent">Lorem ipsum dolor sit amet, consectetur adipiscing elit,sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.sed do eiusmod tempor magna aliqua. sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+                                           <p class="mt-md-3 roundedTabcontent">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="text-center"><a id="btnViewcode" name="btnViewcode" class="btn btn-megna" data-toggle="collapse" href="#tab5ViewCodeSection" role="button" aria-expanded="false" aria-controls="tab5ViewCodeSection">View Code</a></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Tab5 view code section-->
+                <div class="col-md-12 col-12 p-0 mt-3">
+                    <div class="collapse" id="tab5ViewCodeSection">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="card bg-light h-100">
+                                        <div class="card-body">
+                                            <nav>
+                                                <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                                                    <a class="nav-item nav-link active" id="nav-html-tab" data-codeType='html' data-toggle="tab" href="#nav-htmltab5" role="tab" aria-controls="nav-html" aria-selected="true">HTML</a>
+                                                    <a class="nav-item nav-link" id="nav-css-tab" data-codeType='css' data-toggle="tab" href="#nav-csstab5" role="tab" aria-controls="nav-css" aria-selected="false">CSS</a>
+                                                </div>
+                                            </nav>
+                                            <div class="tab-content border-left border-right border-bottom bg-white" id="nav-tabContent">
+                                                <div class="tab-pane fade show active" id="nav-htmltab5" role="tabpanel" aria-labelledby="nav-home-tab">
+                                                    <div class="container-fluid">
+                                                        <div class="row">
+                                                            <div class="col-12 text-right py-3">
+                                                                <button class="btn downloadbtn btn-sm" onclick="copyToClipboard('#card5HtmlCode',this)" data-toggle="tooltip" data-placement="top" title="Copy to clipboard">Copy</button>
+                                                            </div>
+                                                            <div class="col-12 px-0">
+                                                                <div class="form-group">
+                                                                <textarea id="card5HtmlCode" class="form-control code" rows="5" id="txthtml" name="txthtml" readonly>
+
+<!--Tab5 section-->
+<div class="row animatedTab mx-2">
+    <nav class="col-lg-1 col-md-2 animatedNav pl-0">
+        <div class="nav nav-pills flex-column text-center" id="nav-tab" role="tablist">
+            <a class="nav-item nav-link text-center show active" id="animatedTab1" data-toggle="tab" href="#navFirstTab" role="tab" aria-controls="#navFirstTab" aria-selected="true">First Tab</a>
+            <a class="nav-item nav-link text-center show " id="animatedTab2" data-toggle="tab" href="#navSecondTab" role="tab" aria-controls="#navSecondTab" aria-selected="false">Second Tab</a>
+            <a class="nav-item nav-link text-center show " id="animatedTab3" data-toggle="tab" href="#navThirdTab" role="tab" aria-controls="#navThirdTab" aria-selected="false">Third Tab</a>
+            <a class="nav-item nav-link text-center show" id="animatedTab4" data-toggle="tab" href="#navFourthTab" role="tab" aria-controls="#navFourthTab" aria-selected="false">Fourth Tab</a>
+            <a class="nav-item nav-link text-center show " id="animatedTab5" data-toggle="tab" href="#navFifthTab" role="tab" aria-controls="#navFifthTab" aria-selected="false">Fifth Tab</a>
+
+        </div>
+    </nav>
+
+    <div class="col-lg-11 col-md-10 tab-content text-left mt-md-4 pl-lg-3 pl-md-0 ">
+        <div class="tab-pane active" id="navFirstTab" role="tabpanel">
+            <h3 class="roundedTabtitle mt-3">Lorem ipsum dolor sit amet</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,sed do<br>  eiusmod tempor incididunt ut labore et dolore magna aliqua.<br>sed do eiusmod tempor magna aliqua.</p>
+            <p class="mt-md-3 roundedTabcontent">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+        </div>
+
+        <div class="tab-pane fade" id="navSecondTab" role="tabpanel">
+            <h3 class="roundedTabtitle1 mt-3">Lorem ipsum dolor sit amet</h3>
+            <p class="titlegrey">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut</p>
+            <p class="roundedTabcontent">Lorem ipsum dolor sit amet, consectetur adipiscing elit,sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.sed do eiusmod tempor magna aliqua. sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+            <p class="mt-md-3 roundedTabcontent">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+        </div>
+
+        <div class="tab-pane fade" id="navThirdTab" role="tabpanel">
+            <h3 class="roundedTabtitle mt-3">Lorem ipsum dolor sit amet</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,sed do<br>  eiusmod tempor incididunt ut labore et dolore magna aliqua.<br>sed do eiusmod tempor magna aliqua.</p>
+            <p class="mt-md-3 roundedTabcontent">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>                          
+        </div>
+        
+        <div class="tab-pane fade" id="navFourthTab" role="tabpanel">
+            <h3 class="roundedTabtitle1 mt-3">Lorem ipsum dolor sit amet</h3>
+            <p class="titlegrey">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut</p>
+            <p class="titlegrey">Lorem ipsum dolor sit amet, consectetur adipiscing elit,sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.sed do eiusmod tempor magna aliqua. sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+            <p class="titlegrey">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+        </div>
+
+        <div class="tab-pane fade" id="navFifthTab" role="tabpanel">
+            
+                <h3 class="roundedTabtitle1 mt-3">Lorem ipsum dolor sit amet</h3>
+                <p class="titlegrey">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut</p>
+                <p class="roundedTabcontent">Lorem ipsum dolor sit amet, consectetur adipiscing elit,sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.sed do eiusmod tempor magna aliqua. sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+                <p class="mt-md-3 roundedTabcontent">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>                                        </p>
+        </div>
+    </div>
+</div>
+                                         
+                                                    
+                                                                </textarea>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+
+                                                </div>
+                                                <div class="tab-pane fade" id="nav-csstab5" role="tabpanel" aria-labelledby="nav-profile-tab">
+                                                    <div class="container-fluid">
+                                                        <div class="row">
+                                                            <div class="col-md-4 col-12 p-3 m-auto">
+                                                                <a class="btn downloadbtn btn-block" target="_blank" href="dist/downloadCss/tabs/tab5.css" download>Download tab5.css</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+     </div>
+    
+
+
+
+
+
+
+    
+     <!--jquery js-->
+     <script src="assets/Core/jquery-3.3.1.min.js"></script>
+     <!--popper js-->
+     <script src="assets/Core/popper/popper.min.js"></script>
+     <!--bootstrap js-->
+     <script src="assets/Core/bootstrap/dist/js/bootstrap.min.js"></script>
+     <!--Sidebarmenu js-->
+     <script src="dist/js/sidebarmenu.js"></script>
+     <!--Wave Effects js -->
+     <script src="dist/js/waves.js"></script>
+     <!-- scrollbar JavaScript -->
+     <script src="dist/js/perfect-scrollbar.jquery.min.js"></script>
+     <!--Custom JavaScript -->
+     <script src="dist/js/custom.js"></script>
+      <!--Code Mirror JS-->
+    <script src="assets/Plugins/codemirror/lib/codemirror.js"></script>
+    <script src="assets/Plugins/codemirror/mode/xml/xml.js"></script>
+    <script src="assets/Plugins/codemirror/mode/css/css.js"></script>
+    <script src="assets/Plugins/codemirror/mode/javascript/javascript.js"></script>
+    <script src="assets/Plugins/codemirror/mode/htmlmixed/htmlmixed.js"></script>
+ 
+     <!--custom js view code-->
+     <script src="dist/js/buttons.js"></script>
+
+
+     <script type="text/javascript">
+         var card1CodeInit = 0;
+         var card2CodeInit = 0;
+         var card3CodeInit = 0;
+         var card4CodeInit = 0;
+         var card5CodeInit = 0;
+        
+             $('#tab1ViewCodeSection').on('shown.bs.collapse', function () {
+                 if(card1CodeInit == 0)
+                 {
+                     card1HtmlCodeEditor();
+                     card1CodeInit = 1;
+                 }
+                 else{
+                     return false;
+                 }
+             });
+             $('#tab2ViewCodeSection').on('shown.bs.collapse', function () {
+                 if(card2CodeInit == 0)
+                 {
+                     card2HtmlCodeEditor();
+                     card2CodeInit = 1;
+                 }
+                 else{
+                     return false;
+                 }
+             });
+             $('#tab3ViewCodeSection').on('shown.bs.collapse', function () {
+                 if(card3CodeInit == 0)
+                 {
+                     card3HtmlCodeEditor();
+                     card3CodeInit = 1;
+                 }
+                 else{
+                     return false;
+                 }
+             });
+             $('#tab4ViewCodeSection').on('shown.bs.collapse', function () {
+                 if(card4CodeInit == 0)
+                 {
+                     card4HtmlCodeEditor();
+                     card4CodeInit = 1;
+                 }
+                 else{
+                     return false;
+                 }
+             });
+             $('#tab5ViewCodeSection').on('shown.bs.collapse', function () {
+                 if(card5CodeInit == 0)
+                 {
+                     card5HtmlCodeEditor();
+                     card5CodeInit = 1;
+                 }
+                 else{
+                     return false;
+                 }
+             });
+          
+     </script>
+     <script type="text/javascript">
+         jQuery(document).on("click", ".show-icon.show-pwd", function () {
+             jQuery(this).toggleClass("active");
+             var input = jQuery(this).parent().find("input");
+             if (input.attr("type") == "password")
+                 input.attr("type", "text");
+             else
+                 input.attr("type", "password");
+         });
+ 
+         $("input[type='image']").click(function() {
+          $("input[id='my_file']").click();
+ });
+     </script>
+ </body>
+ </html>
+ 

@@ -1,0 +1,825 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar</title>
+
+    <!--Bootstrap css-->
+    <link rel="stylesheet" href="assets/Core/bootstrap/dist/css/bootstrap.min.css">
+   <!--plugins of viewcode-->
+   <link rel="stylesheet" type="text/css" href="assets/Plugins/codemirror/lib/codemirror.css">
+   <link rel="stylesheet" type="text/css" href="assets/Plugins/codemirror/theme/material.css">
+   
+    <!--Custom css-->
+    <link rel="stylesheet" href="dist/css/style.css">
+    <link rel="stylesheet" href="dist/scss/css/navbar.css">
+    <link rel="stylesheet" href="dist/sidenavCss/custom.css">
+</head>
+<body class="skin-megna fixed-layout">
+
+     <!-- ============================================================== -->
+        <!-- Topbar header - style you can find in pages.scss -->
+        <!-- ============================================================== -->
+        <header class="topbar">
+            <nav class="navbar top-navbar navbar-expand-md navbar-dark">
+                <!-- ============================================================== -->
+                <!-- Logo -->
+                <!-- ============================================================== -->
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="index.html">
+                        <!-- Logo icon --><b>
+                            <!--You can put here icon as well // <i class="wi wi-sunset"></i> //-->
+                            <!-- Dark Logo icon -->
+                            <img src="assets/images/New Logo.png" alt="homepage" class="light-logo" />
+                            <!-- Light Logo icon -->
+                            <!-- <img src="../assets/images/logo-light-icon.png" alt="homepage" class="light-logo" /> -->
+                        </b>
+                        <!--End Logo icon -->
+                        <span class="hidden-xs font-bold" style="font-size: 19px">Patel Techologies</span>
+                    </a>
+                </div>
+                <!-- ============================================================== -->
+                <!-- End Logo -->
+                <!-- ============================================================== -->
+                <div class="navbar-collapse">
+                    <!-- ============================================================== -->
+                    <!-- toggle and nav items -->
+                    <!-- ============================================================== -->
+                    <ul class="navbar-nav mr-auto">
+                        <!-- This is  -->
+                        <li class="nav-item"> <a class="nav-link nav-toggler d-block d-md-none waves-effect waves-dark" href="javascript:void(0)"><i class="ti-menu"></i></a> </li>
+                        <li class="nav-item"> <a class="nav-link sidebartoggler d-none d-lg-block d-md-block waves-effect waves-dark" href="javascript:void(0)"><i class="icon-menu"></i></a> </li>
+                        <!-- ============================================================== -->
+                        <!-- Search -->
+                        <!-- ============================================================== -->
+                        <li class="nav-item d-none d-md-block d-lg-block">
+                           <form action="">
+                              <input type="search" placeholder="Search & enter">
+                              <i class="fa fa-search"></i>
+                            </form>
+                        </li>
+                    </ul>
+                   
+                </div>
+            </nav>
+        </header>
+        <!-- ============================================================== -->
+        <!-- End Topbar header -->
+        <!-- ============================================================== -->
+        <!-- ============================================================== -->
+        <!-- Left Sidebar - style you can find in  custom.css  -->
+        <!-- ============================================================== -->
+        <aside class="left-sidebar">
+            <!-- Sidebar scroll-->
+            <div class="scroll-sidebar">
+                <!-- <div class="sidebar-header">
+                    <div class="companyLogo">
+                      <img class="img-responsive img-rounded" src="assets/images/company-logo.svg"
+                        alt="Company logo">
+                    </div>
+                </div> -->
+               <!-- Sidebar navigation-->
+                <nav class="sidebar-nav">
+                    <ul id="sidebarnav">
+                        <li>
+                            <a class="has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false"><i class="mdi mdi-login"></i><span class="hide-menu">Dashboard</span></a>
+                            <ul aria-expanded="false" class="collapse">
+                                <li><a href="Dashboard1.html">Dashboard 1</a></li>
+                                <li><a href="Dashboard2.html">Dashboard 2</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false"><i class="mdi mdi-login"></i><span class="hide-menu">Login Templates</span></a>
+                            <ul aria-expanded="false" class="collapse">
+                                <li><a href="Login1.html">Login 1</a></li>
+                                <li><a href="Login2.html">Login 2</a></li>
+                                <li><a href="Login3.html">Login 3</a></li>
+                                <li><a href="Login4.html">Login 4</a></li>
+                                <li><a href="Login5.html">Login 5</a></li>
+                                <li><a href="Login6.html">Login 6</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false"><i class="ti-palette"></i><span class="hide-menu">Ui Elements</span></a>
+                            <ul aria-expanded="false" class="collapse">
+                                <li><a href="cards.html">Cards</a></li>
+                                <li><a href="buttons.html">Buttons</a></li>
+                                <li><a href="tabs.html">Tab</a></li>
+                                <li><a href="switchs.html">Switchs</a></li>
+                                <li><a href="Notification.html">Notification</a></li>
+                                <li><a href="Alert.html">Alert Box</a></li>
+                                <li><a href="carousel.html">Carousel</a></li>
+                                <li><a href="Errorpage.html">Error Page</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false"><i class="ti-layout-accordion-merged"></i><span class="hide-menu">Tables</span></a>
+                            <ul aria-expanded="false" class="collapse">
+                                <li><a href="basicTable.html">Basic Table</a></li>
+                                <li><a href="dataTable.html">Data Table</a></li>
+                                <li><a href="editable table.html">Editable Table</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false"><i class="ti-layout-media-right-alt"></i><span class="hide-menu">Forms</span></a>
+                            <ul aria-expanded="false" class="collapse">
+                                <li><a href="basicForms.html">Basic Forms</a></li>
+                                <li><a href="checkbox.html">Checkbox</a></li>
+                                <li><a href="dateTimepicker.html">Date &amp; Time Picker</a></li>
+                                <li><a href="dragdropfile.html">Drag &amp; Drop File Upload</a></li>
+                                <li><a href="sliders.html">Sliders</a></li>
+                                <li><a href="addon.html">Addon Control</a></li>
+                                <li><a href="icheck.html">Icheck Control</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false"><i class="ti-layout-media-right-alt"></i><span class="hide-menu">Components</span></a>
+                            <ul aria-expanded="false" class="collapse">
+                                <li><a href="mdbuttons.html">Material Buttons</a></li>
+                                <li><a href="badges.html">Badges</a></li>
+                                <li><a href="spinners.html">Loaders/Spinners</a></li>
+                                <li><a href="progressbar.html">ProgressBar</a></li>
+                                <li><a href="socialbutton.html">SocialButtons</a></li>
+                                <li><a href="stepper.html">Steppers</a></li>
+                                <li><a href="extendedcards.html">Extended Cards</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false"><i class="ti-layout-media-right-alt"></i><span class="hide-menu">Navigation</span></a>
+                            <ul aria-expanded="false" class="collapse">
+                                <li><a href="navbar.html">Navbar</a></li>
+                                <li><a href="breadcrumb.html">Breadcrumb</a></li>
+                                <li><a href="megamenu.html">Mega Menu</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false"><i class="mdi mdi-login"></i><span class="hide-menu">Email Templete</span></a>
+                            <ul aria-expanded="false" class="collapse">
+                               <li><a href="Email_1.html">Email Templete 1</a></li>
+                                <li><a href="Email_2.html">Email Templete 2</a></li>
+                            </ul>
+                        </li>
+                        <!--<li>
+                            <a class="has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false"><i class="ti-layout-media-right-alt"></i><span class="hide-menu">Templates</span></a>
+                            <ul aria-expanded="false" class="collapse">
+                                <li><a href="Website.html">Website</a></li>
+                            </ul>
+                        </li>-->
+                    </ul>
+                </nav>
+                <!-- End Sidebar navigation -->
+            </div>
+            <!-- End Sidebar scroll-->
+        </aside>
+        <!-- ============================================================== -->
+        <!-- End Left Sidebar - style you can find in  custom.css  -->
+        <!-- ============================================================== -->
+
+    <div class="page-wrapper">
+        <div class="container-fluid">
+
+            <!--Section1-->
+            <div class="row">
+                <!--Default Navbar-->
+                <div class="col-md-12 col-12 pb-md-4 pb-4">
+                    <div class="card">
+                        <div class="card-header">
+                            <h4>Default Navbar</h4>
+                        </div>
+                        <div class="card-body">
+                            <div class="navbar1">
+                                <h5 class="card-title">Default</h5>
+                                <nav class="navbar navbar-expand-lg navbar-light bg-light mb-4">
+                                    <a class="navbar-brand" href="#">Navbar</a>
+                                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                      <span class="navbar-toggler-icon"></span>
+                                    </button>
+                                  
+                                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                      <ul class="navbar-nav mr-auto">
+                                        <li class="nav-item active">
+                                          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                                        </li>
+                                        <li class="nav-item">
+                                          <a class="nav-link" href="#">Link</a>
+                                        </li>
+                                        <li class="nav-item dropdown">
+                                          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            Dropdown
+                                          </a>
+                                          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                            <a class="dropdown-item" href="#">Action</a>
+                                            <a class="dropdown-item" href="#">Another action</a>
+                                            <div class="dropdown-divider"></div>
+                                            <a class="dropdown-item" href="#">Something else here</a>
+                                          </div>
+                                        </li>
+                                        <li class="nav-item">
+                                          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                                        </li>
+                                      </ul>
+                                      <form class="form-inline my-2 my-lg-0">
+                                        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                                      </form>
+                                    </div>
+                                </nav>
+                            </div>
+                            <div class="navbar2">
+                                <h5 class="card-title">Brand</h5>
+                                <nav class="navbar navbar-light bg-light">
+                                    <a class="navbar-brand" href="#">
+                                      <img src="assets/images/logo.png" alt="">
+                                    </a>
+                                </nav>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="text-center"><a id="btnViewcode" name="btnViewcode" class="btn btn-megna" data-toggle="collapse" href="#card1ViewCodeSection" role="button" aria-expanded="false" aria-controls="card1ViewCodeSection">View Code</a></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Default Navbar View Code-->
+                <div class="col-md-12 pb-md-4 pb-4 p-0">
+                    <div class="collapse" id="card1ViewCodeSection">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="card bg-light h-100">
+                                        <div class="card-body">
+                                            <nav>
+                                                <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                                                    <a class="nav-item nav-link active" id="nav-html-tab" data-codeType='html' data-toggle="tab" href="#nav-htmlcard1" role="tab" aria-controls="nav-html" aria-selected="true">HTML</a>
+                                                    <a class="nav-item nav-link" id="nav-css-tab" data-codeType='css' data-toggle="tab" href="#nav-csscard1" role="tab" aria-controls="nav-css" aria-selected="false">CSS</a>
+                                                </div>
+                                            </nav>
+                                            <div class="tab-content border-left border-right border-bottom bg-white" id="nav-tabContent">
+                                                <div class="tab-pane fade show active" id="nav-htmlcard1" role="tabpanel" aria-labelledby="nav-home-tab">
+                                                    <div class="container-fluid">
+                                                        <div class="row">
+                                                            <div class="col-12 text-right py-3">
+                                                                <button class="btn downloadbtn btn-sm" onclick="copyToClipboard('#card1HtmlCode',this)" data-toggle="tooltip" data-placement="top" title="Copy to clipboard">Copy</button>
+                                                            </div>
+                                                            <div class="col-12 px-0">
+                                                                <div class="form-group">
+                                                                    <textarea id="card1HtmlCode" class="form-control code" rows="5" id="txthtml" name="txthtml" readonly>
+
+ <!--Default Navbar-->
+<div class="navbar1">
+    <h5 class="card-title">Default</h5>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light mb-4">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Dropdown
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+            </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+</div>
+<div class="navbar2">
+    <h5 class="card-title">Brand</h5>
+    <nav class="navbar navbar-light bg-light">
+        <a class="navbar-brand" href="#">
+            <img src="assets/images/logo.png" alt="">
+        </a>
+    </nav>
+</div>
+        
+                                           
+                                                    
+                                                                </textarea>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+
+                                                </div>
+                                                <div class="tab-pane fade" id="nav-csscard1" role="tabpanel" aria-labelledby="nav-profile-tab">
+                                                    <div class="container-fluid">
+                                                        <div class="row">
+                                                            <div class="col-md-4 col-12 p-3 m-auto">
+                                                                <a class="btn downloadbtn btn-block" target="_blank" href="#" download>No CSS</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--Section2-->
+            <div class="row">
+                <!--Centered Navbar-->
+                <div class="col-md-12 col-12 pb-md-4 pb-4">
+                    <div class="card">
+                        <div class="card-header">
+                            <h4>Centered Navbar</h4>
+                        </div>
+                        <div class="card-body">
+                            <div class="navbar1">
+                               
+                                <nav class="navbar navbar-expand-sm bg-light justify-content-center">
+                                    <ul class="navbar-nav">
+                                        <li class="nav-item active">
+                                            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                                          </li>
+                                          <li class="nav-item">
+                                            <a class="nav-link" href="#">Link</a>
+                                          </li>
+                                      <li class="nav-item">
+                                        <a class="nav-link" href="#">Link 3</a>
+                                      </li>
+                                    </ul>
+                                </nav>
+
+                            </div>
+                            
+                        </div>
+                        <div class="col-md-12">
+                            <div class="text-center"><a id="btnViewcode" name="btnViewcode" class="btn btn-megna" data-toggle="collapse" href="#card2ViewCodeSection" role="button" aria-expanded="false" aria-controls="card2ViewCodeSection">View Code</a></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Centered Navbar-->
+                <div class="col-md-12 pb-md-4 pb-4 p-0">
+                <div class="collapse" id="card2ViewCodeSection">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="card bg-light h-100">
+                                    <div class="card-body">
+                                        <nav>
+                                            <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                                                <a class="nav-item nav-link active" id="nav-html-tab" data-codeType='html' data-toggle="tab" href="#nav-htmlcard2" role="tab" aria-controls="nav-html" aria-selected="true">HTML</a>
+                                                <a class="nav-item nav-link" id="nav-css-tab" data-codeType='css' data-toggle="tab" href="#nav-csscard2" role="tab" aria-controls="nav-css" aria-selected="false">CSS</a>
+                                            </div>
+                                        </nav>
+                                        <div class="tab-content border-left border-right border-bottom bg-white" id="nav-tabContent">
+                                            <div class="tab-pane fade show active" id="nav-htmlcard2" role="tabpanel" aria-labelledby="nav-home-tab">
+                                                <div class="container-fluid">
+                                                    <div class="row">
+                                                        <div class="col-12 text-right py-3">
+                                                            <button class="btn downloadbtn btn-sm" onclick="copyToClipboard('#card2HtmlCode',this)" data-toggle="tooltip" data-placement="top" title="Copy to clipboard">Copy</button>
+                                                        </div>
+                                                        <div class="col-12 px-0">
+                                                            <div class="form-group">
+                                                                <textarea id="card2HtmlCode" class="form-control code" rows="5" id="txthtml" name="txthtml" readonly>
+
+ <!--Centered Navbar-->
+<div class="navbar1">
+    
+    <nav class="navbar navbar-expand-sm bg-light justify-content-center">
+        <ul class="navbar-nav">
+            <li class="nav-item active">
+                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+                </li>
+            <li class="nav-item">
+            <a class="nav-link" href="#">Link 3</a>
+            </li>
+        </ul>
+    </nav>
+
+</div>
+            
+       
+                                       
+                                                
+                                                            </textarea>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+
+                                            </div>
+                                            <div class="tab-pane fade" id="nav-csscard2" role="tabpanel" aria-labelledby="nav-profile-tab">
+                                                <div class="container-fluid">
+                                                    <div class="row">
+                                                        <div class="col-md-4 col-12 p-3 m-auto">
+                                                            <a class="btn downloadbtn btn-block" target="_blank" href="#" download>No CSS</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+
+            <!--Section3-->
+            <div class="row">
+                <!--Colored Navbar-->
+                <div class="col-md-12 col-12 pb-md-4 pb-4">
+                    <div class="card">
+                        <div class="card-header">
+                            <h4>Colored Navbar</h4>
+                        </div>
+                        <div class="card-body">
+                            <div class="colornavbar1">
+                                <nav class="navbar navbar-expand-sm bg-light navbar-light mb-4">
+                                    <ul class="navbar-nav">
+                                      <li class="nav-item active">
+                                        <a class="nav-link" href="#">Active</a>
+                                      </li>
+                                      <li class="nav-item">
+                                        <a class="nav-link" href="#">Link</a>
+                                      </li>
+                                      <li class="nav-item">
+                                        <a class="nav-link" href="#">Link</a>
+                                      </li>
+                                      <li class="nav-item">
+                                        <a class="nav-link disabled" href="#">Disabled</a>
+                                      </li>
+                                    </ul>
+                                  </nav>
+                                  
+                                  <nav class="navbar navbar-expand-sm bg-dark navbar-dark mb-4">
+                                    <ul class="navbar-nav">
+                                      <li class="nav-item active">
+                                        <a class="nav-link" href="#">Active</a>
+                                      </li>
+                                      <li class="nav-item">
+                                        <a class="nav-link" href="#">Link</a>
+                                      </li>
+                                      <li class="nav-item">
+                                        <a class="nav-link" href="#">Link</a>
+                                      </li>
+                                      <li class="nav-item">
+                                        <a class="nav-link disabled" href="#">Disabled</a>
+                                      </li>
+                                    </ul>
+                                  </nav>
+                                  
+                                  <nav class="navbar navbar-expand-sm bg-primary navbar-dark">
+                                    <ul class="navbar-nav">
+                                      <li class="nav-item active">
+                                        <a class="nav-link" href="#">Active</a>
+                                      </li>
+                                      <li class="nav-item">
+                                        <a class="nav-link" href="#">Link</a>
+                                      </li>
+                                      <li class="nav-item">
+                                        <a class="nav-link" href="#">Link</a>
+                                      </li>
+                                      <li class="nav-item">
+                                        <a class="nav-link disabled" href="#">Disabled</a>
+                                      </li>
+                                    </ul>
+                                  </nav>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="text-center"><a id="btnViewcode" name="btnViewcode" class="btn btn-megna" data-toggle="collapse" href="#card3ViewCodeSection" role="button" aria-expanded="false" aria-controls="#card3ViewCodeSection">View Code</a></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Colored Navbar View Code-->
+                <div class="col-md-12 pb-md-4 pb-4 p-0">
+                    <div class="collapse" id="card3ViewCodeSection">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="card bg-light h-100">
+                                        <div class="card-body">
+                                            <nav>
+                                                <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                                                    <a class="nav-item nav-link active" id="nav-html-tab" data-codeType='html' data-toggle="tab" href="#nav-htmlcard3" role="tab" aria-controls="nav-html" aria-selected="true">HTML</a>
+                                                    <a class="nav-item nav-link" id="nav-css-tab" data-codeType='css' data-toggle="tab" href="#nav-csscard3" role="tab" aria-controls="nav-css" aria-selected="false">CSS</a>
+                                                </div>
+                                            </nav>
+                                            <div class="tab-content border-left border-right border-bottom bg-white" id="nav-tabContent">
+                                                <div class="tab-pane fade show active" id="nav-htmlcard3" role="tabpanel" aria-labelledby="nav-home-tab">
+                                                    <div class="container-fluid">
+                                                        <div class="row">
+                                                            <div class="col-12 text-right py-3">
+                                                                <button class="btn downloadbtn btn-sm" onclick="copyToClipboard('#card3HtmlCode',this)" data-toggle="tooltip" data-placement="top" title="Copy to clipboard">Copy</button>
+                                                            </div>
+                                                            <div class="col-12 px-0">
+                                                                <div class="form-group">
+                                                                    <textarea id="card3HtmlCode" class="form-control code" rows="5" id="txthtml" name="txthtml" readonly>
+
+<!--Colored Navbar-->
+<div class="colornavbar1">
+    <nav class="navbar navbar-expand-sm bg-light navbar-light mb-4">
+        <ul class="navbar-nav">
+            <li class="nav-item active">
+            <a class="nav-link" href="#">Active</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link disabled" href="#">Disabled</a>
+            </li>
+        </ul>
+        </nav>
+        
+        <nav class="navbar navbar-expand-sm bg-dark navbar-dark mb-4">
+        <ul class="navbar-nav">
+            <li class="nav-item active">
+            <a class="nav-link" href="#">Active</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link disabled" href="#">Disabled</a>
+            </li>
+        </ul>
+        </nav>
+        
+        <nav class="navbar navbar-expand-sm bg-primary navbar-dark">
+        <ul class="navbar-nav">
+            <li class="nav-item active">
+            <a class="nav-link" href="#">Active</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link disabled" href="#">Disabled</a>
+            </li>
+        </ul>
+        </nav>
+</div>
+      
+                                           
+                                                    
+                                                                </textarea>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+    
+                                                    </div>
+    
+                                                </div>
+                                                <div class="tab-pane fade" id="nav-csscard3" role="tabpanel" aria-labelledby="nav-profile-tab">
+                                                    <div class="container-fluid">
+                                                        <div class="row">
+                                                            <div class="col-4 p-3 m-auto">
+                                                                <a class="btn downloadbtn btn-block" target="_blank" href="#" download>No CSS</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+              <!--Section4-->
+            <div class="row">
+
+                <!--Placement-->
+                <div class="col-md-12 col-12 pb-md-4 pb-4">
+                    <div class="card">
+                        <div class="card-header">
+                            <h4>Placement</h4>
+                        </div>
+                        <div class="card-body">
+                            <div class="fixedtop mb-4">
+                               
+                                <nav class="navbar navbar-dark bg-dark mb-4">
+                                    <a class="navbar-brand" href="#">Fixed top</a>
+                                </nav>
+                            </div>
+                            <div class="fixedbottom mb-4">
+                              
+                                <nav class="navbar navbar-dark bg-dark">
+                                    <a class="navbar-brand" href="#">Fixed bottom</a>
+                                  </nav>
+                            </div>
+                            <div class="stickytop mb-4">
+                               
+                                <nav class="navbar sticky-top navbar-dark bg-dark">
+                                    <a class="navbar-brand" href="#">Sticky top</a>
+                                  </nav>
+                                   
+                            </div>
+                               
+                        </div> 
+                        <div class="col-md-12">
+                            <div class="text-center"><a id="btnViewcode" name="btnViewcode" class="btn btn-megna" data-toggle="collapse" href="#card4ViewCodeSection" role="button" aria-expanded="false" aria-controls="#card4ViewCodeSection">View Code</a></div>
+                        </div>     
+                    </div>
+                </div>
+
+                 <!--Placement View code-->
+                 <div class="col-md-12 pb-md-4 pb-4 p-0">
+                    <div class="collapse" id="card4ViewCodeSection">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="card bg-light h-100">
+                                        <div class="card-body">
+                                            <nav>
+                                                <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                                                    <a class="nav-item nav-link active" id="nav-html-tab" data-codeType='html' data-toggle="tab" href="#nav-htmlcard4" role="tab" aria-controls="nav-html" aria-selected="true">HTML</a>
+                                                    <a class="nav-item nav-link" id="nav-css-tab" data-codeType='css' data-toggle="tab" href="#nav-csscard4" role="tab" aria-controls="nav-css" aria-selected="false">CSS</a>
+                                                </div>
+                                            </nav>
+                                            <div class="tab-content border-left border-right border-bottom bg-white" id="nav-tabContent">
+                                                <div class="tab-pane fade show active" id="nav-htmlcard4" role="tabpanel" aria-labelledby="nav-home-tab">
+                                                    <div class="container-fluid">
+                                                        <div class="row">
+                                                            <div class="col-12 text-right py-3">
+                                                                <button class="btn downloadbtn btn-sm" onclick="copyToClipboard('#card4HtmlCode',this)" data-toggle="tooltip" data-placement="top" title="Copy to clipboard">Copy</button>
+                                                            </div>
+                                                            <div class="col-12 px-0">
+                                                                <div class="form-group">
+                                                                <textarea id="card4HtmlCode" class="form-control code" rows="5" id="txthtml" name="txthtml" readonly>
+
+<!--Placement-->
+<div class="fixedtop mb-4">
+    
+    <nav class="navbar navbar-dark bg-dark mb-4">
+        <a class="navbar-brand" href="#">Fixed top</a>
+    </nav>
+</div>
+<div class="fixedbottom mb-4">
+    
+    <nav class="navbar navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Fixed bottom</a>
+        </nav>
+</div>
+<div class="stickytop mb-4">
+    
+    <nav class="navbar sticky-top navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Sticky top</a>
+        </nav>
+        
+</div>
+            
+                                           
+                                                    
+                                                                </textarea>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+    
+                                                    </div>
+    
+                                                </div>
+                                                <div class="tab-pane fade" id="nav-csscard4" role="tabpanel" aria-labelledby="nav-profile-tab">
+                                                    <div class="container-fluid">
+                                                        <div class="row">
+                                                            <div class="col-4 p-3 m-auto">
+                                                                <a class="btn downloadbtn btn-block" target="_blank" href="dist/downloadCss/badges/iconBadges.css" download>Download iconBadges.css</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+            </div>
+        </div>
+    </div>
+   
+    
+ 
+     <!--jquery js-->
+     <script src="assets/Core/jquery-3.3.1.min.js"></script>
+     <!--popper js-->
+     <script src="assets/Core/popper/popper.min.js"></script>
+     <!--bootstrap js-->
+     <script src="assets/Core/bootstrap/dist/js/bootstrap.min.js"></script>
+     <!--Sidebarmenu js-->
+     <script src="dist/js/sidebarmenu.js"></script>
+     <!--Wave Effects js -->
+     <script src="dist/js/waves.js"></script>
+     <!-- scrollbar JavaScript -->
+     <script src="dist/js/perfect-scrollbar.jquery.min.js"></script>
+     <!--Custom JavaScript -->
+     <script src="dist/js/custom.js"></script>
+     <!--Code Mirror JS-->
+    <script src="assets/Plugins/codemirror/lib/codemirror.js"></script>
+    <script src="assets/Plugins/codemirror/mode/xml/xml.js"></script>
+    <script src="assets/Plugins/codemirror/mode/css/css.js"></script>
+    <script src="assets/Plugins/codemirror/mode/javascript/javascript.js"></script>
+    <script src="assets/Plugins/codemirror/mode/htmlmixed/htmlmixed.js"></script>
+ 
+     <!--custom js view code-->
+     <script src="dist/js/navbar.js"></script>
+ 
+ 
+     <script type="text/javascript">
+         var card1CodeInit = 0;
+         var card2CodeInit = 0;
+         var card3CodeInit = 0;
+         var card4CodeInit = 0;
+        
+         
+             $('#card1ViewCodeSection').on('shown.bs.collapse', function () {
+                 if(card1CodeInit == 0)
+                 {
+                     card1HtmlCodeEditor();
+                     card1CodeInit = 1;
+                 }
+                 else{
+                     return false;
+                 }
+             });
+             $('#card2ViewCodeSection').on('shown.bs.collapse', function () {
+                 if(card2CodeInit == 0)
+                 {
+                     card2HtmlCodeEditor();
+                     card2CodeInit = 1;
+                 }
+                 else{
+                     return false;
+                 }
+             });
+             $('#card3ViewCodeSection').on('shown.bs.collapse', function () {
+                 if(card3CodeInit == 0)
+                 {
+                     card3HtmlCodeEditor();
+                     card3CodeInit = 1;
+                 }
+                 else{
+                     return false;
+                 }
+             });
+
+             $('#card4ViewCodeSection').on('shown.bs.collapse', function () {
+                 if(card4CodeInit == 0)
+                 {
+                     card4HtmlCodeEditor();
+                     card4CodeInit = 1;
+                 }
+                 else{
+                     return false;
+                 }
+             });
+            
+            
+     </script>
+ 
+ </body>
+ </html>
+ 

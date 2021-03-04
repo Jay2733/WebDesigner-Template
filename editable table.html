@@ -1,0 +1,1505 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editable Table</title>
+     <!--Bootstrap css-->
+     <link rel="stylesheet" href="assets/Core/bootstrap/dist/css/bootstrap.min.css">
+     <link rel="stylesheet" href="assets/Plugins/datatables/media/css/dataTables.bootstrap4.css">
+      <!--plugins of viewcode-->
+    <link rel="stylesheet" type="text/css" href="assets/Plugins/codemirror/lib/codemirror.css">
+    <link rel="stylesheet" type="text/css" href="assets/Plugins/codemirror/theme/material.css">
+    <!--Custom css-->
+    <link rel="stylesheet" href="dist/css/style.css">
+    <link rel="stylesheet" href="dist/scss/css/editabletable.css">
+    <link rel="stylesheet" href="dist/sidenavCss/custom.css">
+</head>
+<body class="skin-megna fixed-layout">
+      <!-- ============================================================== -->
+        <!-- Topbar header - style you can find in pages.scss -->
+        <!-- ============================================================== -->
+        <header class="topbar">
+            <nav class="navbar top-navbar navbar-expand-md navbar-dark">
+                <!-- ============================================================== -->
+                <!-- Logo -->
+                <!-- ============================================================== -->
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="index.html">
+                        <!-- Logo icon --><b>
+                            <!--You can put here icon as well // <i class="wi wi-sunset"></i> //-->
+                            <!-- Dark Logo icon -->
+                            <img src="assets/images/New Logo.png" alt="homepage" class="light-logo" />
+                            <!-- Light Logo icon -->
+                            <!-- <img src="../assets/images/logo-light-icon.png" alt="homepage" class="light-logo" /> -->
+                        </b>
+                        <!--End Logo icon -->
+                        <span class="hidden-xs font-bold" style="font-size: 19px">Patel Techologies</span>
+                    </a>
+                </div>
+                <!-- ============================================================== -->
+                <!-- End Logo -->
+                <!-- ============================================================== -->
+                <div class="navbar-collapse">
+                    <!-- ============================================================== -->
+                    <!-- toggle and nav items -->
+                    <!-- ============================================================== -->
+                    <ul class="navbar-nav mr-auto">
+                        <!-- This is  -->
+                        <li class="nav-item"> <a class="nav-link nav-toggler d-block d-md-none waves-effect waves-dark" href="javascript:void(0)"><i class="ti-menu"></i></a> </li>
+                        <li class="nav-item"> <a class="nav-link sidebartoggler d-none d-lg-block d-md-block waves-effect waves-dark" href="javascript:void(0)"><i class="icon-menu"></i></a> </li>
+                        <!-- ============================================================== -->
+                        <!-- Search -->
+                        <!-- ============================================================== -->
+                        <li class="nav-item d-none d-md-block d-lg-block">
+                           <form action="">
+                              <input type="search" placeholder="Search & enter">
+                              <i class="fa fa-search"></i>
+                            </form>
+                        </li>
+                    </ul>
+                   
+                </div>
+            </nav>
+        </header>
+        <!-- ============================================================== -->
+        <!-- End Topbar header -->
+        <!-- ============================================================== -->
+        <!-- ============================================================== -->
+        <!-- Left Sidebar - style you can find in  custom.css  -->
+        <!-- ============================================================== -->
+        <aside class="left-sidebar">
+            <!-- Sidebar scroll-->
+            <div class="scroll-sidebar">
+                <!-- <div class="sidebar-header">
+                    <div class="companyLogo">
+                      <img class="img-responsive img-rounded" src="assets/images/company-logo.svg"
+                        alt="Company logo">
+                    </div>
+                </div> -->
+               <!-- Sidebar navigation-->
+               <nav class="sidebar-nav">
+                    <ul id="sidebarnav">
+                        <li>
+                            <a class="has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false"><i class="mdi mdi-login"></i><span class="hide-menu">Dashboard</span></a>
+                            <ul aria-expanded="false" class="collapse">
+                                <li><a href="Dashboard1.html">Dashboard 1</a></li>
+                                <li><a href="Dashboard2.html">Dashboard 2</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false"><i class="mdi mdi-login"></i><span class="hide-menu">Login Templates</span></a>
+                            <ul aria-expanded="false" class="collapse">
+                                <li><a href="Login1.html">Login 1</a></li>
+                                <li><a href="Login2.html">Login 2</a></li>
+                                <li><a href="Login3.html">Login 3</a></li>
+                                <li><a href="Login4.html">Login 4</a></li>
+                                <li><a href="Login5.html">Login 5</a></li>
+                                <li><a href="Login6.html">Login 6</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false"><i class="ti-palette"></i><span class="hide-menu">Ui Elements</span></a>
+                            <ul aria-expanded="false" class="collapse">
+                                <li><a href="cards.html">Cards</a></li>
+                                <li><a href="buttons.html">Buttons</a></li>
+                                <li><a href="tabs.html">Tab</a></li>
+                                <li><a href="switchs.html">Switchs</a></li>
+                                <li><a href="Notification.html">Notification</a></li>
+                                <li><a href="Alert.html">Alert Box</a></li>
+                                <li><a href="carousel.html">Carousel</a></li>
+                                <li><a href="Errorpage.html">Error Page</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false"><i class="ti-layout-accordion-merged"></i><span class="hide-menu">Tables</span></a>
+                            <ul aria-expanded="false" class="collapse">
+                                <li><a href="basicTable.html">Basic Table</a></li>
+                                <li><a href="dataTable.html">Data Table</a></li>
+                                <li><a href="editable table.html">Editable Table</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false"><i class="ti-layout-media-right-alt"></i><span class="hide-menu">Forms</span></a>
+                            <ul aria-expanded="false" class="collapse">
+                                <li><a href="basicForms.html">Basic Forms</a></li>
+                                <li><a href="checkbox.html">Checkbox</a></li>
+                                <li><a href="dateTimepicker.html">Date &amp; Time Picker</a></li>
+                                <li><a href="dragdropfile.html">Drag &amp; Drop File Upload</a></li>
+                                <li><a href="sliders.html">Sliders</a></li>
+                                <li><a href="addon.html">Addon Control</a></li>
+                                <li><a href="icheck.html">Icheck Control</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false"><i class="ti-layout-media-right-alt"></i><span class="hide-menu">Components</span></a>
+                            <ul aria-expanded="false" class="collapse">
+                                <li><a href="mdbuttons.html">Material Buttons</a></li>
+                                <li><a href="badges.html">Badges</a></li>
+                                <li><a href="spinners.html">Loaders/Spinners</a></li>
+                                <li><a href="progressbar.html">ProgressBar</a></li>
+                                <li><a href="socialbutton.html">SocialButtons</a></li>
+                                <li><a href="stepper.html">Steppers</a></li>
+                                <li><a href="extendedcards.html">Extended Cards</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false"><i class="ti-layout-media-right-alt"></i><span class="hide-menu">Navigation</span></a>
+                            <ul aria-expanded="false" class="collapse">
+                                <li><a href="navbar.html">Navbar</a></li>
+                                <li><a href="breadcrumb.html">Breadcrumb</a></li>
+                                <li><a href="megamenu.html">Mega Menu</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false"><i class="mdi mdi-login"></i><span class="hide-menu">Email Templete</span></a>
+                            <ul aria-expanded="false" class="collapse">
+                               <li><a href="Email_1.html">Email Templete 1</a></li>
+                                <li><a href="Email_2.html">Email Templete 2</a></li>
+                            </ul>
+                        </li>
+                        <!--<li>
+                            <a class="has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false"><i class="ti-layout-media-right-alt"></i><span class="hide-menu">Templates</span></a>
+                            <ul aria-expanded="false" class="collapse">
+                                <li><a href="Website.html">Website</a></li>
+                            </ul>
+                        </li>-->
+                    </ul>
+                </nav>
+                <!-- End Sidebar navigation -->
+            </div>
+            <!-- End Sidebar scroll-->
+        </aside>
+        <!-- ============================================================== -->
+        <!-- End Left Sidebar - style you can find in  custom.css  -->
+        <!-- ============================================================== -->
+    <div class="page-wrapper">
+        <div class="container-fluid">
+            <div class="row">
+                <!--Sub table-->
+                <div class="col-12 pb-4">
+                    <div class="card datatable-wrapper">
+                        <h4 class="card-header">Sub table</h4>
+                        <div class="card-body ">
+                            <div class="card">
+                                <div class="card-body">  
+                                    <div class="d-md-flex justify-content-md-end px-0 mb-3 d-block">
+                                        <label class="clearFilter d-none hideclearfilter">Clear filter</label>
+                                        <div class="col-md-3 px-0 mr-3">
+                                            <div class="input-group my-2">
+                                                <div class="input-group-prepend"><span class="input-group-text"><i class="ti-search"></i></span></div>
+                                                <input type="text" class="form-control" id="SearchHolidaySchedule" name="SearchHolidaySchedule" placeholder="Search" >
+                                            </div>
+                                        </div>
+                                        <div id="SelectCountryContainer" class="selectWrapper col-md-3 px-0 my-2">
+                                            <select class="custom-select" id="FilterSelectCountry" name="FilterSelectCountry" >
+                                                <option value="0">Dropdown</option> 
+                                                <option value="1">Dropdown 1</option>
+                                                <option value="2">Dropdown 2</option> 
+                                            </select>
+                                        </div>
+                                    </div>
+                                   
+                                    <div id="HolidayAccordian" class="col-12 px-0 HolidaySchedule accordion">
+                                        <!--Main table start-->
+                                        <div class="table-responsive">
+                                            <table id="ServiceDetailTable" class="table table-bordered">
+                                                 <thead>
+                                                     <tr>
+                                                         <th class="CollapseIcon" style="width:2%"></th>
+                                                         <th>#</th>
+                                                         <th class="th-sm">Schedule Name</th>
+                                                         <th class="th-sm ">Country</th>
+                                                         <th class="th-sm">State</th>
+                                                         <th class="IconTdWidth" style="width:2%"></th>
+                                                     </tr>
+                                                 </thead>
+                                                 <tbody>
+                                                     <tr data-toggle="collapse" href="#collapseExample1"  aria-expanded="false" aria-controls="collapseExample1" class="accordion-toggle">
+                                                         <td>
+                                                             <a class="IconLink IconActiveAccentColor">
+                                                                 <i class="mdi mdi-plus"></i>
+                                                                 <i class="mdi mdi-minus"></i>
+                                                             </a>
+                                                         </td>
+                                                         <td>1235</td>
+                                                         <td>UK Holidays</td> 
+                                                         <td>United Kingdom</td>
+                                                         <td>worcestershire</td>
+                                                         <td class="text-center">
+                                                             <a class="IconLink"><i class="mdi mdi-lead-pencil"></i></a>
+                                                         </td>
+                                                     </tr>
+                                                     <tr>
+                                                         <!--Sub table start-->
+                                                         <td colspan="6"  class="hiddenRow" data-parent="HolidayAccordian">
+                                                             <div class="card-body collapse" id="collapseExample1">
+                                                                 <div class="d-flex align-items-center justify-content-between">
+                                                                     <div>
+                                                                         <h5 class="DetailAccent mb-0">List of holidays</h5>
+                                                                     </div>
+                                                                     <div>
+                                                                         <button type="button" class="btn btn-skyblue waves-effect">Add Holidays</button>
+                                                                     </div>
+                                                                 </div>
+                                                               
+                                                                 <div class="table-responsive">
+                                                                     <table id="holidayDetailTable" class="table table-bordered mt-3 holidayDetails">
+                                                                         <thead>
+                                                                             <tr>
+                                                                                 <th class="th-sm">
+                                                                                     Description
+                                                                                 </th>
+                                                                                 <th class="th-sm">
+                                                                                     Start Date
+                                                                                 </th>
+                                                                                 <th class="th-sm">
+                                                                                     Start Time
+                                                                                 </th>
+                                                                                 <th class="th-sm">
+                                                                                     End Date
+                                                                                 </th>
+                                                                                 <th class="th-sm">
+                                                                                     End Time
+                                                                                 </th>
+                                                                                 <th class="th-sm" style="width: 2%">
+                                                                                     
+                                                                                 </th>
+                                                                                 <th class="th-sm IconTdWidth" style="width: 2%">
+                                                         
+                                                                                 </th>
+                                                                             </tr>
+                                                                         </thead>
+                                                                         <tbody>
+                                                                             
+                                                                             <tr>
+                                                                                 <td style="width:30%">New year day</td>
+                                                                                 <td>01/January</td>
+                                                                                 <td>00:00   AM</td>
+                                                                                 <td>01/January</td>
+                                                                                 <td>23:59 PM</td>
+                                                                                 <td>
+                                                                                     <a class="IconLink"><i class="mdi mdi-lead-pencil"></i></a>
+                                                                                 </td>
+                                                                                 <td>
+                                                                                     <a class="IconLink"><i class="mdi mdi-close"></i></a>
+                                                                                 </td>
+                                                         
+                                                                             </tr>
+                                                                             <tr>
+                                                                                 <td style="width:30%">Good Friday</td>
+                                                                                 <td>10/April</td>
+                                                                                 <td>00:00 AM</td>
+                                                                                 <td>10/April</td>
+                                                                                 <td>23:59 PM</td>
+                                                                                 <td>
+                                                                                     <a class="IconLink"><i class="mdi mdi-lead-pencil"></i></a>
+                                                                                 </td>
+                                                                                 <td>
+                                                                                     <a class="IconLink"><i class="mdi mdi-close"></i></a>
+                                                                                 </td>
+                                                                             </tr>
+                                                                         </tbody>
+                                                                     </table>
+                                                                 </div>                          
+                                                               
+                                                             </div>
+                                                         </td>
+                                                         <!--Sub table end-->
+                                                     </tr>
+                                                     <tr data-toggle="collapse"  href="#collapseExample2"  aria-expanded="false" aria-controls="collapseExample2" class="accordion-toggle">
+                                                         <td>
+                                                             <a class="IconLink IconActiveAccentColor">
+                                                                 <i class="mdi mdi-plus"></i>
+                                                                 <i class="mdi mdi-minus"></i>
+                                                             </a>
+                                                         </td>
+                                                         <td>1234</td>
+                                                         <td>India Holidays</td> 
+                                                         <td>India</td>
+                                                         <td>Gujarat</td>
+                                                         <td>
+                                                             <a class="IconLink"><i class="mdi mdi-lead-pencil"></i></a>
+                                                         </td>
+                                                     </tr>
+                                                     <tr>
+                                                       <!--Sub table start-->
+                                                       <td colspan="6"  class="hiddenRow" data-parent="HolidayAccordian">
+                                                        <div class="card-body collapse" id="collapseExample2">
+                                                            <div class="d-flex align-items-center justify-content-between">
+                                                                <div>
+                                                                    <h5 class="DetailAccent mb-0">List of holidays</h5>
+                                                                </div>
+                                                                <div>
+                                                                    <button type="button" class="btn btn-skyblue waves-effect">Add Holidays</button>
+                                                                </div>
+                                                            </div>
+                                                          
+                                                            <div class="table-responsive">
+                                                                <table id="holidayDetailTable" class="table table-bordered mt-3 holidayDetails">
+                                                                    <thead>
+                                                                        <tr>
+                                                                            <th class="th-sm">
+                                                                                Description
+                                                                            </th>
+                                                                            <th class="th-sm">
+                                                                                Start Date
+                                                                            </th>
+                                                                            <th class="th-sm">
+                                                                                Start Time
+                                                                            </th>
+                                                                            <th class="th-sm">
+                                                                                End Date
+                                                                            </th>
+                                                                            <th class="th-sm">
+                                                                                End Time
+                                                                            </th>
+                                                                            <th class="th-sm" style="width: 2%">
+                                                                                
+                                                                            </th>
+                                                                            <th class="th-sm IconTdWidth" style="width: 2%">
+                                                    
+                                                                            </th>
+                                                                        </tr>
+                                                                    </thead>
+                                                                    <tbody>
+                                                                        
+                                                                        <tr>
+                                                                            <td style="width:30%">New year day</td>
+                                                                            <td>01/January</td>
+                                                                            <td>00:00   AM</td>
+                                                                            <td>01/January</td>
+                                                                            <td>23:59 PM</td>
+                                                                            <td>
+                                                                                <a class="IconLink"><i class="mdi mdi-lead-pencil"></i></a>
+                                                                            </td>
+                                                                            <td>
+                                                                                <a class="IconLink"><i class="mdi mdi-close"></i></a>
+                                                                            </td>
+                                                    
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td style="width:30%">Good Friday</td>
+                                                                            <td>10/April</td>
+                                                                            <td>00:00 AM</td>
+                                                                            <td>10/April</td>
+                                                                            <td>23:59 PM</td>
+                                                                            <td>
+                                                                                <a class="IconLink"><i class="mdi mdi-lead-pencil"></i></a>
+                                                                            </td>
+                                                                            <td>
+                                                                                <a class="IconLink"><i class="mdi mdi-close"></i></a>
+                                                                            </td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                            </div>                          
+                                                          
+                                                        </div>
+                                                    </td>
+                                                     <!--Sub table end-->
+                                                    </tr>
+                                                   
+                                                     <tr data-toggle="collapse"  href="#collapseExample3"  aria-expanded="false" aria-controls="collapseExample3" class="accordion-toggle">
+                                                         <td class="text-center">
+                                                             <a class="IconLink IconActiveAccentColor">
+                                                                 <i class="mdi mdi-plus"></i>
+                                                                 <i class="mdi mdi-minus"></i>
+                                                             </a>
+                                                         </td>
+                                                         <td>1233</td>
+                                                         <td>Canada Holidays</td> 
+                                                         <td>Canada</td>
+                                                         <td>Manitoba</td>
+                                                         <td>
+                                                             <a class="IconLink"><i class="mdi mdi-lead-pencil"></i></a>
+                                                         </td>
+                                                     </tr>
+                                                     <tr>
+                                                        <!--Sub table start-->
+                                                        <td colspan="6"  class="hiddenRow">
+                                                         <div class="card-body collapse" id="collapseExample3">
+                                                             <div class="d-flex align-items-center justify-content-between">
+                                                                 <div>
+                                                                     <h5 class="DetailAccent mb-0">List of holidays</h5>
+                                                                 </div>
+                                                                 <div>
+                                                                     <button type="button" class="btn btn-skyblue waves-effect">Add Holidays</button>
+                                                                 </div>
+                                                             </div>
+                                                           
+                                                             <div class="table-responsive">
+                                                                 <table id="holidayDetailTable" class="table table-bordered mt-3 holidayDetails">
+                                                                     <thead>
+                                                                         <tr>
+                                                                             <th class="th-sm">
+                                                                                 Description
+                                                                             </th>
+                                                                             <th class="th-sm">
+                                                                                 Start Date
+                                                                             </th>
+                                                                             <th class="th-sm">
+                                                                                 Start Time
+                                                                             </th>
+                                                                             <th class="th-sm">
+                                                                                 End Date
+                                                                             </th>
+                                                                             <th class="th-sm">
+                                                                                 End Time
+                                                                             </th>
+                                                                             <th class="th-sm" style="width: 2%">
+                                                                                 
+                                                                             </th>
+                                                                             <th class="th-sm IconTdWidth" style="width: 2%">
+                                                     
+                                                                             </th>
+                                                                         </tr>
+                                                                     </thead>
+                                                                     <tbody>
+                                                                         
+                                                                         <tr>
+                                                                             <td style="width:30%">New year day</td>
+                                                                             <td>01/January</td>
+                                                                             <td>00:00   AM</td>
+                                                                             <td>01/January</td>
+                                                                             <td>23:59 PM</td>
+                                                                             <td>
+                                                                                 <a class="IconLink"><i class="mdi mdi-lead-pencil"></i></a>
+                                                                             </td>
+                                                                             <td>
+                                                                                 <a class="IconLink"><i class="mdi mdi-close"></i></a>
+                                                                             </td>
+                                                     
+                                                                         </tr>
+                                                                         <tr>
+                                                                             <td style="width:30%">Good Friday</td>
+                                                                             <td>10/April</td>
+                                                                             <td>00:00 AM</td>
+                                                                             <td>10/April</td>
+                                                                             <td>23:59 PM</td>
+                                                                             <td>
+                                                                                 <a class="IconLink"><i class="mdi mdi-lead-pencil"></i></a>
+                                                                             </td>
+                                                                             <td>
+                                                                                 <a class="IconLink"><i class="mdi mdi-close"></i></a>
+                                                                             </td>
+                                                                         </tr>
+                                                                     </tbody>
+                                                                 </table>
+                                                             </div>                          
+                                                           
+                                                         </div>
+                                                     </td>
+                                                      <!--Sub table end-->
+                                                     </tr>
+                                                     <tr data-toggle="collapse"  href="#collapseExample4"  aria-expanded="false" aria-controls="collapseExample4" class="accordion-toggle">
+                                                         <td class="text-center">
+                                                             <a class="IconLink IconActiveAccentColor">
+                                                                 <i class="mdi mdi-plus"></i>
+                                                                 <i class="mdi mdi-minus"></i>
+                                                             </a>
+                                                         </td>
+                                                         <td>1233</td>
+                                                         <td>Canada Holidays</td> 
+                                                         <td>Canada</td>
+                                                         <td>Manitoba</td>
+                                                         <td>
+                                                             <a class="IconLink"><i class="mdi mdi-lead-pencil"></i></a>
+                                                         </td>
+                                                     </tr>
+                                                     <tr>
+                                                        <!--Sub table start-->
+                                                        <td colspan="6"  class="hiddenRow" data-parent="HolidayAccordian">
+                                                         <div class="card-body collapse" id="collapseExample4">
+                                                             <div class="d-flex align-items-center justify-content-between">
+                                                                 <div>
+                                                                     <h5 class="DetailAccent mb-0">List of holidays</h5>
+                                                                 </div>
+                                                                 <div>
+                                                                     <button type="button" class="btn btn-skyblue waves-effect">Add Holidays</button>
+                                                                 </div>
+                                                             </div>
+                                                           
+                                                             <div class="table-responsive">
+                                                                 <table id="holidayDetailTable" class="table table-bordered mt-3 holidayDetails">
+                                                                     <thead>
+                                                                         <tr>
+                                                                             <th class="th-sm">
+                                                                                 Description
+                                                                             </th>
+                                                                             <th class="th-sm">
+                                                                                 Start Date
+                                                                             </th>
+                                                                             <th class="th-sm">
+                                                                                 Start Time
+                                                                             </th>
+                                                                             <th class="th-sm">
+                                                                                 End Date
+                                                                             </th>
+                                                                             <th class="th-sm">
+                                                                                 End Time
+                                                                             </th>
+                                                                             <th class="th-sm" style="width: 2%">
+                                                                                 
+                                                                             </th>
+                                                                             <th class="th-sm IconTdWidth" style="width: 2%">
+                                                     
+                                                                             </th>
+                                                                         </tr>
+                                                                     </thead>
+                                                                     <tbody>
+                                                                         
+                                                                         <tr>
+                                                                             <td style="width:30%">New year day</td>
+                                                                             <td>01/January</td>
+                                                                             <td>00:00   AM</td>
+                                                                             <td>01/January</td>
+                                                                             <td>23:59 PM</td>
+                                                                             <td>
+                                                                                 <a class="IconLink"><i class="mdi mdi-lead-pencil"></i></a>
+                                                                             </td>
+                                                                             <td>
+                                                                                 <a class="IconLink"><i class="mdi mdi-close"></i></a>
+                                                                             </td>
+                                                     
+                                                                         </tr>
+                                                                         <tr>
+                                                                             <td style="width:30%">Good Friday</td>
+                                                                             <td>10/April</td>
+                                                                             <td>00:00 AM</td>
+                                                                             <td>10/April</td>
+                                                                             <td>23:59 PM</td>
+                                                                             <td>
+                                                                                 <a class="IconLink"><i class="mdi mdi-lead-pencil"></i></a>
+                                                                             </td>
+                                                                             <td>
+                                                                                 <a class="IconLink"><i class="mdi mdi-close"></i></a>
+                                                                             </td>
+                                                                         </tr>
+                                                                     </tbody>
+                                                                 </table>
+                                                             </div>                          
+                                                           
+                                                         </div>
+                                                     </td>
+                                                      <!--Sub table end-->
+                                                     </tr>
+                                                     <tr data-toggle="collapse"  href="#collapseExample5"  aria-expanded="false" aria-controls="collapseExample5" class="accordion-toggle">
+                                                         <td class="text-center">
+                                                             <a class="IconLink IconActiveAccentColor">
+                                                                 <i class="mdi mdi-plus"></i>
+                                                                 <i class="mdi mdi-minus"></i>
+                                                             </a>
+                                                         </td>
+                                                         <td>1233</td>
+                                                         <td>Canada Holidays</td> 
+                                                         <td>Canada</td>
+                                                         <td>Manitoba</td>
+                                                         <td>
+                                                             <a class="IconLink"><i class="mdi mdi-lead-pencil"></i></a>
+                                                         </td>
+                                                     </tr>
+                                                     <tr>
+                                                        <!--Sub table start-->
+                                                        <td colspan="6"  class="hiddenRow" data-parent="HolidayAccordian">
+                                                         <div class="card-body collapse" id="collapseExample5">
+                                                             <div class="d-flex align-items-center justify-content-between">
+                                                                 <div>
+                                                                     <h5 class="DetailAccent mb-0">List of holidays</h5>
+                                                                 </div>
+                                                                 <div>
+                                                                     <button type="button" class="btn btn-skyblue waves-effect">Add Holidays</button>
+                                                                 </div>
+                                                             </div>
+                                                           
+                                                             <div class="table-responsive">
+                                                                 <table id="holidayDetailTable" class="table table-bordered mt-3 holidayDetails">
+                                                                     <thead>
+                                                                         <tr>
+                                                                             <th class="th-sm">
+                                                                                 Description
+                                                                             </th>
+                                                                             <th class="th-sm">
+                                                                                 Start Date
+                                                                             </th>
+                                                                             <th class="th-sm">
+                                                                                 Start Time
+                                                                             </th>
+                                                                             <th class="th-sm">
+                                                                                 End Date
+                                                                             </th>
+                                                                             <th class="th-sm">
+                                                                                 End Time
+                                                                             </th>
+                                                                             <th class="th-sm" style="width: 2%">
+                                                                                 
+                                                                             </th>
+                                                                             <th class="th-sm IconTdWidth" style="width: 2%">
+                                                     
+                                                                             </th>
+                                                                         </tr>
+                                                                     </thead>
+                                                                     <tbody>
+                                                                         
+                                                                         <tr>
+                                                                             <td style="width:30%">New year day</td>
+                                                                             <td>01/January</td>
+                                                                             <td>00:00   AM</td>
+                                                                             <td>01/January</td>
+                                                                             <td>23:59 PM</td>
+                                                                             <td>
+                                                                                 <a class="IconLink"><i class="mdi mdi-lead-pencil"></i></a>
+                                                                             </td>
+                                                                             <td>
+                                                                                 <a class="IconLink"><i class="mdi mdi-close"></i></a>
+                                                                             </td>
+                                                     
+                                                                         </tr>
+                                                                         <tr>
+                                                                             <td style="width:30%">Good Friday</td>
+                                                                             <td>10/April</td>
+                                                                             <td>00:00 AM</td>
+                                                                             <td>10/April</td>
+                                                                             <td>23:59 PM</td>
+                                                                             <td>
+                                                                                 <a class="IconLink"><i class="mdi mdi-lead-pencil"></i></a>
+                                                                             </td>
+                                                                             <td>
+                                                                                 <a class="IconLink"><i class="mdi mdi-close"></i></a>
+                                                                             </td>
+                                                                         </tr>
+                                                                     </tbody>
+                                                                 </table>
+                                                             </div>                          
+                                                           
+                                                         </div>
+                                                     </td>
+                                                      <!--Sub table end-->
+                                                     </tr>
+                                                     <tr data-toggle="collapse"  href="#collapseExample6"  aria-expanded="false" aria-controls="collapseExample6" class="accordion-toggle">
+                                                         <td class="text-center">
+                                                             <a class="IconLink IconActiveAccentColor">
+                                                                 <i class="mdi mdi-plus"></i>
+                                                                 <i class="mdi mdi-minus"></i>
+                                                             </a>
+                                                         </td>
+                                                         <td>1233</td>
+                                                         <td>Canada Holidays</td> 
+                                                         <td>Canada</td>
+                                                         <td>Manitoba</td>
+                                                         <td>
+                                                             <a class="IconLink"><i class="mdi mdi-lead-pencil"></i></a>
+                                                         </td>
+                                                     </tr>
+                                                     <tr>
+                                                        <!--Sub table start-->
+                                                        <td colspan="6"  class="hiddenRow">
+                                                         <div class="card-body collapse" id="collapseExample6" data-parent="HolidayAccordian">
+                                                             <div class="d-flex align-items-center justify-content-between">
+                                                                 <div>
+                                                                     <h5 class="DetailAccent mb-0">List of holidays</h5>
+                                                                 </div>
+                                                                 <div>
+                                                                     <button type="button" class="btn btn-skyblue waves-effect">Add Holidays</button>
+                                                                 </div>
+                                                             </div>
+                                                           
+                                                             <div class="table-responsive">
+                                                                 <table id="holidayDetailTable" class="table table-bordered mt-3 holidayDetails">
+                                                                     <thead>
+                                                                         <tr>
+                                                                             <th class="th-sm">
+                                                                                 Description
+                                                                             </th>
+                                                                             <th class="th-sm">
+                                                                                 Start Date
+                                                                             </th>
+                                                                             <th class="th-sm">
+                                                                                 Start Time
+                                                                             </th>
+                                                                             <th class="th-sm">
+                                                                                 End Date
+                                                                             </th>
+                                                                             <th class="th-sm">
+                                                                                 End Time
+                                                                             </th>
+                                                                             <th class="th-sm" style="width: 2%">
+                                                                                 
+                                                                             </th>
+                                                                             <th class="th-sm IconTdWidth" style="width: 2%">
+                                                     
+                                                                             </th>
+                                                                         </tr>
+                                                                     </thead>
+                                                                     <tbody>
+                                                                         
+                                                                         <tr>
+                                                                             <td style="width:30%">New year day</td>
+                                                                             <td>01/January</td>
+                                                                             <td>00:00   AM</td>
+                                                                             <td>01/January</td>
+                                                                             <td>23:59 PM</td>
+                                                                             <td>
+                                                                                 <a class="IconLink"><i class="mdi mdi-lead-pencil"></i></a>
+                                                                             </td>
+                                                                             <td>
+                                                                                 <a class="IconLink"><i class="mdi mdi-close"></i></a>
+                                                                             </td>
+                                                     
+                                                                         </tr>
+                                                                         <tr>
+                                                                             <td style="width:30%">Good Friday</td>
+                                                                             <td>10/April</td>
+                                                                             <td>00:00 AM</td>
+                                                                             <td>10/April</td>
+                                                                             <td>23:59 PM</td>
+                                                                             <td>
+                                                                                 <a class="IconLink"><i class="mdi mdi-lead-pencil"></i></a>
+                                                                             </td>
+                                                                             <td>
+                                                                                 <a class="IconLink"><i class="mdi mdi-close"></i></a>
+                                                                             </td>
+                                                                         </tr>
+                                                                     </tbody>
+                                                                 </table>
+                                                             </div>                          
+                                                           
+                                                         </div>
+                                                     </td>
+                                                      <!--Sub table end-->
+                                                     </tr>
+                                                 </tbody>
+                                             </table>
+                                         </div>
+                                    </div>    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <div class="text-center"><a id="btnViewcode" name="btnViewcode" class="btn btn-megna" role="button" data-toggle="collapse" href="#card1ViewCodeSection" aria-expanded="false" aria-controls="card1ViewCodeSection">View Code</a></div>
+                        </div>
+                    </div>
+                </div>
+                <!--Sub table-->
+                <!--View code of Sub table start-->
+                <div class="col-12 pb-4">
+                    <div class="collapse" id="card1ViewCodeSection">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-12 p-0">
+                                    <div class="card bg-light h-100">
+                                        <div class="card-body">
+                                            <nav>
+                                                <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                                                    <a class="nav-item nav-link active" id="nav-html-tab" data-codeType='html' data-toggle="tab" href="#nav-html" role="tab" aria-controls="nav-html" aria-selected="true">HTML</a>
+                                                    <a class="nav-item nav-link" id="nav-css-tab" data-codeType='css' data-toggle="tab" href="#nav-css" role="tab" aria-controls="nav-css" aria-selected="false">CSS</a>
+                                                </div>
+                                            </nav>
+                                            <div class="tab-content border-left border-right border-bottom bg-white" id="nav-tabContent">
+                                                <div class="tab-pane fade show active" id="nav-html" role="tabpanel" aria-labelledby="nav-home-tab">
+                                                    <div class="container-fluid">
+                                                        <div class="row">
+                                                            <div class="col-12 text-right py-3">
+                                                                <button class="btn downloadbtn btn-sm" onclick="copyToClipboard('#card1HtmlCode',this)" data-toggle="tooltip" data-placement="top" title="Copy to clipboard">Copy</button>
+                                                            </div>
+                                                            <div class="col-12 px-0">
+                                                                <div class="form-group">
+                                                                    <textarea id="card1HtmlCode" class="form-control code" rows="5" id="txthtml" name="txthtml" readonly>
+<!--editable table 1-->
+<div class="d-md-flex justify-content-md-end px-0 mb-3 d-block">
+    <label class="clearFilter d-none hideclearfilter">Clear filter</label>
+    <div class="col-md-3 px-0 mr-3">
+        <div class="input-group my-2">
+            <div class="input-group-prepend"><span class="input-group-text"><i class="ti-search"></i></span></div>
+            <input type="text" class="form-control" id="SearchHolidaySchedule" name="SearchHolidaySchedule" placeholder="Search" >
+        </div>
+    </div>
+    <div id="SelectCountryContainer" class="selectWrapper col-md-3 px-0 my-2">
+        <select class="custom-select" id="FilterSelectCountry" name="FilterSelectCountry" >
+            <option value="0">Dropdown</option> 
+            <option value="1">Dropdown 1</option>
+            <option value="2">Dropdown 2</option> 
+        </select>
+    </div>
+</div>
+
+<div id="HolidayAccordian" class="col-12 px-0 HolidaySchedule">
+    <!--Main table start-->
+    <div class="table-responsive">
+        <table id="ServiceDetailTable" class="table table-bordered">
+            <thead>
+                <tr>
+                    <th class="CollapseIcon" style="width:2%"></th>
+                    <th>#</th>
+                    <th class="th-sm">Schedule Name</th>
+                    <th class="th-sm ">Country</th>
+                    <th class="th-sm">State</th>
+                    <th class="IconTdWidth" style="width:2%"></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr data-toggle="collapse" href="#collapseExample1"  aria-expanded="false" aria-controls="collapseExample1" class="accordion-toggle">
+                    <td>
+                        <a class="IconLink IconActiveAccentColor">
+                            <i class="mdi mdi-plus"></i>
+                            <i class="mdi mdi-minus"></i>
+                        </a>
+                    </td>
+                    <td>1235</td>
+                    <td>UK Holidays</td> 
+                    <td>United Kingdom</td>
+                    <td>worcestershire</td>
+                    <td class="text-center">
+                        <a class="IconLink"><i class="mdi mdi-lead-pencil"></i></a>
+                    </td>
+                </tr>
+                <tr>
+                    <!--Sub table start-->
+                    <td colspan="11"  class="hiddenRow">
+                        <div class="card-body collapse" id="collapseExample1">
+                            <div class="d-flex align-items-center justify-content-between">
+                                <div>
+                                    <h5 class="DetailAccent mb-0">List of holidays</h5>
+                                </div>
+                                <div>
+                                    <button type="button" class="btn btn-skyblue waves-effect">Add Holidays</button>
+                                </div>
+                            </div>
+                            
+                            <div class="table-responsive">
+                                <table id="holidayDetailTable" class="table table-bordered mt-3 holidayDetails">
+                                    <thead>
+                                        <tr>
+                                            <th class="th-sm">
+                                                Description
+                                            </th>
+                                            <th class="th-sm">
+                                                Start Date
+                                            </th>
+                                            <th class="th-sm">
+                                                Start Time
+                                            </th>
+                                            <th class="th-sm">
+                                                End Date
+                                            </th>
+                                            <th class="th-sm">
+                                                End Time
+                                            </th>
+                                            <th class="th-sm" style="width: 2%">
+                                                
+                                            </th>
+                                            <th class="th-sm IconTdWidth" style="width: 2%">
+                    
+                                            </th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        
+                                        <tr>
+                                            <td style="width:30%">New year day</td>
+                                            <td>01/January</td>
+                                            <td>00:00   AM</td>
+                                            <td>01/January</td>
+                                            <td>23:59 PM</td>
+                                            <td>
+                                                <a class="IconLink"><i class="mdi mdi-lead-pencil"></i></a>
+                                            </td>
+                                            <td>
+                                                <a class="IconLink"><i class="mdi mdi-close"></i></a>
+                                            </td>
+                    
+                                        </tr>
+                                        <tr>
+                                            <td style="width:30%">Good Friday</td>
+                                            <td>10/April</td>
+                                            <td>00:00 AM</td>
+                                            <td>10/April</td>
+                                            <td>23:59 PM</td>
+                                            <td>
+                                                <a class="IconLink"><i class="mdi mdi-lead-pencil"></i></a>
+                                            </td>
+                                            <td>
+                                                <a class="IconLink"><i class="mdi mdi-close"></i></a>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>                          
+                            
+                        </div>
+                    </td>
+                    <!--Sub table end-->
+                </tr>
+                <tr data-toggle="collapse"  href="#collapseExample2"  aria-expanded="false" aria-controls="collapseExample2" class="accordion-toggle">
+                    <td>
+                        <a class="IconLink IconActiveAccentColor">
+                            <i class="mdi mdi-plus"></i>
+                            <i class="mdi mdi-minus"></i>
+                        </a>
+                    </td>
+                    <td>1234</td>
+                    <td>India Holidays</td> 
+                    <td>India</td>
+                    <td>Gujarat</td>
+                    <td>
+                        <a class="IconLink"><i class="mdi mdi-lead-pencil"></i></a>
+                    </td>
+                </tr>
+                <tr data-toggle="collapse"  href="#collapseExample3"  aria-expanded="false" aria-controls="collapseExample3" class="accordion-toggle">
+                    <td class="text-center">
+                        <a class="IconLink IconActiveAccentColor">
+                            <i class="mdi mdi-plus"></i>
+                            <i class="mdi mdi-minus"></i>
+                        </a>
+                    </td>
+                    <td>1233</td>
+                    <td>Canada Holidays</td> 
+                    <td>Canada</td>
+                    <td>Manitoba</td>
+                    <td>
+                        <a class="IconLink"><i class="mdi mdi-lead-pencil"></i></a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>    
+               
+                                                                       
+                                                                </textarea>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+
+                                                </div>
+                                                <div class="tab-pane fade" id="nav-css" role="tabpanel" aria-labelledby="nav-profile-tab">
+                                                    <div class="container-fluid">
+                                                        <div class="row">
+                                                            <div class="col-md-4 col-12 p-3 m-auto">
+                                                                <a class="btn downloadbtn btn-block" target="_blank" href="dist/downloadCss/Tables/ediTable/ediTable1.css" download>Download ediTable1.css</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--View code of Sub table end-->
+
+
+
+                 <!--Editable with Datatable-->
+                 <div class="col-12 pb-4">
+                    <div class="card datatable-wrapper">
+                        <h4 class="card-header">Editable Table Datatable</h4>
+                        <div class="card-body ">
+                            <div class="card">
+                                <div class="card-body">  
+                                    <div class="col-12 px-0 editDatatable">
+                                        <!--Main table start-->
+                                        <div class="table-responsive">
+                                           <table id="editable-table" class="table table-bordered table-striped">
+                                                <thead>
+                                                    <tr>
+                                                        <th class="th-sm">#</th>
+                                                        <th class="th-sm">First Name</th>
+                                                        <th class="th-sm ">Last Nmae</th>
+                                                        <th class="th-sm">Username</th>
+                                                        <th class="th-sm">Role</th>
+                                                        <th></th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>1</td>
+                                                        <td>
+                                                            <label class="DisplayLabel" for="inputid1">Nandan</label>
+                                                            <input type="text" class="form-control EditableTextbox"  value="Nandan" name="" id="inputid1" required>
+                                                        </td> 
+                                                        <td>
+                                                            <label class="DisplayLabel" for="inputid2">Patel</label>
+                                                            <input type="text" class="form-control EditableTextbox"  value="Patel" name="" id="inputid2" required>
+                                                        </td>
+                                                        <td>
+                                                            <label class="DisplayLabel" for="inputid3">Patel@123</label>
+                                                            <input type="text" class="form-control EditableTextbox"  value="Patel@123" name="" id="inputid3" required>
+                                                        </td>
+                                                        <td>
+                                                            <label class="DisplayLabel" for="FilterSelectrole">Admin</label>
+                                                          
+                                                                <select class="custom-select" id="FilterSelectrole" name="FilterSelectrole" >
+                                                                    <option value="Admin">Admin</option> 
+                                                                    <option value="Dropdown 1">Dropdown 1</option>
+                                                                    <option value="Dropdown 2">Dropdown 2</option> 
+                                                                </select>
+                                                           
+                                                        </td>
+                                                        <td>
+                                                            <div class="button-group ActionButtons">
+                                                                <a class="IconLink editDetails" id="editDetails"><i class="mdi mdi-lead-pencil"></i></a>
+                                                                <a class="IconLink" id="deleteDetails"><i class="ti-trash"></i></a>
+                                                            </div>
+                                                            <div class="editable-button-group">
+                                                                <a class="IconLink check addDetails" id="addDetails"><i class="mdi mdi-check"></i></a>
+                                                                <a class="IconLink close closeDetails" id="closeDetails"><i class="mdi mdi-close"></i></a>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>2</td>
+                                                        <td>
+                                                            <label class="DisplayLabel" for="inputid12">Akki</label>
+                                                            <input type="text" class="form-control EditableTextbox"  value="Akki" name="" id="inputid12" required>
+                                                        </td> 
+                                                        <td>
+                                                            <label class="DisplayLabel" for="inputid22">Patel</label>
+                                                            <input type="text" class="form-control EditableTextbox"  value="Patel" name="" id="inputid22" required>
+                                                        </td>
+                                                        <td>
+                                                            <label class="DisplayLabel" for="inputid32">Patel1245</label>
+                                                            <input type="text" class="form-control EditableTextbox"  value="Patel1245" name="" id="inputid32" required>
+                                                        </td>
+                                                        <td>
+                                                            <label class="DisplayLabel" for="FilterSelectrole1">Web Designer</label>
+                                                           
+                                                                <select class="custom-select" id="FilterSelectrole1" name="FilterSelectrole1" >
+                                                                    <option value="Web Designer">Web Designer</option> 
+                                                                    <option value="Dropdown 1">Dropdown 1</option>
+                                                                    <option value="Dropdown 2">Dropdown 2</option> 
+                                                                </select>
+                                                            
+                                                        </td>
+                                                        <td>
+                                                            <div class="button-group ActionButtons">
+                                                                <a class="IconLink editDetails" id="editDetails"><i class="mdi mdi-lead-pencil"></i></a>
+                                                                <a class="IconLink" id="deleteDetails"><i class="ti-trash"></i></a>
+                                                            </div>
+                                                            <div class="editable-button-group">
+                                                                <a class="IconLink check addDetails" id="addDetails"><i class="mdi mdi-check"></i></a>
+                                                                <a class="IconLink close closeDetails" id="closeDetails"><i class="mdi mdi-close"></i></a>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                   
+                                                    <tr>
+                                                        <td>2</td>
+                                                        <td>
+                                                            <label class="DisplayLabel" for="inputid13">Meet</label>
+                                                            <input type="text" class="form-control EditableTextbox"  value="Meet" name="" id="inputid13" required>
+                                                        </td> 
+                                                        <td>
+                                                            <label class="DisplayLabel" for="inputid23">Patel</label>
+                                                            <input type="text" class="form-control EditableTextbox"  value="Patel" name="" id="inputid23" required>
+                                                        </td>
+                                                        <td>
+                                                            <label class="DisplayLabel" for="inputid33">Meet.Patel@123</label>
+                                                            <input type="text" class="form-control EditableTextbox"  value="Meet.Patel@123" name="" id="inputid33" required>
+                                                        </td>
+                                                        <td>
+                                                            <label class="DisplayLabel" for="FilterSelectrole2">Web Devloper</label>
+                                                               <select class="custom-select" id="FilterSelectrole2" name="FilterSelectrole2" >
+                                                                    <option value="Web Devloper">Web Devloper</option> 
+                                                                    <option value="Dropdown 1">Dropdown 1</option>
+                                                                    <option value="Dropdown 2">Dropdown 2</option> 
+                                                                </select>
+                                                           
+                                                        </td>
+                                                        <td>
+                                                            <div class="button-group ActionButtons">
+                                                                <a class="IconLink editDetails" id="editDetails"><i class="mdi mdi-lead-pencil"></i></a>
+                                                                <a class="IconLink" id="deleteDetails"><i class="ti-trash"></i></a>
+                                                            </div>
+                                                            <div class="editable-button-group">
+                                                                <a class="IconLink check addDetails" id="addDetails"><i class="mdi mdi-check"></i></a>
+                                                                <a class="IconLink close closeDetails" id="closeDetails"><i class="mdi mdi-close"></i></a>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <div class="text-center"><a id="btnViewcode" name="btnViewcode" class="btn btn-megna" role="button" data-toggle="collapse" href="#card2ViewCodeSection" aria-expanded="false" aria-controls="card2ViewCodeSection">View Code</a></div>
+                        </div>
+                    </div>
+                 </div>
+                <!--Editable with Datatable-->
+                 <!--View code of Editable with Datatable start-->
+                 <div class="col-12 pb-4">
+                    <div class="collapse" id="card2ViewCodeSection">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-12 p-0">
+                                    <div class="card bg-light h-100">
+                                        <div class="card-body">
+                                            <nav>
+                                                <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                                                    <a class="nav-item nav-link active" id="nav-html-tab" data-codeType='html' data-toggle="tab" href="#nav-htmlcard2" role="tab" aria-controls="nav-htmlcard2" aria-selected="true">HTML</a>
+                                                    <a class="nav-item nav-link" id="nav-css-tab" data-codeType='css' data-toggle="tab" href="#nav-csscard2" role="tab" aria-controls="nav-csscard2" aria-selected="false">CSS</a>
+                                                    <a class="nav-item nav-link" id="nav-jquery-tab" data-codeType='js' data-toggle="tab" href="#nav-jquerycard2" role="tab" aria-controls="nav-jquerycard2" aria-selected="false">JS</a>
+                                                </div>
+                                            </nav>
+                                            <div class="tab-content border-left border-right border-bottom bg-white" id="nav-tabContent">
+                                                <div class="tab-pane fade show active" id="nav-htmlcard2" role="tabpanel" aria-labelledby="nav-home-tab">
+                                                    <div class="container-fluid">
+                                                        <div class="row">
+                                                            <div class="col-12 text-right py-3">
+                                                                <button class="btn downloadbtn btn-sm" onclick="copyToClipboard('#card2HtmlCode',this)" data-toggle="tooltip" data-placement="top" title="Copy to clipboard">Copy</button>
+                                                            </div>
+                                                            <div class="col-12 px-0">
+                                                                <div class="form-group">
+                                                                    <textarea id="card2HtmlCode" class="form-control code" rows="5" id="txthtml" name="txthtml" readonly>
+<!--editable datatable-->
+<div class="col-12 px-0 editDatatable">
+    <!--Main table start-->
+    <div class="table-responsive">
+       <table id="editable-table" class="table table-bordered table-striped">
+            <thead>
+                <tr>
+                    <th class="th-sm">#</th>
+                    <th class="th-sm">First Name</th>
+                    <th class="th-sm ">Last Nmae</th>
+                    <th class="th-sm">Username</th>
+                    <th class="th-sm">Role</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>
+                        <label class="DisplayLabel" for="inputid1">Nandan</label>
+                        <input type="text" class="form-control EditableTextbox"  value="Nandan" name="" id="inputid1" required>
+                    </td> 
+                    <td>
+                        <label class="DisplayLabel" for="inputid2">Patel</label>
+                        <input type="text" class="form-control EditableTextbox"  value="Patel" name="" id="inputid2" required>
+                    </td>
+                    <td>
+                        <label class="DisplayLabel" for="inputid3">Patel@123</label>
+                        <input type="text" class="form-control EditableTextbox"  value="Patel@123" name="" id="inputid3" required>
+                    </td>
+                    <td>
+                        <label class="DisplayLabel" for="FilterSelectrole">Admin</label>
+                      
+                            <select class="custom-select" id="FilterSelectrole" name="FilterSelectrole" >
+                                <option value="Admin">Admin</option> 
+                                <option value="Dropdown 1">Dropdown 1</option>
+                                <option value="Dropdown 2">Dropdown 2</option> 
+                            </select>
+                       
+                    </td>
+                    <td>
+                        <div class="button-group ActionButtons">
+                            <a class="IconLink editDetails" id="editDetails"><i class="mdi mdi-lead-pencil"></i></a>
+                            <a class="IconLink" id="deleteDetails"><i class="ti-trash"></i></a>
+                        </div>
+                        <div class="editable-button-group">
+                            <a class="IconLink check addDetails" id="addDetails"><i class="mdi mdi-check"></i></a>
+                            <a class="IconLink close closeDetails" id="closeDetails"><i class="mdi mdi-close"></i></a>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>
+                        <label class="DisplayLabel" for="inputid12">Akki</label>
+                        <input type="text" class="form-control EditableTextbox"  value="Akki" name="" id="inputid12" required>
+                    </td> 
+                    <td>
+                        <label class="DisplayLabel" for="inputid22">Patel</label>
+                        <input type="text" class="form-control EditableTextbox"  value="Patel" name="" id="inputid22" required>
+                    </td>
+                    <td>
+                        <label class="DisplayLabel" for="inputid32">Patel1245</label>
+                        <input type="text" class="form-control EditableTextbox"  value="Patel1245" name="" id="inputid32" required>
+                    </td>
+                    <td>
+                        <label class="DisplayLabel" for="FilterSelectrole1">Web Designer</label>
+                       
+                            <select class="custom-select" id="FilterSelectrole1" name="FilterSelectrole1" >
+                                <option value="Web Designer">Web Designer</option> 
+                                <option value="Dropdown 1">Dropdown 1</option>
+                                <option value="Dropdown 2">Dropdown 2</option> 
+                            </select>
+                        
+                    </td>
+                    <td>
+                        <div class="button-group ActionButtons">
+                            <a class="IconLink editDetails" id="editDetails"><i class="mdi mdi-lead-pencil"></i></a>
+                            <a class="IconLink" id="deleteDetails"><i class="ti-trash"></i></a>
+                        </div>
+                        <div class="editable-button-group">
+                            <a class="IconLink check addDetails" id="addDetails"><i class="mdi mdi-check"></i></a>
+                            <a class="IconLink close closeDetails" id="closeDetails"><i class="mdi mdi-close"></i></a>
+                        </div>
+                    </td>
+                </tr>
+               
+                <tr>
+                    <td>2</td>
+                    <td>
+                        <label class="DisplayLabel" for="inputid13">Meet</label>
+                        <input type="text" class="form-control EditableTextbox"  value="Meet" name="" id="inputid13" required>
+                    </td> 
+                    <td>
+                        <label class="DisplayLabel" for="inputid23">Patel</label>
+                        <input type="text" class="form-control EditableTextbox"  value="Patel" name="" id="inputid23" required>
+                    </td>
+                    <td>
+                        <label class="DisplayLabel" for="inputid33">Meet.Patel@123</label>
+                        <input type="text" class="form-control EditableTextbox"  value="Meet.Patel@123" name="" id="inputid33" required>
+                    </td>
+                    <td>
+                        <label class="DisplayLabel" for="FilterSelectrole2">Web Devloper</label>
+                           <select class="custom-select" id="FilterSelectrole2" name="FilterSelectrole2" >
+                                <option value="Web Devloper">Web Devloper</option> 
+                                <option value="Dropdown 1">Dropdown 1</option>
+                                <option value="Dropdown 2">Dropdown 2</option> 
+                            </select>
+                       
+                    </td>
+                    <td>
+                        <div class="button-group ActionButtons">
+                            <a class="IconLink editDetails" id="editDetails"><i class="mdi mdi-lead-pencil"></i></a>
+                            <a class="IconLink" id="deleteDetails"><i class="ti-trash"></i></a>
+                        </div>
+                        <div class="editable-button-group">
+                            <a class="IconLink check addDetails" id="addDetails"><i class="mdi mdi-check"></i></a>
+                            <a class="IconLink close closeDetails" id="closeDetails"><i class="mdi mdi-close"></i></a>
+                        </div>
+                    </td>
+                </tr>
+                
+            </tbody>
+        </table>
+    </div>
+</div>      
+               
+                                                                       
+                                                                </textarea>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+
+                                                </div>
+                                                <div class="tab-pane fade" id="nav-csscard2" role="tabpanel" aria-labelledby="nav-profile-tab">
+                                                    <div class="container-fluid">
+                                                        <div class="row">
+                                                            <div class="col-md-4 col-12 p-3 m-auto">
+                                                                <a class="btn downloadbtn btn-block" target="_blank" href="dist/downloadCss/Tables/ediTable/ediTable2-datatable.css" download>Download ediTable2.css</a>
+                                                            </div>
+                                                            <!--datatable css-->
+                                                            <div class="col-md-4 col-12 p-3 m-auto">
+                                                                <a class="btn downloadbtn btn-block" target="_blank" href="assets/Plugins/datatables/media/css/dataTables.bootstrap4.css" download>Download dataTables.bootstrap4.css</a>
+                                                            </div>
+                                                           
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="tab-pane fade" id="nav-jquerycard2" role="tabpanel" aria-labelledby="nav-profile-tab">
+                                                    <div class="container-fluid">
+                                                        <div class="row">
+                                                            <div class="col-md-4 col-12 p-3 m-auto">
+                                                                <a class="btn downloadbtn btn-block" target="_blank" href="dist/downloadjquery/Tables/editable Table/editable2-datatable.js" download>Download editable2-datatable.js</a>
+                                                            </div>
+                                                            <!--datatable js-->
+                                                            <div class="col-md-4 col-12 p-3 m-auto">
+                                                                <a class="btn downloadbtn btn-block" target="_blank" href="assets/Plugins/datatables/datatables.min.js" download>Download datatables.min.js</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--View code of Editable with Datatable end-->
+            </div>
+        </div>
+    </div>
+
+
+    <!--jquery js-->
+    <script src="assets/Core/jquery-3.3.1.min.js"></script>
+    <!--popper js-->
+    <script src="assets/Core/popper/popper.min.js"></script>
+    <!--bootstrap js-->
+    <script src="assets/Core/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- scrollbar JavaScript -->
+    <script src="dist/js/perfect-scrollbar.jquery.min.js"></script>
+    <!-- This is data table -->
+    <script src="assets/Plugins/datatables/datatables.min.js"></script>
+    <!--Wave Effects js -->
+    <script src="dist/js/waves.js"></script>
+    <!--Sidebarmenu js-->
+    <script src="dist/js/sidebarmenu.js"></script>
+    <!--Custom JavaScript -->
+    <script src="dist/js/custom.js"></script>
+    <!--Code Mirror JS-->
+    <script src="assets/Plugins/codemirror/lib/codemirror.js"></script>
+    <script src="assets/Plugins/codemirror/mode/xml/xml.js"></script>
+    <script src="assets/Plugins/codemirror/mode/css/css.js"></script>
+    <script src="assets/Plugins/codemirror/mode/javascript/javascript.js"></script>
+    <script src="assets/Plugins/codemirror/mode/htmlmixed/htmlmixed.js"></script>
+    <!--custom js view code-->
+    <script src="dist/js/editable.js"></script>
+    <script>
+        $(function (){
+            $('#editable-table').DataTable({
+                "language": {
+                    "paginate": {
+                        "previous": "<",
+                        "next": ">"
+                    },
+                    "columnDefs": [{
+                        "visible": false,
+                        "targets": 5
+                    }],  
+                },
+                "lengthChange": false,
+                "searching": false,
+            });
+        });
+        // $("#editDetails").click(function () {
+        //     $(this).hide();
+        //     $('#editable-table tr td').addClass('editmode');
+            
+        //     $('#deleteDetails').hide();
+        //     $('#addDetails').show();
+        //     $('#closeDetails').show();
+        //     $('#editable-table tr td .DisplayLabel').each(function () {
+        //     //  debugger;
+        //         "use strict";
+        //         $(this).hide();
+        //         $('#' + $(this).attr('for'))
+        //             .val($(this).text())
+        //             .show()
+        //             .focus();
+        //     });
+        // });
+        $(".editDetails").click(function () {
+           
+            $('.ActionButtons').show();
+            $(this).parent().hide();
+            $('.editable-button-group').hide();
+            $(this).parent().next().show();
+
+            $('#editable-table tr td').addClass('editmode');
+            
+            // $('#deleteDetails').hide();
+            // $('#addDetails').show();
+            // $('#closeDetails').show();
+            $(this).parent().parent().parent().find('td .DisplayLabel').each(function () {
+            //  debugger;
+                "use strict";
+                $(this).hide();
+                $('#' + $(this).attr('for'))
+                    .val($(this).text())
+                    .show()
+                    .focus();
+            });
+        });
+        
+        // $('#addDetails').click(function () {
+        //     $('#editable-table tr td').removeClass('editmode');
+        //     $(this).hide();
+        //     $('#closeDetails').hide();
+        //     $('#editDetails').show();
+        //     $('#deleteDetails').show();
+        //     $('#editable-table tr td .DisplayLabel').each(function () {
+        //         //  debugger;
+        //         "use strict";
+        //         $('#' + $(this).attr('for')).hide();
+        //         $(this).text($('#' + $(this).attr('for')).val()).show();
+
+        //     });
+        // });
+        $('.addDetails').click(function () {
+            $('#editable-table tr td').removeClass('editmode');
+             //$('.ActionButtons').show();
+             $(this).parent().hide();
+           // $('.editable-button-group').hide();
+            $(this).parent().prev().show();
+            // $(this).hide();
+            // $('#closeDetails').hide();
+            // $('#editDetails').show();
+            // $('#deleteDetails').show();
+            $('#editable-table tr td .DisplayLabel').each(function () {
+                //  debugger;
+                "use strict";
+                $('#' + $(this).attr('for')).hide();
+                $(this).text($('#' + $(this).attr('for')).val()).show();
+
+            });
+        });
+        // $('#closeDetails').click(function () {
+        //     $(this).hide();
+        //     $('#addDetails').hide();
+        //     $('#editDetails').show();
+        //     $('#deleteDetails').show();
+        //     $('.DisplayLabel').show();
+        //     $('.EditableTextbox').hide();
+        //     $('#FilterSelectrole').hide()
+        // });
+        $('.closeDetails').click(function () {
+            $('#editable-table tr td').removeClass('editmode');
+            //$('.ActionButtons').show();
+            $(this).parent().hide();
+           // $('.editable-button-group').hide();
+            $(this).parent().prev().show();
+            $('#editable-table tr td .DisplayLabel').each(function () {
+                //  debugger;
+                "use strict";
+                $('#' + $(this).attr('for')).hide();
+                $(this).text($('#' + $(this).attr('for')).val()).show();
+
+            });
+        });
+    </script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            var card1CodeInit = 0;
+            var card2CodeInit = 0;
+            $('#card1ViewCodeSection').on('shown.bs.collapse', function () {
+                if(card1CodeInit == 0)
+                {
+                    card1HtmlCodeEditor();
+                    card1CodeInit = 1;
+                }
+                else{
+                    return false;
+                }
+            });
+            $('#card2ViewCodeSection').on('shown.bs.collapse', function () {
+                if(card2CodeInit == 0)
+                {
+                    card2HtmlCodeEditor();
+                    card2CodeInit = 1;
+                }
+                else{
+                    return false;
+                }
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,572 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Icheck</title>
+
+    <!--Bootstrap css-->
+    <link rel="stylesheet" href="assets/Core/bootstrap/dist/css/bootstrap.min.css">
+   <!--plugins of viewcode-->
+   <link rel="stylesheet" type="text/css" href="assets/Plugins/codemirror/lib/codemirror.css">
+   <link rel="stylesheet" type="text/css" href="assets/Plugins/codemirror/theme/material.css">
+  
+    <link rel="stylesheet" type="text/css" href="assets/Plugins/icheck-1.x/skins/all.css">
+   
+    <!--Custom css-->
+    <link rel="stylesheet" href="dist/css/style.css">
+    <link rel="stylesheet" href="dist/scss/css/icheck.css">
+    <link rel="stylesheet" href="dist/sidenavCss/custom.css">
+
+    
+ 
+</head>
+<body class="skin-megna fixed-layout">
+
+     <!-- ============================================================== -->
+        <!-- Topbar header - style you can find in pages.scss -->
+        <!-- ============================================================== -->
+        <header class="topbar">
+            <nav class="navbar top-navbar navbar-expand-md navbar-dark">
+                <!-- ============================================================== -->
+                <!-- Logo -->
+                <!-- ============================================================== -->
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="index.html">
+                        <!-- Logo icon --><b>
+                            <!--You can put here icon as well // <i class="wi wi-sunset"></i> //-->
+                            <!-- Dark Logo icon -->
+                            <img src="assets/images/New Logo.png" alt="homepage" class="light-logo" />
+                            <!-- Light Logo icon -->
+                            <!-- <img src="../assets/images/logo-light-icon.png" alt="homepage" class="light-logo" /> -->
+                        </b>
+                        <!--End Logo icon -->
+                        <span class="hidden-xs font-bold" style="font-size: 19px">Patel Techologies</span>
+                    </a>
+                </div>
+                <!-- ============================================================== -->
+                <!-- End Logo -->
+                <!-- ============================================================== -->
+                <div class="navbar-collapse">
+                    <!-- ============================================================== -->
+                    <!-- toggle and nav items -->
+                    <!-- ============================================================== -->
+                    <ul class="navbar-nav mr-auto">
+                        <!-- This is  -->
+                        <li class="nav-item"> <a class="nav-link nav-toggler d-block d-md-none waves-effect waves-dark" href="javascript:void(0)"><i class="ti-menu"></i></a> </li>
+                        <li class="nav-item"> <a class="nav-link sidebartoggler d-none d-lg-block d-md-block waves-effect waves-dark" href="javascript:void(0)"><i class="icon-menu"></i></a> </li>
+                        <!-- ============================================================== -->
+                        <!-- Search -->
+                        <!-- ============================================================== -->
+                        <li class="nav-item d-none d-md-block d-lg-block">
+                           <form action="">
+                              <input type="search" placeholder="Search & enter">
+                              <i class="fa fa-search"></i>
+                            </form>
+                        </li>
+                    </ul>
+                   
+                </div>
+            </nav>
+        </header>
+        <!-- ============================================================== -->
+        <!-- End Topbar header -->
+        <!-- ============================================================== -->
+        <!-- ============================================================== -->
+        <!-- Left Sidebar - style you can find in  custom.css  -->
+        <!-- ============================================================== -->
+        <aside class="left-sidebar">
+            <!-- Sidebar scroll-->
+            <div class="scroll-sidebar">
+                <!-- <div class="sidebar-header">
+                    <div class="companyLogo">
+                      <img class="img-responsive img-rounded" src="assets/images/company-logo.svg"
+                        alt="Company logo">
+                    </div>
+                </div> -->
+               <!-- Sidebar navigation-->
+                <nav class="sidebar-nav">
+                    <ul id="sidebarnav">
+                        <li>
+                            <a class="has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false"><i class="mdi mdi-login"></i><span class="hide-menu">Dashboard</span></a>
+                            <ul aria-expanded="false" class="collapse">
+                                <li><a href="Dashboard1.html">Dashboard 1</a></li>
+                                <li><a href="Dashboard2.html">Dashboard 2</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false"><i class="mdi mdi-login"></i><span class="hide-menu">Login Templates</span></a>
+                            <ul aria-expanded="false" class="collapse">
+                                <li><a href="Login1.html">Login 1</a></li>
+                                <li><a href="Login2.html">Login 2</a></li>
+                                <li><a href="Login3.html">Login 3</a></li>
+                                <li><a href="Login4.html">Login 4</a></li>
+                                <li><a href="Login5.html">Login 5</a></li>
+                                <li><a href="Login6.html">Login 6</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false"><i class="ti-palette"></i><span class="hide-menu">Ui Elements</span></a>
+                            <ul aria-expanded="false" class="collapse">
+                                <li><a href="cards.html">Cards</a></li>
+                                <li><a href="buttons.html">Buttons</a></li>
+                                <li><a href="tabs.html">Tab</a></li>
+                                <li><a href="switchs.html">Switchs</a></li>
+                                <li><a href="Notification.html">Notification</a></li>
+                                <li><a href="Alert.html">Alert Box</a></li>
+                                <li><a href="carousel.html">Carousel</a></li>
+                                <li><a href="Errorpage.html">Error Page</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false"><i class="ti-layout-accordion-merged"></i><span class="hide-menu">Tables</span></a>
+                            <ul aria-expanded="false" class="collapse">
+                                <li><a href="basicTable.html">Basic Table</a></li>
+                                <li><a href="dataTable.html">Data Table</a></li>
+                                <li><a href="editable table.html">Editable Table</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false"><i class="ti-layout-media-right-alt"></i><span class="hide-menu">Forms</span></a>
+                            <ul aria-expanded="false" class="collapse">
+                                <li><a href="basicForms.html">Basic Forms</a></li>
+                                <li><a href="checkbox.html">Checkbox</a></li>
+                                <li><a href="dateTimepicker.html">Date &amp; Time Picker</a></li>
+                                <li><a href="dragdropfile.html">Drag &amp; Drop File Upload</a></li>
+                                <li><a href="sliders.html">Sliders</a></li>
+                                <li><a href="addon.html">Addon Control</a></li>
+                                <li><a href="icheck.html">Icheck Control</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false"><i class="ti-layout-media-right-alt"></i><span class="hide-menu">Components</span></a>
+                            <ul aria-expanded="false" class="collapse">
+                                <li><a href="mdbuttons.html">Material Buttons</a></li>
+                                <li><a href="badges.html">Badges</a></li>
+                                <li><a href="spinners.html">Loaders/Spinners</a></li>
+                                <li><a href="progressbar.html">ProgressBar</a></li>
+                                <li><a href="socialbutton.html">SocialButtons</a></li>
+                                <li><a href="stepper.html">Steppers</a></li>
+                                <li><a href="extendedcards.html">Extended Cards</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false"><i class="ti-layout-media-right-alt"></i><span class="hide-menu">Navigation</span></a>
+                            <ul aria-expanded="false" class="collapse">
+                                <li><a href="navbar.html">Navbar</a></li>
+                                <li><a href="breadcrumb.html">Breadcrumb</a></li>
+                                <li><a href="megamenu.html">Mega Menu</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false"><i class="mdi mdi-login"></i><span class="hide-menu">Email Templete</span></a>
+                            <ul aria-expanded="false" class="collapse">
+                               <li><a href="Email_1.html">Email Templete 1</a></li>
+                                <li><a href="Email_2.html">Email Templete 2</a></li>
+                            </ul>
+                        </li>
+                        <!--<li>
+                            <a class="has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false"><i class="ti-layout-media-right-alt"></i><span class="hide-menu">Templates</span></a>
+                            <ul aria-expanded="false" class="collapse">
+                                <li><a href="Website.html">Website</a></li>
+                            </ul>
+                        </li>-->
+                    </ul>
+                </nav>
+                <!-- End Sidebar navigation -->
+            </div>
+            <!-- End Sidebar scroll-->
+        </aside>
+        <!-- ============================================================== -->
+        <!-- End Left Sidebar - style you can find in  custom.css  -->
+        <!-- ============================================================== -->
+    <div class="page-wrapper">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12 col-12 pb-md-4 pb-4">
+                    <div class="card">
+                        <div class="card-header">
+                            <h4>Icheck with minimal skin</h4>
+                        </div>
+                        <div class="card-body">
+                            <div class="row pb-4">
+                                <div class="col-md-6">
+                                   
+                                    <h6 class="card-subtitle"></h6>
+                                    <div class="skin skin-minimal">
+                                        <form>
+                                            <div class="form-group">
+                                                <label>Colors</label>
+                                                <div class="input-group">
+                                                    <ul class="icolors">
+                                                        <li></li>
+                                                        <li class="red active"></li>
+                                                        <li class="green"></li>
+                                                        <li class="blue"></li>
+                                                        <li class="orange"></li>
+                                                        <li class="yellow"></li>
+                                                        <li class="purple"></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label>Checkbox &amp; Radio List</label>
+                                                <div class="input-group">
+                                                    <ul class="icheck-list">
+                                                        <li>
+                                                            <div class="icheckbox_minimal-red" style="position: relative;"><input type="checkbox" class="check" id="minimal-checkbox-1" style="position: absolute; opacity: 0;"><ins class="iCheck-helper" style="position: absolute; top: 0%; left: 0%; display: block; width: 100%; height: 100%; margin: 0px; padding: 0px; background: rgb(255, 255, 255); border: 0px; opacity: 0;"></ins></div>
+                                                            <label for="minimal-checkbox-1" class="">Checkbox 1</label>
+                                                        </li>
+                                                        <li>
+                                                            <div class="icheckbox_minimal-red checked" style="position: relative;"><input type="checkbox" class="check" id="minimal-checkbox-2" checked="" style="position: absolute; opacity: 0;"><ins class="iCheck-helper" style="position: absolute; top: 0%; left: 0%; display: block; width: 100%; height: 100%; margin: 0px; padding: 0px; background: rgb(255, 255, 255); border: 0px; opacity: 0;"></ins></div>
+                                                            <label for="minimal-checkbox-2">Checkbox 2</label>
+                                                        </li>
+                                                        <li>
+                                                            <div class="icheckbox_minimal-red disabled" style="position: relative;"><input type="checkbox" class="check" id="minimal-checkbox-disabled" disabled="" style="position: absolute; opacity: 0;"><ins class="iCheck-helper" style="position: absolute; top: 0%; left: 0%; display: block; width: 100%; height: 100%; margin: 0px; padding: 0px; background: rgb(255, 255, 255); border: 0px; opacity: 0;"></ins></div>
+                                                            <label for="minimal-checkbox-disabled">Disabled</label>
+                                                        </li>
+                                                        <li>
+                                                            <div class="icheckbox_minimal-red checked disabled" style="position: relative;"><input type="checkbox" class="check" id="minimal-checkbox-disabled-checked" checked="" disabled="" style="position: absolute; opacity: 0;"><ins class="iCheck-helper" style="position: absolute; top: 0%; left: 0%; display: block; width: 100%; height: 100%; margin: 0px; padding: 0px; background: rgb(255, 255, 255); border: 0px; opacity: 0;"></ins></div>
+                                                            <label for="minimal-checkbox-disabled-checked">Disabled &amp; checked</label>
+                                                        </li>
+                                                    </ul>
+                                                    <ul class="icheck-list">
+                                                        <li>
+                                                            <div class="iradio_minimal-red" style="position: relative;"><input tabindex="7" type="radio" class="check" id="minimal-radio-1" name="minimal-radio" style="position: absolute; opacity: 0;"><ins class="iCheck-helper" style="position: absolute; top: 0%; left: 0%; display: block; width: 100%; height: 100%; margin: 0px; padding: 0px; background: rgb(255, 255, 255); border: 0px; opacity: 0;"></ins></div>
+                                                            <label for="minimal-radio-1" class="">Radio button 1</label>
+                                                        </li>
+                                                        <li>
+                                                            <div class="iradio_minimal-red checked" style="position: relative;"><input tabindex="8" type="radio" class="check" id="minimal-radio-2" name="minimal-radio" checked="" style="position: absolute; opacity: 0;"><ins class="iCheck-helper" style="position: absolute; top: 0%; left: 0%; display: block; width: 100%; height: 100%; margin: 0px; padding: 0px; background: rgb(255, 255, 255); border: 0px; opacity: 0;"></ins></div>
+                                                            <label for="minimal-radio-2" class="">Radio button 2</label>
+                                                        </li>
+                                                        <li>
+                                                            <div class="iradio_minimal-red disabled" style="position: relative;"><input type="radio" class="check" id="minimal-radio-disabled" disabled="" style="position: absolute; opacity: 0;"><ins class="iCheck-helper" style="position: absolute; top: 0%; left: 0%; display: block; width: 100%; height: 100%; margin: 0px; padding: 0px; background: rgb(255, 255, 255); border: 0px; opacity: 0;"></ins></div>
+                                                            <label for="minimal-radio-disabled">Disabled</label>
+                                                        </li>
+                                                        <li>
+                                                            <div class="iradio_minimal-red checked disabled" style="position: relative;"><input type="radio" class="check" id="minimal-radio-disabled-checked" checked="" disabled="" style="position: absolute; opacity: 0;"><ins class="iCheck-helper" style="position: absolute; top: 0%; left: 0%; display: block; width: 100%; height: 100%; margin: 0px; padding: 0px; background: rgb(255, 255, 255); border: 0px; opacity: 0;"></ins></div>
+                                                            <label for="minimal-radio-disabled-checked">Disabled &amp; checked</label>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                                <!-- column -->
+                                <div class="col-md-6">
+                                    <div class="skin skin-flat m-t-30">
+                                        <form>
+                                            <div class="form-group">
+                                                <label>Colors</label>
+                                                <div class="input-group">
+                                                    <ul class="icolors">
+                                                        <li></li>
+                                                        <li class="red active"></li>
+                                                        <li class="green"></li>
+                                                        <li class="blue"></li>
+                                                        <li class="orange"></li>
+                                                        <li class="yellow"></li>
+                                                        <li class="purple"></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label>Checkbox &amp; Radio List</label>
+                                                <div class="input-group">
+                                                    <ul class="icheck-list">
+                                                        <li>
+                                                            <div class="icheckbox_flat-red" style="position: relative;"><input type="checkbox" class="check" id="flat-checkbox-1" data-checkbox="icheckbox_flat-red" style="position: absolute; opacity: 0;"><ins class="iCheck-helper" style="position: absolute; top: 0%; left: 0%; display: block; width: 100%; height: 100%; margin: 0px; padding: 0px; background: rgb(255, 255, 255); border: 0px; opacity: 0;"></ins></div>
+                                                            <label for="flat-checkbox-1">Checkbox 1</label>
+                                                        </li>
+                                                        <li>
+                                                            <div class="icheckbox_flat-red checked" style="position: relative;"><input type="checkbox" class="check" id="flat-checkbox-2" checked="" data-checkbox="icheckbox_flat-red" style="position: absolute; opacity: 0;"><ins class="iCheck-helper" style="position: absolute; top: 0%; left: 0%; display: block; width: 100%; height: 100%; margin: 0px; padding: 0px; background: rgb(255, 255, 255); border: 0px; opacity: 0;"></ins></div>
+                                                            <label for="flat-checkbox-2">Checkbox 2</label>
+                                                        </li>
+                                                        <li>
+                                                            <div class="icheckbox_flat-red disabled" style="position: relative;"><input type="checkbox" class="check" id="flat-checkbox-disabled" disabled="" data-checkbox="icheckbox_flat-red" style="position: absolute; opacity: 0;"><ins class="iCheck-helper" style="position: absolute; top: 0%; left: 0%; display: block; width: 100%; height: 100%; margin: 0px; padding: 0px; background: rgb(255, 255, 255); border: 0px; opacity: 0;"></ins></div>
+                                                            <label for="flat-checkbox-disabled">Disabled</label>
+                                                        </li>
+                                                        <li>
+                                                            <div class="icheckbox_flat-red checked disabled" style="position: relative;"><input type="checkbox" class="check" id="flat-checkbox-disabled-checked" checked="" disabled="" data-checkbox="icheckbox_flat-red" style="position: absolute; opacity: 0;"><ins class="iCheck-helper" style="position: absolute; top: 0%; left: 0%; display: block; width: 100%; height: 100%; margin: 0px; padding: 0px; background: rgb(255, 255, 255); border: 0px; opacity: 0;"></ins></div>
+                                                            <label for="flat-checkbox-disabled-checked">Disabled &amp; checked</label>
+                                                        </li>
+                                                    </ul>
+                                                    <ul class="icheck-list">
+                                                        <li>
+                                                            <div class="iradio_flat-red" style="position: relative;"><input type="radio" class="check" id="flat-radio-1" name="flat-radio" data-radio="iradio_flat-red" style="position: absolute; opacity: 0;"><ins class="iCheck-helper" style="position: absolute; top: 0%; left: 0%; display: block; width: 100%; height: 100%; margin: 0px; padding: 0px; background: rgb(255, 255, 255); border: 0px; opacity: 0;"></ins></div>
+                                                            <label for="flat-radio-1">Radio button 1</label>
+                                                        </li>
+                                                        <li>
+                                                            <div class="iradio_flat-red checked" style="position: relative;"><input type="radio" class="check" id="flat-radio-2" name="flat-radio" checked="" data-radio="iradio_flat-red" style="position: absolute; opacity: 0;"><ins class="iCheck-helper" style="position: absolute; top: 0%; left: 0%; display: block; width: 100%; height: 100%; margin: 0px; padding: 0px; background: rgb(255, 255, 255); border: 0px; opacity: 0;"></ins></div>
+                                                            <label for="flat-radio-2">Radio button 2</label>
+                                                        </li>
+                                                        <li>
+                                                            <div class="iradio_flat-red disabled" style="position: relative;"><input type="radio" class="check" id="flat-radio-disabled" disabled="" data-radio="iradio_flat-red" style="position: absolute; opacity: 0;"><ins class="iCheck-helper" style="position: absolute; top: 0%; left: 0%; display: block; width: 100%; height: 100%; margin: 0px; padding: 0px; background: rgb(255, 255, 255); border: 0px; opacity: 0;"></ins></div>
+                                                            <label for="flat-radio-disabled">Disabled</label>
+                                                        </li>
+                                                        <li>
+                                                            <div class="iradio_flat-red checked disabled" style="position: relative;"><input type="radio" class="check" id="flat-radio-disabled-checked" checked="" disabled="" data-radio="iradio_flat-red" style="position: absolute; opacity: 0;"><ins class="iCheck-helper" style="position: absolute; top: 0%; left: 0%; display: block; width: 100%; height: 100%; margin: 0px; padding: 0px; background: rgb(255, 255, 255); border: 0px; opacity: 0;"></ins></div>
+                                                            <label for="flat-radio-disabled-checked">Disabled &amp; checked</label>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                                <!-- column -->
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-6">
+                               
+                                    <h6 class="card-subtitle"></h6>
+                                    <div class="skin skin-square">
+                                        <form>
+                                            <div class="form-group">
+                                                <label>Colors</label>
+                                                <div class="input-group">
+                                                    <ul class="icolors">
+                                                        <li></li>
+                                                        <li class="red active"></li>
+                                                        <li class="green"></li>
+                                                        <li class="blue"></li>
+                                                        <li class="orange"></li>
+                                                        <li class="yellow"></li>
+                                                        <li class="purple"></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label>Checkbox &amp; Radio List</label>
+                                                <div class="input-group">
+                                                    <ul class="icheck-list">
+                                                        <li>
+                                                            <div class="icheckbox_square-red" style="position: relative;"><input type="checkbox" class="check" id="square-checkbox-1" data-checkbox="icheckbox_square-red" style="position: absolute; opacity: 0;"><ins class="iCheck-helper" style="position: absolute; top: 0%; left: 0%; display: block; width: 100%; height: 100%; margin: 0px; padding: 0px; background: rgb(255, 255, 255); border: 0px; opacity: 0;"></ins></div>
+                                                            <label for="square-checkbox-1">Checkbox 1</label>
+                                                        </li>
+                                                        <li>
+                                                            <div class="icheckbox_square-red checked" style="position: relative;"><input type="checkbox" class="check" id="square-checkbox-2" checked="" data-checkbox="icheckbox_square-red" style="position: absolute; opacity: 0;"><ins class="iCheck-helper" style="position: absolute; top: 0%; left: 0%; display: block; width: 100%; height: 100%; margin: 0px; padding: 0px; background: rgb(255, 255, 255); border: 0px; opacity: 0;"></ins></div>
+                                                            <label for="square-checkbox-2">Checkbox 2</label>
+                                                        </li>
+                                                        <li>
+                                                            <div class="icheckbox_square-red disabled" style="position: relative;"><input type="checkbox" class="check" id="square-checkbox-disabled" disabled="" data-checkbox="icheckbox_square-red" style="position: absolute; opacity: 0;"><ins class="iCheck-helper" style="position: absolute; top: 0%; left: 0%; display: block; width: 100%; height: 100%; margin: 0px; padding: 0px; background: rgb(255, 255, 255); border: 0px; opacity: 0;"></ins></div>
+                                                            <label for="square-checkbox-disabled">Disabled</label>
+                                                        </li>
+                                                        <li>
+                                                            <div class="icheckbox_square-red checked disabled" style="position: relative;"><input type="checkbox" class="check" id="square-checkbox-disabled-checked" checked="" disabled="" data-checkbox="icheckbox_square-red" style="position: absolute; opacity: 0;"><ins class="iCheck-helper" style="position: absolute; top: 0%; left: 0%; display: block; width: 100%; height: 100%; margin: 0px; padding: 0px; background: rgb(255, 255, 255); border: 0px; opacity: 0;"></ins></div>
+                                                            <label for="square-checkbox-disabled-checked">Disabled &amp; checked</label>
+                                                        </li>
+                                                    </ul>
+                                                    <ul class="icheck-list">
+                                                        <li>
+                                                            <div class="iradio_square-red" style="position: relative;"><input type="radio" class="check" id="square-radio-1" name="square-radio" data-radio="iradio_square-red" style="position: absolute; opacity: 0;"><ins class="iCheck-helper" style="position: absolute; top: 0%; left: 0%; display: block; width: 100%; height: 100%; margin: 0px; padding: 0px; background: rgb(255, 255, 255); border: 0px; opacity: 0;"></ins></div>
+                                                            <label for="square-radio-1">Radio button 1</label>
+                                                        </li>
+                                                        <li>
+                                                            <div class="iradio_square-red checked" style="position: relative;"><input type="radio" class="check" id="square-radio-2" name="square-radio" checked="" data-radio="iradio_square-red" style="position: absolute; opacity: 0;"><ins class="iCheck-helper" style="position: absolute; top: 0%; left: 0%; display: block; width: 100%; height: 100%; margin: 0px; padding: 0px; background: rgb(255, 255, 255); border: 0px; opacity: 0;"></ins></div>
+                                                            <label for="square-radio-2">Radio button 2</label>
+                                                        </li>
+                                                        <li>
+                                                            <div class="iradio_square-red disabled" style="position: relative;"><input type="radio" class="check" id="square-radio-disabled" disabled="" data-radio="iradio_square-red" style="position: absolute; opacity: 0;"><ins class="iCheck-helper" style="position: absolute; top: 0%; left: 0%; display: block; width: 100%; height: 100%; margin: 0px; padding: 0px; background: rgb(255, 255, 255); border: 0px; opacity: 0;"></ins></div>
+                                                            <label for="square-radio-disabled">Disabled</label>
+                                                        </li>
+                                                        <li>
+                                                            <div class="iradio_square-red checked disabled" style="position: relative;"><input type="radio" class="check" id="square-radio-disabled-checked" checked="" disabled="" data-radio="iradio_square-red" style="position: absolute; opacity: 0;"><ins class="iCheck-helper" style="position: absolute; top: 0%; left: 0%; display: block; width: 100%; height: 100%; margin: 0px; padding: 0px; background: rgb(255, 255, 255); border: 0px; opacity: 0;"></ins></div>
+                                                            <label for="square-radio-disabled-checked">Disabled &amp; checked</label>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                                <!-- column -->
+                                <div class="col-md-6">
+                                    <div class="skin skin-line m-t-30">
+                                        <form>
+                                            <div class="form-group">
+                                                <label>Colors</label>
+                                                <div class="input-group">
+                                                    <ul class="icolors">
+                                                        <li></li>
+                                                        <li class="red active"></li>
+                                                        <li class="green"></li>
+                                                        <li class="blue"></li>
+                                                        <li class="orange"></li>
+                                                        <li class="yellow"></li>
+                                                        <li class="purple"></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label>Checkbox &amp; Radio List</label>
+                                                <div class="input-group">
+                                                    <ul class="icheck-list">
+                                                        <li>
+                                                            <div class="icheckbox_line-red"><input type="checkbox" class="check" data-checkbox="icheckbox_line-red" data-label="Checkbox 1" style="position: absolute; opacity: 0;"><div class="icheck_line-icon"></div>Checkbox 1<ins class="iCheck-helper" style="position: absolute; top: 0%; left: 0%; display: block; width: 100%; height: 100%; margin: 0px; padding: 0px; background: rgb(255, 255, 255); border: 0px; opacity: 0;"></ins></div> </li>
+                                                        <li>
+                                                            <div class="icheckbox_line-red checked"><input type="checkbox" class="check" checked="" data-checkbox="icheckbox_line-red" data-label="Checkbox 2" style="position: absolute; opacity: 0;"><div class="icheck_line-icon"></div>Checkbox 2<ins class="iCheck-helper" style="position: absolute; top: 0%; left: 0%; display: block; width: 100%; height: 100%; margin: 0px; padding: 0px; background: rgb(255, 255, 255); border: 0px; opacity: 0;"></ins></div> </li>
+                                                        <li>
+                                                            <div class="icheckbox_line-red disabled"><input type="checkbox" class="check" disabled="" data-checkbox="icheckbox_line-red" data-label="Disabled" style="position: absolute; opacity: 0;"><div class="icheck_line-icon"></div>Disabled<ins class="iCheck-helper" style="position: absolute; top: 0%; left: 0%; display: block; width: 100%; height: 100%; margin: 0px; padding: 0px; background: rgb(255, 255, 255); border: 0px; opacity: 0;"></ins></div> </li>
+                                                        <li>
+                                                            <div class="icheckbox_line-red checked disabled"><input type="checkbox" class="check" checked="" disabled="" data-checkbox="icheckbox_line-red" data-label="Disabled &amp; checked" style="position: absolute; opacity: 0;"><div class="icheck_line-icon"></div>Disabled &amp; checked<ins class="iCheck-helper" style="position: absolute; top: 0%; left: 0%; display: block; width: 100%; height: 100%; margin: 0px; padding: 0px; background: rgb(255, 255, 255); border: 0px; opacity: 0;"></ins></div> </li>
+                                                    </ul>
+                                                    <ul class="icheck-list">
+                                                        <li>
+                                                            <div class="iradio_line-red"><input type="radio" class="check" name="line-radio" data-radio="iradio_line-red" data-label="Radio button 1" style="position: absolute; opacity: 0;"><div class="icheck_line-icon"></div>Radio button 1<ins class="iCheck-helper" style="position: absolute; top: 0%; left: 0%; display: block; width: 100%; height: 100%; margin: 0px; padding: 0px; background: rgb(255, 255, 255); border: 0px; opacity: 0;"></ins></div> </li>
+                                                        <li>
+                                                            <div class="iradio_line-red checked"><input type="radio" class="check" name="line-radio" checked="" data-radio="iradio_line-red" data-label="Radio button 2" style="position: absolute; opacity: 0;"><div class="icheck_line-icon"></div>Radio button 2<ins class="iCheck-helper" style="position: absolute; top: 0%; left: 0%; display: block; width: 100%; height: 100%; margin: 0px; padding: 0px; background: rgb(255, 255, 255); border: 0px; opacity: 0;"></ins></div> </li>
+                                                        <li>
+                                                            <div class="iradio_line-red disabled"><input type="radio" class="check" disabled="" data-radio="iradio_line-red" data-label="Disabled" style="position: absolute; opacity: 0;"><div class="icheck_line-icon"></div>Disabled<ins class="iCheck-helper" style="position: absolute; top: 0%; left: 0%; display: block; width: 100%; height: 100%; margin: 0px; padding: 0px; background: rgb(255, 255, 255); border: 0px; opacity: 0;"></ins></div> </li>
+                                                        <li>
+                                                            <div class="iradio_line-red checked disabled"><input type="radio" class="check" checked="" disabled="" data-radio="iradio_line-red" data-label="Disabled &amp; checked" style="position: absolute; opacity: 0;"><div class="icheck_line-icon"></div>Disabled &amp; checked<ins class="iCheck-helper" style="position: absolute; top: 0%; left: 0%; display: block; width: 100%; height: 100%; margin: 0px; padding: 0px; background: rgb(255, 255, 255); border: 0px; opacity: 0;"></ins></div> </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                                <!-- column -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+     <!--jquery js-->
+     <script src="assets/Core/jquery-3.3.1.min.js"></script>
+     <!--popper js-->
+     <script src="assets/Core/popper/popper.min.js"></script>
+     <!--bootstrap js-->
+     <script src="assets/Core/bootstrap/dist/js/bootstrap.min.js"></script>
+     <!--Sidebarmenu js-->
+     <script src="dist/js/sidebarmenu.js"></script>
+     <!--Wave Effects js -->
+     <script src="dist/js/waves.js"></script>
+     <!-- scrollbar JavaScript -->
+     <script src="dist/js/perfect-scrollbar.jquery.min.js"></script>
+     <!--Custom JavaScript -->
+     <script src="dist/js/custom.js"></script>
+     
+    <script src="assets/Plugins/icheck-1.x/icheck.min.js"></script>
+    <script src="assets/Plugins/icheck-1.x/icheck.init.js"></script>
+     <!--Code Mirror JS-->
+    <script src="assets/Plugins/codemirror/lib/codemirror.js"></script>
+    <script src="assets/Plugins/codemirror/mode/xml/xml.js"></script>
+    <script src="assets/Plugins/codemirror/mode/css/css.js"></script>
+    <script src="assets/Plugins/codemirror/mode/javascript/javascript.js"></script>
+    <script src="assets/Plugins/codemirror/mode/htmlmixed/htmlmixed.js"></script>
+ 
+     <!--custom js view code-->
+     <script src="assets/Plugins/icheck-1.x/icheck.js"></script>
+ 
+     <script type="text/javascript">
+         $(document).ready(function () {
+          $('input').iCheck({
+            checkboxClass: 'icheckbox_futurico',
+            radioClass: 'iradio_futurico',
+            increaseArea: '20%' // optional
+          });
+        });
+        </script>
+
+
+    
+     
+     <script type="text/javascript">
+         var card1CodeInit = 0;
+         var card2CodeInit = 0;
+         var card3CodeInit = 0;
+         var card4CodeInit = 0;
+         var card5CodeInit = 0;
+         var card6CodeInit = 0;
+         var card7CodeInit = 0;
+        
+         
+             $('#card1ViewCodeSection').on('shown.bs.collapse', function () {
+                 if(card1CodeInit == 0)
+                 {
+                     card1HtmlCodeEditor();
+                     card1CodeInit = 1;
+                 }
+                 else{
+                     return false;
+                 }
+             });
+             $('#card2ViewCodeSection').on('shown.bs.collapse', function () {
+                 if(card2CodeInit == 0)
+                 {
+                     card2HtmlCodeEditor();
+                     card2CodeInit = 1;
+                 }
+                 else{
+                     return false;
+                 }
+             });
+             $('#card3ViewCodeSection').on('shown.bs.collapse', function () {
+                 if(card3CodeInit == 0)
+                 {
+                     card3HtmlCodeEditor();
+                     card3CodeInit = 1;
+                 }
+                 else{
+                     return false;
+                 }
+             });
+ 
+             $('#card4ViewCodeSection').on('shown.bs.collapse', function () {
+                 if(card4CodeInit == 0)
+                 {
+                     card4HtmlCodeEditor();
+                     card4CodeInit = 1;
+                 }
+                 else{
+                     return false;
+                 }
+             });
+ 
+             $('#card5ViewCodeSection').on('shown.bs.collapse', function () {
+                 if(card5CodeInit == 0)
+                 {
+                     card5HtmlCodeEditor();
+                     card5CodeInit = 1;
+                 }
+                 else{
+                     return false;
+                 }
+             });
+ 
+             $('#card6ViewCodeSection').on('shown.bs.collapse', function () {
+                 if(card6CodeInit == 0)
+                 {
+                     card6HtmlCodeEditor();
+                     card6CodeInit = 1;
+                 }
+                 else{
+                     return false;
+                 }
+             });
+ 
+             $('#card7ViewCodeSection').on('shown.bs.collapse', function () {
+                 if(card6CodeInit == 0)
+                 {
+                     card7HtmlCodeEditor();
+                     card7CodeInit = 1;
+                 }
+                 else{
+                     return false;
+                 }
+             });
+            
+            
+     </script>
+ 
+ </body>
+ </html>
+ 

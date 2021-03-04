@@ -1,0 +1,1212 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Steppers</title>
+
+    <!--Bootstrap css-->
+    <link rel="stylesheet" href="assets/Core/bootstrap/dist/css/bootstrap.min.css">
+   <!--plugins of viewcode-->
+   <link rel="stylesheet" type="text/css" href="assets/Plugins/codemirror/lib/codemirror.css">
+   <link rel="stylesheet" type="text/css" href="assets/Plugins/codemirror/theme/material.css">
+  
+    <link rel="stylesheet" type="text/css" href="assets/Plugins/bs-stepper-1.7.0/src/css/bs-stepper.css">
+   
+    <!--Custom css-->
+    <link rel="stylesheet" href="dist/css/style.css">
+    <link rel="stylesheet" href="dist/scss/css/stepper.css">
+    <link rel="stylesheet" href="dist/sidenavCss/custom.css">
+</head>
+<body class="skin-megna fixed-layout">
+
+     <!-- ============================================================== -->
+        <!-- Topbar header - style you can find in pages.scss -->
+        <!-- ============================================================== -->
+        <header class="topbar">
+            <nav class="navbar top-navbar navbar-expand-md navbar-dark">
+                <!-- ============================================================== -->
+                <!-- Logo -->
+                <!-- ============================================================== -->
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="index.html">
+                        <!-- Logo icon --><b>
+                            <!--You can put here icon as well // <i class="wi wi-sunset"></i> //-->
+                            <!-- Dark Logo icon -->
+                            <img src="assets/images/New Logo.png" alt="homepage" class="light-logo" />
+                            <!-- Light Logo icon -->
+                            <!-- <img src="../assets/images/logo-light-icon.png" alt="homepage" class="light-logo" /> -->
+                        </b>
+                        <!--End Logo icon -->
+                        <span class="hidden-xs font-bold" style="font-size: 19px">Patel Techologies</span>
+                    </a>
+                </div>
+                <!-- ============================================================== -->
+                <!-- End Logo -->
+                <!-- ============================================================== -->
+                <div class="navbar-collapse">
+                    <!-- ============================================================== -->
+                    <!-- toggle and nav items -->
+                    <!-- ============================================================== -->
+                    <ul class="navbar-nav mr-auto">
+                        <!-- This is  -->
+                        <li class="nav-item"> <a class="nav-link nav-toggler d-block d-md-none waves-effect waves-dark" href="javascript:void(0)"><i class="ti-menu"></i></a> </li>
+                        <li class="nav-item"> <a class="nav-link sidebartoggler d-none d-lg-block d-md-block waves-effect waves-dark" href="javascript:void(0)"><i class="icon-menu"></i></a> </li>
+                        <!-- ============================================================== -->
+                        <!-- Search -->
+                        <!-- ============================================================== -->
+                        <li class="nav-item d-none d-md-block d-lg-block">
+                           <form action="">
+                              <input type="search" placeholder="Search & enter">
+                              <i class="fa fa-search"></i>
+                            </form>
+                        </li>
+                    </ul>
+                   
+                </div>
+            </nav>
+        </header>
+        <!-- ============================================================== -->
+        <!-- End Topbar header -->
+        <!-- ============================================================== -->
+        <!-- ============================================================== -->
+        <!-- Left Sidebar - style you can find in  custom.css  -->
+        <!-- ============================================================== -->
+        <aside class="left-sidebar">
+            <!-- Sidebar scroll-->
+            <div class="scroll-sidebar">
+                <!-- <div class="sidebar-header">
+                    <div class="companyLogo">
+                      <img class="img-responsive img-rounded" src="assets/images/company-logo.svg"
+                        alt="Company logo">
+                    </div>
+                </div> -->
+               <!-- Sidebar navigation-->
+                <nav class="sidebar-nav">
+                    <ul id="sidebarnav">
+                        <li>
+                            <a class="has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false"><i class="mdi mdi-login"></i><span class="hide-menu">Dashboard</span></a>
+                            <ul aria-expanded="false" class="collapse">
+                                <li><a href="Dashboard1.html">Dashboard 1</a></li>
+                                <li><a href="Dashboard2.html">Dashboard 2</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false"><i class="mdi mdi-login"></i><span class="hide-menu">Login Templates</span></a>
+                            <ul aria-expanded="false" class="collapse">
+                                <li><a href="Login1.html">Login 1</a></li>
+                                <li><a href="Login2.html">Login 2</a></li>
+                                <li><a href="Login3.html">Login 3</a></li>
+                                <li><a href="Login4.html">Login 4</a></li>
+                                <li><a href="Login5.html">Login 5</a></li>
+                                <li><a href="Login6.html">Login 6</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false"><i class="ti-palette"></i><span class="hide-menu">Ui Elements</span></a>
+                            <ul aria-expanded="false" class="collapse">
+                                <li><a href="cards.html">Cards</a></li>
+                                <li><a href="buttons.html">Buttons</a></li>
+                                <li><a href="tabs.html">Tab</a></li>
+                                <li><a href="switchs.html">Switchs</a></li>
+                                <li><a href="Notification.html">Notification</a></li>
+                                <li><a href="Alert.html">Alert Box</a></li>
+                                <li><a href="carousel.html">Carousel</a></li>
+                                <li><a href="Errorpage.html">Error Page</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false"><i class="ti-layout-accordion-merged"></i><span class="hide-menu">Tables</span></a>
+                            <ul aria-expanded="false" class="collapse">
+                                <li><a href="basicTable.html">Basic Table</a></li>
+                                <li><a href="dataTable.html">Data Table</a></li>
+                                <li><a href="editable table.html">Editable Table</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false"><i class="ti-layout-media-right-alt"></i><span class="hide-menu">Forms</span></a>
+                            <ul aria-expanded="false" class="collapse">
+                                <li><a href="basicForms.html">Basic Forms</a></li>
+                                <li><a href="checkbox.html">Checkbox</a></li>
+                                <li><a href="dateTimepicker.html">Date &amp; Time Picker</a></li>
+                                <li><a href="dragdropfile.html">Drag &amp; Drop File Upload</a></li>
+                                <li><a href="sliders.html">Sliders</a></li>
+                                <li><a href="addon.html">Addon Control</a></li>
+                                <li><a href="icheck.html">Icheck Control</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false"><i class="ti-layout-media-right-alt"></i><span class="hide-menu">Components</span></a>
+                            <ul aria-expanded="false" class="collapse">
+                                <li><a href="mdbuttons.html">Material Buttons</a></li>
+                                <li><a href="badges.html">Badges</a></li>
+                                <li><a href="spinners.html">Loaders/Spinners</a></li>
+                                <li><a href="progressbar.html">ProgressBar</a></li>
+                                <li><a href="socialbutton.html">SocialButtons</a></li>
+                                <li><a href="stepper.html">Steppers</a></li>
+                                <li><a href="extendedcards.html">Extended Cards</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false"><i class="ti-layout-media-right-alt"></i><span class="hide-menu">Navigation</span></a>
+                            <ul aria-expanded="false" class="collapse">
+                                <li><a href="navbar.html">Navbar</a></li>
+                                <li><a href="breadcrumb.html">Breadcrumb</a></li>
+                                <li><a href="megamenu.html">Mega Menu</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false"><i class="mdi mdi-login"></i><span class="hide-menu">Email Templete</span></a>
+                            <ul aria-expanded="false" class="collapse">
+                               <li><a href="Email_1.html">Email Templete 1</a></li>
+                                <li><a href="Email_2.html">Email Templete 2</a></li>
+                            </ul>
+                        </li>
+                        <li class="d-none">
+                            <a class="has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false"><i class="ti-layout-media-right-alt"></i><span class="hide-menu">Templates</span></a>
+                            <ul aria-expanded="false" class="collapse">
+                                <li><a href="Website.html">Website</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+                <!-- End Sidebar navigation -->
+            </div>
+            <!-- End Sidebar scroll-->
+        </aside>
+        <!-- ============================================================== -->
+        <!-- End Left Sidebar - style you can find in  custom.css  -->
+        <!-- ============================================================== -->
+
+    <div class="page-wrapper">
+        <div class="container-fluid">
+
+
+            <div class="row">
+                <!--Stepper1-->
+                <div class="col-md-12 col-12 pb-md-4 pb-4">
+                    <div class="card">
+                        <div class="card-header">
+                            <h4>Linear stepper</h4>
+                        </div>
+                        <div class="card-body">
+                            <div id="stepper1" class="bs-stepper linear">
+                                <div class="bs-stepper-header" role="tablist">
+                                  <div class="step active" data-target="#test-l-1">
+                                    <button type="button" class="step-trigger" role="tab" id="stepper1trigger1" aria-controls="test-l-1" aria-selected="true">
+                                      <span class="bs-stepper-circle">1</span>
+                                      <span class="bs-stepper-label">Email</span>
+                                    </button>
+                                  </div>
+                                  <div class="bs-stepper-line"></div>
+                                  <div class="step" data-target="#test-l-2">
+                                    <button type="button" class="step-trigger" role="tab" id="stepper1trigger2" aria-controls="test-l-2" aria-selected="false" disabled="disabled">
+                                      <span class="bs-stepper-circle">2</span>
+                                      <span class="bs-stepper-label">Password</span>
+                                    </button>
+                                  </div>
+                                  <div class="bs-stepper-line"></div>
+                                  <div class="step" data-target="#test-l-3">
+                                    <button type="button" class="step-trigger" role="tab" id="stepper1trigger3" aria-controls="test-l-3" aria-selected="false" disabled="disabled">
+                                      <span class="bs-stepper-circle">3</span>
+                                      <span class="bs-stepper-label">Validate</span>
+                                    </button>
+                                  </div>
+                                </div>
+                                <div class="bs-stepper-content">
+                                  <form onsubmit="return false">
+                                    <div id="test-l-1" role="tabpanel" class="bs-stepper-pane active dstepper-block" aria-labelledby="stepper1trigger1">
+                                      <div class="form-group">
+                                        <label for="exampleInputEmail1">Email address</label>
+                                        <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+                                      </div>
+                                      <button class="btn downloadbtn" onclick="stepper1.next()">Next</button>
+                                    </div>
+                                    <div id="test-l-2" role="tabpanel" class="bs-stepper-pane" aria-labelledby="stepper1trigger2">
+                                      <div class="form-group">
+                                        <label for="exampleInputPassword1">Password</label>
+                                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                                      </div>
+                                      <button class="btn downloadbtn" onclick="stepper1.previous()">Previous</button>
+                                      <button class="btn downloadbtn" onclick="stepper1.next()">Next</button>
+                                    </div>
+                                    <div id="test-l-3" role="tabpanel" class="bs-stepper-pane text-center" aria-labelledby="stepper1trigger3">
+                                      <button class="btn downloadbtn mt-5" onclick="stepper1.previous()">Previous</button>
+                                      <button type="submit" class="btn downloadbtn mt-5">Submit</button>
+                                    </div>
+                                  </form>
+                                </div>
+                              </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="text-center"><a id="btnViewcode" name="btnViewcode" class="btn btn-megna" data-toggle="collapse" href="#card1ViewCodeSection" role="button" aria-expanded="false" aria-controls="#card1ViewCodeSection">View Code</a></div>
+                        </div>
+                    </div>
+                </div>
+
+                 <!--Stepper1 View code-->
+                <div class="col-md-12 pb-md-4 pb-4 p-0">
+                    <div class="collapse" id="card1ViewCodeSection">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="card bg-light h-100">
+                                        <div class="card-body">
+                                            <nav>
+                                                <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                                                    <a class="nav-item nav-link active" id="nav-html-tab" data-codeType='html' data-toggle="tab" href="#nav-htmlcard1" role="tab" aria-controls="nav-html" aria-selected="true">HTML</a>
+                                                    <a class="nav-item nav-link" id="nav-css-tab" data-codeType='css' data-toggle="tab" href="#nav-csscard1" role="tab" aria-controls="nav-css" aria-selected="false">CSS</a>
+                                                    <a class="nav-item nav-link" id="nav-js-tab" data-codeType='js' data-toggle="tab" href="#nav-jscard1" role="tab" aria-controls="nav-js" aria-selected="false">JS</a>
+
+                                                </div>
+                                            </nav>
+                                            <div class="tab-content border-left border-right border-bottom bg-white" id="nav-tabContent">
+                                                <div class="tab-pane fade show active" id="nav-htmlcard1" role="tabpanel" aria-labelledby="nav-home-tab">
+                                                    <div class="container-fluid">
+                                                        <div class="row">
+                                                            <div class="col-12 text-right py-3">
+                                                                <button class="btn downloadbtn btn-sm" onclick="copyToClipboard('#card1HtmlCode',this)" data-toggle="tooltip" data-placement="top" title="Copy to clipboard">Copy</button>
+                                                            </div>
+                                                            <div class="col-12 px-0">
+                                                                <div class="form-group">
+                                                                    <textarea id="card1HtmlCode" class="form-control code" rows="5" id="txthtml" name="txthtml" readonly>
+<link rel="stylesheet" type="text/css" href="assets/Plugins/bs-stepper-1.7.0/src/css/bs-stepper.css">                                                                      
+
+<!--Stepper1-->
+<div id="stepper1" class="bs-stepper linear">
+    <div class="bs-stepper-header" role="tablist">
+      <div class="step active" data-target="#test-l-1">
+        <button type="button" class="step-trigger" role="tab" id="stepper1trigger1" aria-controls="test-l-1" aria-selected="true">
+          <span class="bs-stepper-circle">1</span>
+          <span class="bs-stepper-label">Email</span>
+        </button>
+      </div>
+      <div class="bs-stepper-line"></div>
+      <div class="step" data-target="#test-l-2">
+        <button type="button" class="step-trigger" role="tab" id="stepper1trigger2" aria-controls="test-l-2" aria-selected="false" disabled="disabled">
+          <span class="bs-stepper-circle">2</span>
+          <span class="bs-stepper-label">Password</span>
+        </button>
+      </div>
+      <div class="bs-stepper-line"></div>
+      <div class="step" data-target="#test-l-3">
+        <button type="button" class="step-trigger" role="tab" id="stepper1trigger3" aria-controls="test-l-3" aria-selected="false" disabled="disabled">
+          <span class="bs-stepper-circle">3</span>
+          <span class="bs-stepper-label">Validate</span>
+        </button>
+      </div>
+    </div>
+    <div class="bs-stepper-content">
+      <form onsubmit="return false">
+        <div id="test-l-1" role="tabpanel" class="bs-stepper-pane active dstepper-block" aria-labelledby="stepper1trigger1">
+          <div class="form-group">
+            <label for="exampleInputEmail1">Email address</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+          </div>
+          <button class="btn downloadbtn" onclick="stepper1.next()">Next</button>
+        </div>
+        <div id="test-l-2" role="tabpanel" class="bs-stepper-pane" aria-labelledby="stepper1trigger2">
+          <div class="form-group">
+            <label for="exampleInputPassword1">Password</label>
+            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+          </div>
+          <button class="btn downloadbtn" onclick="stepper1.previous()">Previous</button>
+          <button class="btn downloadbtn" onclick="stepper1.next()">Next</button>
+        </div>
+        <div id="test-l-3" role="tabpanel" class="bs-stepper-pane text-center" aria-labelledby="stepper1trigger3">
+          <button class="btn downloadbtn mt-5" onclick="stepper1.previous()">Previous</button>
+          <button type="submit" class="btn downloadbtn mt-5">Submit</button>
+        </div>
+      </form>
+    </div>
+</div>
+        
+<script src="assets/Plugins/bs-stepper-1.7.0/docs/js/main.js"></script>
+<script src="assets/Plugins/bs-stepper-1.7.0/docs/js/bs-stepper.min.js"></script>
+                                           
+                                                    
+                                                                </textarea>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+
+                                                </div>
+                                                <div class="tab-pane fade" id="nav-csscard1" role="tabpanel" aria-labelledby="nav-profile-tab">
+                                                    <div class="container-fluid">
+                                                        <div class="row">
+                                                            <div class="col-md-4 col-12 p-3 m-auto">
+                                                                <a class="btn downloadbtn btn-block" target="_blank" href="assets/Plugins/bs-stepper-1.7.0.7z" download>Download bs-stepper-1.7.0.7z</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="tab-pane fade" id="nav-jscard1" role="tabpanel" aria-labelledby="nav-profile-tab">
+                                                    <div class="container-fluid">
+                                                        <div class="row">
+                                                            <div class="col-md-4 col-12 p-3 m-auto">
+                                                                <a class="btn downloadbtn btn-block" target="_blank" href="assets/Plugins/bs-stepper-1.7.0.7z" download>Download bs-stepper-1.7.0.7z</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <!--Stepper2-->
+                <div class="col-md-12 col-12 pb-md-4 pb-4">
+                    <div class="card">
+                        <div class="card-header">
+                            <h4>Non Linear stepper</h4>
+                        </div>
+                        <div class="card-body">
+                            <div id="stepper2" class="bs-stepper">
+                                <div class="bs-stepper-header" role="tablist">
+                                  <div class="step active" data-target="#test-nl-1">
+                                    <button type="button" class="step-trigger" role="tab" id="stepper2trigger1" aria-controls="test-nl-1" aria-selected="true">
+                                      <span class="bs-stepper-circle">
+                                        <span class="fas fa-user" aria-hidden="true"></span>
+                                      </span>
+                                      <span class="bs-stepper-label">Name</span>
+                                    </button>
+                                  </div>
+                                  <div class="bs-stepper-line"></div>
+                                  <div class="step" data-target="#test-nl-2">
+                                    <button type="button" class="step-trigger" role="tab" id="stepper2trigger2" aria-controls="test-nl-2" aria-selected="false">
+                                      <span class="bs-stepper-circle">
+                                        <span class="fas fa-home" aria-hidden="true"></span>
+                                      </span>
+                                      <span class="bs-stepper-label">Address</span>
+                                    </button>
+                                  </div>
+                                  <div class="bs-stepper-line"></div>
+                                  <div class="step" data-target="#test-nl-3">
+                                    <button type="button" class="step-trigger" role="tab" id="stepper2trigger3" aria-controls="test-nl-3" aria-selected="false">
+                                      <span class="bs-stepper-circle">
+                                        <span class="fas fa-save" aria-hidden="true"></span>
+                                      </span>
+                                      <span class="bs-stepper-label">Submit</span>
+                                    </button>
+                                  </div>
+                                </div>
+                                <div class="bs-stepper-content">
+                                  <form onsubmit="return false">
+                                    <div id="test-nl-1" role="tabpanel" class="bs-stepper-pane active dstepper-block" aria-labelledby="stepper2trigger1">
+                                      <div class="form-group">
+                                        <label for="exampleInputName1">Name</label>
+                                        <input type="email" class="form-control" id="exampleInputName1" placeholder="Enter your name">
+                                      </div>
+                                      <button class="btn downloadbtn" onclick="stepper2.next()">Next</button>
+                                    </div>
+                                    <div id="test-nl-2" role="tabpanel" class="bs-stepper-pane" aria-labelledby="stepper2trigger2">
+                                      <div class="form-group">
+                                        <label for="exampleInpuAddress1">Address</label>
+                                        <input type="email" class="form-control" id="exampleInpuAddress1" placeholder="Enter your address">
+                                      </div>
+                                      <button class="btn downloadbtn" onclick="stepper2.next()">Next</button>
+                                    </div>
+                                    <div id="test-nl-3" role="tabpanel" class="bs-stepper-pane text-center" aria-labelledby="stepper2trigger3">
+                                      <button type="submit" class="btn downloadbtn mt-5">Submit</button>
+                                    </div>
+                                  </form>
+                                </div>
+                              </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="text-center"><a id="btnViewcode" name="btnViewcode" class="btn btn-megna" data-toggle="collapse" href="#card2ViewCodeSection" role="button" aria-expanded="false" aria-controls="card2ViewCodeSection">View Code</a></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Stepper2 View code-->
+                <div class="col-md-12 pb-md-4 pb-4 p-0">
+                    <div class="collapse" id="card2ViewCodeSection">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="card bg-light h-100">
+                                        <div class="card-body">
+                                            <nav>
+                                                <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                                                    <a class="nav-item nav-link active" id="nav-html-tab" data-codeType='html' data-toggle="tab" href="#nav-htmlcard2" role="tab" aria-controls="nav-html" aria-selected="true">HTML</a>
+                                                    <a class="nav-item nav-link" id="nav-css-tab" data-codeType='css' data-toggle="tab" href="#nav-csscard2" role="tab" aria-controls="nav-css" aria-selected="false">CSS</a>
+                                                    <a class="nav-item nav-link" id="nav-js-tab" data-codeType='js' data-toggle="tab" href="#nav-jscard2" role="tab" aria-controls="nav-js" aria-selected="false">JS</a>
+
+                                                </div>
+                                            </nav>
+                                            <div class="tab-content border-left border-right border-bottom bg-white" id="nav-tabContent">
+                                                <div class="tab-pane fade show active" id="nav-htmlcard2" role="tabpanel" aria-labelledby="nav-home-tab">
+                                                    <div class="container-fluid">
+                                                        <div class="row">
+                                                            <div class="col-12 text-right py-3">
+                                                                <button class="btn downloadbtn btn-sm" onclick="copyToClipboard('#card2HtmlCode',this)" data-toggle="tooltip" data-placement="top" title="Copy to clipboard">Copy</button>
+                                                            </div>
+                                                            <div class="col-12 px-0">
+                                                                <div class="form-group">
+                                                                    <textarea id="card2HtmlCode" class="form-control code" rows="5" id="txthtml" name="txthtml" readonly>
+
+<link rel="stylesheet" type="text/css" href="assets/Plugins/bs-stepper-1.7.0/src/css/bs-stepper.css">                                                                                                                                                                                                 
+
+<!--Stepper2-->
+<div id="stepper2" class="bs-stepper">
+    <div class="bs-stepper-header" role="tablist">
+      <div class="step active" data-target="#test-nl-1">
+        <button type="button" class="step-trigger" role="tab" id="stepper2trigger1" aria-controls="test-nl-1" aria-selected="true">
+          <span class="bs-stepper-circle">
+            <span class="fas fa-user" aria-hidden="true"></span>
+          </span>
+          <span class="bs-stepper-label">Name</span>
+        </button>
+      </div>
+      <div class="bs-stepper-line"></div>
+      <div class="step" data-target="#test-nl-2">
+        <button type="button" class="step-trigger" role="tab" id="stepper2trigger2" aria-controls="test-nl-2" aria-selected="false">
+          <span class="bs-stepper-circle">
+            <span class="fas fa-home" aria-hidden="true"></span>
+          </span>
+          <span class="bs-stepper-label">Address</span>
+        </button>
+      </div>
+      <div class="bs-stepper-line"></div>
+      <div class="step" data-target="#test-nl-3">
+        <button type="button" class="step-trigger" role="tab" id="stepper2trigger3" aria-controls="test-nl-3" aria-selected="false">
+          <span class="bs-stepper-circle">
+            <span class="fas fa-save" aria-hidden="true"></span>
+          </span>
+          <span class="bs-stepper-label">Submit</span>
+        </button>
+      </div>
+    </div>
+    <div class="bs-stepper-content">
+      <form onsubmit="return false">
+        <div id="test-nl-1" role="tabpanel" class="bs-stepper-pane active dstepper-block" aria-labelledby="stepper2trigger1">
+          <div class="form-group">
+            <label for="exampleInputName1">Name</label>
+            <input type="email" class="form-control" id="exampleInputName1" placeholder="Enter your name">
+          </div>
+          <button class="btn downloadbtn" onclick="stepper2.next()">Next</button>
+        </div>
+        <div id="test-nl-2" role="tabpanel" class="bs-stepper-pane" aria-labelledby="stepper2trigger2">
+          <div class="form-group">
+            <label for="exampleInpuAddress1">Address</label>
+            <input type="email" class="form-control" id="exampleInpuAddress1" placeholder="Enter your address">
+          </div>
+          <button class="btn downloadbtn" onclick="stepper2.next()">Next</button>
+        </div>
+        <div id="test-nl-3" role="tabpanel" class="bs-stepper-pane text-center" aria-labelledby="stepper2trigger3">
+          <button type="submit" class="btn downloadbtn mt-5">Submit</button>
+        </div>
+      </form>
+    </div>
+</div>
+        
+<script src="assets/Plugins/bs-stepper-1.7.0/docs/js/main.js"></script>
+<script src="assets/Plugins/bs-stepper-1.7.0/docs/js/bs-stepper.min.js"></script>      
+                                           
+                                                    
+                                                                </textarea>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+
+                                                </div>
+                                                <div class="tab-pane fade" id="nav-csscard2" role="tabpanel" aria-labelledby="nav-profile-tab">
+                                                    <div class="container-fluid">
+                                                        <div class="row">
+                                                            <div class="col-md-4 col-12 p-3 m-auto">
+                                                                <a class="btn downloadbtn btn-block" target="_blank" href="assets/Plugins/bs-stepper-1.7.0.7z" download>Download bs-stepper-1.7.0.7z</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="tab-pane fade" id="nav-jscard2" role="tabpanel" aria-labelledby="nav-profile-tab">
+                                                    <div class="container-fluid">
+                                                        <div class="row">
+                                                            <div class="col-md-4 col-12 p-3 m-auto">
+                                                                <a class="btn downloadbtn btn-block" target="_blank" href="assets/Plugins/bs-stepper-1.7.0.7z" download>Download bs-stepper-1.7.0.7z</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+               <!--Stepper3--> 
+                <div class="col-md-12 col-12 pb-md-4 pb-4">
+                    <div class="card">
+                        <div class="card-header">
+                            <h4>Non linear stepper (with fade)</h4>
+                        </div>
+                        <div class="card-body">
+                            <div id="stepper3" class="bs-stepper">
+                                <div class="bs-stepper-header" role="tablist">
+                                  <div class="step active" data-target="#test-nlf-1">
+                                    <button type="button" class="step-trigger" role="tab" id="stepper3trigger1" aria-controls="test-nlf-1" aria-selected="true">
+                                      <span class="bs-stepper-circle">
+                                        <span class="fas fa-user" aria-hidden="true"></span>
+                                      </span>
+                                      <span class="bs-stepper-label">Name</span>
+                                    </button>
+                                  </div>
+                                  <div class="bs-stepper-line"></div>
+                                  <div class="step" data-target="#test-nlf-2">
+                                    <button type="button" class="step-trigger" role="tab" id="stepper3trigger2" aria-controls="test-nlf-2" aria-selected="false">
+                                      <span class="bs-stepper-circle">
+                                        <span class="fas fa-home" aria-hidden="true"></span>
+                                      </span>
+                                      <span class="bs-stepper-label">Address</span>
+                                    </button>
+                                  </div>
+                                  <div class="bs-stepper-line"></div>
+                                  <div class="step" data-target="#test-nlf-3">
+                                    <button type="button" class="step-trigger" role="tab" id="stepper3trigger3" aria-controls="test-nlf-3" aria-selected="false">
+                                      <span class="bs-stepper-circle">
+                                        <span class="fas fa-save" aria-hidden="true"></span>
+                                      </span>
+                                      <span class="bs-stepper-label">Submit</span>
+                                    </button>
+                                  </div>
+                                </div>
+                                <div class="bs-stepper-content">
+                                  <form onsubmit="return false">
+                                    <div id="test-nlf-1" role="tabpanel" class="bs-stepper-pane fade active dstepper-block" aria-labelledby="stepper3trigger1">
+                                      <div class="form-group">
+                                        <label for="exampleInputName2">Name</label>
+                                        <input type="email" class="form-control" id="exampleInputName2" placeholder="Enter your name">
+                                      </div>
+                                      <button class="btn downloadbtn" onclick="stepper3.next()">Next</button>
+                                    </div>
+                                    <div id="test-nlf-2" role="tabpanel" class="bs-stepper-pane fade dstepper-none" aria-labelledby="stepper3trigger2">
+                                      <div class="form-group">
+                                        <label for="exampleInpuAddress2">Address</label>
+                                        <input type="email" class="form-control" id="exampleInpuAddress2" placeholder="Enter your address">
+                                      </div>
+                                      <button class="btn downloadbtn" onclick="stepper3.next()">Next</button>
+                                    </div>
+                                    <div id="test-nlf-3" role="tabpanel" class="bs-stepper-pane fade text-center dstepper-none" aria-labelledby="stepper3trigger3">
+                                      <button type="submit" class="btn downloadbtn mt-5">Submit</button>
+                                    </div>
+                                  </form>
+                                </div>
+                              </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="text-center"><a id="btnViewcode" name="btnViewcode" class="btn btn-megna" data-toggle="collapse" href="#card3ViewCodeSection" role="button" aria-expanded="false" aria-controls="card3ViewCodeSection">View Code</a></div>
+                        </div>
+                    </div>
+                </div>
+
+                 <!--Stepper3 view code--> 
+                <div class="col-md-12 pb-md-4 pb-4 p-0">
+                    <div class="collapse" id="card3ViewCodeSection">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="card bg-light h-100">
+                                        <div class="card-body">
+                                            <nav>
+                                                <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                                                    <a class="nav-item nav-link active" id="nav-html-tab" data-codeType='html' data-toggle="tab" href="#nav-htmlcard3" role="tab" aria-controls="nav-html" aria-selected="true">HTML</a>
+                                                    <a class="nav-item nav-link" id="nav-css-tab" data-codeType='css' data-toggle="tab" href="#nav-csscard3" role="tab" aria-controls="nav-css" aria-selected="false">CSS</a>
+                                                    <a class="nav-item nav-link" id="nav-js-tab" data-codeType='js' data-toggle="tab" href="#nav-jscard3" role="tab" aria-controls="nav-js" aria-selected="false">JS</a>
+
+                                                </div>
+                                            </nav>
+                                            <div class="tab-content border-left border-right border-bottom bg-white" id="nav-tabContent">
+                                                <div class="tab-pane fade show active" id="nav-htmlcard3" role="tabpanel" aria-labelledby="nav-home-tab">
+                                                    <div class="container-fluid">
+                                                        <div class="row">
+                                                            <div class="col-12 text-right py-3">
+                                                                <button class="btn downloadbtn btn-sm" onclick="copyToClipboard('#card3HtmlCode',this)" data-toggle="tooltip" data-placement="top" title="Copy to clipboard">Copy</button>
+                                                            </div>
+                                                            <div class="col-12 px-0">
+                                                                <div class="form-group">
+                                                                    <textarea id="card3HtmlCode" class="form-control code" rows="5" id="txthtml" name="txthtml" readonly>
+
+<link rel="stylesheet" type="text/css" href="assets/Plugins/bs-stepper-1.7.0/src/css/bs-stepper.css">                                                                      
+
+ <!--Stepper3--> 
+<div id="stepper3" class="bs-stepper">
+    <div class="bs-stepper-header" role="tablist">
+      <div class="step active" data-target="#test-nlf-1">
+        <button type="button" class="step-trigger" role="tab" id="stepper3trigger1" aria-controls="test-nlf-1" aria-selected="true">
+          <span class="bs-stepper-circle">
+            <span class="fas fa-user" aria-hidden="true"></span>
+          </span>
+          <span class="bs-stepper-label">Name</span>
+        </button>
+      </div>
+      <div class="bs-stepper-line"></div>
+      <div class="step" data-target="#test-nlf-2">
+        <button type="button" class="step-trigger" role="tab" id="stepper3trigger2" aria-controls="test-nlf-2" aria-selected="false">
+          <span class="bs-stepper-circle">
+            <span class="fas fa-home" aria-hidden="true"></span>
+          </span>
+          <span class="bs-stepper-label">Address</span>
+        </button>
+      </div>
+      <div class="bs-stepper-line"></div>
+      <div class="step" data-target="#test-nlf-3">
+        <button type="button" class="step-trigger" role="tab" id="stepper3trigger3" aria-controls="test-nlf-3" aria-selected="false">
+          <span class="bs-stepper-circle">
+            <span class="fas fa-save" aria-hidden="true"></span>
+          </span>
+          <span class="bs-stepper-label">Submit</span>
+        </button>
+      </div>
+    </div>
+    <div class="bs-stepper-content">
+      <form onsubmit="return false">
+        <div id="test-nlf-1" role="tabpanel" class="bs-stepper-pane fade active dstepper-block" aria-labelledby="stepper3trigger1">
+          <div class="form-group">
+            <label for="exampleInputName2">Name</label>
+            <input type="email" class="form-control" id="exampleInputName2" placeholder="Enter your name">
+          </div>
+          <button class="btn downloadbtn" onclick="stepper3.next()">Next</button>
+        </div>
+        <div id="test-nlf-2" role="tabpanel" class="bs-stepper-pane fade dstepper-none" aria-labelledby="stepper3trigger2">
+          <div class="form-group">
+            <label for="exampleInpuAddress2">Address</label>
+            <input type="email" class="form-control" id="exampleInpuAddress2" placeholder="Enter your address">
+          </div>
+          <button class="btn downloadbtn" onclick="stepper3.next()">Next</button>
+        </div>
+        <div id="test-nlf-3" role="tabpanel" class="bs-stepper-pane fade text-center dstepper-none" aria-labelledby="stepper3trigger3">
+          <button type="submit" class="btn downloadbtn mt-5">Submit</button>
+        </div>
+      </form>
+    </div>
+</div>
+      
+<script src="assets/Plugins/bs-stepper-1.7.0/docs/js/main.js"></script>
+<script src="assets/Plugins/bs-stepper-1.7.0/docs/js/bs-stepper.min.js"></script> 
+                                           
+                                                    
+                                                                </textarea>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+
+                                                </div>
+                                                <div class="tab-pane fade" id="nav-csscard3" role="tabpanel" aria-labelledby="nav-profile-tab">
+                                                    <div class="container-fluid">
+                                                        <div class="row">
+                                                            <div class="col-md-4 col-12 p-3 m-auto">
+                                                                <a class="btn downloadbtn btn-block" target="_blank" href="assets/Plugins/bs-stepper-1.7.0.7z" download>Download bs-stepper-1.7.0.7z</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="tab-pane fade" id="nav-jscard3" role="tabpanel" aria-labelledby="nav-profile-tab">
+                                                    <div class="container-fluid">
+                                                        <div class="row">
+                                                            <div class="col-md-4 col-12 p-3 m-auto">
+                                                                <a class="btn downloadbtn btn-block" target="_blank" href="assets/Plugins/bs-stepper-1.7.0.7z" download>Download bs-stepper-1.7.0.7z</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <!--Stepper4--> 
+                <div class="col-md-12 col-12 pb-md-4 pb-4">
+                    <div class="card">
+                        <div class="card-header">
+                            <h4>Vertical Linear stepper</h4>
+                        </div>
+                        <div class="card-body">
+                            <div id="stepper4" class="bs-stepper vertical linear">
+                                <div class="bs-stepper-header" role="tablist">
+                                  <div class="step active" data-target="#test-vl-1">
+                                    <button type="button" class="step-trigger" role="tab" id="stepper4trigger1" aria-controls="test-vl-1" aria-selected="true">
+                                      <span class="bs-stepper-circle">1</span>
+                                      <span class="bs-stepper-label">Email</span>
+                                    </button>
+                                  </div>
+                                  <div class="bs-stepper-line"></div>
+                                  <div class="step" data-target="#test-vl-2">
+                                    <button type="button" class="step-trigger" role="tab" id="stepper4trigger2" aria-controls="test-vl-2" aria-selected="false" disabled="disabled">
+                                      <span class="bs-stepper-circle">2</span>
+                                      <span class="bs-stepper-label">Password</span>
+                                    </button>
+                                  </div>
+                                  <div class="bs-stepper-line"></div>
+                                  <div class="step" data-target="#test-vl-3">
+                                    <button type="button" class="step-trigger" role="tab" id="stepper4trigger3" aria-controls="test-vl-3" aria-selected="false" disabled="disabled">
+                                      <span class="bs-stepper-circle">3</span>
+                                      <span class="bs-stepper-label">Validate</span>
+                                    </button>
+                                  </div>
+                                </div>
+                                <div class="bs-stepper-content">
+                                  <form onsubmit="return false">
+                                    <div id="test-vl-1" role="tabpanel" class="bs-stepper-pane fade active dstepper-block" aria-labelledby="stepper4trigger1">
+                                      <div class="form-group">
+                                        <label for="exampleInputEmailV1">Email address</label>
+                                        <input type="email" class="form-control" id="exampleInputEmailV1" placeholder="Enter email">
+                                      </div>
+                                      <button class="btn downloadbtn" onclick="stepper4.next()">Next</button>
+                                    </div>
+                                    <div id="test-vl-2" role="tabpanel" class="bs-stepper-pane fade" aria-labelledby="stepper4trigger2">
+                                      <div class="form-group">
+                                        <label for="exampleInputPasswordV1">Password</label>
+                                        <input type="password" class="form-control" id="exampleInputPasswordV1" placeholder="Password">
+                                      </div>
+                                      <button class="btn downloadbtn" onclick="stepper4.previous()">Previous</button>
+                                      <button class="btn downloadbtn" onclick="stepper4.next()">Next</button>
+                                    </div>
+                                    <div id="test-vl-3" role="tabpanel" class="bs-stepper-pane fade" aria-labelledby="stepper4trigger3">
+                                      <button class="btn downloadbtn mt-5" onclick="stepper4.previous()">Previous</button>
+                                      <button type="submit" class="btn downloadbtn mt-5">Submit</button>
+                                    </div>
+                                  </form>
+                                </div>
+                              </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="text-center"><a id="btnViewcode" name="btnViewcode" class="btn btn-megna" data-toggle="collapse" href="#card4ViewCodeSection" role="button" aria-expanded="false" aria-controls="#card4ViewCodeSection">View Code</a></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Stepper4 view code-->
+                <div class="col-md-12 pb-md-4 pb-4 p-0">
+                    <div class="collapse" id="card4ViewCodeSection">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="card bg-light h-100">
+                                        <div class="card-body">
+                                            <nav>
+                                                <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                                                    <a class="nav-item nav-link active" id="nav-html-tab" data-codeType='html' data-toggle="tab" href="#nav-htmlcard4" role="tab" aria-controls="nav-html" aria-selected="true">HTML</a>
+                                                    <a class="nav-item nav-link" id="nav-css-tab" data-codeType='css' data-toggle="tab" href="#nav-csscard4" role="tab" aria-controls="nav-css" aria-selected="false">CSS</a>
+                                                    <a class="nav-item nav-link" id="nav-js-tab" data-codeType='js' data-toggle="tab" href="#nav-jscard4" role="tab" aria-controls="nav-css" aria-selected="false">JS</a>
+
+                                                </div>
+                                            </nav>
+                                            <div class="tab-content border-left border-right border-bottom bg-white" id="nav-tabContent">
+                                                <div class="tab-pane fade show active" id="nav-htmlcard4" role="tabpanel" aria-labelledby="nav-home-tab">
+                                                    <div class="container-fluid">
+                                                        <div class="row">
+                                                            <div class="col-12 text-right py-3">
+                                                                <button class="btn downloadbtn btn-sm" onclick="copyToClipboard('#card4HtmlCode',this)" data-toggle="tooltip" data-placement="top" title="Copy to clipboard">Copy</button>
+                                                            </div>
+                                                            <div class="col-12 px-0">
+                                                                <div class="form-group">
+                                                                    <textarea id="card4HtmlCode" class="form-control code" rows="5" id="txthtml" name="txthtml" readonly>
+
+<link rel="stylesheet" type="text/css" href="assets/Plugins/bs-stepper-1.7.0/src/css/bs-stepper.css">                                                                      
+
+ <!--Stepper4--> 
+<div id="stepper4" class="bs-stepper vertical linear">
+    <div class="bs-stepper-header" role="tablist">
+      <div class="step active" data-target="#test-vl-1">
+        <button type="button" class="step-trigger" role="tab" id="stepper4trigger1" aria-controls="test-vl-1" aria-selected="true">
+          <span class="bs-stepper-circle">1</span>
+          <span class="bs-stepper-label">Email</span>
+        </button>
+      </div>
+      <div class="bs-stepper-line"></div>
+      <div class="step" data-target="#test-vl-2">
+        <button type="button" class="step-trigger" role="tab" id="stepper4trigger2" aria-controls="test-vl-2" aria-selected="false" disabled="disabled">
+          <span class="bs-stepper-circle">2</span>
+          <span class="bs-stepper-label">Password</span>
+        </button>
+      </div>
+      <div class="bs-stepper-line"></div>
+      <div class="step" data-target="#test-vl-3">
+        <button type="button" class="step-trigger" role="tab" id="stepper4trigger3" aria-controls="test-vl-3" aria-selected="false" disabled="disabled">
+          <span class="bs-stepper-circle">3</span>
+          <span class="bs-stepper-label">Validate</span>
+        </button>
+      </div>
+    </div>
+    <div class="bs-stepper-content">
+      <form onsubmit="return false">
+        <div id="test-vl-1" role="tabpanel" class="bs-stepper-pane fade active dstepper-block" aria-labelledby="stepper4trigger1">
+          <div class="form-group">
+            <label for="exampleInputEmailV1">Email address</label>
+            <input type="email" class="form-control" id="exampleInputEmailV1" placeholder="Enter email">
+          </div>
+          <button class="btn downloadbtn" onclick="stepper4.next()">Next</button>
+        </div>
+        <div id="test-vl-2" role="tabpanel" class="bs-stepper-pane fade" aria-labelledby="stepper4trigger2">
+          <div class="form-group">
+            <label for="exampleInputPasswordV1">Password</label>
+            <input type="password" class="form-control" id="exampleInputPasswordV1" placeholder="Password">
+          </div>
+          <button class="btn downloadbtn" onclick="stepper4.previous()">Previous</button>
+          <button class="btn downloadbtn" onclick="stepper4.next()">Next</button>
+        </div>
+        <div id="test-vl-3" role="tabpanel" class="bs-stepper-pane fade" aria-labelledby="stepper4trigger3">
+          <button class="btn downloadbtn mt-5" onclick="stepper4.previous()">Previous</button>
+          <button type="submit" class="btn downloadbtn mt-5">Submit</button>
+        </div>
+      </form>
+    </div>
+</div>
+      
+<script src="assets/Plugins/bs-stepper-1.7.0/docs/js/main.js"></script>
+<script src="assets/Plugins/bs-stepper-1.7.0/docs/js/bs-stepper.min.js"></script> 
+                                        
+                                                    
+                                                                </textarea>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+    
+                                                    </div>
+    
+                                                </div>
+                                                <div class="tab-pane fade" id="nav-csscard4" role="tabpanel" aria-labelledby="nav-profile-tab">
+                                                    <div class="container-fluid">
+                                                        <div class="row">
+                                                            <div class="col-md-4 col-12 p-3 m-auto">
+                                                                <a class="btn downloadbtn btn-block" target="_blank" href="assets/Plugins/bs-stepper-1.7.0.7z" download>Download bs-stepper-1.7.0.7z</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="tab-pane fade" id="nav-jscard4" role="tabpanel" aria-labelledby="nav-profile-tab">
+                                                    <div class="container-fluid">
+                                                        <div class="row">
+                                                            <div class="col-md-4 col-12p-3 m-auto">
+                                                                <a class="btn downloadbtn btn-block" target="_blank" href="assets/Plugins/bs-stepper-1.7.0.7z" download>Download bs-stepper-1.7.0.7z</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+
+            </div>
+
+            <div class="row">
+                <!--Stepper5-->
+                <div class="col-md-12 col-12 pb-md-4 pb-4">
+                    <div class="card">
+                        <div class="card-header">
+                            <h4>Vertical Linear stepper</h4>
+                        </div>
+                        <div class="card-body">
+                            <div id="stepperForm" class="bs-stepper linear">
+                                <div class="bs-stepper-header" role="tablist">
+                                  <div class="step active" data-target="#test-form-1">
+                                    <button type="button" class="step-trigger" role="tab" id="stepperFormTrigger1" aria-controls="test-form-1" aria-selected="true">
+                                      <span class="bs-stepper-circle">1</span>
+                                      <span class="bs-stepper-label">Email</span>
+                                    </button>
+                                  </div>
+                                  <div class="bs-stepper-line"></div>
+                                  <div class="step" data-target="#test-form-2">
+                                    <button type="button" class="step-trigger" role="tab" id="stepperFormTrigger2" aria-controls="test-form-2" aria-selected="false" disabled="disabled">
+                                      <span class="bs-stepper-circle">2</span>
+                                      <span class="bs-stepper-label">Password</span>
+                                    </button>
+                                  </div>
+                                  <div class="bs-stepper-line"></div>
+                                  <div class="step" data-target="#test-form-3">
+                                    <button type="button" class="step-trigger" role="tab" id="stepperFormTrigger3" aria-controls="test-form-3" aria-selected="false" disabled="disabled">
+                                      <span class="bs-stepper-circle">3</span>
+                                      <span class="bs-stepper-label">Validate</span>
+                                    </button>
+                                  </div>
+                                </div>
+                                <div class="bs-stepper-content">
+                                  <form class="needs-validation" onsubmit="return false" novalidate="">
+                                    <div id="test-form-1" role="tabpanel" class="bs-stepper-pane fade active dstepper-block" aria-labelledby="stepperFormTrigger1">
+                                      <div class="form-group">
+                                        <label for="inputMailForm">Email address <span class="text-danger font-weight-bold">*</span></label>
+                                        <input id="inputMailForm" type="email" class="form-control" placeholder="Enter email" required="">
+                                        <div class="invalid-feedback">Please fill the email field</div>
+                                      </div>
+                                      <button class="btn downloadbtn btn-next-form">Next</button>
+                                    </div>
+                                    <div id="test-form-2" role="tabpanel" class="bs-stepper-pane fade dstepper-none" aria-labelledby="stepperFormTrigger2">
+                                      <div class="form-group">
+                                        <label for="inputPasswordForm">Password <span class="text-danger font-weight-bold">*</span></label>
+                                        <input id="inputPasswordForm" type="password" class="form-control" placeholder="Password" required="">
+                                        <div class="invalid-feedback">Please fill the password field</div>
+                                      </div>
+                                      <button class="btn downloadbtn btn-next-form">Next</button>
+                                    </div>
+                                    <div id="test-form-3" role="tabpanel" class="bs-stepper-pane fade text-center dstepper-none" aria-labelledby="stepperFormTrigger3">
+                                      <button type="submit" class="btn downloadbtn mt-5">Submit</button>
+                                    </div>
+                                  </form>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="text-center"><a id="btnViewcode" name="btnViewcode" class="btn btn-megna" data-toggle="collapse" href="#card5ViewCodeSection" role="button" aria-expanded="false" aria-controls="#card5ViewCodeSection">View Code</a></div>
+                        </div>
+                    </div>
+                </div>
+
+                 <!--Stepper5 view code-->
+                <div class="col-md-12 pb-md-4 pb-4 p-0">
+                    <div class="collapse" id="card5ViewCodeSection">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="card bg-light h-100">
+                                        <div class="card-body">
+                                            <nav>
+                                                <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                                                    <a class="nav-item nav-link active" id="nav-html-tab" data-codeType='html' data-toggle="tab" href="#nav-htmlcard5" role="tab" aria-controls="nav-html" aria-selected="true">HTML</a>
+                                                    <a class="nav-item nav-link" id="nav-css-tab" data-codeType='css' data-toggle="tab" href="#nav-csscard5" role="tab" aria-controls="nav-css" aria-selected="false">CSS</a>
+                                                    <a class="nav-item nav-link" id="nav-js-tab" data-codeType='js' data-toggle="tab" href="#nav-jscard5" role="tab" aria-controls="nav-css" aria-selected="false">JS</a>
+
+                                                </div>
+                                            </nav>
+                                            <div class="tab-content border-left border-right border-bottom bg-white" id="nav-tabContent">
+                                                <div class="tab-pane fade show active" id="nav-htmlcard5" role="tabpanel" aria-labelledby="nav-home-tab">
+                                                    <div class="container-fluid">
+                                                        <div class="row">
+                                                            <div class="col-12 text-right py-3">
+                                                                <button class="btn downloadbtn btn-sm" onclick="copyToClipboard('#card5HtmlCode',this)" data-toggle="tooltip" data-placement="top" title="Copy to clipboard">Copy</button>
+                                                            </div>
+                                                            <div class="col-12 px-0">
+                                                                <div class="form-group">
+                                                                    <textarea id="card5HtmlCode" class="form-control code" rows="5" id="txthtml" name="txthtml" readonly>
+
+<link rel="stylesheet" type="text/css" href="assets/Plugins/bs-stepper-1.7.0/src/css/bs-stepper.css">                                                                      
+
+ <!--Stepper5-->
+<div id="stepperForm" class="bs-stepper linear">
+    <div class="bs-stepper-header" role="tablist">
+      <div class="step active" data-target="#test-form-1">
+        <button type="button" class="step-trigger" role="tab" id="stepperFormTrigger1" aria-controls="test-form-1" aria-selected="true">
+          <span class="bs-stepper-circle">1</span>
+          <span class="bs-stepper-label">Email</span>
+        </button>
+      </div>
+      <div class="bs-stepper-line"></div>
+      <div class="step" data-target="#test-form-2">
+        <button type="button" class="step-trigger" role="tab" id="stepperFormTrigger2" aria-controls="test-form-2" aria-selected="false" disabled="disabled">
+          <span class="bs-stepper-circle">2</span>
+          <span class="bs-stepper-label">Password</span>
+        </button>
+      </div>
+      <div class="bs-stepper-line"></div>
+      <div class="step" data-target="#test-form-3">
+        <button type="button" class="step-trigger" role="tab" id="stepperFormTrigger3" aria-controls="test-form-3" aria-selected="false" disabled="disabled">
+          <span class="bs-stepper-circle">3</span>
+          <span class="bs-stepper-label">Validate</span>
+        </button>
+      </div>
+    </div>
+    <div class="bs-stepper-content">
+      <form class="needs-validation" onsubmit="return false" novalidate="">
+        <div id="test-form-1" role="tabpanel" class="bs-stepper-pane fade active dstepper-block" aria-labelledby="stepperFormTrigger1">
+          <div class="form-group">
+            <label for="inputMailForm">Email address <span class="text-danger font-weight-bold">*</span></label>
+            <input id="inputMailForm" type="email" class="form-control" placeholder="Enter email" required="">
+            <div class="invalid-feedback">Please fill the email field</div>
+          </div>
+          <button class="btn downloadbtn btn-next-form">Next</button>
+        </div>
+        <div id="test-form-2" role="tabpanel" class="bs-stepper-pane fade dstepper-none" aria-labelledby="stepperFormTrigger2">
+          <div class="form-group">
+            <label for="inputPasswordForm">Password <span class="text-danger font-weight-bold">*</span></label>
+            <input id="inputPasswordForm" type="password" class="form-control" placeholder="Password" required="">
+            <div class="invalid-feedback">Please fill the password field</div>
+          </div>
+          <button class="btn downloadbtn btn-next-form">Next</button>
+        </div>
+        <div id="test-form-3" role="tabpanel" class="bs-stepper-pane fade text-center dstepper-none" aria-labelledby="stepperFormTrigger3">
+          <button type="submit" class="btn downloadbtn mt-5">Submit</button>
+        </div>
+      </form>
+    </div>
+</div>
+        
+<script src="assets/Plugins/bs-stepper-1.7.0/docs/js/main.js"></script>
+<script src="assets/Plugins/bs-stepper-1.7.0/docs/js/bs-stepper.min.js"></script>   
+                                        
+                                                    
+                                                                </textarea>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+    
+                                                    </div>
+    
+                                                </div>
+                                                <div class="tab-pane fade" id="nav-csscard5" role="tabpanel" aria-labelledby="nav-profile-tab">
+                                                    <div class="container-fluid">
+                                                        <div class="row">
+                                                            <div class="col-md-4 col-12 p-3 m-auto">
+                                                                <a class="btn downloadbtn btn-block" target="_blank" href="assets/Plugins/bs-stepper-1.7.0.7z" download>Download bs-stepper-1.7.0.7z</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="tab-pane fade" id="nav-jscard5" role="tabpanel" aria-labelledby="nav-profile-tab">
+                                                    <div class="container-fluid">
+                                                        <div class="row">
+                                                            <div class="col-md-4 col-12 p-3 m-auto">
+                                                                <a class="btn downloadbtn btn-block" target="_blank" href="assets/Plugins/bs-stepper-1.7.0.7z" download>Download bs-stepper-1.7.0.7z</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+            </div>
+
+         
+
+        </div>
+    </div>
+
+
+    <!--jquery js-->
+    <script src="assets/Core/jquery-3.3.1.min.js"></script>
+    <!--popper js-->
+    <script src="assets/Core/popper/popper.min.js"></script>
+    <!--bootstrap js-->
+    <script src="assets/Core/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!--Sidebarmenu js-->
+    <script src="dist/js/sidebarmenu.js"></script>
+    <!--Wave Effects js -->
+    <script src="dist/js/waves.js"></script>
+    <!-- scrollbar JavaScript -->
+    <script src="dist/js/perfect-scrollbar.jquery.min.js"></script>
+    <!--Custom JavaScript -->
+    <script src="dist/js/custom.js"></script>
+    
+    <script src="assets/Plugins/bs-stepper-1.7.0/docs/js/main.js"></script>
+   <script src="assets/Plugins/bs-stepper-1.7.0/docs/js/bs-stepper.min.js"></script>
+    <!--Code Mirror JS-->
+   <script src="assets/Plugins/codemirror/lib/codemirror.js"></script>
+   <script src="assets/Plugins/codemirror/mode/xml/xml.js"></script>
+   <script src="assets/Plugins/codemirror/mode/css/css.js"></script>
+   <script src="assets/Plugins/codemirror/mode/javascript/javascript.js"></script>
+   <script src="assets/Plugins/codemirror/mode/htmlmixed/htmlmixed.js"></script>
+
+    <!--custom js view code-->
+    <script src="dist/js/stepper.js"></script>
+
+   <script src="text-javascript">
+       $(document).ready(function() {
+   $(".megamenu").on("click", function(e) {
+       e.stopPropagation();
+   });
+   });
+   </script>
+    
+    <script type="text/javascript">
+        var card1CodeInit = 0;
+        var card2CodeInit = 0;
+        var card3CodeInit = 0;
+        var card4CodeInit = 0;
+        var card5CodeInit = 0;
+       
+       
+        
+            $('#card1ViewCodeSection').on('shown.bs.collapse', function () {
+                if(card1CodeInit == 0)
+                {
+                    card1HtmlCodeEditor();
+                    card1CodeInit = 1;
+                }
+                else{
+                    return false;
+                }
+            });
+            $('#card2ViewCodeSection').on('shown.bs.collapse', function () {
+                if(card2CodeInit == 0)
+                {
+                    card2HtmlCodeEditor();
+                    card2CodeInit = 1;
+                }
+                else{
+                    return false;
+                }
+            });
+            $('#card3ViewCodeSection').on('shown.bs.collapse', function () {
+                if(card3CodeInit == 0)
+                {
+                    card3HtmlCodeEditor();
+                    card3CodeInit = 1;
+                }
+                else{
+                    return false;
+                }
+            });
+
+            $('#card4ViewCodeSection').on('shown.bs.collapse', function () {
+                if(card4CodeInit == 0)
+                {
+                    card4HtmlCodeEditor();
+                    card4CodeInit = 1;
+                }
+                else{
+                    return false;
+                }
+            });
+
+            $('#card5ViewCodeSection').on('shown.bs.collapse', function () {
+                if(card5CodeInit == 0)
+                {
+                    card5HtmlCodeEditor();
+                    card5CodeInit = 1;
+                }
+                else{
+                    return false;
+                }
+            });
+
+            
+           
+           
+    </script>
+
+</body>
+</html>

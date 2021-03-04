@@ -1,0 +1,482 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login2</title>
+    <!--Bootstrap css-->
+    <link rel="stylesheet" href="assets/Core/bootstrap/dist/css/bootstrap.min.css">
+    <!--plugins of viewcode-->
+    <link rel="stylesheet" type="text/css" href="assets/Plugins/codemirror/lib/codemirror.css">
+    <link rel="stylesheet" type="text/css" href="assets/Plugins/codemirror/theme/material.css">
+    <!--Custom css-->
+    <link rel="stylesheet" href="dist/css/style.css">
+     <link rel="stylesheet" href="dist/scss/css/Login_6.css"> 
+    <link rel="stylesheet" href="dist/sidenavCss/custom.css">
+</head>
+<body class="skin-megna fixed-layout">
+
+    <!-- ============================================================== -->
+    <!-- Topbar header - style you can find in pages.scss -->
+    <!-- ============================================================== -->
+    <header class="topbar">
+        <nav class="navbar top-navbar navbar-expand-md navbar-dark">
+            <!-- ============================================================== -->
+            <!-- Logo -->
+            <!-- ============================================================== -->
+           <div class="navbar-header">
+                    <a class="navbar-brand" href="index.html">
+                        <!-- Logo icon --><b>
+                            <!--You can put here icon as well // <i class="wi wi-sunset"></i> //-->
+                            <!-- Dark Logo icon -->
+                            <img src="assets/images/New Logo.png" alt="homepage" class="light-logo" />
+                            <!-- Light Logo icon -->
+                            <!-- <img src="../assets/images/logo-light-icon.png" alt="homepage" class="light-logo" /> -->
+                        </b>
+                        <!--End Logo icon -->
+                        <span class="hidden-xs font-bold" style="font-size: 16px">Patel Techologies</span>
+                    </a>
+                </div>
+            <!-- ============================================================== -->
+            <!-- End Logo -->
+            <!-- ============================================================== -->
+            <div class="navbar-collapse">
+                <!-- ============================================================== -->
+                <!-- toggle and nav items -->
+                <!-- ============================================================== -->
+                <ul class="navbar-nav mr-auto">
+                    <!-- This is  -->
+                    <li class="nav-item"> <a class="nav-link nav-toggler d-block d-md-none waves-effect waves-dark" href="javascript:void(0)"><i class="ti-menu"></i></a> </li>
+                    <li class="nav-item"> <a class="nav-link sidebartoggler d-none d-lg-block d-md-block waves-effect waves-dark" href="javascript:void(0)"><i class="icon-menu"></i></a> </li>
+                    <!-- ============================================================== -->
+                    <!-- Search -->
+                    <!-- ============================================================== -->
+                    <li class="nav-item d-none d-md-block d-lg-block">
+                           <form action="">
+                              <input type="search" placeholder="Search & enter">
+                              <i class="fa fa-search"></i>
+                            </form>
+                        </li>
+                </ul>
+
+            </div>
+        </nav>
+    </header>
+    <!-- ============================================================== -->
+    <!-- End Topbar header -->
+    <!-- ============================================================== -->
+    <!-- ============================================================== -->
+    <!-- Left Sidebar - style you can find in sidebar.scss  -->
+    <!-- ============================================================== -->
+    <aside class="left-sidebar">
+        <!-- Sidebar scroll-->
+        <div class="scroll-sidebar">
+
+            <!-- Sidebar navigation-->
+            <nav class="sidebar-nav">
+                    <ul id="sidebarnav">
+                        
+                        <li>
+                            <a class="has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false"><i class="mdi mdi-login"></i><span class="hide-menu">Dashboard</span></a>
+                            <ul aria-expanded="false" class="collapse">
+                                <li><a href="Dashboard1.html">Dashboard 1</a></li>
+                                <li><a href="Dashboard2.html">Dashboard 2</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false"><i class="mdi mdi-login"></i><span class="hide-menu">Login Templates</span></a>
+                            <ul aria-expanded="false" class="collapse">
+                                <li><a href="Login1.html">Login 1</a></li>
+                                <li><a href="Login2.html">Login 2</a></li>
+                                <li><a href="Login3.html">Login 3</a></li>
+                                <li><a href="Login4.html">Login 4</a></li>
+                                <li><a href="Login5.html">Login 5</a></li>
+                                <li><a href="Login6.html">Login 6</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false"><i class="ti-palette"></i><span class="hide-menu">Ui Elements</span></a>
+                            <ul aria-expanded="false" class="collapse">
+                                <li><a href="cards.html">Cards</a></li>
+                                <li><a href="buttons.html">Buttons</a></li>
+                                <li><a href="tabs.html">Tab</a></li>
+                                <li><a href="switchs.html">Switchs</a></li>
+                                <li><a href="Notification.html">Notification</a></li>
+                                <li><a href="Alert.html">Alert Box</a></li>
+                                <li><a href="carousel.html">Carousel</a></li>
+                                <li><a href="Errorpage.html">Error Page</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false"><i class="ti-layout-accordion-merged"></i><span class="hide-menu">Tables</span></a>
+                            <ul aria-expanded="false" class="collapse">
+                                <li><a href="basicTable.html">Basic Table</a></li>
+                                <li><a href="dataTable.html">Data Table</a></li>
+                                <li><a href="editable table.html">Editable Table</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false"><i class="ti-layout-media-right-alt"></i><span class="hide-menu">Forms</span></a>
+                            <ul aria-expanded="false" class="collapse">
+                                <li><a href="basicForms.html">Basic Forms</a></li>
+                                <li><a href="checkbox.html">Checkbox</a></li>
+                                <li><a href="dateTimepicker.html">Date &amp; Time Picker</a></li>
+                                <li><a href="dragdropfile.html">Drag &amp; Drop File Upload</a></li>
+                                <li><a href="sliders.html">Sliders</a></li>
+                                <li><a href="addon.html">Addon Control</a></li>
+                                <li><a href="icheck.html">Icheck Control</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false"><i class="ti-layout-media-right-alt"></i><span class="hide-menu">Components</span></a>
+                            <ul aria-expanded="false" class="collapse">
+                                <li><a href="mdbuttons.html">Material Buttons</a></li>
+                                <li><a href="badges.html">Badges</a></li>
+                                <li><a href="spinners.html">Loaders/Spinners</a></li>
+                                <li><a href="progressbar.html">ProgressBar</a></li>
+                                <li><a href="socialbutton.html">SocialButtons</a></li>
+                                <li><a href="stepper.html">Steppers</a></li>
+                                <li><a href="extendedcards.html">Extended Cards</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false"><i class="ti-layout-media-right-alt"></i><span class="hide-menu">Navigation</span></a>
+                            <ul aria-expanded="false" class="collapse">
+                                <li><a href="navbar.html">Navbar</a></li>
+                                <li><a href="breadcrumb.html">Breadcrumb</a></li>
+                                <li><a href="megamenu.html">Mega Menu</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false"><i class="mdi mdi-login"></i><span class="hide-menu">Email Templete</span></a>
+                            <ul aria-expanded="false" class="collapse">
+                               <li><a href="Email_1.html">Email Templete 1</a></li>
+                                <li><a href="Email_2.html">Email Templete 2</a></li>
+                            </ul>
+                        </li>
+                        <li class="d-none">
+                            <a class="has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false"><i class="ti-layout-media-right-alt"></i><span class="hide-menu">Templates</span></a>
+                            <ul aria-expanded="false" class="collapse">
+                                <li><a href="Website.html">Website</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            <!-- End Sidebar navigation -->
+        </div>
+        <!-- End Sidebar scroll-->
+    </aside>
+    <!-- ============================================================== -->
+    <!-- End Left Sidebar - style you can find in sidebar.scss  -->
+    <!-- ============================================================== -->
+
+    <div class="page-wrapper">
+        <!--Login Section -->
+        <div class="container-fluid">
+            <div class="container">
+                <div class="forms-container">
+                    <div class="signin-signup">
+                        <form action="#" class="sign-in-form">
+                            <h2 class="title">Sign in</h2>
+                            <div class="input-field">
+                                <i class="fas fa-user"></i>
+                                <input type="text" placeholder="Username" />
+                            </div>
+                            <div class="input-field">
+                                <i class="fas fa-lock"></i>
+                                <input type="password" placeholder="Password" />
+                            </div>
+                            <input type="submit" value="Login" class="btn1 solid" />
+                            <p class="social-text">Or Sign in with social platforms</p>
+                            <div class="social-media">
+                                <a href="#" class="social-icon">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                                <a href="#" class="social-icon">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                                <a href="#" class="social-icon">
+                                    <i class="fab fa-google"></i>
+                                </a>
+                                <a href="#" class="social-icon">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </a>
+                            </div>
+                        </form>
+                        <form action="#" class="sign-up-form">
+                            <h2 class="title">Sign up</h2>
+                            <div class="input-field">
+                                <i class="fas fa-user"></i>
+                                <input type="text" placeholder="Username" />
+                            </div>
+                            <div class="input-field">
+                                <i class="fas fa-envelope"></i>
+                                <input type="email" placeholder="Email" />
+                            </div>
+                            <div class="input-field">
+                                <i class="fas fa-lock"></i>
+                                <input type="password" placeholder="Password" />
+                            </div>
+                            <input type="submit" class="btn1" value="Sign up" />
+                            <p class="social-text">Or Sign up with social platforms</p>
+                            <div class="social-media">
+                                <a href="#" class="social-icon">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                                <a href="#" class="social-icon">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                                <a href="#" class="social-icon">
+                                    <i class="fab fa-google"></i>
+                                </a>
+                                <a href="#" class="social-icon">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="panels-container">
+                    <div class="panel left-panel">
+                        <div class="content">
+                            <h3>New here ?</h3>
+                            <p>
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis,
+                                ex ratione. Aliquid!
+                            </p>
+                            <button class="btn1 transparent" id="sign-up-btn">
+                                Sign up
+                            </button>
+                        </div>
+                        <img src="assets/images/Login_6/log.png" class="image" alt="" />
+                    </div>
+                    <div class="panel right-panel">
+                        <div class="content">
+                            <h3>One of us ?</h3>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
+                                laboriosam ad deleniti.
+                            </p>
+                            <button class="btn1 transparent" id="sign-in-btn">
+                                Sign in
+                            </button>
+                        </div>
+                        <img src="assets/images/Login_6/register.svg" class="image" alt="" />
+                    </div>
+                </div>
+        </div>
+            <div class="col-md-12">
+                <div class="text-center"><a id="btnViewcode" name="btnViewcode" class="btn btn-megna" data-toggle="collapse" href="#LoginViewCodeSection" role="button" aria-expanded="false" aria-controls="LoginViewCodeSection">View Code</a></div>
+            </div>
+        </div>
+        <div class="col-md-12 pb-md-4 pb-4 p-0">
+            <div class="collapse" id="LoginViewCodeSection">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="card bg-light h-100">
+                                <div class="card-body">
+                                    <nav>
+                                        <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                                            <a class="nav-item nav-link active" id="nav-html-tab" data-codeType='html' data-toggle="tab" href="#nav-htmlcard2" role="tab" aria-controls="nav-html" aria-selected="true">HTML</a>
+                                            <a class="nav-item nav-link" id="nav-css-tab" data-codeType='css' data-toggle="tab" href="#nav-csscard2" role="tab" aria-controls="nav-css" aria-selected="false">CSS</a>
+                                            <a class="nav-item nav-link" id="nav-css-tab" data-codeType='css' data-toggle="tab" href="#nav-csscard3" role="tab" aria-controls="nav-css" aria-selected="false">JS</a>
+                                        </div>
+                                    </nav>
+                                    <div class="tab-content border-left border-right border-bottom bg-white" id="nav-tabContent">
+                                        <div class="tab-pane fade show active" id="nav-htmlcard2" role="tabpanel" aria-labelledby="nav-home-tab">
+                                            <div class="container-fluid">
+                                                <div class="row">
+                                                    <div class="col-12 text-right py-3">
+                                                        <button class="btn downloadbtn btn-sm" onclick="copyToClipboard('#card2HtmlCode',this)" data-toggle="tooltip" data-placement="top" title="Copy to clipboard">Copy</button>
+                                                    </div>
+                                                    <div class="col-12 px-0">
+                                                        <div class="form-group">
+                                                            <textarea id="card2HtmlCode" class="form-control code" rows="5" id="txthtml" name="txthtml" readonly>
+                                                                <!--Colored Progressbar-->
+                                                                <div class="row">
+                                                                    <div class="container">
+                                                                        <div class="forms-container">
+                                                                            <div class="signin-signup">
+                                                                                <form action="#" class="sign-in-form">
+                                                                                    <h2 class="title">Sign in</h2>
+                                                                                    <div class="input-field">
+                                                                                        <i class="fas fa-user"></i>
+                                                                                        <input type="text" placeholder="Username" />
+                                                                                    </div>
+                                                                                    <div class="input-field">
+                                                                                        <i class="fas fa-lock"></i>
+                                                                                        <input type="password" placeholder="Password" />
+                                                                                    </div>
+                                                                                    <input type="submit" value="Login" class="btn solid" />
+                                                                                    <p class="social-text">Or Sign in with social platforms</p>
+                                                                                    <div class="social-media">
+                                                                                        <a href="#" class="social-icon">
+                                                                                            <i class="fab fa-facebook-f"></i>
+                                                                                        </a>
+                                                                                        <a href="#" class="social-icon">
+                                                                                            <i class="fab fa-twitter"></i>
+                                                                                        </a>
+                                                                                        <a href="#" class="social-icon">
+                                                                                            <i class="fab fa-google"></i>
+                                                                                        </a>
+                                                                                        <a href="#" class="social-icon">
+                                                                                            <i class="fab fa-linkedin-in"></i>
+                                                                                        </a>
+                                                                                    </div>
+                                                                                </form>
+                                                                                <form action="#" class="sign-up-form">
+                                                                                    <h2 class="title">Sign up</h2>
+                                                                                    <div class="input-field">
+                                                                                        <i class="fas fa-user"></i>
+                                                                                        <input type="text" placeholder="Username" />
+                                                                                    </div>
+                                                                                    <div class="input-field">
+                                                                                        <i class="fas fa-envelope"></i>
+                                                                                        <input type="email" placeholder="Email" />
+                                                                                    </div>
+                                                                                    <div class="input-field">
+                                                                                        <i class="fas fa-lock"></i>
+                                                                                        <input type="password" placeholder="Password" />
+                                                                                    </div>
+                                                                                    <input type="submit" class="btn" value="Sign up" />
+                                                                                    <p class="social-text">Or Sign up with social platforms</p>
+                                                                                    <div class="social-media">
+                                                                                        <a href="#" class="social-icon">
+                                                                                            <i class="fab fa-facebook-f"></i>
+                                                                                        </a>
+                                                                                        <a href="#" class="social-icon">
+                                                                                            <i class="fab fa-twitter"></i>
+                                                                                        </a>
+                                                                                        <a href="#" class="social-icon">
+                                                                                            <i class="fab fa-google"></i>
+                                                                                        </a>
+                                                                                        <a href="#" class="social-icon">
+                                                                                            <i class="fab fa-linkedin-in"></i>
+                                                                                        </a>
+                                                                                    </div>
+                                                                                </form>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="panels-container">
+                                                                            <div class="panel left-panel">
+                                                                                <div class="content">
+                                                                                    <h3>New here ?</h3>
+                                                                                    <p>
+                                                                                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis,
+                                                                                        ex ratione. Aliquid!
+                                                                                    </p>
+                                                                                    <button class="btn transparent" id="sign-up-btn">
+                                                                                        Sign up
+                                                                                    </button>
+                                                                                </div>
+                                                                                <img src="assets/images/Login_6/log.png" class="image" alt="" />
+                                                                            </div>
+                                                                            <div class="panel right-panel">
+                                                                                <div class="content">
+                                                                                    <h3>One of us ?</h3>
+                                                                                    <p>
+                                                                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
+                                                                                        laboriosam ad deleniti.
+                                                                                    </p>
+                                                                                    <button class="btn transparent" id="sign-in-btn">
+                                                                                        Sign in
+                                                                                    </button>
+                                                                                </div>
+                                                                                <img src="assets/images/Login_6/register.svg" class="image" alt="" />
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </textarea>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="tab-pane fade" id="nav-csscard2" role="tabpanel" aria-labelledby="nav-profile-tab">
+                                            <div class="container-fluid">
+                                                <div class="row">
+                                                    <div class="col-md-4 col-12 p-3 m-auto">
+                                                        <a class="btn downloadbtn btn-block" target="_blank" href="dist/scss/css/Login_6.css" download>Login 6 Css</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="tab-pane fade" id="nav-csscard3" role="tabpanel" aria-labelledby="nav-profile-tab">
+                                            <div class="container-fluid">
+                                                <div class="row">
+                                                    <div class="col-md-4 col-12 p-3 m-auto">
+                                                        <a class="btn downloadbtn btn-block" target="_blank" href="dist/scss/css/app.js" download>AppJs</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+       
+       
+    </div>
+
+
+    <!--jquery js-->
+    <script src="assets/Core/jquery-3.3.1.min.js"></script>
+    <!--popper js-->
+    <script src="assets/Core/popper/popper.min.js"></script>
+    <!--bootstrap js-->
+    <script src="assets/Core/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!--Sidebarmenu js-->
+    <script src="dist/js/sidebarmenu.js"></script>
+    <!--Wave Effects js -->
+    <script src="dist/js/waves.js"></script>
+    <!-- scrollbar JavaScript -->
+    <script src="dist/js/perfect-scrollbar.jquery.min.js"></script>
+    <!--Custom JavaScript -->
+    <script src="dist/js/custom.js"></script>
+    <!--Code Mirror JS-->
+    <script src="assets/Plugins/codemirror/lib/codemirror.js"></script>
+    <script src="assets/Plugins/codemirror/mode/xml/xml.js"></script>
+    <script src="assets/Plugins/codemirror/mode/css/css.js"></script>
+    <script src="assets/Plugins/codemirror/mode/javascript/javascript.js"></script>
+    <script src="assets/Plugins/codemirror/mode/htmlmixed/htmlmixed.js"></script>
+    <!--custom js for view code-->
+    <script src="assets/images/Login_6/app.js"></script>
+
+    <script type="text/javascript">
+        $("input[type='image']").click(function() {
+           $("input[id='my_file']").click();
+        });
+    </script>
+    
+    <script type="text/javascript">
+      var loginCodeInit = 0;
+      var RegisterCodeInit = 0;
+        $('#LoginViewCodeSection').on('shown.bs.collapse', function () {
+            if(loginCodeInit == 0)
+            {
+                loginHtmlCodeEditor();
+                loginCodeInit = 1;
+            }
+            else{
+                return false;
+            }
+        });
+        $('#RegistrationViewCodeSection').on('shown.bs.collapse', function () {
+            if(RegisterCodeInit == 0)
+            {
+                registerHtmlCodeEditor();
+                RegisterCodeInit = 1;
+            }
+            else{
+                return false;
+            }
+        });
+    </script>
+</body>
+</html>

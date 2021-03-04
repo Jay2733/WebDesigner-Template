@@ -1,0 +1,1482 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Switch</title>
+
+    <!--Bootstrap css-->
+    <link rel="stylesheet" href="assets/Core/bootstrap/dist/css/bootstrap.min.css">
+   <!--plugins of viewcode-->
+   <link rel="stylesheet" type="text/css" href="assets/Plugins/codemirror/lib/codemirror.css">
+   <link rel="stylesheet" type="text/css" href="assets/Plugins/codemirror/theme/material.css">
+   
+    <!--Custom css-->
+    <link rel="stylesheet" href="dist/css/style.css">
+    <link rel="stylesheet" href="dist/scss/css/switch.css">
+    <link rel="stylesheet" href="dist/sidenavCss/custom.css">
+</head>
+<body class="skin-megna fixed-layout">
+
+     <!-- ============================================================== -->
+        <!-- Topbar header - style you can find in pages.scss -->
+        <!-- ============================================================== -->
+        <header class="topbar">
+            <nav class="navbar top-navbar navbar-expand-md navbar-dark">
+                <!-- ============================================================== -->
+                <!-- Logo -->
+                <!-- ============================================================== -->
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="index.html">
+                        <!-- Logo icon --><b>
+                            <!--You can put here icon as well // <i class="wi wi-sunset"></i> //-->
+                            <!-- Dark Logo icon -->
+                            <img src="assets/images/New Logo.png" alt="homepage" class="light-logo" />
+                            <!-- Light Logo icon -->
+                            <!-- <img src="../assets/images/logo-light-icon.png" alt="homepage" class="light-logo" /> -->
+                        </b>
+                        <!--End Logo icon -->
+                        <span class="hidden-xs font-bold" style="font-size: 19px">Patel Techologies</span>
+                    </a>
+                </div>
+                <!-- ============================================================== -->
+                <!-- End Logo -->
+                <!-- ============================================================== -->
+                <div class="navbar-collapse">
+                    <!-- ============================================================== -->
+                    <!-- toggle and nav items -->
+                    <!-- ============================================================== -->
+                    <ul class="navbar-nav mr-auto">
+                        <!-- This is  -->
+                        <li class="nav-item"> <a class="nav-link nav-toggler d-block d-md-none waves-effect waves-dark" href="javascript:void(0)"><i class="ti-menu"></i></a> </li>
+                        <li class="nav-item"> <a class="nav-link sidebartoggler d-none d-lg-block d-md-block waves-effect waves-dark" href="javascript:void(0)"><i class="icon-menu"></i></a> </li>
+                        <!-- ============================================================== -->
+                        <!-- Search -->
+                        <!-- ============================================================== -->
+                        <li class="nav-item d-none d-md-block d-lg-block">
+                           <form action="">
+                              <input type="search" placeholder="Search & enter">
+                              <i class="fa fa-search"></i>
+                            </form>
+                        </li>
+                    </ul>
+                   
+                </div>
+            </nav>
+        </header>
+        <!-- ============================================================== -->
+        <!-- End Topbar header -->
+        <!-- ============================================================== -->
+        <!-- ============================================================== -->
+        <!-- Left Sidebar - style you can find in  custom.css  -->
+        <!-- ============================================================== -->
+        <aside class="left-sidebar">
+            <!-- Sidebar scroll-->
+            <div class="scroll-sidebar">
+                <!-- <div class="sidebar-header">
+                    <div class="companyLogo">
+                      <img class="img-responsive img-rounded" src="assets/images/company-logo.svg"
+                        alt="Company logo">
+                    </div>
+                </div> -->
+               <!-- Sidebar navigation-->
+                <nav class="sidebar-nav">
+                    <ul id="sidebarnav">
+                        <li>
+                            <a class="has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false"><i class="mdi mdi-login"></i><span class="hide-menu">Dashboard</span></a>
+                            <ul aria-expanded="false" class="collapse">
+                                <li><a href="Dashboard1.html">Dashboard 1</a></li>
+                                <li><a href="Dashboard2.html">Dashboard 2</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false"><i class="mdi mdi-login"></i><span class="hide-menu">Login Templates</span></a>
+                            <ul aria-expanded="false" class="collapse">
+                                <li><a href="Login1.html">Login 1</a></li>
+                                <li><a href="Login2.html">Login 2</a></li>
+                                <li><a href="Login3.html">Login 3</a></li>
+                                <li><a href="Login4.html">Login 4</a></li>
+                                <li><a href="Login5.html">Login 5</a></li>
+                                <li><a href="Login6.html">Login 6</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false"><i class="ti-palette"></i><span class="hide-menu">Ui Elements</span></a>
+                            <ul aria-expanded="false" class="collapse">
+                                <li><a href="cards.html">Cards</a></li>
+                                <li><a href="buttons.html">Buttons</a></li>
+                                <li><a href="tabs.html">Tab</a></li>
+                                <li><a href="switchs.html">Switchs</a></li>
+                                <li><a href="Notification.html">Notification</a></li>
+                                <li><a href="Alert.html">Alert Box</a></li>
+                                <li><a href="carousel.html">Carousel</a></li>
+                                <li><a href="Errorpage.html">Error Page</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false"><i class="ti-layout-accordion-merged"></i><span class="hide-menu">Tables</span></a>
+                            <ul aria-expanded="false" class="collapse">
+                                <li><a href="basicTable.html">Basic Table</a></li>
+                                <li><a href="dataTable.html">Data Table</a></li>
+                                <li><a href="editable table.html">Editable Table</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false"><i class="ti-layout-media-right-alt"></i><span class="hide-menu">Forms</span></a>
+                            <ul aria-expanded="false" class="collapse">
+                                <li><a href="basicForms.html">Basic Forms</a></li>
+                                <li><a href="checkbox.html">Checkbox</a></li>
+                                <li><a href="dateTimepicker.html">Date &amp; Time Picker</a></li>
+                                <li><a href="dragdropfile.html">Drag &amp; Drop File Upload</a></li>
+                                <li><a href="sliders.html">Sliders</a></li>
+                                <li><a href="addon.html">Addon Control</a></li>
+                                <li><a href="icheck.html">Icheck Control</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false"><i class="ti-layout-media-right-alt"></i><span class="hide-menu">Components</span></a>
+                            <ul aria-expanded="false" class="collapse">
+                                <li><a href="mdbuttons.html">Material Buttons</a></li>
+                                <li><a href="badges.html">Badges</a></li>
+                                <li><a href="spinners.html">Loaders/Spinners</a></li>
+                                <li><a href="progressbar.html">ProgressBar</a></li>
+                                <li><a href="socialbutton.html">SocialButtons</a></li>
+                                <li><a href="stepper.html">Steppers</a></li>
+                                <li><a href="extendedcards.html">Extended Cards</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false"><i class="ti-layout-media-right-alt"></i><span class="hide-menu">Navigation</span></a>
+                            <ul aria-expanded="false" class="collapse">
+                                <li><a href="navbar.html">Navbar</a></li>
+                                <li><a href="breadcrumb.html">Breadcrumb</a></li>
+                                <li><a href="megamenu.html">Mega Menu</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false"><i class="mdi mdi-login"></i><span class="hide-menu">Email Templete</span></a>
+                            <ul aria-expanded="false" class="collapse">
+                               <li><a href="Email_1.html">Email Templete 1</a></li>
+                                <li><a href="Email_2.html">Email Templete 2</a></li>
+                            </ul>
+                        </li>
+                        <li class="d-none">
+                            <a class="has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false"><i class="ti-layout-media-right-alt"></i><span class="hide-menu">Templates</span></a>
+                            <ul aria-expanded="false" class="collapse">
+                                <li><a href="Website.html">Website</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+                <!-- End Sidebar navigation -->
+            </div>
+            <!-- End Sidebar scroll-->
+        </aside>
+        <!-- ============================================================== -->
+        <!-- End Left Sidebar - style you can find in  custom.css  -->
+        <!-- ============================================================== -->
+
+    <div class="page-wrapper">
+        <div class="container-fluid">
+
+            <!--Section1-->
+            <div class="row">
+                <!--Switch1-->
+                <div class="col-md-12 col-12 pb-md-4 pb-4">
+                    <div class="card">
+                        <div class="card-header">
+                            <h4>Switch1</h4>
+                        </div>
+                        <div class="card-body">
+                           <div class="col-md-12 col-12">
+                            <div class="row">
+                                <div class="col-12 d-flex flex-row flex-md-nowrap flex-wrap">
+                                    <div class="onoffswitchBlack pb-3">
+                                        <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitchcard1" checked="">
+                                        <label class="onoffswitch-label" for="myonoffswitchcard1">
+                                            <span class="onoffswitch-inner"></span>
+                                            <span class="onoffswitch-switch"></span>
+                                        </label>
+                                    </div>
+                                    <div class="onoffswitchOceanblue pb-3">
+                                        <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitchcard2" checked="">
+                                        <label class="onoffswitch-label" for="myonoffswitchcard2">
+                                            <span class="onoffswitch-inner"></span>
+                                            <span class="onoffswitch-switch"></span>
+                                        </label>
+                                    </div>
+                                    <div class="onoffswitchGreen pb-3">
+                                        <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitchcard3" checked="">
+                                        <label class="onoffswitch-label" for="myonoffswitchcard3">
+                                            <span class="onoffswitch-inner"></span>
+                                            <span class="onoffswitch-switch"></span>
+                                        </label>
+                                    </div>
+        
+                                    <div class="onoffswitchPurple pb-3">
+                                        <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitchcard4" checked="">
+                                        <label class="onoffswitch-label" for="myonoffswitchcard4">
+                                            <span class="onoffswitch-inner"></span>
+                                            <span class="onoffswitch-switch"></span>
+                                        </label>
+                                    </div>
+        
+                                    <div class="onoffswitchYellow pb-3">
+                                        <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitchcard5" checked="">
+                                        <label class="onoffswitch-label" for="myonoffswitchcard5">
+                                            <span class="onoffswitch-inner"></span>
+                                            <span class="onoffswitch-switch"></span>
+                                        </label>
+                                    </div>
+        
+                                    <div class="onoffswitchRoyalblue pb-3">
+                                        <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitchcard6" checked="">
+                                        <label class="onoffswitch-label" for="myonoffswitchcard6">
+                                            <span class="onoffswitch-inner"></span>
+                                            <span class="onoffswitch-switch"></span>
+                                        </label>
+                                    </div>
+        
+                                    <div class="onoffswitchStrongblue pb-3">
+                                        <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitchcard7" checked="">
+                                        <label class="onoffswitch-label" for="myonoffswitchcard7">
+                                            <span class="onoffswitch-inner"></span>
+                                            <span class="onoffswitch-switch"></span>
+                                        </label>
+                                    </div>
+        
+                                    <div class="onoffswitchOrange pb-3">
+                                        <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitchcard8" checked="">
+                                        <label class="onoffswitch-label" for="myonoffswitchcard8">
+                                            <span class="onoffswitch-inner"></span>
+                                            <span class="onoffswitch-switch"></span>
+                                        </label>
+                                    </div>
+        
+                                    <div class="onoffswitchPureblue pb-3">
+                                        <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitchcard9" checked="">
+                                        <label class="onoffswitch-label" for="myonoffswitchcard9">
+                                            <span class="onoffswitch-inner"></span>
+                                            <span class="onoffswitch-switch"></span>
+                                        </label>
+                                    </div>
+        
+                                    <div class="onoffswitchLimegreen pb-3">
+                                        <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitchcard10" checked="">
+                                        <label class="onoffswitch-label" for="myonoffswitchcard10">
+                                            <span class="onoffswitch-inner"></span>
+                                            <span class="onoffswitch-switch"></span>
+                                        </label>
+                                    </div>
+        
+                                    <div class="onoffswitchVividblue pb-3">
+                                        <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitchcard11" checked="">
+                                        <label class="onoffswitch-label" for="myonoffswitchcard11">
+                                            <span class="onoffswitch-inner"></span>
+                                            <span class="onoffswitch-switch"></span>
+                                        </label>
+                                    </div>
+        
+                                    <div class="onoffswitchDarkestblue pb-3">
+                                        <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitchcard12" checked="">
+                                        <label class="onoffswitch-label" for="myonoffswitchcard12">
+                                            <span class="onoffswitch-inner"></span>
+                                            <span class="onoffswitch-switch"></span>
+                                        </label>
+                                    </div>
+
+                                   
+                                    
+                                </div>
+                               
+                            </div>
+                               
+                            
+                            <div class="row">
+                                <div class="col-12 d-flex flex-row flex-md-nowrap flex-wrap">
+                                    <div class="onoffswitchBlackgradient pb-3">
+                                        <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitchcard13" checked="">
+                                        <label class="onoffswitch-label" for="myonoffswitchcard13">
+                                            <span class="onoffswitch-inner"></span>
+                                            <span class="onoffswitch-switch"></span>
+                                        </label>
+                                    </div>
+                                
+                                    <div class="onoffswitchOceanbluegradient pb-3">
+                                        <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitchcard14" checked="">
+                                        <label class="onoffswitch-label" for="myonoffswitchcard14">
+                                            <span class="onoffswitch-inner"></span>
+                                            <span class="onoffswitch-switch"></span>
+                                        </label>
+                                    </div>
+
+                                    <div class="onoffswitchGreengradient pb-3">
+                                        <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitchcard15" checked="">
+                                        <label class="onoffswitch-label" for="myonoffswitchcard15">
+                                            <span class="onoffswitch-inner"></span>
+                                            <span class="onoffswitch-switch"></span>
+                                        </label>
+                                    </div>
+
+                                    <div class="onoffswitchPurplegradient pb-3">
+                                        <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitchcard16" checked="">
+                                        <label class="onoffswitch-label" for="myonoffswitchcard16">
+                                            <span class="onoffswitch-inner"></span>
+                                            <span class="onoffswitch-switch"></span>
+                                        </label>
+                                    </div>
+
+                                    <div class="onoffswitchYellowgradient pb-3">
+                                        <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitchcard17" checked="">
+                                        <label class="onoffswitch-label" for="myonoffswitchcard17">
+                                            <span class="onoffswitch-inner"></span>
+                                            <span class="onoffswitch-switch"></span>
+                                        </label>
+                                    </div>
+
+                                    <div class="onoffswitchRoyalbluegradient pb-3">
+                                        <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitchcard18" checked="">
+                                        <label class="onoffswitch-label" for="myonoffswitchcard18">
+                                            <span class="onoffswitch-inner"></span>
+                                            <span class="onoffswitch-switch"></span>
+                                        </label>
+                                    </div>
+
+                                    <div class="onoffswitchStrongbluegradient pb-3">
+                                        <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitchcard19" checked="">
+                                        <label class="onoffswitch-label" for="myonoffswitchcard19">
+                                            <span class="onoffswitch-inner"></span>
+                                            <span class="onoffswitch-switch"></span>
+                                        </label>
+                                    </div>
+
+                                    <div class="onoffswitchOrangegradient pb-3">
+                                        <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitchcard20" checked="">
+                                        <label class="onoffswitch-label" for="myonoffswitchcard20">
+                                            <span class="onoffswitch-inner"></span>
+                                            <span class="onoffswitch-switch"></span>
+                                        </label>
+                                    </div>
+
+                                    <div class="onoffswitchPurebluegradient pb-3">
+                                        <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitchcard21" checked="">
+                                        <label class="onoffswitch-label" for="myonoffswitchcard21">
+                                            <span class="onoffswitch-inner"></span>
+                                            <span class="onoffswitch-switch"></span>
+                                        </label>
+                                    </div>
+
+                                    <div class="onoffswitchLimegreengradient pb-3">
+                                        <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitchcard22" checked="">
+                                        <label class="onoffswitch-label" for="myonoffswitchcard22">
+                                            <span class="onoffswitch-inner"></span>
+                                            <span class="onoffswitch-switch"></span>
+                                        </label>
+                                    </div>
+
+                                    <div class="onoffswitchVividbluegradient pb-3">
+                                        <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitchcard23" checked="">
+                                        <label class="onoffswitch-label" for="myonoffswitchcard23">
+                                            <span class="onoffswitch-inner"></span>
+                                            <span class="onoffswitch-switch"></span>
+                                        </label>
+                                    </div>
+
+                                    <div class="onoffswitchDarkestbluegradient pb-3">
+                                        <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitchcard24" checked="">
+                                        <label class="onoffswitch-label" for="myonoffswitchcard24">
+                                            <span class="onoffswitch-inner"></span>
+                                            <span class="onoffswitch-switch"></span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                           </div>
+                           
+                        </div>
+                        <div class="card-footer">
+                            <div class="text-center"><a id="btnViewcode1" name="btnViewcode1" class="btn btn-megna" data-toggle="collapse" href="#switch1ViewCodeSection" role="button" aria-expanded="false" aria-controls="switch1ViewCodeSection">View Code</a></div>
+                        </div>
+                    </div>
+                </div>
+               
+                <!--switch1 view code -->
+                <div class="col-md-12 col-12 pb-md-4 pb-4">
+                    <div class="collapse" id="switch1ViewCodeSection">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-12 p-0">
+                                    <div class="card bg-light h-100">
+                                        <div class="card-body">
+                                            <nav>
+                                                <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                                                    <a class="nav-item nav-link active" id="nav-html-tab" data-codeType='html' data-toggle="tab" href="#nav-htmlswitch1" role="tab" aria-controls="nav-html" aria-selected="true">HTML</a>
+                                                    <a class="nav-item nav-link" id="nav-css-tab" data-codeType='css' data-toggle="tab" href="#nav-cssswitch1" role="tab" aria-controls="nav-css" aria-selected="false">CSS</a>
+                                                </div>
+                                            </nav>
+                                            <div class="tab-content border-left border-right border-bottom bg-white" id="nav-tabContent">
+                                                <div class="tab-pane fade show active" id="nav-htmlswitch1" role="tabpanel" aria-labelledby="nav-home-tab">
+                                                    <div class="container-fluid">
+                                                        <div class="row">
+                                                            <div class="col-12 text-right py-3">
+                                                                <button class="btn downloadbtn btn-sm" onclick="copyToClipboard('#card1HtmlCode',this)" data-toggle="tooltip" data-placement="top" title="Copy to clipboard">Copy</button>
+                                                            </div>
+                                                            <div class="col-12 px-0">
+                                                                <div class="form-group">
+                                                                <textarea id="card1HtmlCode" class="form-control code" rows="5" id="txthtml" name="txthtml" readonly>
+
+
+ <!--Switch1-->
+<div class="row">
+<div class="col-12 d-flex flex-row flex-nowrap">
+    <div class="onoffswitchBlack pb-3">
+        <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitchcard1" checked="">
+        <label class="onoffswitch-label" for="myonoffswitchcard1">
+            <span class="onoffswitch-inner"></span>
+            <span class="onoffswitch-switch"></span>
+        </label>
+    </div>
+    <div class="onoffswitchOceanblue pb-3">
+        <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitchcard2" checked="">
+        <label class="onoffswitch-label" for="myonoffswitchcard2">
+            <span class="onoffswitch-inner"></span>
+            <span class="onoffswitch-switch"></span>
+        </label>
+    </div>
+    <div class="onoffswitchGreen pb-3">
+        <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitchcard3" checked="">
+        <label class="onoffswitch-label" for="myonoffswitchcard3">
+            <span class="onoffswitch-inner"></span>
+            <span class="onoffswitch-switch"></span>
+        </label>
+    </div>
+
+    <div class="onoffswitchPurple pb-3">
+        <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitchcard4" checked="">
+        <label class="onoffswitch-label" for="myonoffswitchcard4">
+            <span class="onoffswitch-inner"></span>
+            <span class="onoffswitch-switch"></span>
+        </label>
+    </div>
+
+    <div class="onoffswitchYellow pb-3">
+        <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitchcard5" checked="">
+        <label class="onoffswitch-label" for="myonoffswitchcard5">
+            <span class="onoffswitch-inner"></span>
+            <span class="onoffswitch-switch"></span>
+        </label>
+    </div>
+
+    <div class="onoffswitchRoyalblue pb-3">
+        <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitchcard6" checked="">
+        <label class="onoffswitch-label" for="myonoffswitchcard6">
+            <span class="onoffswitch-inner"></span>
+            <span class="onoffswitch-switch"></span>
+        </label>
+    </div>
+
+    <div class="onoffswitchStrongblue pb-3">
+        <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitchcard7" checked="">
+        <label class="onoffswitch-label" for="myonoffswitchcard7">
+            <span class="onoffswitch-inner"></span>
+            <span class="onoffswitch-switch"></span>
+        </label>
+    </div>
+
+    <div class="onoffswitchOrange pb-3">
+        <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitchcard8" checked="">
+        <label class="onoffswitch-label" for="myonoffswitchcard8">
+            <span class="onoffswitch-inner"></span>
+            <span class="onoffswitch-switch"></span>
+        </label>
+    </div>
+
+    <div class="onoffswitchPureblue pb-3">
+        <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitchcard9" checked="">
+        <label class="onoffswitch-label" for="myonoffswitchcard9">
+            <span class="onoffswitch-inner"></span>
+            <span class="onoffswitch-switch"></span>
+        </label>
+    </div>
+
+    <div class="onoffswitchLimegreen pb-3">
+        <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitchcard10" checked="">
+        <label class="onoffswitch-label" for="myonoffswitchcard10">
+            <span class="onoffswitch-inner"></span>
+            <span class="onoffswitch-switch"></span>
+        </label>
+    </div>
+
+    <div class="onoffswitchVividblue pb-3">
+        <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitchcard11" checked="">
+        <label class="onoffswitch-label" for="myonoffswitchcard11">
+            <span class="onoffswitch-inner"></span>
+            <span class="onoffswitch-switch"></span>
+        </label>
+    </div>
+
+    <div class="onoffswitchDarkestblue pb-3">
+        <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitchcard12" checked="">
+        <label class="onoffswitch-label" for="myonoffswitchcard12">
+            <span class="onoffswitch-inner"></span>
+            <span class="onoffswitch-switch"></span>
+        </label>
+    </div>
+
+    
+    
+</div>
+
+</div>
+
+<div class="row">
+<div class="col-12 d-flex flex-row">
+    <div class="onoffswitchBlackgradient pb-3">
+        <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitchcard13" checked="">
+        <label class="onoffswitch-label" for="myonoffswitchcard13">
+            <span class="onoffswitch-inner"></span>
+            <span class="onoffswitch-switch"></span>
+        </label>
+    </div>
+
+    <div class="onoffswitchOceanbluegradient pb-3">
+        <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitchcard14" checked="">
+        <label class="onoffswitch-label" for="myonoffswitchcard14">
+            <span class="onoffswitch-inner"></span>
+            <span class="onoffswitch-switch"></span>
+        </label>
+    </div>
+
+    <div class="onoffswitchGreengradient pb-3">
+        <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitchcard15" checked="">
+        <label class="onoffswitch-label" for="myonoffswitchcard15">
+            <span class="onoffswitch-inner"></span>
+            <span class="onoffswitch-switch"></span>
+        </label>
+    </div>
+
+    <div class="onoffswitchPurplegradient pb-3">
+        <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitchcard16" checked="">
+        <label class="onoffswitch-label" for="myonoffswitchcard16">
+            <span class="onoffswitch-inner"></span>
+            <span class="onoffswitch-switch"></span>
+        </label>
+    </div>
+
+    <div class="onoffswitchYellowgradient pb-3">
+        <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitchcard17" checked="">
+        <label class="onoffswitch-label" for="myonoffswitchcard17">
+            <span class="onoffswitch-inner"></span>
+            <span class="onoffswitch-switch"></span>
+        </label>
+    </div>
+
+    <div class="onoffswitchRoyalbluegradient pb-3">
+        <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitchcard18" checked="">
+        <label class="onoffswitch-label" for="myonoffswitchcard18">
+            <span class="onoffswitch-inner"></span>
+            <span class="onoffswitch-switch"></span>
+        </label>
+    </div>
+
+    <div class="onoffswitchStrongbluegradient pb-3">
+        <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitchcard19" checked="">
+        <label class="onoffswitch-label" for="myonoffswitchcard19">
+            <span class="onoffswitch-inner"></span>
+            <span class="onoffswitch-switch"></span>
+        </label>
+    </div>
+
+    <div class="onoffswitchOrangegradient pb-3">
+        <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitchcard20" checked="">
+        <label class="onoffswitch-label" for="myonoffswitchcard20">
+            <span class="onoffswitch-inner"></span>
+            <span class="onoffswitch-switch"></span>
+        </label>
+    </div>
+
+    <div class="onoffswitchPurebluegradient pb-3">
+        <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitchcard21" checked="">
+        <label class="onoffswitch-label" for="myonoffswitchcard21">
+            <span class="onoffswitch-inner"></span>
+            <span class="onoffswitch-switch"></span>
+        </label>
+    </div>
+
+    <div class="onoffswitchLimegreengradient pb-3">
+        <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitchcard22" checked="">
+        <label class="onoffswitch-label" for="myonoffswitchcard22">
+            <span class="onoffswitch-inner"></span>
+            <span class="onoffswitch-switch"></span>
+        </label>
+    </div>
+
+    <div class="onoffswitchVividbluegradient pb-3">
+        <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitchcard23" checked="">
+        <label class="onoffswitch-label" for="myonoffswitchcard23">
+            <span class="onoffswitch-inner"></span>
+            <span class="onoffswitch-switch"></span>
+        </label>
+    </div>
+
+    <div class="onoffswitchDarkestbluegradient pb-3">
+        <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitchcard24" checked="">
+        <label class="onoffswitch-label" for="myonoffswitchcard24">
+            <span class="onoffswitch-inner"></span>
+            <span class="onoffswitch-switch"></span>
+        </label>
+    </div>
+</div>
+</div>
+           
+                                                    
+                                                    
+                                                                </textarea>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+
+                                                </div>
+                                                <div class="tab-pane fade" id="nav-cssswitch1" role="tabpanel" aria-labelledby="nav-profile-tab">
+                                                    <div class="container-fluid">
+                                                        <div class="row">
+                                                            <div class="col-md-6 col-12 p-3 m-auto">
+                                                                <a class="btn downloadbtn btn-block" target="_blank" href="dist/downloadCss/switch/switch1.css" download>Download switch1.css</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <!--Switch2-->
+                <div class="col-md-12 col-12 pb-md-4 pb-4">
+                    <div class="card">
+                        <div class="card-header">
+                            <h4>Switch2</h4>
+                        </div>
+                        <div class="card-body">
+                           <div class="col-md-12 col-12">
+                            <div class="row">
+                                <div class="col-12 d-flex flex-row flex-md-nowrap flex-wrap">
+                                    <div class="onoffswitchRoundBlack pb-3">
+                                        <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch2card1" checked="">
+                                        <label class="onoffswitch-label" for="myonoffswitch2card1">
+                                            <span class="onoffswitch-inner"></span>
+                                            <span class="onoffswitch-switch"></span>
+                                        </label>
+                                    </div>
+                                    <div class="onoffswitchRoundOceanblue pb-3">
+                                        <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch2card2" checked="">
+                                        <label class="onoffswitch-label" for="myonoffswitch2card2">
+                                            <span class="onoffswitch-inner"></span>
+                                            <span class="onoffswitch-switch"></span>
+                                        </label>
+                                    </div>
+                                    <div class="onoffswitchRoundGreen pb-3">
+                                        <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch2card3" checked="">
+                                        <label class="onoffswitch-label" for="myonoffswitch2card3">
+                                            <span class="onoffswitch-inner"></span>
+                                            <span class="onoffswitch-switch"></span>
+                                        </label>
+                                    </div>
+        
+                                    <div class="onoffswitchRoundPurple pb-3">
+                                        <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch2card4" checked="">
+                                        <label class="onoffswitch-label" for="myonoffswitch2card4">
+                                            <span class="onoffswitch-inner"></span>
+                                            <span class="onoffswitch-switch"></span>
+                                        </label>
+                                    </div>
+        
+                                    <div class="onoffswitchRoundYellow pb-3">
+                                        <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch2card5" checked="">
+                                        <label class="onoffswitch-label" for="myonoffswitch2card5">
+                                            <span class="onoffswitch-inner"></span>
+                                            <span class="onoffswitch-switch"></span>
+                                        </label>
+                                    </div>
+        
+                                    <div class="onoffswitchRoundRoyalblue pb-3">
+                                        <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch2card6" checked="">
+                                        <label class="onoffswitch-label" for="myonoffswitch2card6">
+                                            <span class="onoffswitch-inner"></span>
+                                            <span class="onoffswitch-switch"></span>
+                                        </label>
+                                    </div>
+        
+                                    <div class="onoffswitchRoundStrongblue pb-3">
+                                        <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch2card7" checked="">
+                                        <label class="onoffswitch-label" for="myonoffswitch2card7">
+                                            <span class="onoffswitch-inner"></span>
+                                            <span class="onoffswitch-switch"></span>
+                                        </label>
+                                    </div>
+        
+                                    <div class="onoffswitchRoundOrange pb-3">
+                                        <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch2card8" checked="">
+                                        <label class="onoffswitch-label" for="myonoffswitch2card8">
+                                            <span class="onoffswitch-inner"></span>
+                                            <span class="onoffswitch-switch"></span>
+                                        </label>
+                                    </div>
+        
+                                    <div class="onoffswitchRoundPureblue pb-3">
+                                        <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch2card9" checked="">
+                                        <label class="onoffswitch-label" for="myonoffswitch2card9">
+                                            <span class="onoffswitch-inner"></span>
+                                            <span class="onoffswitch-switch"></span>
+                                        </label>
+                                    </div>
+        
+                                    <div class="onoffswitchRoundLimegreen pb-3">
+                                        <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch2card10" checked="">
+                                        <label class="onoffswitch-label" for="myonoffswitch2card10">
+                                            <span class="onoffswitch-inner"></span>
+                                            <span class="onoffswitch-switch"></span>
+                                        </label>
+                                    </div>
+        
+                                    <div class="onoffswitchRoundVividblue pb-3">
+                                        <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch2card11" checked="">
+                                        <label class="onoffswitch-label" for="myonoffswitch2card11">
+                                            <span class="onoffswitch-inner"></span>
+                                            <span class="onoffswitch-switch"></span>
+                                        </label>
+                                    </div>
+
+                                    <div class="onoffswitchRoundDarkestblue pb-3">
+                                        <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch2card12" checked="">
+                                        <label class="onoffswitch-label" for="myonoffswitch2card12">
+                                            <span class="onoffswitch-inner"></span>
+                                            <span class="onoffswitch-switch"></span>
+                                        </label>
+                                    </div>
+                                </div>
+                               
+                            </div>
+                               
+                           </div>
+                           
+                        </div>
+                        <div class="card-footer">
+                            <div class="text-center"><a id="btnViewcode1" name="btnViewcode1" class="btn btn-megna" data-toggle="collapse" href="#switch2ViewCodeSection" role="button" aria-expanded="false" aria-controls="switch2ViewCodeSection">View Code</a></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--switch2 view code-->
+                <div class="col-md-12 col-12 pb-md-4 pb-4">
+                    <div class="collapse" id="switch2ViewCodeSection">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-12 p-0">
+                                    <div class="card bg-light h-100">
+                                        <div class="card-body">
+                                            <nav>
+                                                <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                                                    <a class="nav-item nav-link active" id="nav-html-tab" data-codeType='html' data-toggle="tab" href="#nav-htmlswitch2" role="tab" aria-controls="nav-html" aria-selected="true">HTML</a>
+                                                    <a class="nav-item nav-link" id="nav-css-tab" data-codeType='css' data-toggle="tab" href="#nav-cssswitch2" role="tab" aria-controls="nav-css" aria-selected="false">CSS</a>
+                                                </div>
+                                            </nav>
+                                            <div class="tab-content border-left border-right border-bottom bg-white" id="nav-tabContent">
+                                                <div class="tab-pane fade show active" id="nav-htmlswitch2" role="tabpanel" aria-labelledby="nav-home-tab">
+                                                    <div class="container-fluid">
+                                                        <div class="row">
+                                                            <div class="col-12 text-right py-3">
+                                                                <button class="btn downloadbtn btn-sm" onclick="copyToClipboard('#card2HtmlCode',this)" data-toggle="tooltip" data-placement="top" title="Copy to clipboard">Copy</button>
+                                                            </div>
+                                                            <div class="col-12 px-0">
+                                                                <div class="form-group">
+                                                                <textarea id="card2HtmlCode" class="form-control code" rows="5" id="txthtml" name="txthtml" readonly>
+
+<!--switch2 section-->
+<div class="row">
+    <div class="col-12 d-flex flex-row flex-nowrap">
+        <div class="onoffswitchRoundBlack pb-3">
+            <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch2card1" checked="">
+            <label class="onoffswitch-label" for="myonoffswitch2card1">
+                <span class="onoffswitch-inner"></span>
+                <span class="onoffswitch-switch"></span>
+            </label>
+        </div>
+        <div class="onoffswitchRoundOceanblue pb-3">
+            <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch2card2" checked="">
+            <label class="onoffswitch-label" for="myonoffswitch2card2">
+                <span class="onoffswitch-inner"></span>
+                <span class="onoffswitch-switch"></span>
+            </label>
+        </div>
+        <div class="onoffswitchRoundGreen pb-3">
+            <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch2card3" checked="">
+            <label class="onoffswitch-label" for="myonoffswitch2card3">
+                <span class="onoffswitch-inner"></span>
+                <span class="onoffswitch-switch"></span>
+            </label>
+        </div>
+
+        <div class="onoffswitchRoundPurple pb-3">
+            <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch2card4" checked="">
+            <label class="onoffswitch-label" for="myonoffswitch2card4">
+                <span class="onoffswitch-inner"></span>
+                <span class="onoffswitch-switch"></span>
+            </label>
+        </div>
+
+        <div class="onoffswitchRoundYellow pb-3">
+            <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch2card5" checked="">
+            <label class="onoffswitch-label" for="myonoffswitch2card5">
+                <span class="onoffswitch-inner"></span>
+                <span class="onoffswitch-switch"></span>
+            </label>
+        </div>
+
+        <div class="onoffswitchRoundRoyalblue pb-3">
+            <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch2card6" checked="">
+            <label class="onoffswitch-label" for="myonoffswitch2card6">
+                <span class="onoffswitch-inner"></span>
+                <span class="onoffswitch-switch"></span>
+            </label>
+        </div>
+
+        <div class="onoffswitchRoundStrongblue pb-3">
+            <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch2card7" checked="">
+            <label class="onoffswitch-label" for="myonoffswitch2card7">
+                <span class="onoffswitch-inner"></span>
+                <span class="onoffswitch-switch"></span>
+            </label>
+        </div>
+
+        <div class="onoffswitchRoundOrange pb-3">
+            <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch2card8" checked="">
+            <label class="onoffswitch-label" for="myonoffswitch2card8">
+                <span class="onoffswitch-inner"></span>
+                <span class="onoffswitch-switch"></span>
+            </label>
+        </div>
+
+        <div class="onoffswitchRoundPureblue pb-3">
+            <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch2card9" checked="">
+            <label class="onoffswitch-label" for="myonoffswitch2card9">
+                <span class="onoffswitch-inner"></span>
+                <span class="onoffswitch-switch"></span>
+            </label>
+        </div>
+
+        <div class="onoffswitchRoundLimegreen pb-3">
+            <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch2card10" checked="">
+            <label class="onoffswitch-label" for="myonoffswitch2card10">
+                <span class="onoffswitch-inner"></span>
+                <span class="onoffswitch-switch"></span>
+            </label>
+        </div>
+
+        <div class="onoffswitchRoundVividblue pb-3">
+            <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch2card11" checked="">
+            <label class="onoffswitch-label" for="myonoffswitch2card11">
+                <span class="onoffswitch-inner"></span>
+                <span class="onoffswitch-switch"></span>
+            </label>
+        </div>
+
+        <div class="onoffswitchRoundDarkestblue pb-3">
+            <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch2card12" checked="">
+            <label class="onoffswitch-label" for="myonoffswitch2card12">
+                <span class="onoffswitch-inner"></span>
+                <span class="onoffswitch-switch"></span>
+            </label>
+        </div>
+    </div>
+    
+</div>
+               
+                                                
+                                                    
+                                                                </textarea>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+
+                                                </div>
+                                                <div class="tab-pane fade" id="nav-cssswitch2" role="tabpanel" aria-labelledby="nav-profile-tab">
+                                                    <div class="container-fluid">
+                                                        <div class="row">
+                                                            <div class="col-md-6 col-12 p-3 m-auto">
+                                                                <a class="btn downloadbtn btn-block" target="_blank" href="dist/downloadCss/switch/switch2.css" download>Download switch2.css</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="row">
+                <!--Switch3-->
+                <div class="col-md-12 col-12 pb-md-4 pb-4">
+                    <div class="card">
+                        <div class="card-header">
+                            <h4>Switch3</h4>
+                        </div>
+                        <div class="card-body">
+                           <div class="col-md-12 col-12">
+                            <div class="row">
+                                <div class="col-12 d-flex flex-row flex-md-nowrap flex-wrap">
+                                    <div class="onoffswitch3Black pb-3">
+                                        <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="thirdswitchcard1" checked="">
+                                        <label class="onoffswitch-label" for="thirdswitchcard1">
+                                            <span class="onoffswitch-inner"></span>
+                                            <span class="onoffswitch-switch"></span>
+                                        </label>
+                                    </div>
+                                    <div class="onoffswitch3Oceanblue pb-3">
+                                        <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="thirdswitchcard2" checked="">
+                                        <label class="onoffswitch-label" for="thirdswitchcard2">
+                                            <span class="onoffswitch-inner"></span>
+                                            <span class="onoffswitch-switch"></span>
+                                        </label>
+                                    </div>
+                                    <div class="onoffswitch3Green pb-3">
+                                        <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="thirdswitchcard3" checked="">
+                                        <label class="onoffswitch-label" for="thirdswitchcard3">
+                                            <span class="onoffswitch-inner"></span>
+                                            <span class="onoffswitch-switch"></span>
+                                        </label>
+                                    </div>
+        
+                                    <div class="onoffswitch3Purple pb-3">
+                                        <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="thirdswitchcard4" checked="">
+                                        <label class="onoffswitch-label" for="thirdswitchcard4">
+                                            <span class="onoffswitch-inner"></span>
+                                            <span class="onoffswitch-switch"></span>
+                                        </label>
+                                    </div>
+        
+                                    <div class="onoffswitch3Yellow pb-3">
+                                        <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="thirdswitchcard5" checked="">
+                                        <label class="onoffswitch-label" for="thirdswitchcard5">
+                                            <span class="onoffswitch-inner"></span>
+                                            <span class="onoffswitch-switch"></span>
+                                        </label>
+                                    </div>
+        
+                                    <div class="onoffswitch3Royalblue pb-3">
+                                        <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="thirdswitchcard6" checked="">
+                                        <label class="onoffswitch-label" for="thirdswitchcard6">
+                                            <span class="onoffswitch-inner"></span>
+                                            <span class="onoffswitch-switch"></span>
+                                        </label>
+                                    </div>
+        
+                                    <div class="onoffswitch3Strongblue pb-3">
+                                        <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="thirdswitchcard7" checked="">
+                                        <label class="onoffswitch-label" for="thirdswitchcard7">
+                                            <span class="onoffswitch-inner"></span>
+                                            <span class="onoffswitch-switch"></span>
+                                        </label>
+                                    </div>
+        
+                                    <div class="onoffswitch3Orange pb-3">
+                                        <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="thirdswitchcard8" checked="">
+                                        <label class="onoffswitch-label" for="thirdswitchcard8">
+                                            <span class="onoffswitch-inner"></span>
+                                            <span class="onoffswitch-switch"></span>
+                                        </label>
+                                    </div>
+        
+                                    <div class="onoffswitch3Pureblue pb-3">
+                                        <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="thirdswitchcard9" checked="">
+                                        <label class="onoffswitch-label" for="thirdswitchcard9">
+                                            <span class="onoffswitch-inner"></span>
+                                            <span class="onoffswitch-switch"></span>
+                                        </label>
+                                    </div>
+        
+                                    <div class="onoffswitch3Limegreen pb-3">
+                                        <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="thirdswitchcard10" checked="">
+                                        <label class="onoffswitch-label" for="thirdswitchcard10">
+                                            <span class="onoffswitch-inner"></span>
+                                            <span class="onoffswitch-switch"></span>
+                                        </label>
+                                    </div>
+        
+                                    <div class="onoffswitch3Vividblue pb-3">
+                                        <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="thirdswitchcard11" checked="">
+                                        <label class="onoffswitch-label" for="thirdswitchcard11">
+                                            <span class="onoffswitch-inner"></span>
+                                            <span class="onoffswitch-switch"></span>
+                                        </label>
+                                    </div>
+
+                                    <div class="onoffswitch3Darkestblue pb-3">
+                                        <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="thirdswitchcard12" checked="">
+                                        <label class="onoffswitch-label" for="thirdswitchcard12">
+                                            <span class="onoffswitch-inner"></span>
+                                            <span class="onoffswitch-switch"></span>
+                                        </label>
+                                    </div>
+                                </div>
+                               
+                            </div>
+                               
+                           </div>
+                           
+                        </div>
+                        <div class="card-footer">
+                            <div class="text-center"><a id="btnViewcode1" name="btnViewcode1" class="btn btn-megna" data-toggle="collapse" href="#switch3ViewCodeSection" role="button" aria-expanded="false" aria-controls="switch3ViewCodeSection">View Code</a></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--switch3 view code-->
+                <div class="col-md-12 col-12 pb-md-4 pb-4">
+                    <div class="collapse" id="switch3ViewCodeSection">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-12 p-0">
+                                    <div class="card bg-light h-100">
+                                        <div class="card-body">
+                                            <nav>
+                                                <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                                                    <a class="nav-item nav-link active" id="nav-html-tab" data-codeType='html' data-toggle="tab" href="#nav-htmlswitch3" role="tab" aria-controls="nav-html" aria-selected="true">HTML</a>
+                                                    <a class="nav-item nav-link" id="nav-css-tab" data-codeType='css' data-toggle="tab" href="#nav-cssswitch3" role="tab" aria-controls="nav-css" aria-selected="false">CSS</a>
+                                                </div>
+                                            </nav>
+                                            <div class="tab-content border-left border-right border-bottom bg-white" id="nav-tabContent">
+                                                <div class="tab-pane fade show active" id="nav-htmlswitch3" role="tabpanel" aria-labelledby="nav-home-tab">
+                                                    <div class="container-fluid">
+                                                        <div class="row">
+                                                            <div class="col-12 text-right py-3">
+                                                                <button class="btn downloadbtn btn-sm" onclick="copyToClipboard('#card3HtmlCode',this)" data-toggle="tooltip" data-placement="top" title="Copy to clipboard">Copy</button>
+                                                            </div>
+                                                            <div class="col-12 px-0">
+                                                                <div class="form-group">
+                                                                <textarea id="card3HtmlCode" class="form-control code" rows="5" id="txthtml" name="txthtml" readonly>
+
+<!--Switch3-->
+<div class="row">
+    <div class="col-12 d-flex flex-row flex-nowrap">
+        <div class="onoffswitch3Black pb-3">
+            <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="thirdswitchcard1" checked="">
+            <label class="onoffswitch-label" for="thirdswitchcard1">
+                <span class="onoffswitch-inner"></span>
+                <span class="onoffswitch-switch"></span>
+            </label>
+        </div>
+        <div class="onoffswitch3Oceanblue pb-3">
+            <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="thirdswitchcard2" checked="">
+            <label class="onoffswitch-label" for="thirdswitchcard2">
+                <span class="onoffswitch-inner"></span>
+                <span class="onoffswitch-switch"></span>
+            </label>
+        </div>
+        <div class="onoffswitch3Green pb-3">
+            <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="thirdswitchcard3" checked="">
+            <label class="onoffswitch-label" for="thirdswitchcard3">
+                <span class="onoffswitch-inner"></span>
+                <span class="onoffswitch-switch"></span>
+            </label>
+        </div>
+
+        <div class="onoffswitch3Purple pb-3">
+            <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="thirdswitchcard4" checked="">
+            <label class="onoffswitch-label" for="thirdswitchcard4">
+                <span class="onoffswitch-inner"></span>
+                <span class="onoffswitch-switch"></span>
+            </label>
+        </div>
+
+        <div class="onoffswitch3Yellow pb-3">
+            <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="thirdswitchcard5" checked="">
+            <label class="onoffswitch-label" for="thirdswitchcard5">
+                <span class="onoffswitch-inner"></span>
+                <span class="onoffswitch-switch"></span>
+            </label>
+        </div>
+
+        <div class="onoffswitch3Royalblue pb-3">
+            <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="thirdswitchcard6" checked="">
+            <label class="onoffswitch-label" for="thirdswitchcard6">
+                <span class="onoffswitch-inner"></span>
+                <span class="onoffswitch-switch"></span>
+            </label>
+        </div>
+
+        <div class="onoffswitch3Strongblue pb-3">
+            <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="thirdswitchcard7" checked="">
+            <label class="onoffswitch-label" for="thirdswitchcard7">
+                <span class="onoffswitch-inner"></span>
+                <span class="onoffswitch-switch"></span>
+            </label>
+        </div>
+
+        <div class="onoffswitch3Orange pb-3">
+            <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="thirdswitchcard8" checked="">
+            <label class="onoffswitch-label" for="thirdswitchcard8">
+                <span class="onoffswitch-inner"></span>
+                <span class="onoffswitch-switch"></span>
+            </label>
+        </div>
+
+        <div class="onoffswitch3Pureblue pb-3">
+            <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="thirdswitchcard9" checked="">
+            <label class="onoffswitch-label" for="thirdswitchcard9">
+                <span class="onoffswitch-inner"></span>
+                <span class="onoffswitch-switch"></span>
+            </label>
+        </div>
+
+        <div class="onoffswitch3Limegreen pb-3">
+            <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="thirdswitchcard10" checked="">
+            <label class="onoffswitch-label" for="thirdswitchcard10">
+                <span class="onoffswitch-inner"></span>
+                <span class="onoffswitch-switch"></span>
+            </label>
+        </div>
+
+        <div class="onoffswitch3Vividblue pb-3">
+            <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="thirdswitchcard11" checked="">
+            <label class="onoffswitch-label" for="thirdswitchcard11">
+                <span class="onoffswitch-inner"></span>
+                <span class="onoffswitch-switch"></span>
+            </label>
+        </div>
+
+        <div class="onoffswitch3Darkestblue pb-3">
+            <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="thirdswitchcard12" checked="">
+            <label class="onoffswitch-label" for="thirdswitchcard12">
+                <span class="onoffswitch-inner"></span>
+                <span class="onoffswitch-switch"></span>
+            </label>
+        </div>
+    </div>
+    
+</div>
+               
+                                            
+                                                    
+                                                                </textarea>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+
+                                                </div>
+                                                <div class="tab-pane fade" id="nav-cssswitch3" role="tabpanel" aria-labelledby="nav-profile-tab">
+                                                    <div class="container-fluid">
+                                                        <div class="row">
+                                                            <div class="col-md-6 col-12 p-3 m-auto">
+                                                                <a class="btn downloadbtn btn-block" target="_blank" href="dist/downloadCss/switch/switch3.css" download>Download switch3.css</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                 <!--Switch4-->
+                <div class="col-md-12 col-12 pb-md-4 pb-4">
+                    <div class="card">
+                        <div class="card-header">
+                            <h4>Switch4</h4>
+                        </div>
+                        <div class="card-body">
+                           <div class="col-md-12 col-12">
+                            <div class="row">
+                                <div class="col-12 d-flex flex-row fflex-md-nowrap flex-wrap">
+                                    <div class="onoff-Switch4Black">
+                                        <input id="switch4DefaultBlack" name="switch4Black" type="checkbox" checked="">
+                                        <label for="switch4DefaultBlack" class="label-default"></label>
+                                    </div>
+
+                                    <div class="onoff-Switch4Oceanblue">
+                                        <input id="switch4DefaultOceanblue" name="switch4Oceanblue" type="checkbox" checked="">
+                                        <label for="switch4DefaultOceanblue" class="label-default"></label>
+                                    </div>
+
+                                    <div class="onoff-Switch4Green">
+                                        <input id="switch4DefaultGreen" name="switch4Green" type="checkbox" checked="">
+                                        <label for="switch4DefaultGreen" class="label-default"></label>
+                                    </div>
+
+                                    <div class="onoff-Switch4Purple">
+                                        <input id="switch4DefaultPurple" name="switch4Purple" type="checkbox" checked="">
+                                        <label for="switch4DefaultPurple" class="label-default"></label>
+                                    </div>
+
+                                    <div class="onoff-Switch4Yellow">
+                                        <input id="switch4DefaultYellow" name="switch4Yellow" type="checkbox" checked="">
+                                        <label for="switch4DefaultYellow" class="label-default"></label>
+                                    </div>
+
+                                    <div class="onoff-Switch4Royalblue">
+                                        <input id="switch4DefaultRoyalblue" name="switch4Royalblue" type="checkbox" checked="">
+                                        <label for="switch4DefaultRoyalblue" class="label-default"></label>
+                                    </div>
+
+                                    <div class="onoff-Switch4Strongblue">
+                                        <input id="switch4DefaultStrongblue" name="switch4Strongblue" type="checkbox" checked="">
+                                        <label for="switch4DefaultStrongblue" class="label-default"></label>
+                                    </div>
+
+                                    <div class="onoff-Switch4Orange">
+                                        <input id="switch4DefaultOrange" name="switch4Orange" type="checkbox" checked="">
+                                        <label for="switch4DefaultOrange" class="label-default"></label>
+                                    </div>
+
+                                    <div class="onoff-Switch4Pureblue">
+                                        <input id="switch4DefaultPureblue" name="switch4Pureblue" type="checkbox" checked="">
+                                        <label for="switch4DefaultPureblue" class="label-default"></label>
+                                    </div>
+
+                                    <div class="onoff-Switch4Limegreen">
+                                        <input id="switch4DefaultLimegreen" name="switch4Limegreen" type="checkbox" checked="">
+                                        <label for="switch4DefaultLimegreen" class="label-default"></label>
+                                    </div>
+
+                                    <div class="onoff-Switch4Vividblue">
+                                        <input id="switch4DefaultVividblue" name="switch4Vividblue" type="checkbox" checked="">
+                                        <label for="switch4DefaultVividblue" class="label-default"></label>
+                                    </div>
+
+                                    <div class="onoff-Switch4Darkestblue">
+                                        <input id="switch4DefaultDarkestblue" name="switch4Darkestblue" type="checkbox" checked="">
+                                        <label for="switch4DefaultDarkestblue" class="label-default"></label>
+                                    </div>
+                                  
+                                </div>
+                               
+                            </div>
+                               
+                           </div>
+                           
+                        </div>
+                        <div class="card-footer">
+                            <div class="text-center"><a id="btnViewcode1" name="btnViewcode1" class="btn btn-megna" data-toggle="collapse" href="#switch4ViewCodeSection" role="button" aria-expanded="false" aria-controls="switch4ViewCodeSection">View Code</a></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--switch4 view code-->
+                <div class="col-md-12 col-12 pb-md-4 pb-4">
+                    <div class="collapse" id="switch4ViewCodeSection">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-12 p-0">
+                                    <div class="card bg-light h-100">
+                                        <div class="card-body">
+                                            <nav>
+                                                <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                                                    <a class="nav-item nav-link active" id="nav-html-tab" data-codeType='html' data-toggle="tab" href="#nav-htmlswitch4" role="tab" aria-controls="nav-html" aria-selected="true">HTML</a>
+                                                    <a class="nav-item nav-link" id="nav-css-tab" data-codeType='css' data-toggle="tab" href="#nav-cssswitch4" role="tab" aria-controls="nav-css" aria-selected="false">CSS</a>
+                                                </div>
+                                            </nav>
+                                            <div class="tab-content border-left border-right border-bottom bg-white" id="nav-tabContent">
+                                                <div class="tab-pane fade show active" id="nav-htmlswitch4" role="tabpanel" aria-labelledby="nav-home-tab">
+                                                    <div class="container-fluid">
+                                                        <div class="row">
+                                                            <div class="col-12 text-right py-3">
+                                                                <button class="btn downloadbtn btn-sm" onclick="copyToClipboard('#card4HtmlCode',this)" data-toggle="tooltip" data-placement="top" title="Copy to clipboard">Copy</button>
+                                                            </div>
+                                                            <div class="col-12 px-0">
+                                                                <div class="form-group">
+                                                                <textarea id="card4HtmlCode" class="form-control code" rows="5" id="txthtml" name="txthtml" readonly>
+
+ <!--Switch4-->
+<div class="row">
+    <div class="col-12 d-flex flex-row flex-nowrap">
+        <div class="onoff-Switch4Black">
+            <input id="switch4DefaultBlack" name="switch4Black" type="checkbox" checked="">
+            <label for="switch4DefaultBlack" class="label-default"></label>
+        </div>
+
+        <div class="onoff-Switch4Oceanblue">
+            <input id="switch4DefaultOceanblue" name="switch4Oceanblue" type="checkbox" checked="">
+            <label for="switch4DefaultOceanblue" class="label-default"></label>
+        </div>
+
+        <div class="onoff-Switch4Green">
+            <input id="switch4DefaultGreen" name="switch4Green" type="checkbox" checked="">
+            <label for="switch4DefaultGreen" class="label-default"></label>
+        </div>
+
+        <div class="onoff-Switch4Purple">
+            <input id="switch4DefaultPurple" name="switch4Purple" type="checkbox" checked="">
+            <label for="switch4DefaultPurple" class="label-default"></label>
+        </div>
+
+        <div class="onoff-Switch4Yellow">
+            <input id="switch4DefaultYellow" name="switch4Yellow" type="checkbox" checked="">
+            <label for="switch4DefaultYellow" class="label-default"></label>
+        </div>
+
+        <div class="onoff-Switch4Royalblue">
+            <input id="switch4DefaultRoyalblue" name="switch4Royalblue" type="checkbox" checked="">
+            <label for="switch4DefaultRoyalblue" class="label-default"></label>
+        </div>
+
+        <div class="onoff-Switch4Strongblue">
+            <input id="switch4DefaultStrongblue" name="switch4Strongblue" type="checkbox" checked="">
+            <label for="switch4DefaultStrongblue" class="label-default"></label>
+        </div>
+
+        <div class="onoff-Switch4Orange">
+            <input id="switch4DefaultOrange" name="switch4Orange" type="checkbox" checked="">
+            <label for="switch4DefaultOrange" class="label-default"></label>
+        </div>
+
+        <div class="onoff-Switch4Pureblue">
+            <input id="switch4DefaultPureblue" name="switch4Pureblue" type="checkbox" checked="">
+            <label for="switch4DefaultPureblue" class="label-default"></label>
+        </div>
+
+        <div class="onoff-Switch4Limegreen">
+            <input id="switch4DefaultLimegreen" name="switch4Limegreen" type="checkbox" checked="">
+            <label for="switch4DefaultLimegreen" class="label-default"></label>
+        </div>
+
+        <div class="onoff-Switch4Vividblue">
+            <input id="switch4DefaultVividblue" name="switch4Vividblue" type="checkbox" checked="">
+            <label for="switch4DefaultVividblue" class="label-default"></label>
+        </div>
+
+        <div class="onoff-Switch4Darkestblue">
+            <input id="switch4DefaultDarkestblue" name="switch4Darkestblue" type="checkbox" checked="">
+            <label for="switch4DefaultDarkestblue" class="label-default"></label>
+        </div>
+    </div>
+</div>
+                                               
+                                                    
+                                                                </textarea>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+
+                                                </div>
+                                                <div class="tab-pane fade" id="nav-cssswitch3" role="tabpanel" aria-labelledby="nav-profile-tab">
+                                                    <div class="container-fluid">
+                                                        <div class="row">
+                                                            <div class="col-md-6 col-12 p-3">
+                                                                <a class="btn downloadbtn btn-block" target="_blank" href="dist/downloadCss/switch/switch3.css" download>Download switch3.css</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>  
+                </div>
+            </div>
+        </div>
+    </div>
+ <!--jquery js-->
+ <script src="assets/Core/jquery-3.3.1.min.js"></script>
+ <!--popper js-->
+ <script src="assets/Core/popper/popper.min.js"></script>
+ <!--bootstrap js-->
+ <script src="assets/Core/bootstrap/dist/js/bootstrap.min.js"></script>
+ <!--Sidebarmenu js-->
+ <script src="dist/js/sidebarmenu.js"></script>
+ <!--Wave Effects js -->
+ <script src="dist/js/waves.js"></script>
+ <!-- scrollbar JavaScript -->
+ <script src="dist/js/perfect-scrollbar.jquery.min.js"></script>
+ <!--Custom JavaScript -->
+ <script src="dist/js/custom.js"></script>
+ <!--Code Mirror JS-->
+<script src="assets/Plugins/codemirror/lib/codemirror.js"></script>
+<script src="assets/Plugins/codemirror/mode/xml/xml.js"></script>
+<script src="assets/Plugins/codemirror/mode/css/css.js"></script>
+<script src="assets/Plugins/codemirror/mode/javascript/javascript.js"></script>
+<script src="assets/Plugins/codemirror/mode/htmlmixed/htmlmixed.js"></script>
+
+ <!--custom js view code-->
+ <script src="dist/js/switch.js"></script>
+
+
+ <script type="text/javascript">
+     var card1CodeInit = 0;
+     var card2CodeInit = 0;
+     var card3CodeInit = 0;
+     var card4CodeInit = 0;
+    
+         $('#switch1ViewCodeSection').on('shown.bs.collapse', function () {
+             if(card1CodeInit == 0)
+             {
+                 card1HtmlCodeEditor();
+                 card1CodeInit = 1;
+             }
+             else{
+                 return false;
+             }
+         });
+         $('#switch2ViewCodeSection').on('shown.bs.collapse', function () {
+             if(card2CodeInit == 0)
+             {
+                 card2HtmlCodeEditor();
+                 card2CodeInit = 1;
+             }
+             else{
+                 return false;
+             }
+         });
+         $('#switch3ViewCodeSection').on('shown.bs.collapse', function () {
+             if(card3CodeInit == 0)
+             {
+                 card3HtmlCodeEditor();
+                 card3CodeInit = 1;
+             }
+             else{
+                 return false;
+             }
+         });
+         $('#switch4ViewCodeSection').on('shown.bs.collapse', function () {
+             if(card4CodeInit == 0)
+             {
+                 card4HtmlCodeEditor();
+                 card4CodeInit = 1;
+             }
+             else{
+                 return false;
+             }
+         });
+
+ </script>
+
+</body>
+</html>

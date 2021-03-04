@@ -1,0 +1,1031 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard 1</title>
+    <!--Bootstrap css-->
+    <link rel="stylesheet" href="assets/Core/bootstrap/dist/css/bootstrap.min.css">
+    <!--plugins of viewcode-->
+    <link rel="stylesheet" type="text/css" href="assets/Core/MDB/MDB Pro/css/mdb.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/Plugins/codemirror/lib/codemirror.css">
+    <link rel="stylesheet" type="text/css" href="assets/Plugins/codemirror/theme/material.css">
+    <!--Custom css-->
+    <link rel="stylesheet" href="dist/css/style.css">
+    <link rel="stylesheet" href="dist/scss/css/Dashboard 1.css">
+    <link rel="stylesheet" type="text/css" href="dist/scss/css/Extra.Dashboard.css">
+    <link rel="stylesheet" type="text/css" href="dist/scss/css/adminSite.css">
+    <link rel="stylesheet" href="dist/sidenavCss/custom.css">
+</head>
+<body class="skin-megna fixed-layout">
+    <!-- ============================================================== -->
+    <!-- Topbar header - style you can find in pages.scss -->
+    <!-- ============================================================== -->
+    <header class="topbar">
+        <nav class="navbar top-navbar navbar-expand-md navbar-dark">
+            <!-- ============================================================== -->
+            <!-- Logo -->
+            <!-- ============================================================== -->
+            <div class="navbar-header">
+                    <a class="navbar-brand" href="index.html">
+                        <!-- Logo icon --><b>
+                            <!--You can put here icon as well // <i class="wi wi-sunset"></i> //-->
+                            <!-- Dark Logo icon -->
+                            <img src="assets/images/New Logo.png" alt="homepage" class="light-logo" />
+                            <!-- Light Logo icon -->
+                            <!-- <img src="../assets/images/logo-light-icon.png" alt="homepage" class="light-logo" /> -->
+                        </b>
+                        <!--End Logo icon -->
+                        <span class="hidden-xs font-bold" style="font-size: 19px">Patel Techologies</span>
+                    </a>
+                </div>
+            <!-- ============================================================== -->
+            <!-- End Logo -->
+            <!-- ============================================================== -->
+            <div class="navbar-collapse">
+                <!-- ============================================================== -->
+                <!-- toggle and nav items -->
+                <!-- ============================================================== -->
+                <ul class="navbar-nav mr-auto">
+                    <!-- This is  -->
+                    <li class="nav-item"> <a class="nav-link nav-toggler d-block d-md-none waves-effect waves-dark" href="javascript:void(0)"><i class="ti-menu"></i></a> </li>
+                    <li class="nav-item"> <a class="nav-link sidebartoggler d-none d-lg-block d-md-block waves-effect waves-dark" href="javascript:void(0)"><i class="icon-menu"></i></a> </li>
+                    <!-- ============================================================== -->
+                    <!-- Search -->
+                    <!-- ============================================================== -->
+                    <li class="nav-item d-none d-md-block d-lg-block">
+                           <form action="">
+                              <input type="search" placeholder="Search & enter">
+                              <i class="fa fa-search"></i>
+                            </form>
+                        </li>
+                </ul>
+
+            </div>
+        </nav>
+    </header>
+    <!-- ============================================================== -->
+    <!-- End Topbar header -->
+    <!-- ============================================================== -->
+    <!-- ============================================================== -->
+    <!-- Left Sidebar - style you can find in custom.css  -->
+    <!-- ============================================================== -->
+    <aside class="left-sidebar">
+        <!-- Sidebar scroll-->
+        <div class="scroll-sidebar">
+
+            <!-- Sidebar navigation-->
+           <nav class="sidebar-nav">
+                    <ul id="sidebarnav">
+                        <li>
+                            <a class="has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false"><i class="mdi mdi-login"></i><span class="hide-menu">Dashboard</span></a>
+                            <ul aria-expanded="false" class="collapse">
+                                <li><a href="Dashboard1.html">Dashboard 1</a></li>
+                                <li><a href="Dashboard2.html">Dashboard 2</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false"><i class="mdi mdi-login"></i><span class="hide-menu">Login Templates</span></a>
+                            <ul aria-expanded="false" class="collapse">
+                                <li><a href="Login1.html">Login 1</a></li>
+                                <li><a href="Login2.html">Login 2</a></li>
+                                <li><a href="Login3.html">Login 3</a></li>
+                                <li><a href="Login4.html">Login 4</a></li>
+                                <li><a href="Login5.html">Login 5</a></li>
+                                <li><a href="Login6.html">Login 6</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false"><i class="ti-palette"></i><span class="hide-menu">Ui Elements</span></a>
+                            <ul aria-expanded="false" class="collapse">
+                                <li><a href="cards.html">Cards</a></li>
+                                <li><a href="buttons.html">Buttons</a></li>
+                                <li><a href="tabs.html">Tab</a></li>
+                                <li><a href="switchs.html">Switchs</a></li>
+                                <li><a href="Notification.html">Notification</a></li>
+                                <li><a href="Alert.html">Alert Box</a></li>
+                                <li><a href="carousel.html">Carousel</a></li>
+                                <li><a href="Errorpage.html">Error Page</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false"><i class="ti-layout-accordion-merged"></i><span class="hide-menu">Tables</span></a>
+                            <ul aria-expanded="false" class="collapse">
+                                <li><a href="basicTable.html">Basic Table</a></li>
+                                <li><a href="dataTable.html">Data Table</a></li>
+                                <li><a href="editable table.html">Editable Table</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false"><i class="ti-layout-media-right-alt"></i><span class="hide-menu">Forms</span></a>
+                            <ul aria-expanded="false" class="collapse">
+                                <li><a href="basicForms.html">Basic Forms</a></li>
+                                <li><a href="checkbox.html">Checkbox</a></li>
+                                <li><a href="dateTimepicker.html">Date &amp; Time Picker</a></li>
+                                <li><a href="dragdropfile.html">Drag &amp; Drop File Upload</a></li>
+                                <li><a href="sliders.html">Sliders</a></li>
+                                <li><a href="addon.html">Addon Control</a></li>
+                                <li><a href="icheck.html">Icheck Control</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false"><i class="ti-layout-media-right-alt"></i><span class="hide-menu">Components</span></a>
+                            <ul aria-expanded="false" class="collapse">
+                                <li><a href="mdbuttons.html">Material Buttons</a></li>
+                                <li><a href="badges.html">Badges</a></li>
+                                <li><a href="spinners.html">Loaders/Spinners</a></li>
+                                <li><a href="progressbar.html">ProgressBar</a></li>
+                                <li><a href="socialbutton.html">SocialButtons</a></li>
+                                <li><a href="stepper.html">Steppers</a></li>
+                                <li><a href="extendedcards.html">Extended Cards</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false"><i class="ti-layout-media-right-alt"></i><span class="hide-menu">Navigation</span></a>
+                            <ul aria-expanded="false" class="collapse">
+                                <li><a href="navbar.html">Navbar</a></li>
+                                <li><a href="breadcrumb.html">Breadcrumb</a></li>
+                                <li><a href="megamenu.html">Mega Menu</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false"><i class="mdi mdi-login"></i><span class="hide-menu">Email Templete</span></a>
+                            <ul aria-expanded="false" class="collapse">
+                               <li><a href="Email_1.html">Email Templete 1</a></li>
+                                <li><a href="Email_2.html">Email Templete 2</a></li>
+                            </ul>
+                        </li>
+                        <!--<li>
+                            <a class="has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false"><i class="ti-layout-media-right-alt"></i><span class="hide-menu">Templates</span></a>
+                            <ul aria-expanded="false" class="collapse">
+                                <li><a href="Website.html">Website</a></li>
+                            </ul>
+                        </li>-->
+                    </ul>
+           </nav>
+            <!-- End Sidebar navigation -->
+        </div>
+        <!-- End Sidebar scroll-->
+    </aside>
+    <!-- ============================================================== -->
+    <!-- End Left Sidebar - style you can find in  custom.css  -->
+    <!-- ============================================================== -->
+    <div class="page-wrapper">
+        <div class="container-fluid">
+            <!--Action bar Section Start-->
+    <div class="row">
+        <div class="col-lg-12 col-md-12 col-xs-12 mt-md-0 mt-5 px-lg-4 px-md-3 admin-header-blue d-none d-md-block main-container-actionbar">
+            <div class="card actionbar">
+                <div class="p-2">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-lg-3 col-md-3 col-xs-12">
+                                <ol class="breadcrumb white mb-0 pl-0 pr-0">
+                                    <li class="breadcrumb-item"><a href="#"><h5 class="active-page-text-color font-weight-bold mb-0">Dashboard</h5></a></li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+       
+    </div>
+    <!--Action bar Section End-->
+    <!-- Main Dashboard Cotent Start -->
+    <div id="MainDashboard" class="continer-fluid MainDashboard px-lg-2">
+        <!-- Report Cards Start -->
+        <!--Add mob-scroll class below in row to make cards scrollable and card column size col-10 in mobile view-->
+        <div class="row">
+            <div class="col-lg-3 col-md-6 col-12">
+                <div class="card cascading-admin-card">
+                    <div class="admin-up">
+                        <img src="assets/images/SVG/calendar.svg" class="icon blue" />
+                        <div class="data">
+                            <div class="font-weight-bold">Total Appointments</div>
+                            <h4 class="font-weight-bold active-page-text-color">100</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-12 mob-no-l-p">
+                <div class="card cascading-admin-card">
+                    <div class="admin-up">
+                        <img src="assets/images/SVG/man.svg" class="icon gold" />
+                        <div class="data">
+                            <div class="font-weight-bold">Total Employee</div>
+                            <h4 class="font-weight-bold active-page-text-color">200</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-12 mob-no-l-p">
+                <div class="card cascading-admin-card">
+                    <div class="admin-up">
+                        <img src="assets/images/SVG/Profile.svg" class="icon lightBlue" />
+                        <div class="data">
+                            <div class="font-weight-bold">Total approval</div>
+                            <h4 class="font-weight-bold active-page-text-color">300</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-12 mob-no-l-p">
+                <div class="card cascading-admin-card">
+                    <div class="admin-up">
+                        <img src="assets/images/SVG/man.svg" class="icon green" />
+                        <div class="data">
+                            <div class="font-weight-bold">Total Staff</div>
+                            <h4 class="font-weight-bold active-page-text-color">400</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Report Cards End -->
+        <!--Appointment and Recipe Report Section Start-->
+        <div class="row">
+            <div class="col-lg-6 col-md-12 col-12">
+                <div class="card border my-md-3 my-2">
+                    <div class="card-header bg-header py-2 px-3 mob-padding-px2">
+                        <div class="container-fluid">
+                            <div class="row align-items-center">
+                                <div class="col-md-6 col-6 px-0">
+                                    <h5 class="card-title font-weight-medium mb-0">Appointments</h5>
+                                </div>
+                                <div class="col-md-6 col-6 pr-0 pl-0">
+                                    <div class="dropdown">
+                                        <a class="btn StatusDropdown z-depth-0 dropdown-toggle bg-color-primary" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            Report<i class="fas fa-chevron-down ml-2"></i>
+                                        </a>
+
+                                        <div class="dropdown-menu ChangeStatusDropdown-Menu dropdown-menu-right">
+                                            <a href="">Add User</a>
+                                            <a href="">Add Employee</a>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body p-0">
+                        <ul class="list-group margin-list-item" infinitescroll="Nextpage()" id="apptDiv" ng-if="Appt.length > 0">
+                            <li class="list-group-item p-0" ng-repeat=" app in Appt">
+                                <div class="container-fluid">
+                                    <div class="row">
+                                        <div class="col-12 px-0">
+                                            <div class="py-2 px-3 mob-padding-px2">
+                                                <div class="card-title font-weight-bold mb-0 ">
+                                                    <i class="far fa-calendar-alt mr-2"></i>
+                                                    <span class="active-page-text-color font-weight-bold">
+                                                        <span>22/04/2020</span>
+                                                    </span>
+                                                </div>
+                                                <div class="font-weight-medium m-CardSubtitletext d-md-inline-block" style="font-size:14px;">
+                                                    <i class="far fa-clock mr-2"></i>
+                                                    <span>1:00 PM to 1:50 PM</span>
+                                                </div>
+                                                <div class="d-md-inline-block ml-md-2" style="font-size:14px;">
+                                                    <span class="font-weight-medium">
+                                                        <img class="icon RestaurantIcon d-inline-block" src="assets/images/SVG/user.svg">
+                                                        <span id="AppointmentName" class="ng-binding">Nandan</span>
+                                                    </span>
+                                                </div>
+                                                <div class="d-flex ml-0" style="font-size:14px;">
+                                                    <img class="icon mt-1 d-inline-block addressIcon" src="assets/images/SVG/Address.svg">
+                                                    <span class="d-inline-block font-weight-medium" id="restaurantAddress"><span>
+                                                        Liberty Cinema Station Road Padra-391440
+                                                    </span></span>
+                                                </div>
+                                            </div>
+                                            <div class="bg-header">
+                                                <ul class="list-group list-group-flush sublist">
+                                                    <li class="list-group-item mob-padding-px2">
+                                                        <div class="container-fluid p-2">
+                                                            <div class="row" ng-repeat="appt in app.CookingEventFoodItems">
+                                                                <div class="col-md-12 col-12 px-2">
+                                                                    <div class="d-flex align-items-start">
+                                                                        <img src="assets/images/SVG/Nandan.jpg" class="recipeListImg-sm rounded d-inline-block z-depth-1">
+                                                                        <div>
+                                                                            <div class="d-block ml-2 font-weight-bold">Nandan Patel</div>
+                                                                            <div class="d-block ml-2 font-weight-medium foodCategory"><span>Software Devlopers ,</span>6th Month Ex.</div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="container-fluid p-2 border-Seperator">
+                                                            <div class="row">
+                                                                <div class="col-md-12 col-12 px-2">
+                                                                    <div class="d-flex align-items-center">
+
+                                                                        <img  src="assets/images/SVG/Akshay Patel.jpg" class="Chef-img rounded d-inline-block default">
+                                                                        <div>
+                                                                            <div class="d-block ml-2 font-weight-bold"><span>Akshay Patel</span></div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+
+                                                            </div>
+                                                        </div>
+                                                    </li>
+
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 px-0">
+                                            <div class="py-2 px-3 mob-padding-px2">
+                                                <div class="card-title font-weight-bold mb-0 ">
+                                                    <i class="far fa-calendar-alt mr-2"></i>
+                                                    <span class="active-page-text-color font-weight-bold">
+                                                        <span>22/04/2020</span>
+                                                    </span>
+                                                </div>
+                                                <div class="font-weight-medium m-CardSubtitletext d-md-inline-block" style="font-size:14px;">
+                                                    <i class="far fa-clock mr-2"></i>
+                                                    <span>1:00 PM to 1:50 PM</span>
+                                                </div>
+                                                <div class="d-md-inline-block ml-md-2" style="font-size:14px;">
+                                                    <span class="font-weight-medium">
+                                                        <img class="icon RestaurantIcon d-inline-block" src="assets/images/SVG/user.svg">
+                                                        <span id="AppointmentName" class="ng-binding">Yeshi</span>
+                                                    </span>
+                                                </div>
+                                                <div class="d-flex ml-0" style="font-size:14px;">
+                                                    <img class="icon mt-1 d-inline-block addressIcon" src="assets/images/SVG/Address.svg">
+                                                    <span class="d-inline-block font-weight-medium" id="restaurantAddress"><span>
+                                                        Liberty Cinema Station Road Padra-391440
+                                                    </span></span>
+                                                </div>
+                                            </div>
+                                            <div class="bg-header">
+                                                <ul class="list-group list-group-flush sublist">
+                                                    <li class="list-group-item mob-padding-px2">
+                                                        <div class="container-fluid p-2">
+                                                            <div class="row" ng-repeat="appt in app.CookingEventFoodItems">
+                                                                <div class="col-md-12 col-12 px-2">
+                                                                    <div class="d-flex align-items-start">
+                                                                        <img src="assets/images/SVG/Yeshi.jpg" class="recipeListImg-sm rounded d-inline-block z-depth-1">
+                                                                        <div>
+                                                                            <div class="d-block ml-2 font-weight-bold">Yeshi Ngawang</div>
+                                                                            <div class="d-block ml-2 font-weight-medium foodCategory"><span>Software Devlopers ,</span>8th Month Ex.</div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="container-fluid p-2 border-Seperator">
+                                                            <div class="row">
+                                                                <div class="col-md-12 col-12 px-2">
+                                                                    <div class="d-flex align-items-center">
+
+                                                                        <img  src="assets/images/SVG/Akshay Patel.jpg" class="Chef-img rounded d-inline-block default">
+                                                                        <div>
+                                                                            <div class="d-block ml-2 font-weight-bold"><span>Akshay Patel</span></div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+
+                                                            </div>
+                                                        </div>
+                                                    </li>
+
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 px-0">
+                                            <div class="py-2 px-3 mob-padding-px2">
+                                                <div class="card-title font-weight-bold mb-0 ">
+                                                    <i class="far fa-calendar-alt mr-2"></i>
+                                                    <span class="active-page-text-color font-weight-bold">
+                                                        <span>22/04/2020</span>
+                                                    </span>
+                                                </div>
+                                                <div class="font-weight-medium m-CardSubtitletext d-md-inline-block" style="font-size:14px;">
+                                                    <i class="far fa-clock mr-2"></i>
+                                                    <span>1:00 PM to 1:50 PM</span>
+                                                </div>
+                                                <div class="d-md-inline-block ml-md-2" style="font-size:14px;">
+                                                    <span class="font-weight-medium">
+                                                        <img class="icon RestaurantIcon d-inline-block" src="assets/images/SVG/user.svg">
+                                                        <span id="AppointmentName" class="ng-binding">Pritesh</span>
+                                                    </span>
+                                                </div>
+                                                <div class="d-flex ml-0" style="font-size:14px;">
+                                                    <img class="icon mt-1 d-inline-block addressIcon" src="assets/images/SVG/Address.svg">
+                                                    <span class="d-inline-block font-weight-medium" id="restaurantAddress"><span>
+                                                        Liberty Cinema Station Road Padra-391440
+                                                    </span></span>
+                                                </div>
+                                            </div>
+                                            <div class="bg-header">
+                                                <ul class="list-group list-group-flush sublist">
+                                                    <li class="list-group-item mob-padding-px2">
+                                                        <div class="container-fluid p-2">
+                                                            <div class="row" ng-repeat="appt in app.CookingEventFoodItems">
+                                                                <div class="col-md-12 col-12 px-2">
+                                                                    <div class="d-flex align-items-start">
+                                                                        <img src="assets/images/SVG/Pritesh.jpg" class="recipeListImg-sm rounded d-inline-block z-depth-1">
+                                                                        <div>
+                                                                            <div class="d-block ml-2 font-weight-bold">Pritesh Lakhiya</div>
+                                                                            <div class="d-block ml-2 font-weight-medium foodCategory"><span>Software Devlopers ,</span>10th Month Ex.</div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="container-fluid p-2 border-Seperator">
+                                                            <div class="row">
+                                                                <div class="col-md-12 col-12 px-2">
+                                                                    <div class="d-flex align-items-center">
+
+                                                                        <img  src="assets/images/SVG/Akshay Patel.jpg" class="Chef-img rounded d-inline-block default">
+                                                                        <div>
+                                                                            <div class="d-block ml-2 font-weight-bold"><span>Akshay Patel</span></div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+
+                                                            </div>
+                                                        </div>
+                                                    </li>
+
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 px-0">
+                                            <div class="py-2 px-3 mob-padding-px2">
+                                                <div class="card-title font-weight-bold mb-0 ">
+                                                    <i class="far fa-calendar-alt mr-2"></i>
+                                                    <span class="active-page-text-color font-weight-bold">
+                                                        <span>22/04/2020</span>
+                                                    </span>
+                                                </div>
+                                                <div class="font-weight-medium m-CardSubtitletext d-md-inline-block" style="font-size:14px;">
+                                                    <i class="far fa-clock mr-2"></i>
+                                                    <span>1:00 PM to 1:50 PM</span>
+                                                </div>
+                                                <div class="d-md-inline-block ml-md-2" style="font-size:14px;">
+                                                    <span class="font-weight-medium">
+                                                        <img class="icon RestaurantIcon d-inline-block" src="assets/images/SVG/user.svg">
+                                                        <span id="AppointmentName" class="ng-binding">Marmik</span>
+                                                    </span>
+                                                </div>
+                                                <div class="d-flex ml-0" style="font-size:14px;">
+                                                    <img class="icon mt-1 d-inline-block addressIcon" src="assets/images/SVG/Address.svg">
+                                                    <span class="d-inline-block font-weight-medium" id="restaurantAddress"><span>
+                                                        Liberty Cinema Station Road Padra-391440
+                                                    </span></span>
+                                                </div>
+                                            </div>
+                                            <div class="bg-header">
+                                                <ul class="list-group list-group-flush sublist">
+                                                    <li class="list-group-item mob-padding-px2">
+                                                        <div class="container-fluid p-2">
+                                                            <div class="row" ng-repeat="appt in app.CookingEventFoodItems">
+                                                                <div class="col-md-12 col-12 px-2">
+                                                                    <div class="d-flex align-items-start">
+                                                                        <img src="assets/images/SVG/Marmik.jpg" class="recipeListImg-sm rounded d-inline-block z-depth-1">
+                                                                        <div>
+                                                                            <div class="d-block ml-2 font-weight-bold">Marmik Upadhayay</div>
+                                                                            <div class="d-block ml-2 font-weight-medium foodCategory"><span>Software Devlopers ,</span>12th Month Ex.</div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="container-fluid p-2 border-Seperator">
+                                                            <div class="row">
+                                                                <div class="col-md-12 col-12 px-2">
+                                                                    <div class="d-flex align-items-center">
+
+                                                                        <img  src="assets/images/SVG/Akshay Patel.jpg" class="Chef-img rounded d-inline-block default">
+                                                                        <div>
+                                                                            <div class="d-block ml-2 font-weight-bold"><span>Akshay Patel</span></div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+
+                                                            </div>
+                                                        </div>
+                                                    </li>
+
+                                                </ul>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </li>
+
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-12 col-12">
+                <div class="card z-depth-0 my-md-3 my-2">
+                    <div class="card-body p-0">
+                        <ul class="nav nav-tabs nav-justified" id="RecipeGroupTab" role="tablist">
+                            <li class="nav-item">
+                                <a class="nav-link active" id="TopSales-tab" data-toggle="tab" href="#TopSales" role="tab" aria-controls="TopSales"
+                                   aria-selected="true">Top Sales</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="TopChefs-tab" data-toggle="tab" href="#TopChefs" role="tab" ng-click="GetTopChefs()" aria-controls="TopChefs"
+                                   aria-selected="false">Top Salary</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="TopCraves-tab" data-toggle="tab" href="#TopCraves" role="tab" ng-click="TopCraves()" aria-controls="TopCraves"
+                                   aria-selected="false">Top Employee</a>
+                            </li>
+                        </ul>
+                        <div class="tab-content border-left border-right border-bottom rounded-bottom p-0" id="myTabContent">
+                           
+                            <div class="tab-pane fade show active" id="TopSales" role="tabpanel" aria-labelledby="TopSales-tab">
+                                <ul class="list-group margin-list-item">
+                                    <li class="list-group-item p-2">
+                                        <div class="container-fluid mob-padding-px2">
+                                            <div class="row">
+                                                <div class="col-md-12 col-12 px-2">
+                                                    <div class="d-flex align-items-start">
+                                                        <img src="assets/images/SVG/Nandan.jpg" class="recipeListImg-sm rounded d-inline-block z-depth-1 mt-1">
+                                                        <div>
+                                                            <div class="d-block ml-2 font-weight-bold font-1em-px">Nandan Patel</div>
+                                                            <div class="d-block ml-2 font-weight-medium foodCategory"><span>Software Devlopers</span>,Selected</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item p-2">
+                                        <div class="container-fluid mob-padding-px2">
+                                            <div class="row">
+                                                <div class="col-md-12 col-12 px-2">
+                                                    <div class="d-flex align-items-start">
+                                                        <img src="assets/images/SVG/Yeshi.jpg" class="recipeListImg-sm rounded d-inline-block z-depth-1 mt-1">
+                                                        <div>
+                                                            <div class="d-block ml-2 font-weight-bold font-1em-px">Yeshi Ngawang</div>
+                                                            <div class="d-block ml-2 font-weight-medium foodCategory"><span>Software Devlopers</span>,Selected</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item p-2">
+                                        <div class="container-fluid mob-padding-px2">
+                                            <div class="row">
+                                                <div class="col-md-12 col-12 px-2">
+                                                    <div class="d-flex align-items-start">
+                                                        <img src="assets/images/SVG/Pritesh.jpg" class="recipeListImg-sm rounded d-inline-block z-depth-1 mt-1">
+                                                        <div>
+                                                            <div class="d-block ml-2 font-weight-bold font-1em-px">Pritesh Lakhaniya</div>
+                                                            <div class="d-block ml-2 font-weight-medium foodCategory"><span>Software Devlopers</span>,Selected</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item p-2">
+                                        <div class="container-fluid mob-padding-px2">
+                                            <div class="row">
+                                                <div class="col-md-12 col-12 px-2">
+                                                    <div class="d-flex align-items-start">
+                                                        <img src="assets/images/SVG/Marmik.jpg" class="recipeListImg-sm rounded d-inline-block z-depth-1 mt-1">
+                                                        <div>
+                                                            <div class="d-block ml-2 font-weight-bold font-1em-px">Marmik Upadhiyaya</div>
+                                                            <div class="d-block ml-2 font-weight-medium foodCategory"><span>Software Devlopers</span>,Selected</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item p-2">
+                                        <div class="container-fluid mob-padding-px2">
+                                            <div class="row">
+                                                <div class="col-md-12 col-12 px-2">
+                                                    <div class="d-flex align-items-start">
+                                                        <img src="assets/images/SVG/Yeshi.jpg" class="recipeListImg-sm rounded d-inline-block z-depth-1 mt-1">
+                                                        <div>
+                                                            <div class="d-block ml-2 font-weight-bold font-1em-px">Yeshi Ngawang</div>
+                                                            <div class="d-block ml-2 font-weight-medium foodCategory"><span>Software Devlopers</span>,Selected</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item p-2">
+                                        <div class="container-fluid mob-padding-px2">
+                                            <div class="row">
+                                                <div class="col-md-12 col-12 px-2">
+                                                    <div class="d-flex align-items-start">
+                                                        <img src="assets/images/SVG/Nandan.jpg" class="recipeListImg-sm rounded d-inline-block z-depth-1 mt-1">
+                                                        <div>
+                                                            <div class="d-block ml-2 font-weight-bold font-1em-px">Nandan Patel</div>
+                                                            <div class="d-block ml-2 font-weight-medium foodCategory"><span>Software Devlopers</span>,Selected</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item p-2">
+                                        <div class="container-fluid mob-padding-px2">
+                                            <div class="row">
+                                                <div class="col-md-12 col-12 px-2">
+                                                    <div class="d-flex align-items-start">
+                                                        <img src="assets/images/SVG/Yeshi.jpg" class="recipeListImg-sm rounded d-inline-block z-depth-1 mt-1">
+                                                        <div>
+                                                            <div class="d-block ml-2 font-weight-bold font-1em-px">Yeshi Ngawang</div>
+                                                            <div class="d-block ml-2 font-weight-medium foodCategory"><span>Software Devlopers</span>,Selected</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="tab-pane fade" id="TopChefs" role="tabpanel" aria-labelledby="TopChefs-tab">
+                                <ul class="list-group margin-list-item">
+                                    <li class="list-group-item p-2">
+                                        <div class="container-fluid px-2 py-0">
+                                            <div class="row"> 
+                                                <div class="col-md-12 col-12 px-2">
+                                                    <div class="d-flex align-items-start">
+                                                        <img  src="assets/images/SVG/Nandan.jpg" class="recipeListImg-sm rounded mt-1 d-inline-block z-depth-1">
+                                                        <div class="ml-2">
+                                                            <div class="d-block ml-1 font-weight-bold font-1em-px">Nandan Patel</div>
+                                                            <div class="d-flex align-items-center">
+                                                                <div>
+                                                                    <div class="d-flex align-items-center font-weight-medium"><i class="fas fa-envelope mx-1"></i><span class="subText text-ellipsis ml-1">Nandan.Patel@Patel.com</span></div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="d-flex align-items-center">
+                                                                <div>
+                                                                    <div class="d-flex align-items-center font-weight-medium"><i class="fas fa-mobile-alt mx-2"></i><span class="subText">+91 9574813299</span></div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item p-2">
+                                        <div class="container-fluid px-2 py-0">
+                                            <div class="row"> 
+                                                <div class="col-md-12 col-12 px-2">
+                                                    <div class="d-flex align-items-start">
+                                                        <img  src="assets/images/SVG/Yeshi.jpg" class="recipeListImg-sm rounded mt-1 d-inline-block z-depth-1">
+                                                        <div class="ml-2">
+                                                            <div class="d-block ml-1 font-weight-bold font-1em-px">Yeshi Ngwanag</div>
+                                                            <div class="d-flex align-items-center">
+                                                                <div>
+                                                                    <div class="d-flex align-items-center font-weight-medium"><i class="fas fa-envelope mx-1"></i><span class="subText text-ellipsis ml-1">Yeshi.Ngwanag@Patel.com</span></div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="d-flex align-items-center">
+                                                                <div>
+                                                                    <div class="d-flex align-items-center font-weight-medium"><i class="fas fa-mobile-alt mx-2"></i><span class="subText">+91 123459656</span></div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item p-2">
+                                        <div class="container-fluid px-2 py-0">
+                                            <div class="row"> 
+                                                <div class="col-md-12 col-12 px-2">
+                                                    <div class="d-flex align-items-start">
+                                                        <img  src="assets/images/SVG/Pritesh.jpg" class="recipeListImg-sm rounded mt-1 d-inline-block z-depth-1">
+                                                        <div class="ml-2">
+                                                            <div class="d-block ml-1 font-weight-bold font-1em-px">Pritesh Lakhaniya</div>
+                                                            <div class="d-flex align-items-center">
+                                                                <div>
+                                                                    <div class="d-flex align-items-center font-weight-medium"><i class="fas fa-envelope mx-1"></i><span class="subText text-ellipsis ml-1">Pritesh.Lakhaniya@Patel.com</span></div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="d-flex align-items-center">
+                                                                <div>
+                                                                    <div class="d-flex align-items-center font-weight-medium"><i class="fas fa-mobile-alt mx-2"></i><span class="subText">+91 9574813299</span></div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item p-2">
+                                        <div class="container-fluid px-2 py-0">
+                                            <div class="row"> 
+                                                <div class="col-md-12 col-12 px-2">
+                                                    <div class="d-flex align-items-start">
+                                                        <img  src="assets/images/SVG/Marmik.jpg" class="recipeListImg-sm rounded mt-1 d-inline-block z-depth-1">
+                                                        <div class="ml-2">
+                                                            <div class="d-block ml-1 font-weight-bold font-1em-px">Marmik Upadhaya</div>
+                                                            <div class="d-flex align-items-center">
+                                                                <div>
+                                                                    <div class="d-flex align-items-center font-weight-medium"><i class="fas fa-envelope mx-1"></i><span class="subText text-ellipsis ml-1">Marmik.Upadhaya@Patel.com</span></div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="d-flex align-items-center">
+                                                                <div>
+                                                                    <div class="d-flex align-items-center font-weight-medium"><i class="fas fa-mobile-alt mx-2"></i><span class="subText">+91 9574813299</span></div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item p-2">
+                                        <div class="container-fluid px-2 py-0">
+                                            <div class="row"> 
+                                                <div class="col-md-12 col-12 px-2">
+                                                    <div class="d-flex align-items-start">
+                                                        <img  src="assets/images/SVG/Nandan.jpg" class="recipeListImg-sm rounded mt-1 d-inline-block z-depth-1">
+                                                        <div class="ml-2">
+                                                            <div class="d-block ml-1 font-weight-bold font-1em-px">Nandan Patel</div>
+                                                            <div class="d-flex align-items-center">
+                                                                <div>
+                                                                    <div class="d-flex align-items-center font-weight-medium"><i class="fas fa-envelope mx-1"></i><span class="subText text-ellipsis ml-1">Nandan.Patel@Patel.com</span></div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="d-flex align-items-center">
+                                                                <div>
+                                                                    <div class="d-flex align-items-center font-weight-medium"><i class="fas fa-mobile-alt mx-2"></i><span class="subText">+91 9574813299</span></div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="tab-pane fade" id="TopCraves" role="tabpanel" aria-labelledby="TopCraves-tab">
+                                <ul class="list-group margin-list-item">
+                                    <li class="list-group-item p-2">
+                                        <div class="container-fluid mob-padding-px2">
+                                            <div class="row">
+                                                <div class="col-md-12 col-12 px-2">
+                                                    <div class="d-flex align-items-start">
+                                                        <img  src="assets/images/SVG/Nandan.jpg" class="recipeListImg-sm rounded d-inline-block z-depth-1 mt-1">
+                                                        <div>
+                                                            <div class="d-block ml-2 font-weight-bold font-1em-px">Nandan Patel</div>
+                                                            <div class="d-block ml-2 font-weight-medium foodCategory"><span>Software Devloper,</span>16000</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Appointment and Recipe Report Section End-->
+        <!--Approvals and Report Section Start-->
+        <div class="row">
+            <div class="col-lg-6 col-md-12 col-12 employeecard">
+               <div class="card border my-md-3 my-2 h-100">
+                    <div class="card-header bg-header mob-padding-px2">
+                        <h5 class="card-title font-weight-medium mb-0">Employee Lists</h5>
+                    </div>
+                <div class="card-body p-0">
+                    <div class="table-responsive">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>#</th>
+                                    <th>First Name</th>
+                                    <th>Last Name</th>
+                                    <th>Postion</th>
+                                    <th>Salary</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Nandan</td>
+                                    <td>Patel</td>
+                                    <td>CEO</td>
+                                    <td><span class="label label-danger">13000</span> </td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>Akshay</td>
+                                    <td>Patel</td>
+                                    <td>Web Designer</td>
+                                    <td><span class="label label-info">15000</span> </td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>Pritesh</td>
+                                    <td>Lakhaniya</td>
+                                    <td>PHP Devlpoer</td>
+                                    <td><span class="label label-warning">19000</span> </td>
+                                </tr>
+                                <tr>
+                                    <td>4</td>
+                                    <td>Meet</td>
+                                    <td>Patel</td>
+                                    <td>CA</td>
+                                    <td><span class="label label-success">25000</span> </td>
+                                </tr>
+                                <tr>
+                                    <td>5</td>
+                                    <td>Jay</td>
+                                    <td>Patel</td>
+                                    <td>Office Boy</td>
+                                    <td><span class="label label-info">7000</span> </td>
+                                </tr>
+                                <tr>
+                                    <td>6</td>
+                                    <td>Rushi</td>
+                                    <td>Patel</td>
+                                    <td>Manager</td>
+                                    <td><span class="label label-success">30000</span> </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            </div>
+            <div class="col-lg-6 col-md-12 col-12">
+                <div id="reportCard" class="card border my-md-3 my-2 h-100">
+                    <div class="card-header bg-header mob-padding-px2">
+                        <h5 class="card-title font-weight-medium mb-0">Report</h5>
+                    </div>
+                    <div class="card-body p-0">
+                        <div id="ApprovalGroupContainer">
+                            <ul class="nav nav-tabs nav-justified" id="ApprovalGroupTab" role="tablist">
+                                <li class="nav-item">
+                                    <a class="nav-link active" id="Appoinment-tab" data-toggle="tab" href="#Appoinment" role="tab" aria-controls="Appoinment" aria-selected="true">
+                                        Appoinment
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" id="Order-tab" data-toggle="tab" href="#Order" onclick="OrdersFunc()" role="tab" aria-controls="Order" aria-selected="false">
+                                        Sales
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" id="Revenue-tab" data-toggle="tab" href="#Revenue" role="tab" onclick="RevenueFunc()" aria-controls="Revenue" aria-selected="false">
+                                        Revenue
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="tab-content p-0 border-top" id="myTabContent">
+                            <div class="tab-pane fade show active" id="Appoinment" role="tabpanel" aria-labelledby="Appoinment-tab">
+                                <div class="card-body p-0">
+                                    <div id="myChart" class="ReportChart"></div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade show active" id="Order" role="tabpanel" aria-labelledby="Order-tab">
+                                <div class="card-body p-0">
+                                    <div id="myChart-orders" class="ReportChart"></div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade show active" id="Revenue" role="tabpanel" aria-labelledby="Revenue-tab">
+                                <div class="card-body p-0">
+                                    <div id="myChart-revenue" class="ReportChart"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!--Approvals and Report Section End-->
+    </div>
+
+    
+    <!-- Main Dashboard Cotent Start -->
+        </div>
+    </div>
+    <!--jquery js-->
+    <script src="assets/Core/jquery-3.3.1.min.js"></script>
+    <!--popper js-->
+    <script src="assets/Core/popper/popper.min.js"></script>
+    <!--bootstrap js-->
+    <script src="assets/Core/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!--Sidebarmenu js-->
+    <script src="dist/js/sidebarmenu.js"></script>
+    <!--Wave Effects js -->
+    <script src="dist/js/waves.js"></script>
+    <!-- scrollbar JavaScript -->
+    <script src="dist/js/perfect-scrollbar.jquery.min.js"></script>
+    <!--Custom JavaScript -->
+    <script src="dist/js/custom.js"></script>
+    <!--Code Mirror JS-->
+    <script src="assets/Plugins/codemirror/lib/codemirror.js"></script>
+    <script src="assets/Plugins/codemirror/mode/xml/xml.js"></script>
+    <script src="assets/Plugins/codemirror/mode/css/css.js"></script>
+    <script src="assets/Plugins/codemirror/mode/javascript/javascript.js"></script>
+    <script src="assets/Plugins/codemirror/mode/htmlmixed/htmlmixed.js"></script>
+    <script src="https://cdn.zingchart.com/zingchart.min.js"></script>
+   <script type="text/javascript">
+       $(document).ready(function () {
+                          const myConfig = {
+    type: 'bar',
+    title: {
+      text: 'Appoinment',
+      fontSize: 24,
+      color: '#5d7d9a'
+    },
+    legend: {
+      draggable: true,
+    },
+    scaleX: {
+      // set scale label
+      label: {
+        text: 'Days'
+      },
+      // convert text on scale indices
+      labels: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun']
+    },
+    scaleY: {
+      // scale label with unicode character
+      label: {
+        text: 'Temperature (°F)'
+      }
+    },
+    plot: {
+      // animation docs here:
+      // https://www.zingchart.com/docs/tutorials/design-and-styling/chart-animation/#animation__effect
+      animation: {
+        effect: 'ANIMATION_EXPAND_BOTTOM',
+        method: 'ANIMATION_STRONG_EASE_OUT',
+        sequence: 'ANIMATION_BY_NODE',
+        speed: 275,
+      }
+    },
+    series: [{
+        // plot 1 values, linear data
+        values: [23, 20, 27, 29, 25, 17, 15],
+        text: 'Week 1',
+        backgroundColor: '#4d80a6'
+      },
+      {
+        // plot 2 values, linear data
+        values: [35, 42, 33, 49, 35, 47, 35],
+        text: 'Week 2',
+        backgroundColor: '#70cfeb'
+      },
+      {
+        // plot 2 values, linear data
+        values: [15, 22, 13, 33, 44, 27, 31],
+        text: 'Week 3',
+        backgroundColor: '#8ee9de'
+      }
+    ]
+  };
+ 
+  // render chart with width and height to
+  // fill the parent container CSS dimensions
+  zingchart.render({
+    id: 'myChart',
+    data: myConfig,
+    height: '100%',
+    width: '100%'
+  }); 
+                    
+       });
+   </script>
+    
+</body>
+</html>

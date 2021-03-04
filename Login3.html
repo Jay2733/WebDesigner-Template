@@ -1,0 +1,665 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login3</title>
+
+    <!--Bootstrap css-->
+    <link rel="stylesheet" href="assets/Core/bootstrap/dist/css/bootstrap.min.css">
+    <!--plugins of viewcode-->
+    <link rel="stylesheet" type="text/css" href="assets/Plugins/codemirror/lib/codemirror.css">
+    <link rel="stylesheet" type="text/css" href="assets/Plugins/codemirror/theme/material.css">
+    <!--Custom css-->
+    <link rel="stylesheet" href="dist/css/style.css">
+    <link rel="stylesheet" href="dist/scss/css/login3.css">
+    <link rel="stylesheet" href="dist/scss/css/register3.css">
+    <link rel="stylesheet" href="dist/sidenavCss/custom.css">
+</head>
+<body class="skin-megna fixed-layout">
+    <!-- ============================================================== -->
+    <!-- Topbar header - style you can find in pages.scss -->
+    <!-- ============================================================== -->
+    <header class="topbar">
+        <nav class="navbar top-navbar navbar-expand-md navbar-dark">
+            <!-- ============================================================== -->
+            <!-- Logo -->
+            <!-- ============================================================== -->
+            <div class="navbar-header">
+                    <a class="navbar-brand" href="index.html">
+                        <!-- Logo icon --><b>
+                            <!--You can put here icon as well // <i class="wi wi-sunset"></i> //-->
+                            <!-- Dark Logo icon -->
+                            <img src="assets/images/New Logo.png" alt="homepage" class="light-logo" />
+                            <!-- Light Logo icon -->
+                            <!-- <img src="../assets/images/logo-light-icon.png" alt="homepage" class="light-logo" /> -->
+                        </b>
+                        <!--End Logo icon -->
+                        <span class="hidden-xs font-bold" style="font-size: 19px">Patel Techologies</span>
+                    </a>
+                </div>
+            <!-- ============================================================== -->
+            <!-- End Logo -->
+            <!-- ============================================================== -->
+            <div class="navbar-collapse">
+                <!-- ============================================================== -->
+                <!-- toggle and nav items -->
+                <!-- ============================================================== -->
+                <ul class="navbar-nav mr-auto">
+                    <!-- This is  -->
+                    <li class="nav-item"> <a class="nav-link nav-toggler d-block d-md-none waves-effect waves-dark" href="javascript:void(0)"><i class="ti-menu"></i></a> </li>
+                    <li class="nav-item"> <a class="nav-link sidebartoggler d-none d-lg-block d-md-block waves-effect waves-dark" href="javascript:void(0)"><i class="icon-menu"></i></a> </li>
+                    <!-- ============================================================== -->
+                    <!-- Search -->
+                    <!-- ============================================================== -->
+                    <li class="nav-item d-none d-md-block d-lg-block">
+                           <form action="">
+                              <input type="search" placeholder="Search & enter">
+                              <i class="fa fa-search"></i>
+                            </form>
+                        </li>
+                </ul>
+
+            </div>
+        </nav>
+    </header>
+    <!-- ============================================================== -->
+    <!-- End Topbar header -->
+    <!-- ============================================================== -->
+    <!-- ============================================================== -->
+    <!-- Left Sidebar - style you can find in sidebar.scss  -->
+    <!-- ============================================================== -->
+    <aside class="left-sidebar">
+        <!-- Sidebar scroll-->
+        <div class="scroll-sidebar">
+
+            <!-- Sidebar navigation-->
+           <nav class="sidebar-nav">
+                    <ul id="sidebarnav">
+                        <li>
+                            <a class="has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false"><i class="mdi mdi-login"></i><span class="hide-menu">Dashboard</span></a>
+                            <ul aria-expanded="false" class="collapse">
+                                <li><a href="Dashboard1.html">Dashboard 1</a></li>
+                                <li><a href="Dashboard2.html">Dashboard 2</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false"><i class="mdi mdi-login"></i><span class="hide-menu">Login Templates</span></a>
+                            <ul aria-expanded="false" class="collapse">
+                                <li><a href="Login1.html">Login 1</a></li>
+                                <li><a href="Login2.html">Login 2</a></li>
+                                <li><a href="Login3.html">Login 3</a></li>
+                                <li><a href="Login4.html">Login 4</a></li>
+                                <li><a href="Login5.html">Login 5</a></li>
+                                <li><a href="Login6.html">Login 6</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false"><i class="ti-palette"></i><span class="hide-menu">Ui Elements</span></a>
+                            <ul aria-expanded="false" class="collapse">
+                                <li><a href="cards.html">Cards</a></li>
+                                <li><a href="buttons.html">Buttons</a></li>
+                                <li><a href="tabs.html">Tab</a></li>
+                                <li><a href="switchs.html">Switchs</a></li>
+                                <li><a href="Notification.html">Notification</a></li>
+                                <li><a href="Alert.html">Alert Box</a></li>
+                                <li><a href="carousel.html">Carousel</a></li>
+                                <li><a href="Errorpage.html">Error Page</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false"><i class="ti-layout-accordion-merged"></i><span class="hide-menu">Tables</span></a>
+                            <ul aria-expanded="false" class="collapse">
+                                <li><a href="basicTable.html">Basic Table</a></li>
+                                <li><a href="dataTable.html">Data Table</a></li>
+                                <li><a href="editable table.html">Editable Table</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false"><i class="ti-layout-media-right-alt"></i><span class="hide-menu">Forms</span></a>
+                            <ul aria-expanded="false" class="collapse">
+                                <li><a href="basicForms.html">Basic Forms</a></li>
+                                <li><a href="checkbox.html">Checkbox</a></li>
+                                <li><a href="dateTimepicker.html">Date &amp; Time Picker</a></li>
+                                <li><a href="dragdropfile.html">Drag &amp; Drop File Upload</a></li>
+                                <li><a href="sliders.html">Sliders</a></li>
+                                <li><a href="addon.html">Addon Control</a></li>
+                                <li><a href="icheck.html">Icheck Control</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false"><i class="ti-layout-media-right-alt"></i><span class="hide-menu">Components</span></a>
+                            <ul aria-expanded="false" class="collapse">
+                                <li><a href="mdbuttons.html">Material Buttons</a></li>
+                                <li><a href="badges.html">Badges</a></li>
+                                <li><a href="spinners.html">Loaders/Spinners</a></li>
+                                <li><a href="progressbar.html">ProgressBar</a></li>
+                                <li><a href="socialbutton.html">SocialButtons</a></li>
+                                <li><a href="stepper.html">Steppers</a></li>
+                                <li><a href="extendedcards.html">Extended Cards</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false"><i class="ti-layout-media-right-alt"></i><span class="hide-menu">Navigation</span></a>
+                            <ul aria-expanded="false" class="collapse">
+                                <li><a href="navbar.html">Navbar</a></li>
+                                <li><a href="breadcrumb.html">Breadcrumb</a></li>
+                                <li><a href="megamenu.html">Mega Menu</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false"><i class="mdi mdi-login"></i><span class="hide-menu">Email Templete</span></a>
+                            <ul aria-expanded="false" class="collapse">
+                               <li><a href="Email_1.html">Email Templete 1</a></li>
+                                <li><a href="Email_2.html">Email Templete 2</a></li>
+                            </ul>
+                        </li>
+                        <!--<li>
+                            <a class="has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false"><i class="ti-layout-media-right-alt"></i><span class="hide-menu">Templates</span></a>
+                            <ul aria-expanded="false" class="collapse">
+                                <li><a href="Website.html">Website</a></li>
+                            </ul>
+                        </li>-->
+                    </ul>
+                </nav>
+            <!-- End Sidebar navigation -->
+        </div>
+        <!-- End Sidebar scroll-->
+    </aside>
+    <!-- ============================================================== -->
+    <!-- End Left Sidebar - style you can find in sidebar.scss  -->
+    <!-- ============================================================== -->
+
+    
+    <div class="page-wrapper">
+        <!--Login Section -->
+        <div class="container-fluid">
+            <div class="content-wrapper">
+                <div class="col-lg-6 col-md-8 col-12 m-auto largeScreen-width">
+                    <div class="template-wrapper">
+                        <div class="card">
+                            <div class="loginHeader">
+                                <div class="text-center">
+                                    <img class="img-responsive img-fluid " src="assets/images/comapny-white-HZ-logo.svg" alt="Company logo horizonal">
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <form class="col-md-10 px-lg-3 px-0 m-auto form-material" role="form" id="loginform3">
+                                    <div class="form-group">
+                                        <input class="form-control" type="email" id="txtEmail" name="txtEmail" required="" placeholder="Email">
+                                    </div>
+                                    <div class="form-group">
+                                        <input class="form-control" type="password" id="txtPassword" name="txtPassword" required="" placeholder="Password">
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="d-flex no-block align-items-center checklist-items">
+                                                <div class="custom-control custom-checkbox">
+                                                    <input type="checkbox" class="custom-control-input" id="customCheck1" name="customCheck1">
+                                                    <label class="custom-control-label" for="customCheck1">Remember me</label>
+                                                </div>
+                                                <div class="forgot-link ml-auto">
+                                                    <a href="#" id="forgotPassword" name="forgotPassword">Forgot password?</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="text-center px-md-4"><a href="#" id="btnLogin" name="btnLogin" class="btn btn-block btn-lg btn-info btn-rounded login-btn">Login</a></div>
+                                    <p class="text-center textdarkColor">Don't have an account? <a href="#" class="signup">Sign Up</a></p>
+                                </form>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-12">
+                <div class="text-center"><a id="btnViewcode" name="btnViewcode" class="btn btn-megna" data-toggle="collapse" href="#LoginViewCodeSection" role="button" aria-expanded="false" aria-controls="LoginViewCodeSection">View Code</a></div>
+            </div>
+        </div>
+        
+        <!--Login View Code Section Start-->
+        <div class="collapse" id="LoginViewCodeSection">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="card my-4 bg-light">
+                            <div class="card-body">
+                                <nav>
+                                    <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                                        <a class="nav-item nav-link active" id="nav-html-tab" data-codeType='html' data-toggle="tab" href="#nav-html" role="tab" aria-controls="nav-html" aria-selected="true">HTML</a>
+                                        <a class="nav-item nav-link" id="nav-css-tab" data-codeType='css' data-toggle="tab" href="#nav-css" role="tab" aria-controls="nav-css" aria-selected="false">CSS</a>
+                                    </div>
+                                </nav>
+                                <div class="tab-content border-left border-right border-bottom bg-white" id="nav-tabContent">
+                                    <div class="tab-pane fade show active" id="nav-html" role="tabpanel" aria-labelledby="nav-home-tab">
+                                        <div class="container-fluid">
+                                            <div class="row">
+                                                <div class="col-12 text-right py-3">
+                                                    <button class="btn downloadbtn btn-sm" onclick="copyToClipboard('#loginHtmlCode',this)" data-toggle="tooltip" data-placement="top" title="Copy to clipboard">Copy</button>
+                                                </div>
+                                                <div class="col-12 px-0">
+                                                    <div class="form-group">
+                                                    <textarea id="loginHtmlCode" class="form-control code" rows="5" id="txthtml" name="txthtml" readonly>
+
+<div class="container-fluid">
+    <div class="content-wrapper">
+        <div class="col-lg-6 col-md-8 col-12 m-auto largeScreen-width">
+            <div class="template-wrapper">
+                <div class="card">
+                    <div class="loginHeader">
+                        <div class="text-center">
+                            <img class="img-responsive img-fluid " src="assets/images/comapny-white-HZ-logo.svg" alt="Company logo horizonal">
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <form class="col-md-10 px-lg-3 px-0 m-auto form-material" role="form" id="loginform3">
+                            <div class="form-group">
+                                <input class="form-control" type="email" id="txtEmail" name="txtEmail" required="" placeholder="Email">
+                            </div>
+                            <div class="form-group">
+                                <input class="form-control" type="password" id="txtPassword" name="txtPassword" required="" placeholder="Password">
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="d-flex no-block align-items-center checklist-items">
+                                        <div class="custom-control custom-checkbox">
+                                            <input type="checkbox" class="custom-control-input" id="customCheck1" name="customCheck1">
+                                            <label class="custom-control-label" for="customCheck1">Remember me</label>
+                                        </div>
+                                        <div class="forgot-link ml-auto">
+                                            <a href="#" id="forgotPassword" name="forgotPassword">Forgot password?</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="text-center px-md-4"><a href="#" id="btnLogin" name="btnLogin" class="btn btn-block btn-lg btn-info btn-rounded login-btn">Login</a></div>
+                            <p class="text-center textdarkColor">Don't have an account? <a href="#" class="signup">Sign Up</a></p>
+                        </form>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</div>                                                
+                                        
+                                                    </textarea>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                    <div class="tab-pane fade" id="nav-css" role="tabpanel" aria-labelledby="nav-profile-tab">
+                                        <div class="container-fluid">
+                                            <div class="row">
+                                                <div class="col-4 p-3 m-auto">
+                                                    <a class="btn downloadbtn btn-block" target="_blank" href="dist/scss/css/login3.css" download>Download login3.css</a>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Login View Code Section End-->
+
+        <!--Register Section-->
+        <div class="container-fluid">
+            <div class="register-wrapper">
+                <div class="col-lg-6 col-md-8 col-12 m-auto largeScreen-width">
+                    <div class="template-wrapper">
+                        <div class="card">
+                            <div class="loginHeader">
+                                <div class="text-center">
+                                    <img class="img-responsive img-fluid " src="assets/images/comapny-white-HZ-logo.svg" alt="Company logo horizonal">
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <form class="form-material" role="form" id="registerform3">
+                                    <div class="uploadPhotho-wrap text-center">
+                                        <input class="img-responsive img-fluid " src="assets/images/upload-photo.svg" type="image" alt="upload photo" />
+                                        <input type="file" id="my_file" style="display: none;" />
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-6 col-12">
+                                            <div class="form-group">
+                                                <input class="form-control" type="text" id="firstname" name="firstname" required="" placeholder="First Name">
+                                            </div>
+                                        </div>
+                                       <div class="col-md-6 col-12">
+                                            <div class="form-group">
+                                                <input class="form-control" type="text" id="lastname" name="lastname" required="" placeholder="Last Name">
+                                            </div>
+                                       </div>
+                                       <div class="col-md-6 col-12">
+                                            <div class="form-group">
+                                                <input class="form-control" type="email" id="Email" name="Email" required="" placeholder="Email">
+                                            </div>
+                                       </div>
+                                       <div class="col-md-6 col-12">
+                                            <div class="form-group">
+                                                <input class="form-control" type="number" id="Phone" name="Phone" required="" placeholder="Phone">
+                                            </div>
+                                       </div>
+                                       <div class="col-md-12 col-12">
+                                            <div class="form-group">
+                                                <input class="form-control" type="text" id="address" name="address" required="" placeholder="Address">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-12">
+                                            <div class="form-group">
+                                                <!-- <div class="select-box"> -->
+                                                    <select class="form-control selectOption " id="txtcountry" name="txtcountry">
+                                                        <option value=""> Country</option>
+                                                        <option>USA</option>
+                                                        <option>India</option>
+                                                        <option>Australia</option>
+                                                        <option>Russia</option>
+                                                        <option>UK</option>
+                                                    </select>
+                                                <!-- </div> -->
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-12">
+                                            <div class="form-group">
+                                               
+                                                <select class="form-control  selectOption" id="stateTxt" name="stateTxt">
+                                                    <option value="0">State</option>
+                                                    <option value="1">Gujarat</option>
+                                                    <option value="2">Maharastra</option>
+                                                    <option value="3">Tamilnadu</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-12">
+                                            <div class="form-group">
+                                                <select class="form-control  selectOption" id="cityTxt" name="cityTxt">
+                                                    <option value="0">City</option>
+                                                    <option value="1">Vadodara</option>
+                                                    <option value="2">Ahmedabad</option>
+                                                    <option value="3">Surat</option>
+                                                </select>
+                                            </div>
+
+                                            <!-- <div class="form-group mb-3 pb-1 position-relative">
+                                                <select id="cityTxt" name="cityTxt" class="form-control custom-select">
+                                                    <option value="0">City</option>
+                                                    <option value="1">Vadodara</option>
+                                                    <option value="2">Ahmedabad</option>
+                                                    <option value="3">Surat</option>
+                                                </select>
+                                            </div> -->
+                                        </div>
+                                        <div class="col-md-6 col-12">
+                                            <div class="form-group">
+                                                <input class="form-control" type="text" id="zipcode" name="zipcode" required="" placeholder="ZIPcode">
+                                            </div>
+                                       </div>
+                                       <div class="col-md-6 col-12">
+                                            <div class="form-group">
+                                                <input class="form-control" type="password" id="password" name="password" required="" placeholder="Password">
+                                            </div>
+                                       </div>
+                                       <div class="col-md-6 col-12">
+                                            <div class="form-group">
+                                                <input class="form-control" type="password" id="confirmPassword" name="confirmPassword" required="" placeholder="Confirm Password">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-10 m-auto">
+                                            <div class="px-md-4"><a href="#" id="btnRegister" name="btnRegister" class="btn btn-block btn-info btn-rounded register-btn">Register</a></div>
+                                            <p class="text-center textdarkColor">Have already an account? <a href="#" class="login">Login</a></p>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-12">
+                <div class="text-center"><a id="btnViewcode" name="btnViewcode" class="btn btn-megna" data-toggle="collapse" href="#RegistrationViewCodeSection" role="button" aria-expanded="false" aria-controls="RegistrationViewCodeSection">View Code</a></div>
+            </div>
+        </div>
+
+        <!--Registration View code section Start-->
+        <div class="collapse" id="RegistrationViewCodeSection">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="card my-4 bg-light">
+                            <div class="card-body">
+                                <nav>
+                                    <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                                        <a class="nav-item nav-link active" id="nav-html-tab" data-codeType='html' data-toggle="tab" href="#nav-html-register" role="tab" aria-controls="nav-html" aria-selected="true">HTML</a>
+                                        <a class="nav-item nav-link" id="nav-css-tab" data-codeType='css' data-toggle="tab" href="#nav-css-register" role="tab" aria-controls="nav-css" aria-selected="false">CSS</a>
+                                        <a class="nav-item nav-link" id="nav-jquery-tab" data-codeType='js' data-toggle="tab" href="#nav-register-jquery" role="tab" aria-controls="nav-jquery" aria-selected="false">Js</a>
+                                    </div>
+                                </nav>
+                                <div class="tab-content border-left border-right border-bottom bg-white" id="nav-tabContent">
+                                    <div class="tab-pane fade show active" id="nav-html-register" role="tabpanel" aria-labelledby="nav-home-tab">
+                                        <div class="container-fluid">
+                                            <div class="row">
+                                                <div class="col-12 text-right py-3">
+                                                    <button class="btn downloadbtn btn-sm" onclick="copyToClipboard('#registerHtmlCode',this)" data-toggle="tooltip" data-placement="top" title="Copy to clipboard">Copy</button>
+                                                </div>
+                                                <div class="col-12 px-0">
+                                                    <div class="form-group">
+                                                        <textarea id="registerHtmlCode" class="form-control code" rows="5" id="txthtml" name="txthtml" readonly>
+
+<div class="container-fluid">
+    <div class="register-wrapper">
+        <div class="col-lg-6 col-md-8 col-12 m-auto largeScreen-width">
+            <div class="template-wrapper">
+                <div class="card">
+                    <div class="loginHeader">
+                        <div class="text-center">
+                            <img class="img-responsive img-fluid " src="assets/images/comapny-white-HZ-logo.svg" alt="Company logo horizonal">
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <form class="form-material" role="form" id="registerform3">
+                            <div class="uploadPhotho-wrap text-center">
+                                <input class="img-responsive img-fluid " src="assets/images/upload-photo.svg" type="image" alt="upload photo" />
+                                <input type="file" id="my_file" style="display: none;" />
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6 col-12">
+                                    <div class="form-group">
+                                        <input class="form-control" type="text" id="firstname" name="firstname" required="" placeholder="First Name">
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-12">
+                                    <div class="form-group">
+                                        <input class="form-control" type="text" id="lastname" name="lastname" required="" placeholder="Last Name">
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-12">
+                                    <div class="form-group">
+                                        <input class="form-control" type="email" id="Email" name="Email" required="" placeholder="Email">
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-12">
+                                    <div class="form-group">
+                                        <input class="form-control" type="number" id="Phone" name="Phone" required="" placeholder="Phone">
+                                    </div>
+                                </div>
+                                <div class="col-md-12 col-12">
+                                    <div class="form-group">
+                                        <input class="form-control" type="text" id="address" name="address" required="" placeholder="Address">
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-12">
+                                    <div class="form-group">
+                                        <!-- <div class="select-box"> -->
+                                            <select class="form-control selectOption " id="txtcountry" name="txtcountry">
+                                                <option value=""> Country</option>
+                                                <option>USA</option>
+                                                <option>India</option>
+                                                <option>Australia</option>
+                                                <option>Russia</option>
+                                                <option>UK</option>
+                                            </select>
+                                        <!-- </div> -->
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-12">
+                                    <div class="form-group">
+                                        
+                                        <select class="form-control  selectOption" id="stateTxt" name="stateTxt">
+                                            <option value="0">State</option>
+                                            <option value="1">Gujarat</option>
+                                            <option value="2">Maharastra</option>
+                                            <option value="3">Tamilnadu</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-12">
+                                    <div class="form-group">
+                                        <select class="form-control  selectOption" id="cityTxt" name="cityTxt">
+                                            <option value="0">City</option>
+                                            <option value="1">Vadodara</option>
+                                            <option value="2">Ahmedabad</option>
+                                            <option value="3">Surat</option>
+                                        </select>
+                                    </div>
+
+                                    <!-- <div class="form-group mb-3 pb-1 position-relative">
+                                        <select id="cityTxt" name="cityTxt" class="form-control custom-select">
+                                            <option value="0">City</option>
+                                            <option value="1">Vadodara</option>
+                                            <option value="2">Ahmedabad</option>
+                                            <option value="3">Surat</option>
+                                        </select>
+                                    </div> -->
+                                </div>
+                                <div class="col-md-6 col-12">
+                                    <div class="form-group">
+                                        <input class="form-control" type="text" id="zipcode" name="zipcode" required="" placeholder="ZIPcode">
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-12">
+                                    <div class="form-group">
+                                        <input class="form-control" type="password" id="password" name="password" required="" placeholder="Password">
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-12">
+                                    <div class="form-group">
+                                        <input class="form-control" type="password" id="confirmPassword" name="confirmPassword" required="" placeholder="Confirm Password">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-10 m-auto">
+                                    <div class="px-md-4"><a href="#" id="btnRegister" name="btnRegister" class="btn btn-block btn-info btn-rounded register-btn">Register</a></div>
+                                    <p class="text-center textdarkColor">Have already an account? <a href="#" class="login">Login</a></p>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>                                                           
+                                        
+                                                        </textarea>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                    <div class="tab-pane fade" id="nav-css-register" role="tabpanel" aria-labelledby="nav-profile-tab">
+                                        <div class="container-fluid">
+                                            <div class="row">
+                                                <div class="col-4 p-3 m-auto">
+                                                    <a class="btn downloadbtn btn-block" target="_blank" href="dist/scss/css/register3.css" download>Download register3.css</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane fade" id="nav-register-jquery" role="tabpanel" aria-labelledby="nav-profile-tab">
+                                        <div class="container-fluid">
+                                            <div class="row">
+                                                <div class="col-4 p-3 m-auto">
+                                                    <a class="btn downloadbtn btn-block" target="_blank" href="dist/downloadjquery/login/fileupload.js" download>Download register3.js</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Registration View code section End-->
+
+    </div>
+
+
+    <!--jquery js-->
+    <script src="assets/Core/jquery-3.3.1.min.js"></script>
+    <!--popper js-->
+    <script src="assets/Core/popper/popper.min.js"></script>
+    <!--bootstrap js-->
+    <script src="assets/Core/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!--Sidebarmenu js-->
+    <script src="dist/js/sidebarmenu.js"></script>
+    <!--Wave Effects js -->
+    <script src="dist/js/waves.js"></script>
+    <!-- scrollbar JavaScript -->
+    <script src="dist/js/perfect-scrollbar.jquery.min.js"></script>
+    <!--Custom JavaScript -->
+    <script src="dist/js/custom.js"></script>
+    <!--Code Mirror JS-->
+    <script src="assets/Plugins/codemirror/lib/codemirror.js"></script>
+    <script src="assets/Plugins/codemirror/mode/xml/xml.js"></script>
+    <script src="assets/Plugins/codemirror/mode/css/css.js"></script>
+    <script src="assets/Plugins/codemirror/mode/javascript/javascript.js"></script>
+    <script src="assets/Plugins/codemirror/mode/htmlmixed/htmlmixed.js"></script>
+    <!--custom js view code-->
+    <script src="dist/js/login3.js"></script>
+    <script type="text/javascript">
+        $("input[type='image']").click(function() {
+           $("input[id='my_file']").click();
+        });
+    </script>
+    <script type="text/javascript">
+      var loginCodeInit = 0;
+      var RegisterCodeInit = 0;
+        $('#LoginViewCodeSection').on('shown.bs.collapse', function () {
+            if(loginCodeInit == 0)
+            {
+                loginHtmlCodeEditor();
+                loginCodeInit = 1;
+            }
+            else{
+                return false;
+            }
+        });
+        $('#RegistrationViewCodeSection').on('shown.bs.collapse', function () {
+            if(RegisterCodeInit == 0)
+            {
+                registerHtmlCodeEditor();
+                RegisterCodeInit = 1;
+            }
+            else{
+                return false;
+            }
+        });
+    </script>
+</body>
+</html>
